@@ -1,0 +1,108 @@
+---
+title : "Feature docs"
+description: ""
+lead: "View feature documentation for the fictional RTFM-Industries Documentation Dashboard feature."
+draft: false
+weight: 5
+date: 2023-10-11T16:20:10-04:00
+---
+:toc:
+
+NOTE: Because I lack a current MadCap Flare license, raw XHTML code samples are provided instead of parsed content.
+
+== RTFM-Industries Documentation Dashboards
+The following link:../../overview/#_topic_typing[concept documentation] introduces RTFM-Industries Documentation Dashboards, a splendid feature that helps tech writers do their jobs more effectively.
+
+=== Code sample
+```XHTML
+<body>
+    <h1>RTFM-Industries Documentation Dashboards</h1>
+    <p>
+        RTFM-Industries Documentation Dashboards provides technical writers with visualized data to track documentation requests. Each dashboard tracks the following metrics:
+    </p>
+    <ul>
+        <li>Reuests for new feature documentation</li>
+        <li>Request for documentation bug fixes</li>
+        <li>Percentage of documentation completed per project</li>
+    </ul>
+    <figure>
+        <img src=" ../images/best-practice-documentation-dashboards.png " alt="image of RTFM-Industries Documentation Dashboards " />
+        <figcaption>RTFM-Industries Documentation Dashboards</figcaption>
+    </figure>
+    <p>
+        Within each dashboard, a tech writer can learn more about each data point by clicking on it. Requests are color-coded to signify priority:</p>
+    <ul>
+        <li>
+          <span class="red-txt">Red</span> = you forgot to write the documentation and everyone knows it
+        </li>
+        <li>
+          <span class="yellow-txt">Yellow</span> = you've successfully pushed the deadline back by pretending to be sick</li>
+        <li>
+          <span class="green-txt">Green</span> = you've got PLENTY of time to write the docs (as long as nothing goes wrong)
+        </li>
+    </ul>
+        <p>To adjust these priorities, see the <a href="adjust-doc-priority.htm">Adjusting Documentation Priorities</a> section.</p>
+    <h2>Export Documentation Dashboards</h2>
+    <p>RTFM-Industries Dashboard tiles can be exported into the following file type: (Excel, PDF, RTF, CSV).</p>
+        <p>
+        <span class="note">
+        <span class="bold">Note:</span>
+            All RTFM-Industries Documentation Dashboards are fully HTML5 and do not require Microsoft Silverlight.
+        </span>
+        </p>
+        <h2>Prerequisites &amp; licensing</h2>
+        <ul>
+            <li>SaaS client</li>
+            <li>
+                <a href="request-RTFM-Industries-dashboards.htm">
+                Request the RTFM-Industries Documentation Dashboard feature
+                </a>
+            </li>
+            <li>User assigned the Tech Writer <a href="../sys-admin/roles/tech-writer-power-user">power user role</a></li>
+        </ul>
+        <h2>Navigation Path</h2>
+        <p>Home &gt; Dashboards</p>
+        <h2>Next steps</h2>
+        <p><a href="create-doc-dashboard.htm">Create a new Documentation Dashboard</a>
+        </p>
+</body>
+```
+
+== Create a new Documentation Dashboard
+The following link:../../overview/#_topic_typing[task] instructs users how to create a new Documentation Dashboard that evaluates the effectiveness of published documentation.
+
+=== Code sample
+```XHTML
+﻿<body>
+    <h1>Create a new Documentation Dashboard</h1>
+    <p>The creation of a custom Documentation Dashboard helps to visualize the effectiveness of published documentation based on topic type (concept, task, reference).
+    </p>
+    <h2>Prerequisites</h2>
+    <p><a href="doc-dashboards-prerequisites">Prerequisites</a></p>
+    <h2>Navigation Path</h2>
+    <p>Home &gt; Dashboards &gt; Create New </p>
+    <h2>Task</h2>
+    <ol>
+        <li>Click <span class="bold">Add Report</span>.</li>
+        <li>From the Report Type dropdown, select a topic type and enable the chekbox next to each documentation file you want to evaluate:</li>
+        <li>Specify a report code, name, and description</li>
+        <p><span class="note"><span class="bold">Note:</span>Report code must be unique</span>
+        </p>
+        <li>Build the report by dragging and dropping data objects, noting the following about Categories, Sorts, Filters, and Layout tabs:</li>
+        <ol>
+            <li><span class="bold">Categories:</span> Allows the user to select the data categories (RTFM-Industries tables) that should be accessible on the report. One or more categories must be selected and will determine the fields that are available to select on the other tabs.
+                <br /><span class="note "><span class="bold ">Note:</span> Users will see the tables they're permissioned to access.</span><br /></li>
+            <li><span class="bold">Sorts:</span> Allows the user to select one or more data fields used to sort the data. This is optional</li>
+            <li><span class="bold">Filters:</span> Allows the user to select one or more data fields used to filter the data. This is optional</li>
+            <li><span class="bold">Layout:</span> Allows the user to select and order the data fields that should display on the report</li>
+        </ol>
+        <li>To subscribe others to this Documentation Dashboard, enter their email address in the <span class="bold">Subscriber</span> field.</li>
+        <li>Click <span class="bold">Save</span> when finished.<li>
+        <p><span class="bold">Result:</span> the Documentation Dashboard is added to the list in the bottom panel.
+    </ol>
+    <h2>Next Steps</h2>
+    <p>
+        <a href="reports-promote-global.htm ">Promote a Documentation Dashboard to Global</a>
+    </p>
+</body>
+```

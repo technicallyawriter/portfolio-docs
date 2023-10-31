@@ -1,0 +1,18 @@
+---
+title: "Key alliances"
+description: ""
+lead: "A tech writer is only as good as their subject matter experts (SME)"
+draft: false
+menu:
+  docs:
+    parent: process
+weight: 15
+toc: true
+---
+:toc:
+
+
+{{< figure src="../sme.png" alt="The SME is your VIP" caption="<em>The SME is your VIP</em>" class="border-0" >}}
+
+
+Successful tech writers ask the _right people the right questions at the right time_.

@@ -1,0 +1,135 @@
+---
+title : "Release notes"
+description: ""
+lead: "Release notes to the fictional RTFM-Industries release (v1.1.0) are below. For many users, release notes may be their only interaction with software documentation, which makes it a unique document."
+draft: false
+weight: 10
+date: 2023-10-11T16:20:10-04:00
+lastmod: 2023-10-11:07:11-04:00
+---
+:toc:
+
+== Code segments explained
+
+* brief summary of major changes (1-2 sentences)
+* "key highlights" list with anchor links for user navigation
+* images that say 1000 words
+* conditional text for online and print only outputs
+
+== Source code
+
+NOTE: Because I lack a current MadCap Flare license, raw XHTML code samples are provided instead of parsed content.
+
+```XHTML
+<body>
+    <h1>RTFM-Industries v1.1.0 Release Notes</h1>
+    <p>The RTFM-Industries v1.1.0 release introduces Automatic Documentation, changes to our RTFM-Industries REST API, expanded support for prose linting, and general software updates. Key highlights include:</p>
+    <ul class="release-highlights">
+        <li>
+            <span class="bold"><a href="#automatic">Automatic Documentation</a>:</span> send a scattered message to a technical writer at the last minute and documentation will magically appear
+        </li>
+        <li>
+            <span class="bold"><a href="#api">RTFM-Industries REST API updates:</a></span> new methods and attributes added
+        </li>
+        <li>
+            <a href="#Performance"><span class="bold">Tech writer performance improvements: added new indices and removed redundant reviews</span></a>
+        </li>
+    </ul>
+    <h2>
+        <a name="automatic"></a>
+        Automatic documentation
+    </h2>
+    <p>The newest feature from RTFM-Industries is automatic documentation! Tech writers can write all the docs with the press of a button.</p>
+    <figure>
+        <img src="../Images/automatic-documentation/never-write-doc-again.png" alt="the secret to never writing documentation again" />
+        <figcaption>Figure 1. Secret to never writing documentation again</figcaption>
+    </figure>
+    <!-- Conditional text to handle screenOnly and printOnly outputs - this approach is required when providing URLs in release notes -->
+    <p>
+        For more information on this feature, see <a href="../automatic-documentation/getting-started.htm" MadCap:conditions="screenOnly">Getting started with Automatic Documentation</a>
+        <a href="https://RTFM-Industries/pdf/Automatic-Documentation-Guide.pdf" MadCap:conditions="printOnly">Automatic Documentation PDF Guide</a>.
+    </p>
+    <h2>
+        <a name="api"></a>RTFM-Industries REST API (v2.0.0) updates</h2>
+    <p>The following updates have been made to the RTFM-Industries REST API (v2.0.0). For full documentation of this API, see <a href="https://apiv2.rtfm-industries/docs">RTFM-Industries REST API (v2.0.0) Documentation</a>.</p>
+    <ul>
+        <li><span class="bold">New method added in Documentation controller: PrioritizeDocRequest</span></li>
+        <li>
+            <span class="bold">New attributes added to the Workflow endpoint for Process</span>
+            <ul>
+                <li>
+                    WriteTheDocs
+                </li>
+                <li>
+                    EditTheDocs
+                </li>
+                <li>
+                    ReviewTheDocs
+                </li>
+                <li>
+                    MergeTheDocs
+                </li>
+                <li>
+                    ShipTheDocs
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <h2>
+        <a name="performance"></a>Tech writer performance improvements</h2>
+    <ul>
+        <li>Three (3) new indices were added to each tech writer database, resulting in a 31% increase in documentation</li>
+        <li>Two (2) redundant reviews were removed, leading to increased sprint velocity compared to last sprint</li>
+    </ul>
+
+    <h2>
+        <a name="Software"></a>Software Updates</h2>
+    <table class="software-updates" summary="software updates" MadCap:autosort="True">
+        <col class="col-sm" MadCap:autosortPriority="0" MadCap:autosortDirection="ascending" />
+        <col style="col-lg" />
+        <thead>
+            <tr>
+                <th>Issue ID</th>
+                <th>Type</th>
+                <th></th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    #1234
+                </td>
+                <td>
+                    Fixed
+                </td>
+                <td>
+                    Tech writing component references the correct assembly information
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    #5678
+                </td>
+                <td>
+                    Fixed
+                </td>
+                <td>
+                    PDF document no longer shows duplicate sections
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    #9101
+                </td>
+                <td>
+                    Improved
+                </td>
+                <td>
+                    RTFM-Industries satisfaction survey now accepts scores above 100%
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+```

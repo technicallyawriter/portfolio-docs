@@ -1,0 +1,25 @@
+---
+title: "Docs-as-code"
+description:
+lead: "Modern tech writing practices should mimic software development processes and tooling, when appropriate. This approach leads to more scalable, collaborative documentation."
+draft: false
+menu:
+  docs:
+    parent: process
+weight: 10
+toc: true
+---
+:toc:
+
+{{< figure src="../docs-as-code.png" alt="docs-as-code" caption="<em>Docs-as-code</em>" class="border-0" >}}
+
+NOTE: This portolio website is maintained using docs-as-code processes and tooling.
+
+== Preferred Tooling & Processes
+
+* Git/GitHub using link:https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow[Gitflow branching strategies,window=_blank]
+* link:../reviews[SME and Peer Reviews] conducted as part of GitHub Pull Request reviews
+* Atom or VS Code text editors with my favorite plug-ins:
+** link:https://docs.errata.ai/[Vale linter,window=_blank] to validate against a Style Guide
+** code formatting
+* Continuous deployment with link:https://www.netlify.com/[Netlify,window=_blank] or link:https://docs.github.com/en/actions/deployment/about-deployments/about-continuous-deployment[GitHub Actions,window=_blank]

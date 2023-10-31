@@ -1,0 +1,64 @@
+---
+title : "AsciiDoc"
+description: ""
+lead: "As a tech writer, I advocate for the power and flexibility of AsciiDoc compared to traditional Markdown."
+draft: false
+weight: 5
+date: 2023-10-11T16:20:10-04:00
+---
+
+:toc:
+
+Key factors in AsciiDoc syntax:
+
+* same sleakness of traditional Markdown
+* *link:https://docs.asciidoctor.org/asciidoc/latest/directives/conditionals/[conditionals,window=_blank]:* route content depending on output (e.g., HTML or PDF)
+* *link:https://docs.asciidoctor.org/asciidoc/latest/directives/ifdef-ifndef/[directives,window=_blank]:* reuse content with the `::includes` directive and display specific content using logic with the `::ifdef`, `::ifndef`, and `::ifeval` directives
+
+== AsciiDoc code sample
+The following code sample is _fictional_ documentation to help users configure notifications in their RTFM-Industries software.
+
+```
+== Add or edit notification
+
+. Click *+New Notification* or edit an existing notification rule by clicking on it.
+. Complete the following fields:
+.. Name
+.. Email Addresses to receive notification
+.. Enable notifications for documentation request: when enabled, this setting will send an alert to the closet tech writer (day or night)
+. *Save*.
+
+== Disable a notification
+
+To disable a notification, select it for edit, then check the Disabled
+checkbox at the top of the form.
+
+== Delete a notification
+
+To delete a notification, select it for edit, then click
+*Delete*.
+```
+
+== Parsed code sample
+Once the above AsciiDoc code sample is parsed with AsciiDoctor, it looks like this:
+
+'''
+
+== Add or edit notification
+
+. Click *+New Notification* or edit an existing notification rule by clicking on it.
+. Complete the following fields:
+.. Name
+.. Email Addresses to receive notification
+.. Enable notifications for documentation request: when enabled, this setting will send an alert to the closet tech writer (day or night)
+. *Save*.
+
+== Disable a notification
+
+To disable a notification, select it for edit, then check the Disabled
+checkbox at the top of the form.
+
+== Delete a notification
+
+To delete a notification, select it for edit, then click
+*Delete*.
