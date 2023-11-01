@@ -8,7 +8,7 @@ categories:
 tags: 
 - agile
 weight: 5
-lastmod:
+date: "2022-01-10"
 ---
 
 :toc:
