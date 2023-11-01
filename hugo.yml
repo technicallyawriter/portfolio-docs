@@ -1,0 +1,72 @@
+theme: dark-theme-editor
+params:
+  site:
+    faviconUrl: ''
+    localCss: []
+    externalCss: []
+    externalCssDownload: []
+    localJs: []
+    externalJs: []
+    externalJsDownload: []
+  header:
+    title: technicallyawriter
+    subtitle: Welcome to my tech writing portfolio!
+    logo:
+      imgUrl: ''
+      logoLink: ''
+  footer:
+    copyrightStr: No Rights Reserved
+    counter: true
+    language: true
+    hugoVersion: true
+    theme: true
+    modifiedTime: true
+    dateFormat: 'Jan 02 2006 15:04:05'
+    gitHash: true
+    socialLink:
+      github: 'https://github.com/technicallyawriter'
+      email: npjones_techwriter@proton.me
+      linkedin: 'https://www.linkedin.com/in/parker-j-151391223/'
+  globalFrontmatter:
+    author: Parker Jones
+    description: Tech writing portfolio
+    keywords: 'portfolio,technical writing,hugo,madcap flare'
+  homePage:
+    siteLongDescription: 'Hi, I''m Parker TODO...'
+    siteLongDescriptionTitle: About me
+    showRecentPostsBlock: false
+  page:
+    includeToc: true
+    showAuthor: true
+    showDate: true
+    dateFormat: 2006.01.02
+    showTimeToRead: true
+    showBreadcrumb: true
+    codeBlockCopible: true
+
+# allow asciidoctor in security policy
+# see https://gohugo.io/about/security-model/ for more info
+security:
+  enableInlineShortcodes: false
+  exec:
+    allow:
+    - ^(dart-)?sass(-embedded)?$
+    - ^go$
+    - ^npx$
+    - ^postcss$
+    - ^asciidoctor$
+    osEnv:
+    - (?i)^((HTTPS?|NO)_PROXY|PATH(EXT)?|APPDATA|TE?MP|TERM|GO\w+|(XDG_CONFIG_)?HOME|USERPROFILE|SSH_AUTH_SOCK|DISPLAY|LANG)$
+  funcs:
+    getenv:
+    - ^HUGO_
+    - ^CI$
+  goTemplates:
+    allowActionJSTmpl: false
+  http:
+    mediaTypes: null
+    methods:
+    - (?i)GET|POST
+    urls:
+    - .*
+
