@@ -44,10 +44,10 @@ theme = 'dark-theme-editor'
     # Customized info shown in header of the page
     [params.header]
         # Website title for header banner.
-        title = "My New Hugo Site"
+        title = "technicallyawriter"
 
         # Subtitle for this site, used in homepage only
-        subtitle = "A Site Built by Hugo"
+        subtitle = "Welcome to my tech writing portfolio!"
 
         # Config about your's site logo, remove this item to hide the logo
         [params.header.logo]
@@ -60,8 +60,7 @@ theme = 'dark-theme-editor'
 
     # Customized info shown in footer of the page
     [params.footer]
-        # CopyRight string shown in the footer. Keep it an empty string or remove this item will hide it from the page.
-        copyrightStr = "All Rights Reserved ®."
+        copyrightStr = "No Rights Reserved"
 
         # Should show the counter in the footer or not
         # In the home page, it will show the numbers of all pages
@@ -82,7 +81,6 @@ theme = 'dark-theme-editor'
         # Should show the edited time of the page or not
         modifiedTime = true
 
-        # The format of the `modifiedTime`.
         # Refer to page https://gohugo.io/functions/format/ for more detail.
         # Below is the default format, please do not remove it, unless you set `false` in `modifiedTime` field.
         dateFormat = "Jan 02 2006 15:04:05"
@@ -94,85 +92,39 @@ theme = 'dark-theme-editor'
 
         # Social link in the footer, listed items are supported, delete unwanted items to hide it.
         [params.footer.socialLink]
-            github = ""
-            facebook = ""
-            twitter = ""
-            email = ""
-            linkedin = ""
-            instagram = ""
-            telegram = ""
-            medium = ""
-            vimeo = ""
-            youtube = ""
+            github = "https://github.com/technicallyawriter"
+            email = "npjones_techwriter@proton.me"
+            linkedin = "https://www.linkedin.com/in/parker-j-151391223/"
 
-    # Metadata of the site, value will be used in HTML <header>
-    # These value would be used when they didn't appear in the frontmatter of a single page.
-    # In other words, these value will be overwritten by the frontmatter in the single page.
     [params.globalFrontmatter]
-        # The author of this site. This will be shown in 
-        # 1. the footer of all page
-        # 2. the author filed in the single page. (this could be overwritten by the frontmatter of the single page.)
-        # Keep it an empty string or remove this item will hide it from the page
-        author = "Jing Wang"
+        author = "Parker Jones"
         
         # Website description for RSS and SEO. Theme will generate a <meta> tag for this item
-        description = "This is my new hugo site"
+        description = "Tech writing portfolio"
 
         # Website keywords. Theme will generate a <meta> tag for this item.
-        keywords = "hugo,site,new"
+        keywords = "portfolio,technical writing,hugo,madcap flare"
 
     # Parameters applied in the homepage only
     [params.homePage]
-        # Long Descripition shown in home page "Start Block". Is is recommended to have the paragraph shorter than 100 words.        
-        siteLongDescription = "Hugo is a fast and easy-to-use static website generator written in Go. It renders a complete HTML website from content and templates in a directory, utilizing Markdown files for metadata. It's optimized for speed and suitable for various website types."
+        siteLongDescription = "TODO..."
+        siteLongDescriptionTitle = "About me"
+        showRecentPostsBlock = false
 
-        # If you don't like the title of "siteLongDescription" be "Start" (default), 
-        # you may change the value of this item to "Description" or something you like.
-        siteLongDescriptionTitle = "Start"
-
-        # Param to decide whether to show the most recent blog posts or not. (Default: true)
-        showRecentPostsBlock = true
-
-        # Param to decide how many recent posts to show in the home page. (Default: 5)
-        numOfRecentPosts = 5
-
-        # Parameter to decide whether to show the URL behind the title.
-        # It will be more like an editor if it is shown. However, in general, it can be messy if it is displayed.        
-        # (Default: true)
-        recentPostShowUrl = true
-    
-    
     # Paramater applied in the single page
     # These values could be overwritten by the frontmatter in the single page.
     [params.page]
         # Should include Table of Content in front of the page or not.
         includeToc = true
-
-        # Should show the author of the page or not.
-        # The author name will be shown in the single page if and only if 
-        #   1. this items been set as true and
-        #   2. "aurthor" filed been provided in the 
-        #       A. single page frontmatter or
-        #       B. "author" filed in above "globalFrontmatter" block
         showAuthor = true
-
-        # Should show the date of the page or not
         showDate = true
-
-        # The format of the date.
-        # Refer to page https://gohugo.io/functions/format/ for more detail.
-        # Below is the default format, please do not remove it, unless you set `false` in `showDate` field.
         dateFormat = "2006.01.02"
-
-        # Should show the estimate reading time in front of the page or not.
         showTimeToRead = true
-
-        # Should show the breadcrumb in front of the page or not.
         showBreadcrumb = true
-
         # Should show the "copy" button in the codeblock or not.
         codeBlockCopible = true
-# security configuration to allow third-party app execution
+
+# security configuration to allow third-party app execution (required for asciidoctor)
 [security]
   enableInlineShortcodes = false
   [security.exec]
