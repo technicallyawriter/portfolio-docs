@@ -3,15 +3,17 @@ title: "Agile methodology"
 description: ""
 lead: "I'm an Agile advocate who believes in team-created definitions and protocols that measure out bite-size chunks of work with testable acceptance criteria."
 draft: false
-menu:
-  docs:
-    parent: process
+categories:
+- process
+tags: 
+- agile
 weight: 5
-toc: true
+lastmod:
 ---
+
 :toc:
 
-{{< figure src="../agile.jpeg" alt="The Agile cycle" caption="<em>The Agile cycle</em>" class="border-0" height="420">}}
+{{< figure src="../agile.jpeg" alt="The Agile cycle" caption="<em>The Agile cycle</em>" >}}
 
 == Agile Ceremonies
 Over the past five (5) years I have experience participating in and leading typical Agile ceremonies:

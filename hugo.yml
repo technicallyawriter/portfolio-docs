@@ -1,4 +1,14 @@
 theme: dark-theme-editor
+
+# automatically stamp lastmod date in frontmatter using git commit info
+enableGitInfo: true
+frontmatter:
+  lastmod:
+  - lastmod
+  - :git
+  - date
+  - publishDate
+
 params:
   site:
     faviconUrl: ''
