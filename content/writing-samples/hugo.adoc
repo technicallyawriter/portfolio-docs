@@ -1,24 +1,31 @@
 ---
-title : "AsciiDoc"
-description: ""
-lead: "As a tech writer, I advocate for the power and flexibility of AsciiDoc compared to traditional Markdown."
-draft: false
-weight: 5
-date: 2023-10-11T16:20:10-04:00
+title: "Hugo"
+date: 2023-11-02T12:15:33-04:00
+draft: true
 ---
 
 :toc:
 
-Key factors in AsciiDoc syntax:
+== Hugo
+
+what I like about hugo...
+
+== AsciiDoc over traditional Markdown
+
+Traditional Markdown is great for documentation, but as a tech writer, I prefer for the power and flexibility of AsciiDoc.
+
+Key factors in AsciiDoc syntax (turn this into a sentence of two and add above):
 
 * same sleakness of traditional Markdown
 * *link:https://docs.asciidoctor.org/asciidoc/latest/directives/conditionals/[conditionals,window=_blank]:* route content depending on output (e.g., HTML or PDF)
 * *link:https://docs.asciidoctor.org/asciidoc/latest/directives/ifdef-ifndef/[directives,window=_blank]:* reuse content with the `::includes` directive and display specific content using logic with the `::ifdef`, `::ifndef`, and `::ifeval` directives
 
-== AsciiDoc code sample
+=== Code sample
+
 The following code sample is _fictional_ documentation to help users configure notifications in their RTFM-Industries software.
 
 ```
+
 == Add or edit notification
 
 . Click *+New Notification* or edit an existing notification rule by clicking on it.
@@ -39,26 +46,22 @@ To delete a notification, select it for edit, then click
 *Delete*.
 ```
 
-== Parsed code sample
-Once the above AsciiDoc code sample is parsed with AsciiDoctor, it looks like this:
+== AsciiDoctor-pdf for print
 
-'''
+When outputting single-sourced AsciiDoc content into PDF format, I prefer the link:https://www.npmjs.com/package/asciidoctor-pdf[AsciiDoctor-pdf] NPM package.
 
-== Add or edit notification
+=== Install AsciiDoctor-pdf
+```NPM
+npm install asciidoctor-pdf
+```
 
-. Click *+New Notification* or edit an existing notification rule by clicking on it.
-. Complete the following fields:
-.. Name
-.. Email Addresses to receive notification
-.. Enable notifications for documentation request: when enabled, this setting will send an alert to the closet tech writer (day or night)
-. *Save*.
+=== Custom PDF styling
+Extend the default PDF theme to your liking by adjusting values in a separate YAML file.
 
-== Disable a notification
+```YAML
+extends: default
+base:
+  font-color: #ff0000
+```
 
-To disable a notification, select it for edit, then check the Disabled
-checkbox at the top of the form.
-
-== Delete a notification
-
-To delete a notification, select it for edit, then click
-*Delete*.
+**TIP:** refer to the link:https://github.com/asciidoctor/asciidoctor-pdf/blob/main/docs/theming-guide.adoc[AsciiDoctor PDF Theming Guide,window=_blank] for more details.

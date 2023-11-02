@@ -1,19 +1,31 @@
 ---
 title: "Docs-as-code"
-description:
-lead: "Modern tech writing practices should mimic software development processes and tooling, when appropriate. This approach leads to more scalable, collaborative documentation."
 draft: false
-menu:
-  docs:
-    parent: process
-weight: 10
-toc: true
+weight: 5
+date: "2023-10-21"
 ---
 :toc:
 
+Modern tech writing practices should mimic software development processes and tooling, when appropriate. This approach leads to more scalable, collaborative documentation.
+
 {{< figure src="../docs-as-code.png" alt="docs-as-code" caption="<em>Docs-as-code</em>" class="border-0" >}}
 
-NOTE: This portolio website is maintained using docs-as-code processes and tooling.
+== Git/GitHub
+
+source control. branching. pull requests and merging. 
+== Modularity
+
+content reuse, snippets or include directives
+
+== Collaboration
+
+audience, reviews (SME and peer)
+
+plain text via GitHub PRs or as Word docs in SharePoint with track changes on.
+
+== Testability
+
+vale (style guides and readability metrics)
 
 == Preferred Tooling & Processes
 

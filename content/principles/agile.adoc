@@ -1,17 +1,17 @@
 ---
 title: "Agile methodology"
-description: ""
-lead: "I'm an Agile advocate who believes in team-created definitions and protocols that measure out bite-size chunks of work with testable acceptance criteria."
 draft: false
 categories:
 - process
 tags: 
 - agile
-weight: 5
+weight: 10
 date: "2022-01-10"
 ---
 
 :toc:
+
+I'm an Agile advocate who believes in team-created definitions and protocols that measure out bite-size chunks of work with testable acceptance criteria.
 
 {{< figure src="../agile.jpeg" alt="The Agile cycle" caption="<em>The Agile cycle</em>" >}}
 
