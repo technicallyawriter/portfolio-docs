@@ -13,7 +13,7 @@ date: "2022-01-10"
 
 I'm an Agile advocate who believes in team-created definitions and protocols that measure out bite-size chunks of work with testable acceptance criteria.
 
-{{< figure src="../agile.jpeg" alt="The Agile cycle" caption="<em>The Agile cycle</em>" >}}
+{{< figure src="../images/TODO.jpeg" alt="TODO" caption="TODO" >}}
 
 == Agile Ceremonies
 Over the past five (5) years I have experience participating in and leading typical Agile ceremonies:

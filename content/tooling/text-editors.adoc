@@ -1,0 +1,15 @@
+---
+title: "Text editors"
+date: 2023-11-02T18:08:58-04:00
+draft: true
+weight: 10
+date:
+---
+
+== VS Code
+
+todo...
+
+== Vim
+
+todo...
