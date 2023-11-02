@@ -13,6 +13,7 @@ Modern tech writing practices should mimic software development processes and to
 == Git/GitHub
 
 source control. branching. pull requests and merging. 
+
 == Modularity
 
 content reuse, snippets or include directives

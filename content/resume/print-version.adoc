@@ -1,0 +1,16 @@
+---
+title: "Print version"
+date: 2023-11-02T14:37:04-04:00
+draft: true
+weight: 0
+---
+
+Made with `asciidoctor-pdf`. 
+
+Check out the config here: 
+
+```
+todo...
+```
+
+link:../../pdf/npjones-resume-2023.pdf[Download PDF resume]
