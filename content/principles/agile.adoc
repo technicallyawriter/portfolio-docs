@@ -1,14 +1,10 @@
 ---
 title: "Agile methodology"
 draft: false
-categories:
-- process
-tags: 
-- agile
 weight: 10
 date: "2022-01-10"
-bookFlatSection: true
 ---
+:toc:
 
 == Agile methodology
 

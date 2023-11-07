@@ -2,7 +2,9 @@
 title: "Release Notes"
 date: 2023-11-07T12:16:00-05:00
 draft: true
+weight: -5
 ---
+:toc:
 
 == Release notes
 
@@ -17,7 +19,8 @@ Release notes to the fictional RTFM-Industries release (v1.1.0) are below. For m
 
 === Source code
 
-```XHTML
+[source,HTML]
+----
 <body>
     <h1>RTFM-Industries v1.1.0 Release Notes</h1>
     <p>The RTFM-Industries v1.1.0 release introduces Automatic Documentation, changes to our RTFM-Industries REST API, expanded support for prose linting, and general software updates. Key highlights include:</p>
@@ -130,3 +133,4 @@ Release notes to the fictional RTFM-Industries release (v1.1.0) are below. For m
     </table>
 </body>
 ```
+

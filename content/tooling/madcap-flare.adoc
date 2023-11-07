@@ -5,6 +5,7 @@ draft: true
 weight: -50
 date: 
 ---
+:toc:
 
 == Madcap Flare
 

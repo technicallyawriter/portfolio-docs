@@ -5,6 +5,7 @@ draft: true
 weight: -30
 date: 
 ---
+:toc:
 
 == Vale
 

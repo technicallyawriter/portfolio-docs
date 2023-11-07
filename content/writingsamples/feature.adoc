@@ -2,18 +2,19 @@
 title: "Feature docs"
 date: 2023-11-02T12:15:26-04:00
 draft: true
+weight: -15
 ---
 :toc:
 
 == Feature docs
 
-=== RTFM-Industries Documentation Dashboards
+=== RTFM-Industries documentation dashboards (XHTML)
 
 View feature documentation for the fictional RTFM-Industries Documentation Dashboard feature.
 The following link:../../overview/#_topic_typing[concept documentation] introduces RTFM-Industries Documentation Dashboards, a splendid feature that helps tech writers do their jobs more effectively.
 
 NOTE: USE `INCLUDES::` to pull in this file...
-[source,XHTML]
+[source,HTML]
 ----
 <body>
     <h1>RTFM-Industries Documentation Dashboards</h1>
@@ -68,11 +69,11 @@ NOTE: USE `INCLUDES::` to pull in this file...
 </body>
 ----
 
-=== Create a new Documentation Dashboard
+=== Create a new documentation dashboard (XHTML)
 
 The following link:../../overview/#_topic_typing[task] instructs users how to create a new Documentation Dashboard that evaluates the effectiveness of published documentation.
 
-[source,XHTML]
+[source,HTML]
 ----
 <body>
     <h1>Create a new Documentation Dashboard</h1>
@@ -108,11 +109,11 @@ The following link:../../overview/#_topic_typing[task] instructs users how to cr
 </body>
 ---- 
 
-=== Finance 
+=== Finance example (XHTML) 
 
 Complex workflow. 
 
-[source,XHTML]
+[source,HTML]
 ----
 <body>
     <h1>Match a supplier invoice</h1>
@@ -183,6 +184,32 @@ Complex workflow.
     </p>
 </body>
 </html>
+----
+
+=== Asciidoc example
+
+The following code sample is _fictional_ documentation to help users configure notifications in their RTFM-Industries software.
+
+[source,asciidoc]
+----
+== Add or edit notification
+
+. Click *+New Notification* or edit an existing notification rule by clicking on it.
+. Complete the following fields:
+.. Name
+.. Email Addresses to receive notification
+.. Enable notifications for documentation request: when enabled, this setting will send an alert to the closet tech writer (day or night)
+. *Save*.
+
+== Disable a notification
+
+To disable a notification, select it for edit, then check the Disabled
+checkbox at the top of the form.
+
+== Delete a notification
+
+To delete a notification, select it for edit, then click
+*Delete*.
 ----
 
 

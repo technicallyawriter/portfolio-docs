@@ -5,6 +5,7 @@ draft: true
 weight: 10
 date:
 ---
+:toc:
 
 == Text editors
 a tech writer's livelihood!
