@@ -6,10 +6,13 @@ weight: 10
 date:
 ---
 
-== VS Code
+== Text editors
+a tech writer's livelihood!
+
+=== VS Code
 
 todo...
 
-== Vim
+=== Vim
 
 todo...

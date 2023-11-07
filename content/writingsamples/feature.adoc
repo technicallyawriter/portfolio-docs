@@ -1,13 +1,9 @@
 ---
-title: "Madcap Flare"
+title: "Feature docs"
 date: 2023-11-02T12:15:26-04:00
 draft: true
 ---
 :toc:
-
-== Madcap Flare
-
-What I like about Flare...
 
 == Feature docs
 
@@ -16,8 +12,9 @@ What I like about Flare...
 View feature documentation for the fictional RTFM-Industries Documentation Dashboard feature.
 The following link:../../overview/#_topic_typing[concept documentation] introduces RTFM-Industries Documentation Dashboards, a splendid feature that helps tech writers do their jobs more effectively.
 
-==== Code sample
-```XHTML
+NOTE: USE `INCLUDES::` to pull in this file...
+[source,XHTML]
+----
 <body>
     <h1>RTFM-Industries Documentation Dashboards</h1>
     <p>
@@ -69,14 +66,14 @@ The following link:../../overview/#_topic_typing[concept documentation] introduc
         <p><a href="create-doc-dashboard.htm">Create a new Documentation Dashboard</a>
         </p>
 </body>
-```
+----
 
 === Create a new Documentation Dashboard
 
 The following link:../../overview/#_topic_typing[task] instructs users how to create a new Documentation Dashboard that evaluates the effectiveness of published documentation.
 
-==== Code sample
-```XHTML
+[source,XHTML]
+----
 <body>
     <h1>Create a new Documentation Dashboard</h1>
     <p>The creation of a custom Documentation Dashboard helps to visualize the effectiveness of published documentation based on topic type (concept, task, reference).
@@ -109,146 +106,14 @@ The following link:../../overview/#_topic_typing[task] instructs users how to cr
         <a href="reports-promote-global.htm ">Promote a Documentation Dashboard to Global</a>
     </p>
 </body>
-```
-
-== Release notes
-
-Release notes to the fictional RTFM-Industries release (v1.1.0) are below. For many users, release notes may be their only interaction with software documentation, which makes it a unique document.
-
-=== Code segments explained
-
-* brief summary of major changes (1-2 sentences)
-* "key highlights" list with anchor links for user navigation
-* images that say 1000 words
-* conditional text for online and print-only outputs
-
-=== Source code
-
-```XHTML
-<body>
-    <h1>RTFM-Industries v1.1.0 Release Notes</h1>
-    <p>The RTFM-Industries v1.1.0 release introduces Automatic Documentation, changes to our RTFM-Industries REST API, expanded support for prose linting, and general software updates. Key highlights include:</p>
-    <ul class="release-highlights">
-        <li>
-            <span class="bold"><a href="#automatic">Automatic Documentation</a>:</span> send a scattered message to a technical writer at the last minute and documentation will magically appear
-        </li>
-        <li>
-            <span class="bold"><a href="#api">RTFM-Industries REST API updates:</a></span> new methods and attributes added
-        </li>
-        <li>
-            <a href="#Performance"><span class="bold">Tech writer performance improvements: added new indices and removed redundant reviews</span></a>
-        </li>
-    </ul>
-    <h2>
-        <a name="automatic"></a>
-        Automatic documentation
-    </h2>
-    <p>The newest feature from RTFM-Industries is automatic documentation! Tech writers can write all the docs with the press of a button.</p>
-    <figure>
-        <img src="../Images/automatic-documentation/never-write-doc-again.png" alt="the secret to never writing documentation again" />
-        <figcaption>Figure 1. Secret to never writing documentation again</figcaption>
-    </figure>
-    <!-- Conditional text to handle screenOnly and printOnly outputs - this approach is required when providing URLs in release notes -->
-    <p>
-        For more information on this feature, see <a href="../automatic-documentation/getting-started.htm" MadCap:conditions="screenOnly">Getting started with Automatic Documentation</a>
-        <a href="https://RTFM-Industries/pdf/Automatic-Documentation-Guide.pdf" MadCap:conditions="printOnly">Automatic Documentation PDF Guide</a>.
-    </p>
-    <h2>
-        <a name="api"></a>RTFM-Industries REST API (v2.0.0) updates</h2>
-    <p>The following updates have been made to the RTFM-Industries REST API (v2.0.0). For full documentation of this API, see <a href="https://apiv2.rtfm-industries/docs">RTFM-Industries REST API (v2.0.0) Documentation</a>.</p>
-    <ul>
-        <li><span class="bold">New method added in Documentation controller: PrioritizeDocRequest</span></li>
-        <li>
-            <span class="bold">New attributes added to the Workflow endpoint for Process</span>
-            <ul>
-                <li>
-                    WriteTheDocs
-                </li>
-                <li>
-                    EditTheDocs
-                </li>
-                <li>
-                    ReviewTheDocs
-                </li>
-                <li>
-                    MergeTheDocs
-                </li>
-                <li>
-                    ShipTheDocs
-                </li>
-            </ul>
-        </li>
-    </ul>
-    <h2>
-        <a name="performance"></a>Tech writer performance improvements</h2>
-    <ul>
-        <li>Three (3) new indices were added to each tech writer database, resulting in a 31% increase in documentation</li>
-        <li>Two (2) redundant reviews were removed, leading to increased sprint velocity compared to last sprint</li>
-    </ul>
-
-    <h2>
-        <a name="Software"></a>Software Updates</h2>
-    <table class="software-updates" summary="software updates" MadCap:autosort="True">
-        <col class="col-sm" MadCap:autosortPriority="0" MadCap:autosortDirection="ascending" />
-        <col style="col-lg" />
-        <thead>
-            <tr>
-                <th>Issue ID</th>
-                <th>Type</th>
-                <th></th>
-                <th>Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    #1234
-                </td>
-                <td>
-                    Fixed
-                </td>
-                <td>
-                    Tech writing component references the correct assembly information
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    #5678
-                </td>
-                <td>
-                    Fixed
-                </td>
-                <td>
-                    PDF document no longer shows duplicate sections
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    #9101
-                </td>
-                <td>
-                    Improved
-                </td>
-                <td>
-                    RTFM-Industries satisfaction survey now accepts scores above 100%
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</body>
-```
+---- 
 
 === Finance 
 
-[source,xml]
+Complex workflow. 
+
+[source,XHTML]
 ----
-<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../Resources/MasterPages/SideNavTopics.flmsp')" MadCap:conditions="cp.Publish">
-
-<head>
-    <title>Match a supplier invoice</title>
-</head>
-
 <body>
     <h1>Match a supplier invoice</h1>
     <h2 MadCap:conditions="cp.EnglishOnly">Overview</h2>
@@ -317,6 +182,7 @@ Release notes to the fictional RTFM-Industries release (v1.1.0) are below. For m
     <p><a href="SupplierInvoiceNoPO.htm">No-PO invoicing</a>
     </p>
 </body>
-
 </html>
 ----
+
+

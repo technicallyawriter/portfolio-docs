@@ -7,20 +7,6 @@ date:
 
 :toc:
 
-== Hugo
-
-what I like about hugo...
-
-== AsciiDoc over traditional Markdown
-
-Traditional Markdown is great for documentation, but as a tech writer, I prefer for the power and flexibility of AsciiDoc.
-
-Key factors in AsciiDoc syntax (turn this into a sentence of two and add above):
-
-* same sleakness of traditional Markdown
-* *link:https://docs.asciidoctor.org/asciidoc/latest/directives/conditionals/[conditionals,window=_blank]:* route content depending on output (e.g., HTML or PDF)
-* *link:https://docs.asciidoctor.org/asciidoc/latest/directives/ifdef-ifndef/[directives,window=_blank]:* reuse content with the `::includes` directive and display specific content using logic with the `::ifdef`, `::ifndef`, and `::ifeval` directives
-
 === Code sample
 
 The following code sample is _fictional_ documentation to help users configure notifications in their RTFM-Industries software.

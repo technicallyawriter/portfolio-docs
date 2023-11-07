@@ -6,3 +6,6 @@ weight: -50
 date: 
 ---
 
+== Madcap Flare
+
+what I like about flare...

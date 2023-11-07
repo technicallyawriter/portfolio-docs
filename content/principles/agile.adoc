@@ -10,7 +10,7 @@ date: "2022-01-10"
 bookFlatSection: true
 ---
 
-:toc:
+== Agile methodology
 
 I'm an Agile advocate who believes in team-created definitions and protocols that measure out bite-size chunks of work with testable acceptance criteria.
 
