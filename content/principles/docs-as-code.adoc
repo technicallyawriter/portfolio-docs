@@ -18,7 +18,7 @@ source control. branching. pull requests and merging.
 
 == Modularity
 
-content reuse, snippets or include directives
+topic typing (steal from old overview page), content reuse, snippets or include directives
 
 == Collaboration
 

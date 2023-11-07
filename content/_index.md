@@ -6,27 +6,33 @@ bookTOC: false
 
 # Parker Jones | Tech writer
 
-## About me
-todo...todo...todo...todo...todo...
+_Clear communication over jumbled jargon_
+
+IMG PLACEHOLDER
 
 {{< columns >}}
 ## Docs-as-code
 
-Est in vagis et Pittheus tu arge accipiter regia iram vocatur nurus. Omnes ut
-olivae sensit **arma sorori** deducit, inesset **crudus**, ego vetuere aliis,
-modo arsit? Utinam rapta fiducia valuere litora _adicit cursu_, ad facies
+Experienced tech writer who values modern approaches and tooling.
+
+* Git/GitHub
+* MadCap Flare
+* Vale
+* Jira
+* Hugo
 
 <--->
 
 ## Agile methodology
 
-Ea _furtique_ risere fratres edidit terrae magis. Colla tam mihi tenebat:
-miseram excita suadent es pecudes iam. Concilio _quam_ velatus posset ait quod
-nunc! Fragosis suae dextra geruntur functus vulgata.
+Six (6) years experience in an Agile environment. Participated in and led Sprint Planning, Backlog Refinement, and Retrospective meetings. 
 
 <--->
 
-### Attention to language
+## Attention to language
 
+* Poynter ACES Certificate in Editing, 2021
+* MA English, University of North Carolina at Wilmington, 2015
+* BA English, University of North Carolina at Wilmington, 2011
 {{< /columns >}}
 
