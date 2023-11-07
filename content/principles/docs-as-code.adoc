@@ -20,6 +20,15 @@ source control. branching. pull requests and merging.
 
 topic typing (steal from old overview page), content reuse, snippets or include directives
 
+=== Topic typing
+
+Whether I’m writing XHTML in MadCap Flare or AsciiDoc in a static site generator like Hugo, topic typing is a priority in my information architecture. Even when not validating against the DITA specification, I mimic the following topic types and create templates for consistency, modularity, and increased content reuse:
+
+* **Concept:** choose this topic type when introducing a concept, such as a new feature overview.
+* **Task:** choose this topic type when instructing user action, such as enabling notifications within a product.
+* **Reference:** chose this topic type when providing tables and matrixes that provide lots of scannable information, like a compatibility matrix.
+
+
 == Collaboration
 
 audience, reviews (SME and peer)

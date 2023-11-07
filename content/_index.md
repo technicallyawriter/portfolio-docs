@@ -13,7 +13,7 @@ IMG PLACEHOLDER
 {{< columns >}}
 ## Docs-as-code
 
-Experienced tech writer who values modern approaches and tooling.
+Experienced tech writer who values modern approaches and tooling. 
 
 * Git/GitHub
 * MadCap Flare
@@ -25,7 +25,7 @@ Experienced tech writer who values modern approaches and tooling.
 
 ## Agile methodology
 
-Six (6) years experience in an Agile environment. Participated in and led Sprint Planning, Backlog Refinement, and Retrospective meetings. 
+Six years experience in an Agile environment. Participated in and led Sprint Planning, Backlog Refinement, Retrospective, and Definition of Done meetings. 
 
 <--->
 
