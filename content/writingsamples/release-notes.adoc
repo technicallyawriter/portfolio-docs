@@ -10,8 +10,6 @@ weight: -5
 
 Release notes to the fictional RTFM-Industries release (v1.1.0) are below. For many users, release notes may be their only interaction with software documentation, which makes it a unique document.
 
-=== Code segments explained
-
 * brief summary of major changes (1-2 sentences)
 * "key highlights" list with anchor links for user navigation
 * images that say 1000 words
@@ -132,5 +130,4 @@ Release notes to the fictional RTFM-Industries release (v1.1.0) are below. For m
         </tbody>
     </table>
 </body>
-```
-
+----
