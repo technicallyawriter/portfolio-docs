@@ -1,67 +1,90 @@
-# Asciidoc markdown rendering config
-markup:
-  asciidocExt:
-    attributes: {}
-    backend: html5
-    extensions: []
-    failureLevel: fatal
-    noHeaderOrFooter: true
-    preserveTOC: false
-    safeMode: unsafe
-    sectionNumbers: false
-    trace: false
-    verbose: false
-    workingFolderCurrent: false
+baseURL: https://example.com/
+title: technicallyawriter 
+theme: hugo-book
 
-# timestamping lastmod dates using git info
+# Book configuration
+disablePathToLower: true
 enableGitInfo: true
 
-# theme config - copied from /themes/dark-theme-editor/hugo.toml
-theme: dark-theme-editor
+# Needed for mermaid/katex shortcodes
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  tableOfContents:
+    startLevel: 1
+
+menu:
+  # before: []
+  after:
+    - name: "Resume"
+      url: "https://github.com/alex-shpak/hugo-book"
+      weight: 10
+    - name: "Menu #2"
+      url: "https://themes.gohugo.io/hugo-book/"
+      weight: 20
+
 params:
-  site:
-    faviconUrl: ''
-    localCss: []
-    externalCss: []
-    externalCssDownload: []
-    localJs: []
-    externalJs: []
-    externalJsDownload: []
-  header:
-    title: technicallyawriter
-    subtitle: Welcome to my tech writing portfolio!
-    logo:
-      imgUrl: ''
-      logoLink: ''
-  footer:
-    copyrightStr: No Rights Reserved
-    counter: true
-    language: true
-    hugoVersion: true
-    theme: true
-    modifiedTime: true
-    dateFormat: 'Jan 02 2006 15:04:05'
-    gitHash: true
-    socialLink:
-      github: 'https://github.com/technicallyawriter'
-      email: npjones_techwriter@proton.me
-      linkedin: 'https://www.linkedin.com/in/parker-j-151391223/'
-  globalFrontmatter:
-    author: Parker Jones
-    description: Tech writing portfolio
-    keywords: 'portfolio,technical writing,hugo,madcap flare'
-  homePage:
-    siteLongDescription: 'Hi, I''m Parker TODO...'
-    siteLongDescriptionTitle: About me
-    showRecentPostsBlock: false
-  page:
-    includeToc: true
-    showAuthor: true
-    showDate: true
-    dateFormat: 2006.01.02
-    showTimeToRead: true
-    showBreadcrumb: true
-    codeBlockCopible: true
+  # (Optional, default light) Sets color theme: light, dark or auto.
+  # Theme 'auto' switches between dark and light modes based on browser/os preferences
+  BookTheme: auto
+
+  # (Optional, default true) Controls table of contents visibility on right side of pages.
+  # Start and end levels can be controlled with markup.tableOfContents setting.
+  # You can also specify this parameter per page in front matter.
+  BookToC: true
+
+  # (Optional, default favicon.png) Set the path to a favicon file.
+  # If the favicon is /static/favicon.png then the path would be favicon.png
+  # BookFavicon: "favicon.png"
+
+  # (Optional, default none) Set the path to a logo for the book.
+  # If the logo is /static/logo.png then the path would be logo.png
+  # BookLogo: /logo.png
+
+  # (Optional, default none) Set leaf bundle to render as side menu
+  # When not specified file structure and weights will be used
+  # BookMenuBundle: /menu
+
+  # (Optional, default docs) Specify root page to render child pages as menu.
+  # Page is resoled by .GetPage function: https://gohugo.io/functions/getpage/
+  # For backward compatibility you can set '*' to render all sections to menu. Acts same as '/'
+  BookSection: '*'
+
+  # Set source repository location.
+  # Used for 'Last Modified' and 'Edit this page' links.
+  BookRepo: https://github.com/tehnicallyawriter/portfolio
+
+  # (Optional, default 'commit') Specifies commit portion of the link to the page's last modified
+  # commit hash for 'doc' page type.
+  # Requires 'BookRepo' param.
+  # Value used to construct a URL consisting of BookRepo/BookCommitPath/<commit-hash>
+  # Github uses 'commit', Bitbucket uses 'commits'
+  BookCommitPath: commit
+
+  BookDateFormat: "January 2, 2006"
+
+  BookSearch: true
+
+  # (Optional, default true) Enables comments template on pages
+  # By default partals/docs/comments.html includes Disqus template
+  # See https://gohugo.io/content-management/comments/#configure-disqus
+  # Can be overwritten by same param in page frontmatter
+  BookComments: false
+
+  # /!\ This is an experimental feature, might be removed or changed at any time
+  # (Optional, experimental, default false) Enables portable links and link checks in markdown pages.
+  # Portable links meant to work with text editors and let you write markdown without {{< relref >}} shortcode
+  # Theme will print warning if page referenced in markdown does not exists.
+  BookPortableLinks: true
+
+  # /!\ This is an experimental feature, might be removed or changed at any time
+  # (Optional, experimental, default false) Enables service worker that caches visited pages and resources for offline use.
+  BookServiceWorker: true
+
+  # /!\ This is an experimental feature, might be removed or changed at any time
+  # (Optional, experimental, default false) Enables a drop-down menu for translations only if a translation is present.
+  BookTranslatedOnly: false
 
 # allow asciidoctor in security policy
 # see https://gohugo.io/about/security-model/ for more info
