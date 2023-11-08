@@ -1,6 +1,5 @@
 ---
-title: Introduction
-type: docs
+title: Home
 bookTOC: false
 ---
 
@@ -30,7 +29,9 @@ Six years experience in an Agile environment. Participated in and led Sprint Pla
 
 {{< /columns >}}
 
-## My job exists somewhere on this spectrum...
+## The perils of technical writing 
+
+I enjoy working in the middle of this spectrum, preferrably not too far to the right! &#128540;
 
 {{< figure src="images/manuals.png" alt="An xkcd comic showing a line segment with a starting point in the middle titled 'Tools that need a manual.' To one side of the starting point are examples that increasingly 'Solve problems,' such as 'Tools that don't need a manual.' In the other direction are a series of points that increasingly 'Create problems,' such as 'Tools that need a manual but don't have one' and 'Tools whose manual starts with 'How to read this manual''." >}}
 
