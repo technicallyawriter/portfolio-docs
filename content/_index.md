@@ -11,13 +11,13 @@ clear communication over jumbled jargon.
 {{< columns >}}
 ## Docs-as-code
 
-Tech writing is most effective when its processes value modern tooling, content reuse, collaborative reviews, and document testability. Make this longer so it looks good...
+I prefer to treat my docs like source code. Mirroring software development's processes instills rigorous habits and tight feedback loops, making it easier to produce modular, reviewed, and tested documentation at scale. 
 
 <--->
 
 ## Agile methodology
 
-Six years experience in an Agile environment. Participated in and led Sprint Planning, Backlog Refinement, Retrospective, and Definition of Done meetings. 
+Six years experience in an Agile environment with Sprint and Kanban approaches. Participated in and led daily stand-ups, Sprint Planning, Backlog Refinement, Retrospective, and Definition of Done meetings. 
 
 <--->
 
@@ -31,7 +31,7 @@ Six years experience in an Agile environment. Participated in and led Sprint Pla
 
 ## The perils of technical writing 
 
-I enjoy working in the middle of this spectrum, preferrably not too far to the right! &#128540;
+I enjoy working in the middle of this spectrum, preferrably not too far to the right, though! &#128540;
 
 {{< figure src="images/manuals.png" alt="An xkcd comic showing a line segment with a starting point in the middle titled 'Tools that need a manual.' To one side of the starting point are examples that increasingly 'Solve problems,' such as 'Tools that don't need a manual.' In the other direction are a series of points that increasingly 'Create problems,' such as 'Tools that need a manual but don't have one' and 'Tools whose manual starts with 'How to read this manual''." >}}
 
