@@ -1,6 +1,7 @@
 ---
 title: "Agile methodology"
 draft: false
+type: docs
 weight: 10
 date: "2022-01-10"
 ---
