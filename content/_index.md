@@ -7,52 +7,39 @@ bookTOC: false
 
 Experienced tech writer (6+ years) with an emphasis on docs-as-code processes, Agile methodology, and
 clear communication over jumbled jargon.
-{{< columns >}}
-### Git
-{{< figure src="images/icons/git.png" alt="todo..." width="100px" >}}
-<--->
-### Agile methodology
-{{< figure src="images/icons/agile.png" alt="todo..." width="100px" >}}
-<--->
-### Madcap Flare
-{{< figure src="images/icons/flare.png" alt="todo..." width="100px" >}}
-{{< /columns >}}
-{{< columns >}}
-### Jira
-{{< figure src="images/icons/jira.png" alt="todo..." width="100px" >}}
-<--->
-### Confluence
-{{< figure src="images/icons/confluence.png" alt="todo..." width="100px" >}}
-<--->
-### Hugo
-{{< figure src="images/icons/hugo.png" alt="todo..." width="100px" >}}
-{{< /columns >}}
+
+My experience as a Linux/Unix power user tremendously informs my tech writing. I went from blah blah blah...
 {{< columns >}}
 ## Docs-as-code
-
+{{< figure src="images/terminal.png" alt="todo..." width="50px" >}}
 I prefer to treat my docs like source code. Mirroring software development's processes instills rigorous habits and tight feedback loops, making it easier to produce modular, reviewed, and tested documentation at scale. 
-
 <--->
-
 ## Agile methodology
-
+{{< figure src="images/icons/agile.png" alt="todo..." width="50px" >}}
 Six years experience in an Agile environment with Sprint and Kanban approaches. Participated in and led daily stand-ups, Sprint Planning, Backlog Refinement, Retrospective, and Definition of Done meetings. 
 
 <--->
-
 ## Attention to language
-
+{{< figure src="images/icons/editing.png" alt="todo..." width="50px" >}}
 * Poynter ACES Certificate in Editing, 2021
 * MA English, University of North Carolina at Wilmington, 2015
 * BA English, University of North Carolina at Wilmington, 2011
-
 {{< /columns >}}
 
-## Open source influence 
-
-My experience as a Linux/Unix power user tremendously informs my tech writing. I went from blah blah blah...
-
-{{< figure src="images/icons/open-source.png" alt="todo..." width="420px" >}}
+## Tooling
+{{< columns >}}
+{{< figure src="images/icons/git.png" alt="git icon" width="75px" caption="Git" class="text-center" >}}
+<--->
+{{< figure src="images/icons/flare.png" alt="MadCap Flare icon" width="75px" caption="MadCap Flare" class="text-center" >}}
+<--->
+{{< figure src="images/icons/hugo.png" alt="Hugo icon" width="75px" caption="Hugo" class="text-center" >}}
+<--->
+{{< figure src="images/icons/jira.png" alt="Jira icon" width="75px" caption="Jira" class="text-center" >}}
+<--->
+{{< figure src="images/icons/confluence.png" alt="Confluence icon" width="75px" caption="Confluence" class="text-center" >}}
+<--->
+{{< figure src="images/icons/vs-code.png" alt="Visual Studio Code icon" width="75px" caption="Visual Studio Code" class="text-center" >}}
+{{< /columns >}}
 
 ## The perils of technical writing 
 
