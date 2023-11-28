@@ -14,17 +14,17 @@ As a self-taught Linux power user, I know the importance of quality documentatio
 {{< columns >}}
 ## Docs-as-code
 <img src="images/icons/terminal.png" alt="todo.." width="50px" align="left" style="padding-right: 8px;" />
-I prefer to treat my docs like source code. Using modern software development processes and tooling makes it possible to produce modular, reviewed, and tested documentation at scale. 
+I prefer to treat my docs like source code. Using modern software development processes and tooling makes it possible to produce modular, reviewed, and accessible documentation at scale. 
 <--->
 ## Agile methodology
 <img src="images/icons/agile.png" alt="todo.." width="50px" align="left" style="padding-right: 8px;" />
-Six years experience in an Agile environment with Sprint and Kanban approaches. Participated in and led daily stand-ups, Sprint Planning, Backlog Refinement, Retrospective, and Definition of Done meetings. 
+From years of implementing Agile, I've learned the value of proper ticket management, clear acceptance criteria, tight feedback loops with SMEs and shareholders, and periodic reflection for how to improve.
 
 <--->
-## Less is more
+## Simple language
 <img src="images/icons/edit.png" alt="todo.." width="50px" align="left" style="padding-right: 8px;" />
 
-I believe it's harder to write a single clear sentence than a paragraph of jumbled jargon. Tech writing translates the complexity of software into understandable and actionable series of clear sentences. 
+I believe it's harder to write a single clear sentence than a paragraph of jumbled jargon. Tech writing translates the complexity of software into manageable concepts and tasks.
 {{< /columns >}}
 
 ## Tooling
