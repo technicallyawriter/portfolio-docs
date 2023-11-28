@@ -13,7 +13,7 @@ As a self-taught Linux power user, I know the importance of quality documentatio
 
 {{< columns >}}
 ## Docs-as-code
-<img src="images/icons/terminal.png" alt="todo.." width="50px" align="left" style="padding-right: 8px;" />
+<img src="images/icons/terminal.png" alt="todo.." width="55px" align="left" style="padding-right: 8px;" />
 I prefer to treat my docs like source code. Using modern software development processes and tooling makes it possible to produce modular, reviewed, and accessible documentation at scale. 
 <--->
 ## Agile methodology
