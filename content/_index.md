@@ -5,25 +5,26 @@ bookTOC: false
 
 # N. Parker Jones
 
-Experienced tech writer (6+ years) with an emphasis on docs-as-code processes, Agile methodology, and
-clear communication over jumbled jargon.
+Hi, I'm Parker! &#128075; Welcome to my tech writing portfolio. 
 
-My experience as a Linux/Unix power user tremendously informs my tech writing. I went from blah blah blah...
+I'm an experienced tech writer with six years experience in the Financial and Facility Management industries. 
+
+As a self-taught Linux power user, I know the importance of quality documentation and how painful it is to be stuck with lacking instructions. "User empathy" is an overused buzzword, but let's just say I've suffered through enough poorly documented open source software for it to dramatically inform my tech writing approach.  
+
 {{< columns >}}
 ## Docs-as-code
-{{< figure src="images/terminal.png" alt="todo..." width="50px" >}}
-I prefer to treat my docs like source code. Mirroring software development's processes instills rigorous habits and tight feedback loops, making it easier to produce modular, reviewed, and tested documentation at scale. 
+<img src="images/icons/terminal.png" alt="todo.." width="50px" align="left" style="padding-right: 8px;" />
+I prefer to treat my docs like source code. Using modern software development processes and tooling makes it possible to produce modular, reviewed, and tested documentation at scale. 
 <--->
 ## Agile methodology
-{{< figure src="images/icons/agile.png" alt="todo..." width="50px" >}}
+<img src="images/icons/agile.png" alt="todo.." width="50px" align="left" style="padding-right: 8px;" />
 Six years experience in an Agile environment with Sprint and Kanban approaches. Participated in and led daily stand-ups, Sprint Planning, Backlog Refinement, Retrospective, and Definition of Done meetings. 
 
 <--->
-## Attention to language
-{{< figure src="images/icons/editing.png" alt="todo..." width="50px" >}}
-* Poynter ACES Certificate in Editing, 2021
-* MA English, University of North Carolina at Wilmington, 2015
-* BA English, University of North Carolina at Wilmington, 2011
+## Less is more
+<img src="images/icons/edit.png" alt="todo.." width="50px" align="left" style="padding-right: 8px;" />
+
+I believe it's harder to write a single clear sentence than a paragraph of jumbled jargon. Tech writing translates the complexity of software into understandable and actionable series of clear sentences. 
 {{< /columns >}}
 
 ## Tooling
@@ -43,8 +44,7 @@ Six years experience in an Agile environment with Sprint and Kanban approaches. 
 
 ## The perils of technical writing 
 
-I enjoy working in the middle of this spectrum, preferrably not too far to the right, though! &#128540;
-
+I enjoy working in the middle of this spectrum, preferably not too far to the right! &#128540;
 {{< figure src="images/manuals.png" alt="An xkcd comic showing a line segment with a starting point in the middle titled 'Tools that need a manual.' To one side of the starting point are examples that increasingly 'Solve problems,' such as 'Tools that don't need a manual.' In the other direction are a series of points that increasingly 'Create problems,' such as 'Tools that need a manual but don't have one' and 'Tools whose manual starts with 'How to read this manual''." >}}
 
 source: <a href="https://xkcd.com/1343/" target="_blank">xkcd</a>
