@@ -7,7 +7,7 @@ bookTOC: false
 
 Hi, I'm Parker! &#128075; Welcome to my tech writing portfolio. 
 
-I'm an experienced tech writer with six years of experience in the Financial and Facility Management industries. 
+I'm an experienced tech writer (6+ years) who's familiar working in the Financial and Facility Management industries. 
 
 As a self-taught Linux power user, I know the importance of quality documentation and how painful it is to be stuck with lacking instructions. "User empathy" is an overused buzzword, but let's just say I've suffered through enough poorly documented open source software for it to dramatically inform my tech writing approach.  
 
