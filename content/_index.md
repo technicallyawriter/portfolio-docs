@@ -24,7 +24,7 @@ From years of implementing Agile, I've learned the value of proper ticket manage
 ## Simple language
 <img src="images/icons/edit.png" alt="todo.." width="50px" align="left" style="padding-right: 8px;" />
 
-I believe it's harder to write a single clear sentence than a paragraph of jumbled jargon. Tech writing translates the complexity of software into manageable concepts and tasks.
+I believe it's harder to write a single clear sentence than a paragraph of jumbled jargon. The challenge of tech writing is to translate the complexity of software into manageable concepts and tasks.
 {{< /columns >}}
 
 ## Tooling
