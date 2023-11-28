@@ -7,7 +7,7 @@ bookTOC: false
 
 Hi, I'm Parker! &#128075; Welcome to my tech writing portfolio. 
 
-I'm an experienced tech writer (6+ years) who's familiar working in the Financial and Facility Management industries. 
+I'm an experienced tech writer who's worked in the Financial and Facility Management industries for over six years. 
 
 As a self-taught Linux power user, I know the importance of quality documentation and how painful it is to be stuck with lacking instructions. "User empathy" is an overused buzzword, but let's just say I've suffered through enough poorly documented open source software for it to dramatically inform my tech writing approach.  
 
@@ -18,7 +18,7 @@ I prefer to treat my docs like source code. Using modern software development pr
 <--->
 ## Agile methodology
 <img src="images/icons/agile.png" alt="todo.." width="50px" align="left" style="padding-right: 8px;" />
-From years of implementing Agile, I've learned the value of proper ticket management, clear acceptance criteria, tight feedback loops with SMEs and shareholders, and periodic reflection for how to improve.
+From years of implementing Agile, I've learned the value of proper ticket management, clear acceptance criteria, tight feedback loops with SMEs/shareholders, and periodic reflection for how to improve.
 
 <--->
 ## Simple language
