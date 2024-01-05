@@ -1,5 +1,17 @@
 = Resume
 
-== Test
+ifeval::["{backend}" == "html5"]
+link:resume.pdf[Download PDF]
+endif::[]
+
+link:resume.pdf[Download PDF]
+
+== Job 1
+
+I did these things...
+
+== Job 2
+
+I did these things...
 
 todo...
