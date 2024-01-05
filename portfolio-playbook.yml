@@ -1,0 +1,13 @@
+site:
+  title: technicallyawriter 
+  url: https://docs.demo.com
+  start_page: technicallyawriter::index.adoc
+content:
+  sources:
+  - url: https://github.com/technicallyawriter/portfolio.git 
+    branches: main 
+ui:
+  bundle:
+    url: /home/technicallyawriter/git/portfolio-ui/build/ui-bundle.zip
+    #snapshot: true (set if using a remote URL to --fetch on change)
+  supplemental_files: ./supplemental-ui/

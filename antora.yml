@@ -5,10 +5,5 @@ asciidoc:
   attributes:
     source-language: asciidoc@
     table-caption: false
-ui:
-  bundle:
-    url: https://github.com/technicallyawriter/portfolio/raw/main/theme/ui-bundle.zip
-    snapshot: true
-  supplemental_files: ./supplemental-ui
 nav:
   - modules/ROOT/nav.adoc
