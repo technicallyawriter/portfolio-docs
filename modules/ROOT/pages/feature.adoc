@@ -11,9 +11,10 @@ Explain RTFM-Industries...
 View feature documentation for the fictional RTFM-Industries Documentation Dashboard feature.
 The following link:../../overview/#_topic_typing[concept documentation] introduces RTFM-Industries Documentation Dashboards, a splendid feature that helps tech writers do their jobs more effectively.
 
+.Documentation Dashboards Overview
 [,html]
 ----
-include::$example/documentation-dashboards-overview.html[]
+include::1.0.0@technicallyawriter:ROOT:$example/documentation-dashboards-overview.html[]
 ----
 
 == Task-oriented feature docs
