@@ -14,7 +14,7 @@ The following link:../../overview/#_topic_typing[concept documentation] introduc
 .Documentation Dashboards Overview
 [,html]
 ----
-include::1.0.0@technicallyawriter:ROOT:$example/documentation-dashboards-overview.html[]
+include::example$documentation-dashboards-overview.html[]
 ----
 
 == Task-oriented feature docs
@@ -25,27 +25,27 @@ The following link:../../overview/#_topic_typing[task] instructs users how to cr
 
 [,html]
 ----
-include::$example/documentation-dashboards-create.html[]
+include::example$documentation-dashboards-create.html[]
 ----
 
 === Invoicing setup page (XHTML)
 
 [,html]
 ----
-include::$example/invoicing-setup.html[]
+include::example$invoicing-setup.html[]
 ----
 
 === Match a supplier invoice (XHTML)
 
 [,html]
 ----
-include::$example/match-invoice.html[]
+include::example$match-invoice.html[]
 ----
 
 === Configure notifications (AsciiDoc) 
 
 [,asciidoc]
 ----
-include::$example/notification-config.adoc[lines=4..-1]
+include::example$notification-config.adoc[lines=4..-1]
 ----
 
