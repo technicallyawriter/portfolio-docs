@@ -1,11 +1,3 @@
----
-title: "Git"
-date: 2023-11-01
-draft: true
-weight: -30 
----
-:toc:
-
-== Git
+= Git
 
 test test test...

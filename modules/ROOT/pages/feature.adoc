@@ -1,17 +1,11 @@
----
-title: "Feature docs"
-date: 2023-11-02T12:15:26-04:00
-draft: true
-weight: -15
----
-:toc:
+= Feature docs
 
-== Feature docs
 what I like about feature docs...
 
 Explain RTFM-Industries... 
 
 == Conceptual feature docs
+
 === RTFM-Industries documentation dashboards (XHTML)
 
 View feature documentation for the fictional RTFM-Industries Documentation Dashboard feature.
@@ -19,7 +13,7 @@ The following link:../../overview/#_topic_typing[concept documentation] introduc
 
 [,html]
 ----
-include::./content/writingsamples/source/documentation-dashboards-overview.html[]
+include::/examples/documentation-dashboards-overview.html[]
 ----
 
 == Task-oriented feature docs
@@ -30,27 +24,27 @@ The following link:../../overview/#_topic_typing[task] instructs users how to cr
 
 [,html]
 ----
-include::./content/writingsamples/source/documentation-dashboards-create.html[]
+include::/examples/documentation-dashboards-create.html[]
 ----
 
 === Invoicing setup page (XHTML)
 
 [,html]
 ----
-include::./content/writingsamples/source/invoicing-setup.html[]
+include::./examples/invoicing-setup.html[]
 ----
 
 === Match a supplier invoice (XHTML)
 
 [,html]
 ----
-include::./content/writingsamples/source/match-invoice.html[]
+include::./examples/match-invoice.html[]
 ----
 
 === Configure notifications (AsciiDoc) 
 
 [,asciidoc]
 ----
-include::./content/writingsamples/source/notification-config.adoc[lines=4..-1]
+include::./examples/notification-config.adoc[lines=4..-1]
 ----
 

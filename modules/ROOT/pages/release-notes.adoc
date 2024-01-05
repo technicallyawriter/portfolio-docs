@@ -1,12 +1,4 @@
----
-title: "Release docs"
-date: 2023-11-07T12:16:00-05:00
-draft: true
-weight: -5
----
-:toc:
-
-== Release notes
+= Release notes
 
 Release notes to the fictional RTFM-Industries release (v1.1.0) are below. For many users, release notes may be their only interaction with software documentation, which makes it a unique document.
 
