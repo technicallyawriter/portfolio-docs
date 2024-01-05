@@ -1,4 +1,5 @@
 = N. Parker Jones
+:navtitle: Welcome
 
 Hi, I'm Parker! Welcome to my tech writing portfolio. 
 
