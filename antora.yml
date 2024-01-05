@@ -5,5 +5,7 @@ asciidoc:
   attributes:
     source-language: asciidoc@
     table-caption: false
+ui:
+  supplemental_files: ./supplemental-ui
 nav:
   - modules/ROOT/nav.adoc
