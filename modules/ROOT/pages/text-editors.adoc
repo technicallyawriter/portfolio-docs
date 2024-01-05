@@ -2,10 +2,10 @@
 
 a tech writer's livelihood!
 
-=== VS Code
+== VS Code
 
 todo...
 
-=== Vim
+== Vim
 
 todo...

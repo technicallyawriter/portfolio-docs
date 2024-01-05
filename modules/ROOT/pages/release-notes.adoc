@@ -7,7 +7,7 @@ Release notes to the fictional RTFM-Industries release (v1.1.0) are below. For m
 * images that say 1000 words
 * conditional text for online and print-only outputs
 
-=== Source code
+== Source code
 
 [source,HTML]
 ----
