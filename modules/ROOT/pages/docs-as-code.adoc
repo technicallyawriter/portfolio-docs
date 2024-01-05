@@ -1,0 +1,58 @@
+---
+title: "Docs-as-code"
+draft: false
+weight: 5
+date: "2023-10-21"
+---
+:toc:
+
+== Docs-as-code
+
+Modern tech writing practices should mimic software development processes and tooling, when appropriate. This approach leads to more scalable, collaborative documentation.
+
+{{< figure src="../docs-as-code.png" alt="docs-as-code" caption="<em>Docs-as-code</em>" class="border-0" >}}
+
+== Git/GitHub
+
+source control. branching. pull requests and merging. 
+
+== Modularity
+
+topic typing (steal from old overview page), content reuse, snippets or include directives
+
+=== Topic typing
+
+Whether I’m writing XHTML in MadCap Flare or AsciiDoc in a static site generator like Hugo, topic typing is a priority in my information architecture. Even when not validating against the DITA specification, I mimic the following topic types and create templates for consistency, modularity, and increased content reuse:
+
+* **Concept:** choose this topic type when introducing a concept, such as a new feature overview.
+* **Task:** choose this topic type when instructing user action, such as enabling notifications within a product.
+* **Reference:** chose this topic type when providing tables and matrixes that provide lots of scannable information, like a compatibility matrix.
+
+
+== Collaboration
+
+audience, reviews (SME and peer)
+
+plain text via GitHub PRs or as Word docs in SharePoint with track changes on.
+
+=== Subject Matter Expert (SME) review
+The tightest feedback loop should be between a SME and technical writer. This review ensures technical accuracy, proper order of operations, and prerequisites. This review can be completed prior to or as part of a GitHub Pull Request.
+
+=== Peer review
+Once the SME review is complete, other tech writers can evaluate the documentation for style guide adherence, proper information architecture, consistency in tone, grammar, and usage. This review should be completed as part of a GitHub Pull Request.
+
+=== Feature review
+Once a feature is nearing _feature complete_ status, a final review considering the opinion of key stakeholders (Product Management, Engineering, Professional Services, Support) should occur. This review will take into account higher-level feedback from a wider audience and serve as a jumping off point for training.
+
+== Testability
+
+vale (style guides and readability metrics)
+
+== Preferred Tooling & Processes
+
+* Git/GitHub using link:https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow[Gitflow branching strategies,window=_blank]
+* link:../reviews[SME and Peer Reviews] conducted as part of GitHub Pull Request reviews
+* Atom or VS Code text editors with my favorite plug-ins:
+** link:https://docs.errata.ai/[Vale linter,window=_blank] to validate against a Style Guide
+** code formatting
+* Continuous deployment with link:https://www.netlify.com/[Netlify,window=_blank] or link:https://docs.github.com/en/actions/deployment/about-deployments/about-continuous-deployment[GitHub Actions,window=_blank]

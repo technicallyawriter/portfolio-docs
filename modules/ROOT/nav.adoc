@@ -1,0 +1,15 @@
+* xref:index.adoc[]
+* Principles
+** xref:docs-as-code.adoc[]
+** xref:agile.adoc[]
+* Tooling
+** xref:git.adoc[]
+** xref:madcap-flare.adoc[]
+** xref:jira.adoc[]
+** xref:hugo.adoc[]
+** xref:text-editors.adoc[]
+* Writing samples 
+** xref:feature.adoc[]
+** xref:release-notes.adoc[]
+** xref:portfolio.adoc[]
+* xref:resume.adoc[]

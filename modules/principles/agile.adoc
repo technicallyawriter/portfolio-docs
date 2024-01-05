@@ -1,0 +1,30 @@
+---
+title: "Agile methodology"
+draft: false
+weight: 10
+date: "2022-01-10"
+---
+:toc:
+
+== Agile methodology
+
+I'm an Agile advocate who believes in team-created definitions and protocols that measure out bite-size chunks of work with testable acceptance criteria.
+
+{{< figure src="../images/TODO.jpeg" alt="TODO" caption="TODO" >}}
+
+== Agile Ceremonies
+Over the past five (5) years I have experience participating in and leading typical Agile ceremonies:
+
+* Daily stand-up meetings
+* Backlog Refinement meetings
+* Sprint Planning meetings
+* Retrospective meetings
+
+== Definition of Done
+Establishing a Definition of Done is instrumental for negating scope creep in documentation. I'm a fan of the link:https://gamestorming.com/circles-and-soup/[Circles and Soup activity,window=_blank] to demarcate what tech writers can control and influence verses what is out of their control from an organizational standpoint.
+
+== Document Early and Often
+When possible, I advocate that tech writers be involved earlier in the software development life cycle (SDLC) rather than later. Once a project has stable business rules, it's time to start documenting foundational concepts and high-level processes. Then, as the nitty-gritty particulars of a project are ironed out, adjusting course and reviewing changes is a more straight forward process.
+
+== Tight Feedback Loops
+Agile helps tech writers verify doc quickly by creating tighter feedback loops through link:../reviews[SME and Peer Reviews] as part of the Definition of Done.

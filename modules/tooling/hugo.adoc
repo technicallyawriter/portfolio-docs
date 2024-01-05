@@ -1,0 +1,42 @@
+---
+title: "Hugo"
+date: 2023-11-02T12:56:32-04:00
+draft: true
+weight: -40
+date: 
+---
+:toc:
+
+== Hugo
+
+what I like about hugo...
+
+== AsciiDoc over traditional Markdown
+
+Traditional Markdown is great for documentation, but as a tech writer, I prefer for the power and flexibility of AsciiDoc.
+
+Key factors in AsciiDoc syntax (turn this into a sentence of two and add above):
+
+* same sleakness of traditional Markdown
+* *link:https://docs.asciidoctor.org/asciidoc/latest/directives/conditionals/[conditionals,window=_blank]:* route content depending on output (e.g., HTML or PDF)
+* *link:https://docs.asciidoctor.org/asciidoc/latest/directives/ifdef-ifndef/[directives,window=_blank]:* reuse content with the `::includes` directive and display specific content using logic with the `::ifdef`, `::ifndef`, and `::ifeval` directives
+
+== AsciiDoctor-pdf for print
+
+When outputting single-sourced AsciiDoc content into PDF format, I prefer the link:https://www.npmjs.com/package/asciidoctor-pdf[AsciiDoctor-pdf] NPM package.
+
+=== Install AsciiDoctor-pdf
+```NPM
+npm install asciidoctor-pdf
+```
+
+=== Custom PDF styling
+Extend the default PDF theme to your liking by adjusting values in a separate YAML file.
+
+```YAML
+extends: default
+base:
+  font-color: #ff0000
+```
+
+**TIP:** refer to the link:https://github.com/asciidoctor/asciidoctor-pdf/blob/main/docs/theming-guide.adoc[AsciiDoctor PDF Theming Guide,window=_blank] for more details.
