@@ -6,6 +6,8 @@ asciidoc:
     source-language: asciidoc@
     table-caption: false
 ui:
+  bundle:
+    url: /home/technicallyawriter/git/portfolio-theme/build/ui-bundle.zip 
   supplemental_files: ./supplemental-ui
 nav:
   - modules/ROOT/nav.adoc
