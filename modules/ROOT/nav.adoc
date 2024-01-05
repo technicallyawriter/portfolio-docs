@@ -7,6 +7,8 @@
 ** xref:madcap-flare.adoc[]
 ** xref:jira.adoc[]
 ** xref:hugo.adoc[]
+** xref:antora.adoc[]
+** xref:vale.adoc[]
 ** xref:text-editors.adoc[]
 * Writing samples 
 ** xref:feature.adoc[]
