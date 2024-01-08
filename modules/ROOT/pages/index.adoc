@@ -24,5 +24,5 @@ As a self-taught Linux power user, I know the importance of quality documentatio
 I enjoy working in the middle of this spectrum, preferably not too far to the right!
 
 .The perils of technical writing
-[#xkcd, link: https://xkcd.com/1343/]
+[#xkcd,link: https://xkcd.com/1343/]
 image::manuals.png[xkcd comic about how manuals can be so confusing they need their own manual, thus creating more problems for users.]
