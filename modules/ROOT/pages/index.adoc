@@ -2,7 +2,7 @@
 
 Hi, I'm Parker! Welcome to my tech writing portfolio. 
 
-I'm an experienced tech writer who's worked in the Financial and Facility Management industries for over six years. 
+I'm an experienced tech writer who's worked in the Financial and Facility Management industries for over six years. Through this time, I've worked alone as well as on documentation teams to deliver internal and customer-facing docs using a variety of industry-leading software and approaches.
 
 == Docs-as-code
 
