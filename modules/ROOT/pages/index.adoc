@@ -6,11 +6,11 @@ I'm an experienced tech writer who's worked in the Financial and Facility Manage
 
 == Docs-as-code
 
-I prefer to treat my docs like source code. Using modern software development processes and tooling makes it possible to produce modular, reviewed, and accessible documentation at scale. Goodbye 500+ page Microsoft Word documents, hello pull requests that kick off continous deployment.
+I prefer to treat my docs like source code. Using modern software development processes and tooling makes it possible to produce modular, reviewed, and accessible documentation at scale. Goodbye 500+ page Microsoft Word documents; hello pull requests that kick off continuous deployment.
 
 == Agile methodology
 
-From years of implementing Agile, I've learned the value of proper ticket management, clear acceptance criteria, tight feedback loops with SMEs/shareholders, and periodic reflection for how to improve.
+Years of implementing Agile has taught me the value of proper ticket management, clear acceptance criteria, tight feedback loops with SMEs/shareholders, and the important of periodic reflection on how things are done.
 
 == Simple language
 
