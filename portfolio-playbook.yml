@@ -9,5 +9,5 @@ content:
 ui:
   bundle:
     url: /home/technicallyawriter/git/portfolio-ui/build/ui-bundle.zip
-    #snapshot: true (set if using a remote URL to --fetch on change)
+    snapshot: true 
   supplemental_files: ./supplemental-ui/
