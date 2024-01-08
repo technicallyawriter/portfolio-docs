@@ -1,14 +1,12 @@
 = N. Parker Jones
 
-Hi, I'm Parker. &#128074; Welcome to my tech writing portfolio!
-
-&#9749;
+Hi, I'm Parker. &#128075; Welcome to my tech writing portfolio!
 
 I'm an tech writer with 6 years of experience in the Financial and Facility Management industries. Through this time, I've worked within Engineering and Product Management departments as a sole contributor, team member, and team lead. Wherever I find myself, I strive to produce documentation that answers more questions than it creates and rewards those who take the time to read what I write. 
 
 == Docs-as-code
 
-image:icons/terminal.png[a blank computer terminal]
+image:icons/terminal.png[a blank computer terminal,50,50]
 
 I prefer to treat my docs like source code. Using modern software development processes and tooling makes it possible to produce modular, reviewed, and accessible documentation at scale. 
 
@@ -16,13 +14,13 @@ Goodbye 500+ page Microsoft Word documents; hello pull requests that kick off co
 
 == Agile methodology
 
-image:icons/agile.png[circular cycle to represent the feedback loop of agile]
+image:icons/agile.png[circular cycle to represent the feedback loop of agile,50,50]
 
 Years of implementing Agile has taught me the value of proper ticket management, clear acceptance criteria, tight feedback loops with SMEs/shareholders, and the important of periodic reflection on how things are done.
 
 == Simple language
 
-image:icons/edit.png[hand holding a pen]
+image:icons/edit.png[hand holding a pen,50,50]
 
 I believe it's often harder to write a single clear sentence than a paragraph of jumbled jargon. The challenge of tech writing is to translate the complexity of software into manageable concepts and tasks.
 
