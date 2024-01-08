@@ -1,27 +1,36 @@
 = N. Parker Jones
 
-Hi, I'm Parker! Welcome to my tech writing portfolio. 
+Hi, I'm Parker. &#128074; Welcome to my tech writing portfolio!
+
+&#9749;
 
 I'm an tech writer with 6 years of experience in the Financial and Facility Management industries. Through this time, I've worked within Engineering and Product Management departments as a sole contributor, team member, and team lead. Wherever I find myself, I strive to produce documentation that answers more questions than it creates and rewards those who take the time to read what I write. 
 
 == Docs-as-code
 
-I prefer to treat my docs like source code. Using modern software development processes and tooling makes it possible to produce modular, reviewed, and accessible documentation at scale. Goodbye 500+ page Microsoft Word documents; hello pull requests that kick off continuous deployment!
+image:icons/terminal.png[a blank computer terminal]
+
+I prefer to treat my docs like source code. Using modern software development processes and tooling makes it possible to produce modular, reviewed, and accessible documentation at scale. 
+
+Goodbye 500+ page Microsoft Word documents; hello pull requests that kick off continuous deployment!
 
 == Agile methodology
+
+image:icons/agile.png[circular cycle to represent the feedback loop of agile]
 
 Years of implementing Agile has taught me the value of proper ticket management, clear acceptance criteria, tight feedback loops with SMEs/shareholders, and the important of periodic reflection on how things are done.
 
 == Simple language
 
-I believe it's often harder to write a single clear sentence than a paragraph of jumbled jargon. The challenge of tech writing is to translate the complexity of software into manageable concepts and tasks.
+image:icons/edit.png[hand holding a pen]
 
+I believe it's often harder to write a single clear sentence than a paragraph of jumbled jargon. The challenge of tech writing is to translate the complexity of software into manageable concepts and tasks.
 
 == User empathy
 
 As a self-taught Linux power user, I know the importance of quality documentation and how painful it is to be stuck with lacking instructions. "User empathy" is an overused buzzword, but let's just say I've suffered through enough poorly documented open source software for it to dramatically inform my tech writing approach.  
 
-I enjoy working in the middle of this spectrum, preferably not too far to the right!
+I enjoy working in the middle of this spectrum, preferably not too far to the right! 
 
 .The perils of technical writing
 [link=https://xkcd.com/1343/]
