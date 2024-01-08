@@ -1,5 +1,4 @@
 = N. Parker Jones
-:navtitle: Welcome
 
 Hi, I'm Parker! Welcome to my tech writing portfolio. 
 
@@ -9,7 +8,7 @@ As a self-taught Linux power user, I know the importance of quality documentatio
 
 == Docs-as-code
 
-I prefer to treat my docs like source code. Using modern software development processes and tooling makes it possible to produce modular, reviewed, and accessible documentation at scale. 
+I prefer to treat my docs like source code. Using modern software development processes and tooling makes it possible to produce modular, reviewed, and accessible documentation at scale. Goodbye 500+ page Microsoft Word documents, hello pull requests that kick off continous deployment.
 
 == Agile methodology
 
@@ -17,7 +16,7 @@ From years of implementing Agile, I've learned the value of proper ticket manage
 
 == Simple language
 
-I believe it's harder to write a single clear sentence than a paragraph of jumbled jargon. The challenge of tech writing is to translate the complexity of software into manageable concepts and tasks.
+I believe it's often harder to write a single clear sentence than a paragraph of jumbled jargon. The challenge of tech writing is to translate the complexity of software into manageable concepts and tasks.
 
 == Tooling
 

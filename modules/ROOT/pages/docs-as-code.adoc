@@ -3,8 +3,6 @@
 
 Modern tech writing practices should mimic software development processes and tooling, when appropriate. This approach leads to more scalable, collaborative documentation.
 
-{{< figure src="../docs-as-code.png" alt="docs-as-code" caption="<em>Docs-as-code</em>" class="border-0" >}}
-
 == Git/GitHub
 
 source control. branching. pull requests and merging. 
