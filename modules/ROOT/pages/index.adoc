@@ -6,7 +6,7 @@ I'm an tech writer with 6 years of experience in the Financial and Facility Mana
 
 == Docs-as-code
 
-I prefer to treat my docs like source code. Using modern software development processes and tooling makes it possible to produce modular, reviewed, and accessible documentation at scale. Goodbye 500+ page Microsoft Word documents; hello pull requests that kick off continuous deployment.
+I prefer to treat my docs like source code. Using modern software development processes and tooling makes it possible to produce modular, reviewed, and accessible documentation at scale. Goodbye 500+ page Microsoft Word documents; hello pull requests that kick off continuous deployment!
 
 == Agile methodology
 
