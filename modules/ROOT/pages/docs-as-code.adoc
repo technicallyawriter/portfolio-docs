@@ -2,13 +2,19 @@
 
 Modern tech writing practices should mimic software development processes and tooling, when appropriate. This approach leads to more scalable, collaborative documentation.
 
-== Git/GitHub
+== Git
 
-Whether working alone or on a team, proper version control is a must. FEATURE BRANCHING. As a general rule, [branch]`master` branch always contains shippable code. This means that documentation for upcoming releases get worked in feature branches that are typically scoped at the link:agile.adoc[Epic or Feature level]. 
+Whether working alone or on a team, proper version control is a must. 
+
+=== Feature branching
+
+As a general rule, [branch]`master` branch should always contain production-ready code. This means that documentation for upcoming releases get worked in feature branches that are typically scoped at the link:agile.adoc[Epic or Feature level]. 
 
 [feature branch image]
 
-Branching in this way is more straight-forward the more agile a company is, however, if a company prefers a longer release runway, I'll add a release branch off [branch]`main` to merge completed feature branches into. Of course, branching like this makes writing release notes for service packs and hotfixes simple, as these docs are just another feature branch. 
+Branching in this way is more straight-forward the more frequent a company's release schedule is, however, if a company prefers a longer release runway (*cough* waterfall! *cough*), I'll add a release branch off [branch]`main` to merge completed feature branches into. Branching like this makes writing release notes for service packs and hotfixes simple, as these docs are just another feature branch. 
+
+=== Naming conventions
 
 I prefer to name branches using ticket IDs, for example [branch]`jira-123`, as descriptive names can become confusing, vague, or even inaccurate as development evolves. What is lost in presentation is gained in clarity, in my experience. The associated ticket provides ample room to explore the detailed scope of the branch.
 
@@ -24,7 +30,9 @@ jira-126
 # This isn't the prettiest naming convention, but it gets the job done!
 ----
 
-Prior to merging, docs are link:#test[tested] and link:#review[peer reviewed] as part of a Pull Request (SME review should already be completed before opening PR), and deployed into staging environments (if possible) to distribute with internal shareholders.  
+=== Pull requests
+
+Prior to merging, docs are link:#test[tested] and link:#review[peer reviewed] as part of a Pull Request (SME review should already be completed before opening PR). Depending on the DevOps setup for docs, a [branch]`feature` or [branch]`dev` branch can be deployed to a staging environment and shared with internal shareholders.
 
 == Modularity
 
