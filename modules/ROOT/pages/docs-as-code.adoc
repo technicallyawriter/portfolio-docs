@@ -1,5 +1,5 @@
 = Docs-as-code
-:source-highlighter: rouge
+:source-highlighter: highlight.js 
 
 Modern tech writing practices should mimic software development processes and tooling, when appropriate. This approach leads to more scalable, collaborative documentation.
 
