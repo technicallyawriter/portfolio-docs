@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-09T21:21:49.642Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0" etag="I-3FZ-2VA24fZtVegsbn" version="22.1.17" type="device">
+<mxfile host="app.diagrams.net" modified="2024-01-09T21:53:40.502Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0" etag="oORNoK1Z6nuMoPxCYy21" version="22.1.17" type="device">
   <diagram name="Page-1" id="c7488fd3-1785-93aa-aadb-54a6760d102a">
     <mxGraphModel dx="794" dy="408" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
@@ -142,8 +142,8 @@
         <mxCell id="vP-8v2ZjThqZAnv4l1-K-1" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;container=0;fillColor=#FF99FF;" vertex="1" parent="1">
           <mxGeometry x="339.99869565217386" y="69.99702290076337" width="26.086956521739133" height="26.086956521739133" as="geometry" />
         </mxCell>
-        <mxCell id="vP-8v2ZjThqZAnv4l1-K-2" value="Hotfix" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="143.26" y="78.04" width="60" height="30" as="geometry" />
+        <mxCell id="vP-8v2ZjThqZAnv4l1-K-2" value="hotfix/v1.0.4" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="128.26" y="78.04" width="90" height="30" as="geometry" />
         </mxCell>
         <mxCell id="vP-8v2ZjThqZAnv4l1-K-6" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="gq6_N2pdq_TAN1hvi7me-8" target="vP-8v2ZjThqZAnv4l1-K-1">
           <mxGeometry width="100" relative="1" as="geometry">
