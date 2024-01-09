@@ -32,6 +32,7 @@ I prefer to name branches using ticket IDs, for example [branch]`jira-123`, as d
 ----
 $ git branch
 
+* main
 feature/jira-123
 feature/jira-456
 feature/jira-789
