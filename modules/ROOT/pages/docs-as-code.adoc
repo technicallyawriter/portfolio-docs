@@ -11,17 +11,17 @@ Whether working alone or on a team, proper version control is a must.
 As a general rule, [branch]`master` branch should always contain production-ready code. This means that documentation for upcoming releases get worked in feature branches that are typically scoped at the xref:agile.adoc[Epic or Feature level]. 
 
 .Feature branching (simple) 
-image::feature-branching-simple.png[Feature branches without release branch,150,150]
+image::feature-branching-simple.png[Feature branches without release branch,150]
 
 Branching in this way is more straight-forward the more frequent a company's release schedule is. However, if a company prefers a longer release runway (_cough_ waterfall! _cough_), I'll create a release branch off [branch]`main` to merge completed feature branches into. 
 
 .Feature branching with a release branch
-image::feature-branching-release.png[Feature branches with release branch,150,150]
+image::feature-branching-release.png[Feature branches with release branch,150]
 
 Branching like this makes writing release notes for service packs and hotfixes simple, as these docs are just another feature branch. 
 
 .Feature branching with release and hotfix branches
-image::feature-branching-release-hotfix.png[Feature branches with release and hotfix branch,150,150]
+image::feature-branching-release-hotfix.png[Feature branches with release and hotfix branch,150]
 
 === Naming conventions
 
