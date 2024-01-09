@@ -10,17 +10,22 @@ Whether working alone or on a team, proper version control is a must.
 
 As a general rule, [branch]`master` branch should always contain production-ready code. This means that documentation for upcoming releases get worked in feature branches that are typically scoped at the xref:agile.adoc[Epic or Feature level]. 
 
-.Feature branches (simple) 
-image::feature-branch.png[Feature branches without release branch]
+.Feature branching (simple) 
+image::feature-branching-simple.png[Feature branches without release branch]
 
-Branching in this way is more straight-forward the more frequent a company's release schedule is. However, if a company prefers a longer release runway (_cough_ waterfall! _cough_), I'll create a release branch off [branch]`main` to merge completed feature branches into. Branching like this makes writing release notes for service packs and hotfixes simple, as these docs are just another feature branch. 
+Branching in this way is more straight-forward the more frequent a company's release schedule is. However, if a company prefers a longer release runway (_cough_ waterfall! _cough_), I'll create a release branch off [branch]`main` to merge completed feature branches into. 
 
-.Feature branches with a release branch
-image::feature-release-branches.png[Feature branches with release branch]
+.Feature branching with a release branch
+image::feature-branching-release.png[Feature branches with release branch]
+
+Branching like this makes writing release notes for service packs and hotfixes simple, as these docs are just another feature branch. 
+
+.Feature branching with release and hotfix branches
+image::feature-branching-release-hotfix.png[Feature branches with release and hotfix branch]
 
 === Naming conventions
 
-I prefer to name branches using ticket IDs, for example [branch]`jira-123`, as descriptive names can become confusing, vague, or even inaccurate as development evolves. What is lost in presentation is gained in clarity, in my experience. The associated ticket provides ample room to explore the detailed scope of the branch. 
+I prefer to name branches using ticket IDs, for example [branch]`jira-123`, as descriptive names can become confusing, vague, or even inaccurate as development evolves. What is lost in presentation is gained in clarity, in my experience. The associated ticket serves as a breadcrumb to the fully detailed source of truth.
 
 [source,bash]
 ----
@@ -31,7 +36,8 @@ feature/jira-456
 feature/jira-789
 ----
 
-.This isn't the most alluring naming convention, I'll admit. But sometimes:
+This isn't the most alluring naming convention, I'll admit. But sometimes:
+
 [quote,Unix Philosophy]
 Clarity is better than cleverness
 
