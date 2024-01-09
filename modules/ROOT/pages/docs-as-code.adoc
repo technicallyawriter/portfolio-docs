@@ -1,5 +1,4 @@
 = Docs-as-code
-:navtitle: Docs-as-code
 
 Modern tech writing practices should mimic software development processes and tooling, when appropriate. This approach leads to more scalable, collaborative documentation.
 
