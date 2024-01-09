@@ -26,7 +26,7 @@ image::feature-branching-release-hotfix.png[Feature branches with release and ho
 
 === Naming conventions
 
-I prefer to name branches using ticket IDs, for example [branch]`jira-123`, as descriptive names can become confusing, vague, or even inaccurate as development evolves. What is lost in presentation is gained in clarity, in my experience. The associated ticket serves as a breadcrumb to the fully detailed source of truth.
+I prefer to name branches using ticket IDs, for example [branch]`feature/jira-123`, as descriptive names can become confusing, vague, or even inaccurate as development evolves. What is lost in presentation is gained in clarity, in my experience. Used this way, the associated ticket ID serves as a breadcrumb to the source of truth if someone is curious about scope or feature details.
 
 [source,bash]
 ----
@@ -36,6 +36,8 @@ $ git branch
 feature/jira-123
 feature/jira-456
 feature/jira-789
+release/v1.1.0
+hotfix/v1.0.4
 ----
 
 This isn't the most alluring naming convention, I'll admit. But sometimes:
