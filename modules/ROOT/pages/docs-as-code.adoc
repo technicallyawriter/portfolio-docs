@@ -1,5 +1,4 @@
 = Docs-as-code
-:source-highlighter: highlight.js 
 
 Modern tech writing practices should mimic software development processes and tooling, when appropriate. This approach leads to more scalable, collaborative documentation.
 
@@ -14,7 +13,7 @@ As a general rule, [branch]`master` branch should always contain production-read
 .Feature branching (simple) 
 image::feature-branching-simple.png[Feature branches without release branch]
 
-Branching in this way is more straight-forward the more frequent a company's release schedule is. However, if a company prefers a longer release runway (_cough_ waterfall! _cough_), I'll create a release branch off [branch]`main` to merge completed feature branches into. 
+Branching in this way is more straight-forward the more "agile" a company's release cadence is. In other words, if a company releases a feature once it's complete, the feature branch containing the docs is simply merged to [branch]`main` come release time. However, if a company prefers a longer release runway (_cough_ waterfall! _cough_), I'll create a release branch off [branch]`main` to merge completed feature branches into. 
 
 .Feature branching with a release branch
 image::feature-branching-release.png[Feature branches with release branch]
@@ -26,7 +25,7 @@ image::feature-branching-release-hotfix.png[Feature branches with release and ho
 
 === Naming conventions
 
-I prefer to name branches using ticket IDs, for example [branch]`feature/jira-123`, as descriptive names can become confusing, vague, or even inaccurate as development evolves. What is lost in presentation is gained in clarity, in my experience. Used this way, the associated ticket ID serves as a breadcrumb to the source of truth if someone is curious about scope or feature details.
+I prefer to name branches using ticket IDs, for example [branch]`feature/jira-123`, as descriptive names can become confusing, vague, or even inaccurate as development evolves. The associated ticket ID serves as a breadcrumb to the source of truth, in this case a Jira ticket, that contains the most up-to-date information about the feature.
 
 [source,bash]
 ----
@@ -40,14 +39,14 @@ release/v1.1.0
 hotfix/v1.0.4
 ----
 
-This isn't the most alluring naming convention, I'll admit. But sometimes:
+This isn't the most alluring naming convention, I'll admit. What is lost in presentation is gained in clarity, in my experience. And sometimes:
 
 [quote,Unix Philosophy]
 Clarity is better than cleverness
 
 === Pull requests
 
-Prior to merging, docs are link:#test[tested] and link:#review[peer reviewed] as part of a Pull Request (SME review should already be completed before opening PR). Depending on the DevOps setup for docs, a [branch]`feature` or [branch]`dev` branch can be deployed to a staging environment and shared with internal shareholders.
+Prior to merging, docs are xref:#_testability[tested] and xref:#_peer_review[peer reviewed] as part of a Pull Request (SME review should already be completed before opening PR). Depending on the DevOps setup for docs, a [branch]`feature` or [branch]`dev` branch can be deployed to a staging environment and shared with internal shareholders prior to the release.
 
 == Modularity
 
@@ -62,7 +61,7 @@ Whether I’m writing XHTML in MadCap Flare or AsciiDoc in a static site generat
 * **Reference:** chose this topic type when providing tables and matrixes that provide lots of scannable information, like a compatibility matrix.
 
 
-== Collaboration
+== Reviews 
 
 audience, reviews (SME and peer)
 
@@ -79,13 +78,8 @@ Once a feature is nearing _feature complete_ status, a final review considering 
 
 == Testability
 
+Validating against style guides and readability. On a team, peer review from other tech writers has the advantage of unfamiliar eyes. This is true for editing as well as "testing" the documentation with someone who's unfamiliar with the content. Sometimes a paragraph makes sense to someone if they already understand the content. This is often not the position of the audience reading user documentation. Distance like this helps actually helps tech writers do their jobs more effectively.
+
+Test against acceptance criteria (these need to be clear, have audience in mind, etc.). Give good and bad example of AC. 
+
 vale (style guides and readability metrics)
-
-== Preferred Tooling & Processes
-
-* Git/GitHub using link:https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow[Gitflow branching strategies,window=_blank]
-* link:../reviews[SME and Peer Reviews] conducted as part of GitHub Pull Request reviews
-* Atom or VS Code text editors with my favorite plug-ins:
-** link:https://docs.errata.ai/[Vale linter,window=_blank] to validate against a Style Guide
-** code formatting
-* Continuous deployment with link:https://www.netlify.com/[Netlify,window=_blank] or link:https://docs.github.com/en/actions/deployment/about-deployments/about-continuous-deployment[GitHub Actions,window=_blank]
