@@ -72,20 +72,22 @@ In *Hugo*, I can create a custom shortcode that holds a feature's "short descrip
 {{% feature-xyz-short-desc %}}
 ----
 
-When writing with AsciiDoc in *Antora*, I can use the `::include` directive to display source code from a file.
+When writing with AsciiDoc in *Antora*, I can use the `include::` directive to display source code from a file.
 
 [source,asciidoc]
 ----
 \include::feature-xyz.php[]
 ----
 
-=== TODO...Topic typing
+=== Topic typing
 
-I mimic the following topic types and create templates for consistency, modularity, and increased content reuse:
+TODO..needs a better intro. I mentioned earlier I don't advocate for the DITA specification due to how strict it is. Sometimes what's best for the specification isn't always best (or most intuitive) for the user or use-case. For this reason, I prefer topic-based writing. TODO...Mention templates for each.
 
-* **Concept:** choose this topic type when introducing a concept, such as a new feature overview.
-* **Task:** choose this topic type when instructing user action, such as enabling notifications within a product.
-* **Reference:** chose this topic type when providing tables and matrixes that provide lots of scannable information, like a compatibility matrix.
+In topic-based tech writing, docs typically belong to one of three general types:
+
+* **Concept:** used when introducing or explaining an idea, like the overview of a complex feature.
+* **Task:** used when instructing user action, like enabling a feature within a product.
+* **Reference:** used when providing a large amount of scannable information, like tabular data about compatibility.
 
 
 == Reviews 
