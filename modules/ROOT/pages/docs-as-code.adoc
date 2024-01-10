@@ -81,7 +81,7 @@ When writing with AsciiDoc in *Antora*, I can use the `include::` directive to d
 
 === Topic typing
 
-TODO..needs a better intro. I mentioned earlier I don't advocate for the DITA specification due to how strict it is. Sometimes what's best for the specification isn't always best (or most intuitive) for the user or use-case. For this reason, I prefer topic-based writing. TODO...Mention templates for each.
+TODO..needs a better intro. I mentioned earlier I don't advocate for the DITA specification due to how strict it is. Sometimes what's best for the specification isn't always best (or most intuitive) for the user or use-case. For this reason, I prefer topic-based writing. 
 
 In topic-based tech writing, docs typically belong to one of three general types:
 
@@ -89,6 +89,7 @@ In topic-based tech writing, docs typically belong to one of three general types
 * **Task:** used when instructing user action, like enabling a feature within a product.
 * **Reference:** used when providing a large amount of scannable information, like tabular data about compatibility.
 
+TODO...Mention templates for each.
 
 == Reviews 
 
