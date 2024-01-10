@@ -1,10 +1,8 @@
 = Resume
 
 ifeval::["{backend}" == "html5"]
-link:resume.pdf[Download PDF]
+xref:attachment$resume.pdf[Download PDF]
 endif::[]
-
-link:resume.pdf[Download PDF]
 
 == Job 1
 
