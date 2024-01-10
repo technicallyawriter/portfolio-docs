@@ -8,7 +8,7 @@ Whether working alone or on a team, proper version control is a must.
 
 === Feature branching
 
-As a general rule, [branch]`master` branch should always contain production-ready code. This means that documentation for upcoming releases get worked in feature branches that are typically scoped at the xref:agile.adoc[Epic or Feature level]. 
+As a general rule, [branch]`master` branch should always contain production-ready code. This means that documentation for an upcoming release gets worked in feature branches that are typically scoped at the xref:agile.adoc[Epic or Feature level]. Ideally, tickets within these Epics or Features are worked on their own branch and merged into the respective feature branch once complete.
 
 .Feature branching (simple) 
 image::feature-branching-simple.png[Feature branches without release branch]
