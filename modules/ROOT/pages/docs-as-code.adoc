@@ -93,11 +93,11 @@ Dedicating a page to a specific content type might be enough modularity for you.
 ----
 = Topic xyz
 
-\include::topic-xyz-intro.adoc
-\include::topic-xyz-prerequities.adoc
-\include::concept-x.adoc
-\include::concept-y.adoc
-\include::concept-z.adoc
+include::topic-xyz-intro.adoc
+include::topic-xyz-prerequities.adoc
+include::concept-x.adoc
+include::concept-y.adoc
+include::concept-z.adoc
 ----
 
 Regardless of how granular you go, decide what's included in each topic and implement a template for each to display information consistently. This consistency makes content reuse easier, as the purpose of each section is narrowly scoped, so you can plug-and-play content as needed.
