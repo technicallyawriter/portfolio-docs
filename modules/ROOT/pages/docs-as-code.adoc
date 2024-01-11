@@ -121,8 +121,24 @@ Once a feature is nearing **feature complete** status, a final review considerin
 
 == Testability
 
-The author can test at any time, but it's also a good idea to test again during peer review. Validating against style guides and readability. On a team, peer review from other tech writers has the advantage of unfamiliar eyes. This is true for editing as well as "testing" the documentation with someone who's unfamiliar with the content. Sometimes a paragraph makes sense to someone if they already understand the content. This is often not the position of the audience reading user documentation. Distance like this helps actually helps tech writers do their jobs more effectively.
+=== Linters
 
-Test against acceptance criteria (these need to be clear, have audience in mind, etc.). Give good and bad example of AC. 
+Validating documentation to a standard doesn't need to be purely subjective. Language might not follow as strict of conventions as code, but I like to test my docs with Vale for style guide adherence and readability metrics. Style guide linting in Vale can be adjusted or extended to reflect your organization's preferences, as well. 
 
-vale (style guides and readability metrics) - is a rule unwarranted? add it to the exceptions list or remove it (does this get overwritten again by `vale sync`?).
+NOTE: Running [command] the `vale sync` command will re-download any removed rules from your list of packages.
+
+=== Acceptance criteria
+
+Another test of documentation is to verify the writing against the ticket's acceptance criteria. This calls for clear, demonstrative acceptance criteria that can pass or fail such a test. Here's a couple of examples to show what I mean: 
+
+.Bad example of acceptance criteria
+[example]
+Document feature xyz.
+
+.Good example of acceptance criteria
+[example]
+todo...
+
+=== Reviews
+
+xref:#_subject_matter_expert_sme_review[SME] and xref:#_peer_review[peer] reviews serve as the catch-all test for what escapes linters and acceptance criteria. This is the arena for "_I think this is confusing_" or "_I would word this differently_" type of feedback. We're humans after all, writing documentation for other humans, so it should pass these subjective criteria, too. Synthesizing murky (and sometimes conflicing) feedback into consistent and predictable documentation is yet another challenege for tech writers to take on.
