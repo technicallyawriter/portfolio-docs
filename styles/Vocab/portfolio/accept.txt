@@ -1,3 +1,7 @@
 Antora
 shortcode
 shortcodes
+Jira
+hotfix
+hotfixes
+xyz

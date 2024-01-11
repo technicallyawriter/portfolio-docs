@@ -52,7 +52,7 @@ Prior to merging, docs are xref:#_testability[tested] and xref:#_peer_review[pee
 
 == Content reuse
 
-Tech writers can benefit from the coding concept of modular programming, where code is separated depending on the purpose it serves. Then, because segments of code exist independently, they are reused whenever a particular purpose is needed. For documentation, why write something three or four times when you can write it once and reuse it? Doing so creates consistenty for readers and makes docs easier to manage. While I don't advocate for the rigidity of the DITA specification (modularity can be a double-edged sword), I appreciate how content reuse strategies encourage you to write more flexibly, efficiently, and with a clear scope in mind.
+Tech writers can benefit from the coding concept of modular programming, where code is separated depending on the purpose it serves. Then, because segments of code exist independently, they are reused whenever a particular purpose is needed. For documentation, why write something three or four times when you can write it once and reuse it? Doing so creates consistency for readers and makes docs easier to manage. While I don't advocate for the rigidity of the DITA specification (modularity can be a double-edged sword), I appreciate how content reuse strategies encourage you to write more flexibly, efficiently, and with a clear scope in mind.
 
 Content reuse goes by different names depending on the software I'm using, but the concept remains the same throughout. Here are a few examples from my professional experience. 
 
@@ -72,7 +72,7 @@ In *Hugo*, I can create a custom shortcode that holds a feature's "short descrip
 {{% feature-xyz-short-desc %}}
 ----
 
-When writing with AsciiDoc in *Antora*, I can use the `include::` directive to display source code from a file, rathre than copying and pasting it on the page. If I want to reuse this example elsewhere and the example code is updated, all reference to it update automatically.
+When writing with AsciiDoc in *Antora*, I can use the `include::` directive to display source code from a file, rather than copying and pasting it on the page. If I want to reuse this example elsewhere and the example code is updated, all reference to it update automatically.
 
 [source,asciidoc]
 ----
@@ -111,7 +111,7 @@ Docs are best when they're collaborative. And the most fruitful collaboration of
 Reviews might look differently depending on personal preference and the software used. I've conducted reviews of plain text docs in GitHub as part of a Pull Request, as well as in exported Word docs uploaded to SharePoint with the Track Changes feature turned on.
 
 === Subject Matter Expert (SME) review
-The tightest feedback loop should be between a SME and technical writer. Ask the SME how they'd prefer to handle reviews and accomodate accordingly. They're helping you out, after all! This review ensures technical accuracy, proper order of operations, and prerequisites. This review can be completed prior to or as part of a GitHub Pull Request.
+The tightest feedback loop should be between a SME and technical writer. Ask the SME how they'd prefer to handle reviews and accommodate accordingly. They're helping you out, after all! This review ensures technical accuracy, proper order of operations, and prerequisites. This review can be completed prior to or as part of a GitHub Pull Request.
 
 === Peer review
 Once the SME review is complete, other tech writers can evaluate the documentation for style guide adherence, proper information architecture, consistency in tone, grammar, and usage. This review should be completed as part of a GitHub Pull Request.
@@ -123,7 +123,7 @@ Once a feature is nearing **feature complete** status, a final review considerin
 
 === Linters
 
-Validating documentation to a standard doesn't need to be purely subjective. Language might not follow as strict of conventions as code, but I like to test my docs with Vale for style guide adherence and readability metrics. Style guide linting in Vale can be adjusted or extended to reflect your organization's preferences, as well. 
+Validating documentation doesn't need to be purely subjective. Language might not follow as strict of conventions as code, but I like to test my docs with Vale for style guide adherence and readability metrics. Style guide linting in Vale can be adjusted or extended to reflect your organization's preferences, as well. 
 
 .Updates I've made to Vale in this project
 ====
@@ -151,4 +151,4 @@ Documentation covering the following use-cases:
 
 === Reviews
 
-xref:#_subject_matter_expert_sme_review[SME] and xref:#_peer_review[peer] reviews serve as the catch-all test for what escapes linters and acceptance criteria. This is the arena for "I think this paragraph is confusing" or "I would word this differently" type of feedback. We're humans after all, writing documentation for other humans, so it should pass these subjective criteria, too. Effective tech writers must develop the ability to synthesize murky (and sometimes conflicing) feedback into clear documentation.
+xref:#_subject_matter_expert_sme_review[SME] and xref:#_peer_review[peer] reviews serve as the catch-all test for what escapes linters and acceptance criteria. This is the arena for "I think this paragraph is confusing" or "I would word this differently" type of feedback. We're humans after all, writing documentation for other humans, so it should pass these subjective criteria, too. Effective tech writers must develop the ability to synthesize murky (and sometimes conflicting) feedback into clear documentation.
