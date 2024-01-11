@@ -81,15 +81,31 @@ When writing with AsciiDoc in *Antora*, I can use the `include::` directive to d
 
 === Topic typing
 
-TODO..needs a better intro. I mentioned earlier I don't advocate for the DITA specification due to how strict it is. Sometimes what's best for the specification isn't always best (or most intuitive) for the user or use-case. For this reason, I prefer topic-based writing. 
-
-In topic-based tech writing, docs typically belong to one of three general types:
+Another valuable content reuse technique is topic typing. At it's most general, this can mean organizing content into three basic categories: **concept**, **task**, or **reference**. Each of these categories has their own template for displaying information consistently. This consistency makes content reuse easier, as the purpose of each section is narrowly scoped, so you can plug-and-play content as needed.
 
 * **Concept:** used when introducing or explaining an idea, like the overview of a complex feature.
 * **Task:** used when instructing user action, like enabling a feature within a product.
 * **Reference:** used when providing a large amount of scannable information, like tabular data about compatibility.
 
-TODO...Mention templates for each.
+You can take topic typing further and make each piece of content a grandular type. For example:
+
+[plantuml, format=svg, opts="inline"]
+----
+skinparam Legend {
+	BackgroundColor transparent
+	BorderColor transparent
+}
+legend
+Root
+|_ Element 1
+  |_ Element 1.1
+  |_ Element 1.2
+|_ Element 2
+  |_ Element 2.1
+end legend
+----
+
+This goes the way of DITA and is not my preference since you're often caught having to please the schema over what might otherwise be most helpful to the reader. I think structure is wonderful and should be enforced whenever possible, though I enjoy the flexibility of "breaking the rules" and displaying content in a different order, for example, if it helps make the docs more effective.
 
 == Reviews 
 
