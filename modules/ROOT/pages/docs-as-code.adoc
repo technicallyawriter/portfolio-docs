@@ -81,31 +81,28 @@ When writing with AsciiDoc in *Antora*, I can use the `include::` directive to d
 
 === Topic typing
 
-Another valuable content reuse technique is topic typing. At it's most general, this can mean organizing content into three basic categories: **concept**, **task**, or **reference**. Each of these categories has their own template for displaying information consistently. This consistency makes content reuse easier, as the purpose of each section is narrowly scoped, so you can plug-and-play content as needed.
+Another valuable content reuse technique is topic typing. At it's most general, this can mean organizing content into three basic categories: **concept**, **task**, or **reference**. 
 
 * **Concept:** used when introducing or explaining an idea, like the overview of a complex feature.
 * **Task:** used when instructing user action, like enabling a feature within a product.
 * **Reference:** used when providing a large amount of scannable information, like tabular data about compatibility.
 
-You can take topic typing further and make each piece of content a grandular type. For example:
+Dedicating a page to a specific content type might be enough modularity for you. If desired, you can take topic typing further and make each piece of content within a page more modular. For example:
 
-[plantuml, format=svg, opts="inline"]
+[source,asciidoc]
 ----
-skinparam Legend {
-	BackgroundColor transparent
-	BorderColor transparent
-}
-legend
-Root
-|_ Element 1
-  |_ Element 1.1
-  |_ Element 1.2
-|_ Element 2
-  |_ Element 2.1
-end legend
+= Topic xyz
+
+includes:topic-xyz-intro.adoc
+includes:topic-xyz-prerequities.adoc
+includes:concept-x.adoc
+includes:concept-y.adoc
+includes:concept-z.adoc
 ----
 
-This goes the way of DITA and is not my preference since you're often caught having to please the schema over what might otherwise be most helpful to the reader. I think structure is wonderful and should be enforced whenever possible, though I enjoy the flexibility of "breaking the rules" and displaying content in a different order, for example, if it helps make the docs more effective.
+Regardless of how granular you go, decide what's included in each topic and implement a template for each to display information consistently. This consistency makes content reuse easier, as the purpose of each section is narrowly scoped, so you can plug-and-play content as needed.
+
+Structuring content for reuse is easier to do from the start but not _everything_ needs to be reused. Discuss with your team (or yourself) to determine how modular your docs should be.
 
 == Reviews 
 
