@@ -106,12 +106,12 @@ Structuring content for reuse is easier to do from the start but not _everything
 
 == Reviews 
 
-Docs are best when they're collaborative. And the most fruitful collaboration often takes the form of reviews. Tech writers usually aren't the expert on the subject they're writing--for this, there's xref:#_subject_matter_expert_sme_review[Subject Matter Expert (SME) review]. And authors usually aren't the best editors of their own work--for this, there's xref:#_peer_review[peer review].
+Docs are best when they're collaborative. And the most fruitful collaboration often takes the form of reviews. Tech writers usually aren't the expert on the subject they're writing--for this, there's the xref:#_subject_matter_expert_sme_review[subject matter expert (SME) review]. And authors usually aren't the best editors of their own work--for this, there's the xref:#_peer_review[peer review].
 
 Reviews might look differently depending on personal preference and the software used. I've conducted reviews of plain text docs in GitHub as part of a Pull Request, as well as in exported Word docs uploaded to SharePoint with the Track Changes feature turned on.
 
 === Subject Matter Expert (SME) review
-The tightest feedback loop should be between a SME and technical writer. This review ensures technical accuracy, proper order of operations, and prerequisites. This review can be completed prior to or as part of a GitHub Pull Request.
+The tightest feedback loop should be between a SME and technical writer. Ask the SME how they'd prefer to handle reviews and accomodate accordingly. They're helping you out, after all! This review ensures technical accuracy, proper order of operations, and prerequisites. This review can be completed prior to or as part of a GitHub Pull Request.
 
 === Peer review
 Once the SME review is complete, other tech writers can evaluate the documentation for style guide adherence, proper information architecture, consistency in tone, grammar, and usage. This review should be completed as part of a GitHub Pull Request.
