@@ -145,7 +145,9 @@ NOTE: Running the `vale sync` command re-downloads any removed rules from your l
 
 === Acceptance criteria
 
-Another test of documentation is to verify the writing against the ticket's acceptance criteria. This calls for clear, demonstrative acceptance criteria that can pass or fail such a test. Here's a couple of examples to show what I mean: 
+Another test of documentation is to verify the writing against the ticket's acceptance criteria. This calls for clear, demonstrative acceptance criteria that can pass or fail such a test. 
+
+Here's a couple of examples to show what I mean: 
 
 .Bad acceptance criteria
 [example]
@@ -154,6 +156,7 @@ Document feature xyz
 .Good acceptance criteria
 [example]
 Documentation covering the following use-cases:
+
 * [task] fresh install workflow for new users
 * [task] upgrade workflow for existing users (USA)
 * [task] upgrade workflow for existing users (UK) 
