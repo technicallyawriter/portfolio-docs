@@ -132,7 +132,7 @@ Tech writers don't just write the docs. They should test them too!
 
 === Linters
 
-Validating documentation doesn't need to be purely subjective. Tools like link:https://vale.sh[Vale,target] deliver data around style guide adherence and readability. Vale lets you customize existing style guides and create your own rules to reflect your organization's preferences. It's a very powerful tool. 
+Validating documentation doesn't need to be purely subjective. Tools like link:https://vale.sh[Vale,_blank] deliver data around style guide adherence and readability. Vale lets you customize existing style guides and create your own rules to reflect your organization's preferences. It's a very powerful tool. 
 
 .Updates I've made to Vale in this project
 ====
