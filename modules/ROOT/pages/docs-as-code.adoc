@@ -149,7 +149,7 @@ Another test of documentation is to verify the writing against the ticket's acce
 
 .Bad acceptance criteria
 [example]
-* "Document feature xyz"
+Document feature xyz
 
 .Good acceptance criteria
 [example]
