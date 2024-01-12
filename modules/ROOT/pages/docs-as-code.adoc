@@ -154,13 +154,13 @@ Here's a couple of examples to show what I mean:
 Document feature xyz
 
 .Good acceptance criteria
-[example]
+====
 Documentation covering the following use-cases:
 
 * [task] fresh install workflow for new users
 * [task] upgrade workflow for existing users (USA)
 * [task] upgrade workflow for existing users (UK) 
-
+====
 === Reviews
 
 xref:#_subject_matter_expert_sme_review[SME] and xref:#_peer_review[peer] reviews serve as the catch-all test for what escapes linters and acceptance criteria. This is the arena for "I think this paragraph is confusing" or "I would word this differently" feedback. Tech writers are human after all, writing documentation for other humans, so docs should pass these subjective criteria, too. Effective tech writers must develop the ability to synthesize murky (and sometimes conflicting) feedback into clear docs.
