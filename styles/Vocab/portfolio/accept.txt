@@ -5,3 +5,5 @@ Jira
 hotfix
 hotfixes
 xyz
+SME
+SME's

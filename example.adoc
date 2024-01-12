@@ -1,0 +1,5 @@
+== Example Heading With Title Casing
+
+The document is written by tech writers.
+
+This is a spellling mistake!
