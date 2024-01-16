@@ -139,6 +139,7 @@ Validating documentation doesn't need to be purely subjective. Tools like link:h
 * removed all Readability tests other than `Readability.FleschKincaid` and `Readability.FleschReadingEase` since I prefer focusing on syllable count
 * removed `Google.FirstPerson.yml` rule since first-person is okay in my portfolio
 * added custom vocab list at `styles/Vocab/portfolio` with `accept.txt` file for spelling exceptions
+* added "methodology" to write-good exceptions list so it won't flag "Agile methodology" in `TooWordy.yml`.
 ====
 
 NOTE: Running the `vale sync` command re-downloads any removed rules from your list of packages.

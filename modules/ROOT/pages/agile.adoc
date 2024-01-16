@@ -2,21 +2,23 @@
 
 I'm an Agile advocate who believes in team-created definitions and protocols that measure out bite-size chunks of work with testable acceptance criteria.
 
-{{< figure src="../images/TODO.jpeg" alt="TODO" caption="TODO" >}}
+== Agile ceremonies
 
-== Agile Ceremonies
-Over the past five (5) years I have experience participating in and leading typical Agile ceremonies:
+Over the past six years I have experience participating in and leading typical Agile ceremonies:
 
 * Daily stand-up meetings
 * Backlog Refinement meetings
 * Sprint Planning meetings
 * Retrospective meetings
 
-== Definition of Done
-Establishing a Definition of Done is instrumental for negating scope creep in documentation. I'm a fan of the link:https://gamestorming.com/circles-and-soup/[Circles and Soup activity,window=_blank] to demarcate what tech writers can control and influence verses what is out of their control from an organizational standpoint.
+== Definition of done
 
-== Document Early and Often
+Establishing a definition of done is helpful to limit scope creep in tickets. Docs can always be improved, but this doesn't mean they're updated in one fell swoop. I'm a fan of the link:https://gamestorming.com/circles-and-soup/[Circles and Soup activity,blank] to help writers agree on a definition of done. This game separates what tech writers _can_ control and influence from what is _out of their control_ from an organizational standpoint. Knowing the difference between these leads to acheivable resolution times.
+
+== Document early and often
+
 When possible, I advocate that tech writers be involved earlier in the software development life cycle (SDLC) rather than later. Once a project has stable business rules, it's time to start documenting foundational concepts and high-level processes. Then, as the nitty-gritty particulars of a project are ironed out, adjusting course and reviewing changes is a more straight forward process.
 
-== Tight Feedback Loops
+== Tight feedback loops
+
 Agile helps tech writers verify doc quickly by creating tighter feedback loops through link:../reviews[SME and Peer Reviews] as part of the Definition of Done.
