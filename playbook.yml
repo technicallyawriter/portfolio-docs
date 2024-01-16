@@ -1,6 +1,6 @@
 site:
   title: technicallyawriter 
-  url: https://docs.demo.com
+  url: https://technicallyawriter.netlify.app
   start_page: technicallyawriter::index.adoc
 content:
   sources:
