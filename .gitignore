@@ -1,1 +1,6 @@
+# antora output
 /build/
+
+# ignore vale packages but track local vocab 
+/styles/*
+!/styles/config/vocabularies
