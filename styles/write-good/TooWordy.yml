@@ -2,6 +2,8 @@ extends: existence
 message: "'%s' is too wordy."
 ignorecase: true
 level: warning
+exceptions:
+  - "Agile methodology"
 tokens:
   - a number of
   - abundance
