@@ -1,6 +1,1 @@
 /build/
-
-# ignore style packages except custom vocab dirs
-/styles/*
-!/styles/Vocab/portfolio/
-
