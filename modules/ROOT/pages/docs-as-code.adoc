@@ -4,7 +4,7 @@ Modern tech writing has evolved to treat documentation like code in how it's ver
 
 Fortunately, there's no need to reinvent the wheel. Treat the docs like code! 
 
-image::docs-as-code.jpeg[decorative image of Docs as Code process]
+image::docs-as-code.jpeg[decorative image of Docs as Code process,200,200]
 
 == Git
 
