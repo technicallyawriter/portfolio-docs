@@ -2,8 +2,6 @@ extends: existence
 message: "'%s' is too wordy."
 ignorecase: true
 level: warning
-exceptions:
-  - "Agile methodology"
 tokens:
   - a number of
   - abundance
@@ -98,6 +96,7 @@ tokens:
   - formulate
   - have a tendency to
   - honest truth
+  - however
   - if and when
   - impacted
   - implement
