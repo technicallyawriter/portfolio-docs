@@ -10,5 +10,3 @@ SME's
 Kanban
 dev
 methodology
-check-in
-touch-point
