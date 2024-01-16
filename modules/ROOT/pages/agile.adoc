@@ -15,13 +15,13 @@ Over the past six years I have experience participating in and leading typical A
 * Sprint Planning meetings
 * Retrospective meetings
 
-If I had to choose only one, I'd pick the daily stand-ups! These quick check-ins get the most done in a the shortest time.
+If I had to choose only one, I'd pick the daily stand-ups! These quick check-ins get the most done in the shortest time.
 
 == Definition of done
 
 Establishing a definition of done is helpful to limit scope creep in tickets. Docs can always improve, but this doesn't mean they're updated in one fell swoop. Creating a series of narrowly scoped tickets helps decouple efforts and makes collaboration easier. 
 
-I'm a fan of the link:https://gamestorming.com/circles-and-soup/[Circles and Soup activity,blank] to help writers agree on a definition of done. This game separates what tech writers _can_ control and influence from what is _out of their control_ from an organizational standpoint. Knowing the difference between these leads to achievable resolution times.
+I'm a fan of the link:https://gamestorming.com/circles-and-soup/[Circles and Soup activity^] to help writers agree on a definition of done. This game separates what tech writers _can_ control and influence from what is _out of their control_ from an organizational standpoint. Knowing the difference between these leads to achievable resolution times.
 
 == Document early and often
 
