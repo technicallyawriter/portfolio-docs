@@ -17,7 +17,7 @@ Over the past six years I have experience participating in and leading typical A
 * Sprint Planning meetings
 * Retrospective meetings
 
-If I had to choose only one, I'd pick the daily stand-ups! These quick check-ins are invaluable.
+If I had to choose only one, I'd pick the daily stand-ups. These quick check-ins are invaluable for divying up work, adjusting priorities, and clarifying uncertainty.
 
 == Definition of done
 
