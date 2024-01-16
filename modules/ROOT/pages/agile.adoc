@@ -6,7 +6,7 @@ My preference between these approaches depends on the context. If I'm assigned t
 
 Above all, I believe in team-created definitions and processes that measure out bite-size chunks of work with testable acceptance criteria. Who doesn't like moving tickets from left to right across the board?! &#128522;
 
-image:agile-board.jpg[a decorative image showing different people moving tickets across a Kanban board]
+image:agile-board.png[a decorative image showing a people moving tickets across a Kanban board]
 
 == Agile ceremonies
 
