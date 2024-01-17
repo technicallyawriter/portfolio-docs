@@ -2,7 +2,7 @@
 * Principles
 ** xref:docs-as-code.adoc[]
 ** xref:agile.adoc[]
-* Tooling
+* Tools
 ** xref:git.adoc[]
 ** xref:madcap-flare.adoc[]
 ** xref:jira.adoc[]
