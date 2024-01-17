@@ -1,14 +1,21 @@
 Antora
 shortcode
-shortcodes
 Jira
 hotfix
-hotfixes
 xyz
 SME
-SME's
 Kanban
 dev
 methodology
 check-in
 touch-point
+RTFM
+MadCap Flare
+AsciiDoc
+AsciiDoctor-pdf
+xkcd
+XHTML
+VS Code
+PDF
+Markdown
+N. Parker Jones
