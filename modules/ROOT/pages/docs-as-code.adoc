@@ -154,12 +154,12 @@ Here's a couple of examples to show what I mean:
 
 .Bad acceptance criteria
 ====
-include::example$/bad-ac.adoc
+include::example$bad-ac.adoc
 ====
 
 .Good acceptance criteria
 ====
-include::example$/good-ac.adoc
+include::example$good-ac.adoc
 ====
 
 === Reviews
