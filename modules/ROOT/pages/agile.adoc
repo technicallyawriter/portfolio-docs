@@ -28,8 +28,8 @@ I'm a fan of the link:https://gamestorming.com/circles-and-soup/[Circles and Sou
 
 As strange as it sounds, it's sometimes hard to know when you're done. Well-written acceptance criteria make this easier.
 
-include::example$acceptance-crieria/bad-ac.adoc[]
-include::example$acceptance-crieria/good-ac.adoc[]
+include::example$acceptance-criteria/bad-ac.adoc[]
+include::example$acceptance-criteria/good-ac.adoc[]
 include::partial$acceptance-criteria/note-about-ac.adoc[]
 
 == Document early and often
