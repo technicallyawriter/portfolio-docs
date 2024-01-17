@@ -152,9 +152,9 @@ Another test of documentation is to verify the writing against the ticket's acce
 
 Here's a couple of examples to show what I mean: 
 
-include::example$bad-ac.adoc
+include::example$bad-ac.adoc[]
 
-include::example$good-ac.adoc
+include::example$good-ac.adoc[]
 
 === Reviews
 
