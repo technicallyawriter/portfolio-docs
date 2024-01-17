@@ -5,7 +5,7 @@ image:icons/git.png[the Git logo,50,50]
 Git is great!
 
 
-For an idea of how I use Git in my typical workflow, see the xref:docs-as-code[Docs as code] page. 
+For an idea of how I use Git in my typical workflow, see the xref:/docs-as-code[Docs as code] page. 
 
 This page is more or less me gushing over how vital Git is for tech writers. Brief why?
 
