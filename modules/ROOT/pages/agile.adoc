@@ -6,7 +6,7 @@ My preference between these approaches depends on the context. If I'm assigned t
 
 Above all, I believe in team-created definitions and processes with tight feedback loops. 
 
-.Who doesn't like moving tickets from left to right across the board?! &#128522;
+.Who doesn't like moving tickets from left to right across the board?! 
 image::agile-board.png[a decorative image showing a people moving tickets across a Kanban board,350,auto]
 
 == Agile ceremonies
@@ -25,6 +25,12 @@ If I had to choose only one, I'd pick the daily stand-ups. These quick check-ins
 Establishing a definition of done is helpful to limit scope creep in tickets. Docs can always improve, but this doesn't mean they're updated in one fell swoop. Creating a series of narrowly scoped tickets helps decouple efforts and makes collaboration easier. 
 
 I'm a fan of the link:https://gamestorming.com/circles-and-soup/[Circles and Soup activity^] to help writers agree on a definition of done. This game maps out what tech writers can control and influence as well as what is out of their control. Knowing the difference between these categories leads to more predictable resolution times for tickets. 
+
+As strange as it sounds, it's sometimes hard to know when you're done. Well-written acceptance criteria make this easier.
+
+include::example$acceptance-crieria/bad-ac.adoc[]
+include::example$acceptance-crieria/good-ac.adoc[]
+include::partial$acceptance-criteria/note-about-ac.adoc[]
 
 == Document early and often
 

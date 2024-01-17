@@ -1,4 +1,4 @@
-.Good example of acceptance criteria
+.Good acceptance criteria
 ====
 Documentation covering the following use-cases:
 
