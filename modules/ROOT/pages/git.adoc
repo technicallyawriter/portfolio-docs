@@ -1,3 +1,33 @@
 = Git
 
-test test test...
+Git is great!
+
+image::icons/git.png[the Git logo]
+
+For an idea of how I use Git in my typical workflow, see the xref:docs-as-code[Docs as code] page. 
+
+This page is more or less me gushing over how vital Git is for tech writers. Brief why?
+
+I prefer the CLI but also like GitHub Desktop. It's all Git under the hood.
+
+== Commits
+
+early and often. breadcrumb trail of what you're working on. try to group commits so xref:#_rollbacks[rolling back] is simpler.
+
+Linus invented it for a reason!
+
+== Branching
+
+todo...isolating work (from release pipeline but also other work). makes deploying pre-release docs possible. reduces merge conflicts from multiple people working on the same branch (or working straight on master!).
+
+== Diffs
+
+todo...helpful in comparision and reviews, especially. 
+
+== Rollbacks
+
+todo...
+
+== Tags and releases
+
+todo...
