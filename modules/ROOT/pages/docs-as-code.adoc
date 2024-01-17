@@ -153,17 +153,15 @@ Another test of documentation is to verify the writing against the ticket's acce
 Here's a couple of examples to show what I mean: 
 
 .Bad acceptance criteria
-[example]
-Document feature xyz
+====
+include::example$/bad-ac.adoc
+====
 
 .Good acceptance criteria
 ====
-Documentation covering the following use-cases:
-
-* [task] fresh install workflow for new users
-* [task] upgrade workflow for existing users (USA)
-* [task] upgrade workflow for existing users (UK) 
+include::example$/good-ac.adoc
 ====
+
 === Reviews
 
 xref:#_subject_matter_expert_sme_review[SME] and xref:#_peer_review[peer] reviews serve as the catch-all test for what escapes linters and acceptance criteria. This is the arena for "I think this paragraph is confusing" or "I would word this differently" feedback. Tech writers are human after all, writing documentation for other humans, so docs should pass these subjective criteria, too. Effective tech writers must develop the ability to synthesize murky (and sometimes conflicting) feedback into clear docs.

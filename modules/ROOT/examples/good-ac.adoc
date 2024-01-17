@@ -1,0 +1,5 @@
+Documentation covering the following use-cases:
+
+* [task] fresh install workflow for new users
+* [task] upgrade workflow for existing users (USA)
+* [task] upgrade workflow for existing users (UK) 
