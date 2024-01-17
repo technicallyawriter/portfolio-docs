@@ -1,1 +1,4 @@
+.Bad acceptance criteria
+====
 Document feature xyz
+====
