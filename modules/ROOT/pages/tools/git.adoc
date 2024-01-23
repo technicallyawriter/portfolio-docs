@@ -1,8 +1,8 @@
 = Git 
 
-When you're documenting three features simultaneously, releasing a weekly service pack for bug fixes on [branch]`main`, and requesting reviews from SMEs and other tech writers, you need serious control over versioning. Git provides this and more. It's an indispensable tool for keeping docs properly versioned and organized.
+image:icons/git.png[the Git logo,50,50,role=right]
 
-image:icons/git.png[the Git logo,50,50]
+When you're documenting three features simultaneously, releasing a weekly service pack for bug fixes on [branch]`main`, and requesting reviews from SMEs and other tech writers, you need serious control over versioning. Git provides this and more. It's an indispensable tool for keeping docs properly versioned and organized.
 
 On this page, I'll mention my favorite aspects of Git and list a few common uses. For an overview of how I use Git in my typical workflow, see xref:/principles/docs-as-code.adoc[Docs as code]. 
 
