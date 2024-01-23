@@ -3,20 +3,21 @@
 When you're documenting three features simultaneously, releasing a weekly service pack for bug fixes on [branch]`main`, and requesting reviews from SMEs and other tech writers, you need serious control over versioning. Git provides this and more. It's an indispensable tool for keeping docs properly versioned and organized.
 
 image:/icons/git.png[the Git logo,50,50]
-Git separates docs like code because, after all, that's what it is! 
 
-On this page, I'll mention my favorite aspects of Git and list a few common uses. For an overview of how I use Git in my typical workflow, see xref:/principles/docs-as-code.adoc[Docs as code]. I prefer to use Git from the command line, but GitHub Desktop is a helpful GUI for reviewing complex xref:#_diffs[diffs] and creating/reviewing Pull Requests. It's all Git under the hood!
+On this page, I'll mention my favorite aspects of Git and list a few common uses. For an overview of how I use Git in my typical workflow, see xref:/principles/docs-as-code.adoc[Docs as code]. 
+
+In general, I prefer to use Git from the command line, but GitHub Desktop is a helpful GUI for reviewing complex xref:#_diffs[diffs] and creating/reviewing Pull Requests. It's all Git under the hood!
 
 == Commits
 
-A wise developer once told me, "commit early and often." One of Git's greatest strengths is the redundancy it offers with the local/remote repository structure. Not only does this give you a local sandbox in which to work and make mistakes, but it also creates constant remote back-ups of your work with each commit push. This is helpful, since you never know when the Blue screen of death may come. 
+A wise developer once told me, "commit early and often." One of Git's greatest strengths is the redundancy it offers through the local/remote repository structure. Not only does this give you a local sandbox in which to work and make mistakes, but it also creates constant remote back-ups of your work with each commit [command]`push`. This is helpful, since you never know when the Blue screen of death may come. 
 
 .The last thing you want to see before committing the entire day's work.
 image::blue-screen.png[The dreaded blue error screen from Windows,500,auto]
 
-Committing often is also great advice because it leaves a clear breadcrumb trail of your work. A descriptive commit history is helpful in case you have to step away from work for a few weeks. 
+Committing often is also great advice because it leaves a clear breadcrumb trail of your work. A descriptive commit history is helpful in case you need to xref:#_reversion[revert] a change or create a branch or tag at a specific commit.
 
-TIP: Try to keep commits smaller and well scoped. They're easier to xref:#_rollbacks[roll back] if in bite-sized chunks.
+TIP: Try to keep commits smaller and well scoped. They're easier to manage when in modular, bite-sized chunks.
 
 == Branching
 
@@ -26,7 +27,7 @@ todo...isolating work (from release pipeline but also other work). makes deployi
 
 todo...helpful in comparison and reviews, especially. 
 
-== Rollbacks
+== Reversion
 
 todo...
 
