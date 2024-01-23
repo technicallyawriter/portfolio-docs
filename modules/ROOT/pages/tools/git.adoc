@@ -1,6 +1,6 @@
 = Git 
 
-image::icons/git.png[the Git logo,50,50,role=right]
+image:icons/git.png[the Git logo,50,50,role=right]
 
 When you're documenting three features simultaneously, releasing a weekly service pack for bug fixes on [branch]`main`, and requesting reviews from SMEs and other tech writers, you need serious control over versioning. Git provides this and more. It's an indispensable tool for keeping docs properly versioned and organized.
 
