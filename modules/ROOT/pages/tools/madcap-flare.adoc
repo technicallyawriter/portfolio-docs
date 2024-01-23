@@ -1,3 +1,23 @@
-= Madcap Flare
+= MadCap Flare
 
-what I like about flare...
+A majority of my tech writing experience is in MadCap Flare. Single-sourcing content for multiple outputs with conditional text, targets, and TOCs is like riding a bike (a somewhat heavy bike that crashes if you change gears too quickly).
+
+== Global project linking
+
+say why...
+
+== Conditional text
+
+Add print only links.
+
+== Snippets
+
+how I prefer to organize...
+
+== Global variables
+
+Automatically global and don't need to be included on a page like in AsciiDoc `include::attributes.adoc[]` (for example)
+
+== PDF creation and styling
+
+managing CSS for PDF is great. single sourcing.
