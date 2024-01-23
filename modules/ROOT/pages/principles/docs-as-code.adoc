@@ -12,7 +12,7 @@ Whether working alone or on a team, proper version control is a must.
 
 === Feature branching
 
-As a general rule, [branch]`main` branch always contains production-ready code. This way, you can quickly release new docs without worry of it containing unfinished work or errors that'll break your site. Feature branches off of [branch]`main` contain in-progress work for upcoming releases. I prefer to scope these feature branches at the xref:agile.adoc[Epic or Feature level] and merge completed feature docs into them. How you structure your tickets informs how you structure your branches.
+As a general rule, [branch]`main` branch always contains production-ready code. This way, you can quickly release new docs without worry of it containing unfinished work or errors that'll break your site. Feature branches off of [branch]`main` contain in-progress work for upcoming releases. I prefer to scope these feature branches at the xref:./agile.adoc[Epic or Feature level] and merge completed feature docs into them. How you structure your tickets informs how you structure your branches.
 
 .Feature branching (simple) 
 image::feature-branching-simple.png[Feature branches without release branch]
