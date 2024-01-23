@@ -21,7 +21,7 @@ TIP: Try to keep commits smaller and well scoped. They're easier to manage when 
 
 == Branching
 
-Branching with Git lets you compartmentalize work in separate locations. This is helpful whether working alone on different features or alongside other tech writers. Of course, working on feature branches frees up your [branch]`main` branch for releases whenever possible.
+Branching with Git lets you compartmentalize work in separate locations. This is helpful whether working alone on different features or alongside other tech writers. Of course, working on feature branches frees up your [branch]`main` branch for releases whenever possible. Branches shouldn't linger around for too long, either. I prefer a feature branch to not last more than a couple of months, ideally. I'll periodically merge the latest from [branch]`main` branch into my feature branches to keep them up-to-date. This reduces the likelihood of merge conflicts later on.
 
 Branching like this requires proper organization to keep things straight. I prefer that branch names and workflows reflect the project's ticket structure. For example, if an Epic-level ticket contains 10 child User Story tickets, I'll first create a feature branch off [branch]`main` for that Epic. Then, for each child ticket, I'll create a dedicated branch off the Epic's feature branch and merged completed worked back into it. If more than one writer needs to work the same child ticket, appending the author's initials at the end of the branch name clears things up (for example, `DOC-123-PJ`). 
 
