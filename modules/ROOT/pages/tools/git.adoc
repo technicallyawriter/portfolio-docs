@@ -10,12 +10,14 @@ On this page, I'll mention my favorite aspects of Git and list a few common uses
 
 == Commits
 
-A wise developer once told me, "commit early and often." One of Git's greatest feature is the redundancy it offers you with the local/remote repository structure. Not only does this give you a local sandbox in which to work and make mistakes, but it also creates constant remote back-ups of your work with each commit. You never know when the Blue screen of death comes. 
+A wise developer once told me, "commit early and often." One of Git's greatest strengths is the redundancy it offers with the local/remote repository structure. Not only does this give you a local sandbox in which to work and make mistakes, but it also creates constant remote back-ups of your work with each commit push. This is helpful, since you never know when the Blue screen of death may come. 
 
 .The last thing you want to see before committing the entire day's work.
 image::blue-screen.png[The dreaded blue error screen from Windows,500,auto]
 
-Committing often is also great advice because it leaves a clear breadcrumb trail of your work behind. Due to shifting priorities, you may step away from a branch for several weeks and a descriptive commit history gets you back on track quickly. Try to keep commits smaller and well scoped. They're easier to xref:#_rollbacks[roll back] in bite-sized chunks.
+Committing often is also great advice because it leaves a clear breadcrumb trail of your work. A descriptive commit history is helpful in case you have to step away from work for a few weeks. 
+
+TIP: Try to keep commits smaller and well scoped. They're easier to xref:#_rollbacks[roll back] if in bite-sized chunks.
 
 == Branching
 
