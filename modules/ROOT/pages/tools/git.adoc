@@ -2,7 +2,7 @@
 
 When you're documenting three features simultaneously, releasing a weekly service pack for bug fixes on [branch]`main`, and requesting reviews from SMEs and other tech writers, you need serious control over versioning. Git provides this and more. It's an indispensable tool for keeping docs properly versioned and organized.
 
-image:/icons/git.png[the Git logo,50,50]
+image:icons/git.png[the Git logo,50,50]
 
 On this page, I'll mention my favorite aspects of Git and list a few common uses. For an overview of how I use Git in my typical workflow, see xref:/principles/docs-as-code.adoc[Docs as code]. 
 
@@ -21,7 +21,13 @@ TIP: Try to keep commits smaller and well scoped. They're easier to manage when 
 
 == Branching
 
-todo...isolating work (from release pipeline but also other work). makes deploying pre-release docs possible. reduces merge conflicts from multiple people working on the same branch (or working straight on master!).
+Branching with Git lets you compartmentalize work in separate locations. This is helpful whether working alone on different features or alongside other tech writers. Of course, working on feature branches frees up your [branch]`main` branch for releases whenever possible.
+
+Branching like this requires proper organization to keep things straight. I prefer that branch names and workflows reflect the project's ticket structure. For example, if an Epic-level ticket contains 10 child User Story tickets, I'll first create a feature branch off [branch]`main` for that Epic. Then, for each child ticket, I'll create a dedicated branch off the Epic's feature branch and merged completed worked back into it. If more than one writer needs to work the same child ticket, appending the author's initials at the end of the branch name clears things up (for example, `DOC-123-PJ`). 
+
+TIP: Smart commits in Jira make it easy to see which branch a ticket's commits belong to.
+
+Branching also makes automated releases of docs possible. Commits merged to [branch]`main` could kick off deployments to production, while commits merged to [branch]`dev` could deploy to a staging environment, for example.
 
 == Diffs
 
