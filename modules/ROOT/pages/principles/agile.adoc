@@ -2,7 +2,7 @@
 
 I'm an Agile advocate with six years of experience running Scrum and Kanban frameworks. 
 
-My preference between these approaches depends on the context. If I'm assigned to a specific dev team also running Scrum, I think Sprints for tech writing are effective. I'll try to follow one sprint behind development and stay aligned with changes by attending their stand-up and planning meetings. If I'm stretched across several teams, I typically prefer Kanban. Juggling simultaneous sprints is overwhelming at a certain point. In this case, it's better to simplify the board and let release deadlines determine priorities. Proper scoping of tickets with xref:docs-as-code.adoc#_testability[testable acceptance criteria] turns that intimidating mountain into small, manageable rocks.
+My preference between these approaches depends on the context. If I'm assigned to a specific dev team also running Scrum, I think Sprints for tech writing are effective. I'll try to follow one sprint behind development and stay aligned with changes by attending their stand-up and planning meetings. If I'm stretched across several teams, I typically prefer Kanban. Juggling simultaneous sprints is overwhelming at a certain point. In this case, it's better to simplify the board and let release deadlines determine priorities. Proper scoping of tickets with xref:/docs-as-code.adoc#_testability[testable acceptance criteria] turns that intimidating mountain into small, manageable rocks.
 
 Above all, I believe in team-created definitions and processes with tight feedback loops. 
 

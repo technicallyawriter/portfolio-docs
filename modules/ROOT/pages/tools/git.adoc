@@ -6,7 +6,7 @@ When you're documenting three features simultaneously, releasing a weekly servic
 
 Git separates docs like code because, after all, that's what it is!
 
-On this page, I'll mention my favorite aspects of Git and list a few common uses. For an overview of how I use Git in my typical workflow, see xref:docs-as-code.adoc[Docs as code]. I prefer to use Git from the command line, but GitHub Desktop is a helpful GUI for reviewing complex xref:#_diffs[diffs] and creating/reviewing Pull Requests. It's all Git under the hood!
+On this page, I'll mention my favorite aspects of Git and list a few common uses. For an overview of how I use Git in my typical workflow, see xref:/principles/docs-as-code.adoc[Docs as code]. I prefer to use Git from the command line, but GitHub Desktop is a helpful GUI for reviewing complex xref:#_diffs[diffs] and creating/reviewing Pull Requests. It's all Git under the hood!
 
 == Commits
 
