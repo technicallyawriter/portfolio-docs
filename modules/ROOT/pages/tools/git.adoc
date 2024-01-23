@@ -1,10 +1,10 @@
 = Git 
 
-image:icons/git.png[the Git logo,50,50]
-
 When you're documenting three features simultaneously, releasing a weekly service pack for bug fixes on [branch]`main`, and requesting reviews from SMEs and other tech writers, you need serious control over versioning. Git provides this and more. It's an indispensable tool for keeping docs properly versioned and organized.
 
 Git separates docs like code because, after all, that's what it is!
+
+image::icons/git.png[the Git logo,50,50]
 
 On this page, I'll mention my favorite aspects of Git and list a few common uses. For an overview of how I use Git in my typical workflow, see xref:/principles/docs-as-code.adoc[Docs as code]. I prefer to use Git from the command line, but GitHub Desktop is a helpful GUI for reviewing complex xref:#_diffs[diffs] and creating/reviewing Pull Requests. It's all Git under the hood!
 
@@ -12,8 +12,8 @@ On this page, I'll mention my favorite aspects of Git and list a few common uses
 
 A wise developer once told me, "commit early and often." One of Git's greatest feature is the redundancy it offers you with the local/remote repository structure. Not only does this give you a local sandbox in which to work and make mistakes, but it also creates constant remote back-ups of your work with each commit. You never know when the Blue screen of death comes. 
 
-.Blue screen of death
-image::[blue-screen.png]
+.The last thing you want to see before commit the entire day's work.
+image::blue-screen.png[The dreaded blue error screen from Windows]
 
 Committing often is also great advice because it leaves a clear breadcrumb trail of your work behind. Due to shifting priorities, you may step away from a branch for several weeks and a descriptive commit history gets you back on track quickly. Try to keep commits smaller and well scoped. They're easier to xref:#_rollbacks[roll back] in bite-sized chunks.
 
