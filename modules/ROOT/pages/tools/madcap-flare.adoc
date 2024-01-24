@@ -4,20 +4,20 @@
 
 image:icons/flare.png[MadCap Flare logo,50,50]
 
-A majority of my tech writing experience is in MadCap Flare. Single-sourcing content for multiple outputs with conditional text, targets, and TOCs is like riding a bike (a somewhat heavy bike that crashes if you change gears too quickly). I poke fun at Flare because I've worked within it for so long. Since it's proprietary, it's Flare's way or the highway, and its lacking extensibility feels like a limitation after years of use. Still, it's a solid tool that I'm more than comfortable in.
+A majority of my tech writing experience is in MadCap Flare. Single-sourcing content for multiple outputs with conditional text, targets, and TOCs is like riding a bike at this point--a somewhat heavy bike that crashes if you change gears too quickly &#128517; (I poke fun since I've intimately familiar with all its quirks over the years). 
 
 Perhaps most importantly, Flare is a fully featured product with a friendly UI. I've found this makes the learning curve less steep, which means you get more help from other tech writers!
 
 == Importing from Microsoft Word
 
-Flare is great for transitioning from Word files to online docs. The efficiency by which you can import .DOCX files, build a TOC, and publish an HTML target is worth the price tag. Sure you can write a Pandoc script to manage the bulk of the transforms, but this comes with hidden costs of writing and maintaining this workflow. I feel Flare has a competitive advantage here, not to mention the stability of a tried-and-tested product. 
+Flare is great for transitioning from Word files to online docs. The efficiency by which you can import .DOCX files, build a TOC, and publish an HTML target is worth the price tag. Sure you could write a Pandoc script to manage the bulk of these transforms, but this comes at a hidden costs of writing and maintaining such an ad hoc workflow. I feel Flare has a competitive advantage here as a tried-and-tested product. 
 
-I've led transitions from Word to Flare at two different organizations, so the process feels like a well-oiled machine. Map Word to Flare styles, remove all of Word's messy inline styling, and Flare does its black-box magic. You've quickly produced bare-bones XHTML content you can polish further if you wish.
+I've led transitions from Word to Flare at two different organizations, so the process feels like a well-oiled machine. Map Word to Flare styles, remove all of Word's messy inline styling, and Flare does its black-box magic pretty well. You've quickly produced bare-bones XHTML content you can polish further if you wish.
 
 == Global Project Linking
 
 Flare's emphasis on content re-use means creating scalable projects with the link:https://help.madcapsoftware.com/flare2023r2/Content/Flare/Global-Project-Linking/Global-Project-Linking.htm[Global Project Linking^] technique. 
-I've lead efforts at two organizations in restructuring Flare content to use this approach. It's a must if you're managing more than a couple of projects. The idea is simple: all shared assets go in a parent-level project. Then, all projects that wish to reuse this content import the shared assets. To update these shared assets, edit them in the parent-level project and re-import from all the child projects. You can even have these child project automatically import from the upstream on each build. Change it once and you're done.
+I've lead efforts at two organizations in restructuring Flare content to use this approach. It's a must if you're managing more than a couple of doc projects. The idea is simple: all shared assets go in a parent-level project. Then, all projects that wish to reuse this content import the shared assets. To update these shared assets, edit them in the parent-level project and re-import into all the child projects. You can even have these child project automatically import on each build. Change it once and you're done.
 
 .An example of Global Project Linking structure
 [source,ascii]
@@ -34,7 +34,7 @@ NOTE: This is a conceptual hierarchy. Child projects don't need to be literally 
 
 Snippets are the poster-child for content reuse in Flare. Create modular snippets to house chunks of content that can stand own their own, then plug them in wherever appropriate.
 
-How and where you store your snippets is a matter of personal preference. You can keep them separate from your main content at their default location in the Project Organizer tab (menu:Project Organizer[Resources > Snippets > Product Area > Snippet.flsnp]) if you wish. 
+How and where you store your snippets is a matter of personal preference. You can keep them separate from your main content (at their default location) in the Project Organizer tab (menu:Project Organizer[Resources > Snippets > Product Area > Snippet.flsnp]) if you wish. 
 
 .Snippets stored in the Project Organizer tab (default)
 [source,ascii]
@@ -51,7 +51,7 @@ Resources/
         └── snippet3.flsnp
 ----
 
-Another common route is to nest a "snippets" directory within each Product Area in the main content editor. For example,  
+Or, if you prefer, you can nest a "snippets" directory within each Product Area in the main content editor. For example:
 
 .Snippets nested within your main content
 [source,ascii]
@@ -70,16 +70,16 @@ Product-B/
 
 == Global variables
 
-Managing global variables is simple with Flare. They're automatically included, so you don't need to explicitly `include::attributes.adoc[]` (for example) like have to in AsciiDocs. This is a small consideration, but small things add up and it's nice when Flare handles it for me.
+Managing global variables is simple with Flare. They're automatically included in topic pages, so you don't need to explicitly include them like with AsciiDocs (`include::attributes.adoc[]`). This is a small consideration, but small things add up and it's nice when Flare handles it for me.
 
 == Conditional text
 
-You manage Flare's conditional text similar to variables. The conditions you wish to exclude are stored in a simple table with an include/exclude filter columns for each row. 
+Conditional text is another content reuse strategy made easy in Flare. You manage conditional text similar to variables and they're automatically available whenever needed. The conditions you wish to include or exclude are stored in a simple table with an include/exclude filter columns for each value. You can apply conditions to an entire file to exclude it from a specific target, or you can highlight in-line text to filter accordingly. 
 
-Someone common examples are to use a `PrintOnly` condition to exclude content from online targets, or an `AdminOnly` condition to hide admininstrator-level content from general use docs. You can apply conditions to an entire file to exclude it from a specific target, or you can highlight in-line text to filter accordingly. 
+Someone common uses for conditional text are to use a `PrintOnly` condition to exclude content from online targets, or an `AdminOnly` condition to hide admininstrator-level content from general use docs. 
 
 == PDF styling
 
-The fact that you can use CSS for PDF styling in Flare has saved me many headaches. Again, Flare excels at single sourcing and this includes styling PDFs. Transforming XML to PDF is inherently a messy venture, so maintaining a syntax I'm familiar with means one less unfamiliar link in the chain. You can create a dedicated `Print.css` file that imports styling you want to include from your `Main.css` or you can use media tags (`@media print`) at the bottom of your `Main.css` file.
+While I'd be happy to never produce another PDF in my life, Flare makes styling PDFs straight forward by using CSS. This is a big time-saver since you can reuse rules from your HTML output, such as heading colors and relative sizing. Transforming XML to PDF is inherently a messy venture, so maintaining a common syntax means one less unfamiliar link in the chain. You can create a dedicated `Print.css` file to house print-specific selectors or simply use a media tag (`@media print {}`) at the bottom of your primary style sheet.
 
-As a comparison, I think Flare's PDF styling approach is much simpler compared to the .YAML theming files used in `asciidoctor-pdf`, for example.
+Perhaps it's my familiarity with CSS, but I prefer producing PDFs in Flare to the .YAML theme files used in `asciidoctor-pdf`, for example.
