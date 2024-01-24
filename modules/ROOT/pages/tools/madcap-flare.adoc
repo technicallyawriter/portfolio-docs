@@ -2,9 +2,11 @@
 
 = MadCap Flare
 
-A majority of my tech writing experience is in MadCap Flare. Single-sourcing content for multiple outputs with conditional text, targets, and TOCs is like riding a bike (a somewhat heavy bike that crashes if you change gears too quickly).
+A majority of my tech writing experience is in MadCap Flare. Single-sourcing content for multiple outputs with conditional text, targets, and TOCs is like riding a bike (a somewhat heavy bike that crashes if you change gears too quickly). I poke fun at Flare because I've worked within it for so long. 
 
-I poke fun at Flare because I've worked within it for so long. Since it's proprietary, it's Flare's way or the highway, and its lacking extensibility feels like a limitation after years of use. Still, it's a solid tool that I'm more than comfortable in.
+Since it's proprietary, it's Flare's way or the highway, and its lacking extensibility feels like a limitation after years of use. Still, it's a solid tool that I'm more than comfortable in.
+
+Perhaps most importantly, Flare is a fully featured product with a friendly UI. I've found this makes the learning curve less steep, which means you get more help from other tech writers!
 
 == Importing from Microsoft Word
 
@@ -28,10 +30,6 @@ shared.flprj
 
 NOTE: This is a conceptual hierarchy. The projects don't need to be literally nested within the parent project.
 
-== Conditional text
-
-Add print only links or hide admininstrator-level content from general use docs.
-
 == Snippets
 
 how I prefer to organize...
@@ -42,6 +40,14 @@ menu:Resources[Snippets > Product Area > Snippet.flsnp]. You can also just nest 
 
 Managing global variables is simple with Flare. They're automatically included, so you don't need to explicitly `include::attributes.adoc[]` (for example) like have to in AsciiDocs. This is a small consideration, but small things add up and it's nice when Flare handles it for me.
 
-== PDF creation and styling
+== Conditional text
 
-The fact that you can use CSS for PDF styling in Flare is great. Again, Flare excels at single sourcing and does so even with styling PDFs. Transforming XML to PDF can be a nightmare and I think managing Flare's PDF output is simpler (or at least more familiar to me) than, say, the .YAML files used in `asciidoctor-pdf`.
+Flare's conditional text is managed similar to variables. The conditions you wish to exclude are stored logically in a simple table with label, definition, and a include/exclude filter columns for each row. 
+
+Someone common examples are to use a `PrintOnly` condition to exclude content from online targets, or an `AdminOnly` condition to hide admininstrator-level content from general use docs. You can apply conditions to an entire file to exclude it from a specific target, or you can highlight in-line text to filter accordingly. 
+
+== PDF styling
+
+The fact that you can use CSS for PDF styling in Flare has saved me many headaches. Again, Flare excels at single sourcing and this includes styling PDFs. Transforming XML to PDF is inherently a messy venture, so maintaining a syntax I'm familiar with means one less unfamiliar link in the chain. You can create a dedicated `Print.css` file that imports styling you want to include from your `Main.css` or you can use media tags (`@media print`) at the bottom of your `Main.css` file.
+
+As a comparison, I think Flare's PDF styling approach is much simpler compared to the .YAML theming files used in `asciidoctor-pdf`, for example.
