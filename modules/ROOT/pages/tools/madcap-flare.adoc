@@ -2,7 +2,7 @@
 
 = MadCap Flare
 
-image::icons/flare.png[MadCap Flare logo,50,50]
+image:icons/flare.png[MadCap Flare logo,50,50]
 
 A majority of my tech writing experience is in MadCap Flare. Single-sourcing content for multiple outputs with conditional text, targets, and TOCs is like riding a bike (a somewhat heavy bike that crashes if you change gears too quickly). I poke fun at Flare because I've worked within it for so long. Since it's proprietary, it's Flare's way or the highway, and its lacking extensibility feels like a limitation after years of use. Still, it's a solid tool that I'm more than comfortable in.
 
