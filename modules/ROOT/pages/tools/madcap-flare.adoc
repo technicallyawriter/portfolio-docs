@@ -2,22 +2,20 @@
 
 = MadCap Flare
 
-A majority of my tech writing experience is in MadCap Flare. Single-sourcing content for multiple outputs with conditional text, targets, and TOCs is like riding a bike (a somewhat heavy bike that crashes if you change gears too quickly). I poke fun at Flare because I've worked within it for so long. 
-
-Since it's proprietary, it's Flare's way or the highway, and its lacking extensibility feels like a limitation after years of use. Still, it's a solid tool that I'm more than comfortable in.
+A majority of my tech writing experience is in MadCap Flare. Single-sourcing content for multiple outputs with conditional text, targets, and TOCs is like riding a bike (a somewhat heavy bike that crashes if you change gears too quickly). I poke fun at Flare because I've worked within it for so long. Since it's proprietary, it's Flare's way or the highway, and its lacking extensibility feels like a limitation after years of use. Still, it's a solid tool that I'm more than comfortable in.
 
 Perhaps most importantly, Flare is a fully featured product with a friendly UI. I've found this makes the learning curve less steep, which means you get more help from other tech writers!
 
 == Importing from Microsoft Word
 
-Flare is great for transitioning from .docx files to online docs. The efficiency by which you can import Word files, build a TOC, and publish an HTML target is worth the price tag, in my experience. Sure you can write a Pandoc script that walks directories and transforms .DOCX files to .XHTML, but with the organizational cost of writing and maintaining this workflow, I feel Flare has a competitive advantage--not to mention the stability of a tried-and-tested product. 
+Flare is great for transitioning from Word files to online docs. The efficiency by which you can import .DOCX files, build a TOC, and publish an HTML target is worth the price tag. Sure you can write a Pandoc script to manage the bulk of the transforms, but this comes with hidden costs of writing and maintaining this workflow. I feel Flare has a competitive advantage here, not to mention the stability of a tried-and-tested product. 
 
-I've led transitions from Word to Flare at two different organizations, so the process feels like a well-oiled machine at this point. Map Word to Flare styles, remove all of Word's messy inline styling, and you've quickly produced bare-bones XHTML content you can polish further if you wish.
+I've led transitions from Word to Flare at two different organizations, so the process feels like a well-oiled machine. Map Word to Flare styles, remove all of Word's messy inline styling, and Flare does its black-box magic. You've quickly produced bare-bones XHTML content you can polish further if you wish.
 
 == Global Project Linking
 
 Flare's emphasis on content re-use means creating scalable projects with the link:https://help.madcapsoftware.com/flare2023r2/Content/Flare/Global-Project-Linking/Global-Project-Linking.htm[Global Project Linking^] technique. 
-I've lead efforts at two organizations in restructuring Flare content to use this approach. Put simply, all shared assets go in a parent-level project. Then, all projects that wish to reuse this content import the shared assets. To update these shared assets, edit them in the parent-level project and re-import from all the child projects.
+I've lead efforts at two organizations in restructuring Flare content to use this approach. It's a must if you're managing more than a couple of projects. The idea is simple: all shared assets go in a parent-level project. Then, all projects that wish to reuse this content import the shared assets. To update these shared assets, edit them in the parent-level project and re-import from all the child projects. You can even have these child project automatically import from the upstream on each build. Change it once and you're done.
 
 .An example of Global Project Linking structure
 [source,ascii]
@@ -28,13 +26,45 @@ shared.flprj
 └── project3.flprj
 ----
 
-NOTE: This is a conceptual hierarchy. The projects don't need to be literally nested within the parent project.
+NOTE: This is a conceptual hierarchy. Child projects don't need to be literally nested within the parent project.
 
 == Snippets
 
-how I prefer to organize...
+Snippets are the poster-child for content reuse in Flare. Create modular snippets to house chunks of content that can stand own their own, then plug them in wherever appropriate.
 
-menu:Resources[Snippets > Product Area > Snippet.flsnp]. You can also just nest a "snippets" folder within each Product Area in the main content editor. It's really a choice of preference.
+How and where you store your snippets is a matter of personal preference. You can keep them separate from your main content at their default location in the Project Organizer tab (menu:Project Organizer[Resources > Snippets > Product Area > Snippet.flsnp]) if you wish. 
+
+.Snippets stored in the Project Organizer tab (default)
+[source,ascii]
+----
+Resources/
+└── Snippets/
+    ├── Producut-Area-A/
+    │   ├── snippet1.flsnp
+    │   ├── snippet2.flsnp
+    │   └── snippet3.flsnp
+    └── Product-Area-B/
+        ├── snippet1.flsnp
+        ├── snippet2.flsnp
+        └── snippet3.flsnp
+----
+
+Another common route is to nest a "snippets" directory within each Product Area in the main content editor. For example,  
+
+.Snippets nested within your main content
+[source,ascii]
+----
+Product-A/
+└── Snippets/
+    ├── snippet1.flsnp
+    ├── snippet2.flsnp
+    └── snippet3.flsnp
+Product-B/
+└── Snippets/
+    ├── snippet1.flsnp
+    ├── snippet2.flsnp
+    └── snippet3.flsnp
+----
 
 == Global variables
 
