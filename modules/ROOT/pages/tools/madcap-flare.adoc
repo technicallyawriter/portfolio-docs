@@ -20,11 +20,13 @@ I've lead efforts at two organizations in restructuring Flare content to use thi
 .An example of Global Project Linking structure
 [source,ascii]
 ----
-shared.flprj/
+shared.flprj
 ├── project1.flprj
 ├── project2.flprj
 └── project3.flprj
 ----
+
+NOTE: This is a conceptual hierarchy. The projects don't need to be literally nested within the parent project.
 
 == Conditional text
 
