@@ -4,6 +4,8 @@
 
 A majority of my tech writing experience is in MadCap Flare. Single-sourcing content for multiple outputs with conditional text, targets, and TOCs is like riding a bike (a somewhat heavy bike that crashes if you change gears too quickly). I poke fun at Flare because I've worked within it for so long. Since it's proprietary, it's Flare's way or the highway, and its lacking extensibility feels like a limitation after years of use. Still, it's a solid tool that I'm more than comfortable in.
 
+image:icons/flare.png[MadCap Flare logo]
+
 Perhaps most importantly, Flare is a fully featured product with a friendly UI. I've found this makes the learning curve less steep, which means you get more help from other tech writers!
 
 == Importing from Microsoft Word
