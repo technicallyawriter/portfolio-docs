@@ -1,3 +1,5 @@
 = Jira
 
-todo...
+image:icons/jira.png[Jira logo]
+
+Ticket board, GitHub integration (smart commits), releases. Confluence integration.
