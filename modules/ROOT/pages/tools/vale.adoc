@@ -1,5 +1,7 @@
 = Vale
 
+image:icons/vale.png[Vale in terminal,300,auto]
+
 adjusted FirstPerson.yml, FleschKincaid to grade level 9 since portfolio's are jargon-heavy and often an area where you have to pack in too much info in too little space...
 
 do an includes for the accept.txt vocab terms (your list is even case-sensitive, which means if--for example--you've added a proper noun as an exception for sentence case heading capitalization, Vale will enforce this capitalization everywhere, which means if you have improper capitalization on this proper noun, Vale flags it!). Use Global Project Linking (flags lowercase) as an example.
