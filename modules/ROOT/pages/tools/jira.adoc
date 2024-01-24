@@ -1,5 +1,5 @@
 = Jira
 
-image:icons/jira.png[Jira logo]
+image:icons/jira.png[Jira logo,50,50]
 
 Ticket board, GitHub integration (smart commits), releases. Confluence integration.
