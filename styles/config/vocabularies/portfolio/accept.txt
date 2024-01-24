@@ -21,3 +21,7 @@ Markdown
 N. Parker Jones
 Git's
 repo
+TOCs
+Microsoft Word
+Pandoc
+Global Project Linking

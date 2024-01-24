@@ -2,22 +2,39 @@
 
 A majority of my tech writing experience is in MadCap Flare. Single-sourcing content for multiple outputs with conditional text, targets, and TOCs is like riding a bike (a somewhat heavy bike that crashes if you change gears too quickly).
 
-== Global project linking
+I poke fun at Flare because I've worked within it for so long. Since it's proprietary, it's Flare's way or the highway, and its lacking extensibility feels like a limitation after years.
 
-say why...
+== Importing from Microsoft Word
+
+Flare is great for transitioning from .docx files to online docs. The efficiency by which you can import Word files, build a TOC, and publish an HTML target is worth the price tag, in my experience. Sure you can write a Pandoc script that walks directories and transforms .DOCX files to .XHTML, but with the organizational cost of writing and maintaining this workflow, I feel Flare has a competitive advantage--not to mention the stability of a tried-and-tested product. 
+
+I've led transitions from Word to Flare at two different organizations, so the process feels like a well-oiled machine at this point. Map Word to Flare styles, remove all of Word's messy inline styling, and you've quickly produced bare-bones XHTML content you can polish further if you wish.
+
+== Global Project Linking
+
+Flare's emphasis on content re-use means creating scalable projects with the link:https://help.madcapsoftware.com/flare2023r2/Content/Flare/Global-Project-Linking/Global-Project-Linking.htm[Global Project Linking] technique. 
+I've lead efforts at two organizations in restructuring Flare content to use this approach. Put simply, all shared assets go in a parent-level project. Then, all projects that wish to reuse this content import the shared assets. To update these shared assets, edit them in the parent-level project and re-import from all the child projects.
+
+.An example of Global Project Linking structure
+shared.flprj/
+├── project1.flprj
+├── project2.flprj
+└── project3.flprj
 
 == Conditional text
 
-Add print only links.
+Add print only links or hide admininstrator-level content from general use docs.
 
 == Snippets
 
 how I prefer to organize...
 
+menu:Resources[Snippets > Product Area > Snippet.flsnp]. You can also just nest a "snippets" folder within each Product Area in the main content editor. It's really a choice of preference.
+
 == Global variables
 
-Automatically global and don't need to be included on a page like in AsciiDoc `include::attributes.adoc[]` (for example)
+Managing global variables is simple with Flare. They're automatically included, so you don't need to explicitly `include::attributes.adoc[]` (for example) like have to in AsciiDocs. This is a small consideration, but small things add up and it's nice when Flare handles it for me.
 
 == PDF creation and styling
 
-managing CSS for PDF is great. single sourcing.
+The fact that you can use CSS for PDF styling in Flare is great. Again, Flare excels at single sourcing and does so even with styling PDFs. Transforming XML to PDF can be a nightmare and I think managing Flare's PDF output is simpler (or at least more familiar to me) than, say, the .YAML files used in `asciidoctor-pdf`.
