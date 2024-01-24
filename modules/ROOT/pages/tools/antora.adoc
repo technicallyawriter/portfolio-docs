@@ -1,5 +1,7 @@
 = Antora
 
+image:icons/antora.png[Antora logo,50,50]
+
 asciidoc...
 
 == AsciiDoc over traditional Markdown

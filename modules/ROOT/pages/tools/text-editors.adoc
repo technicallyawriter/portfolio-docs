@@ -3,9 +3,11 @@
 a tech writer's livelihood!
 
 == VS Code
+image:icons/vs-code.png[VS Code logo,50,50]
 
 todo...
 
 == Vim
+image:icons/vim.png[Vim logo,50,50]
 
 todo...

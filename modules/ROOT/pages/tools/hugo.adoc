@@ -1,7 +1,7 @@
 = Hugo
 
+image:icons/hugo.png[Hugo logo,50,50]
+
 what I like about hugo...
 
 tranform this to be about traditional Markdown
-
-
