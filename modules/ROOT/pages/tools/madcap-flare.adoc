@@ -1,8 +1,10 @@
+:experimental:
+
 = MadCap Flare
 
 A majority of my tech writing experience is in MadCap Flare. Single-sourcing content for multiple outputs with conditional text, targets, and TOCs is like riding a bike (a somewhat heavy bike that crashes if you change gears too quickly).
 
-I poke fun at Flare because I've worked within it for so long. Since it's proprietary, it's Flare's way or the highway, and its lacking extensibility feels like a limitation after years.
+I poke fun at Flare because I've worked within it for so long. Since it's proprietary, it's Flare's way or the highway, and its lacking extensibility feels like a limitation after years of use. Still, it's a solid tool that I'm more than comfortable in.
 
 == Importing from Microsoft Word
 
@@ -12,14 +14,17 @@ I've led transitions from Word to Flare at two different organizations, so the p
 
 == Global Project Linking
 
-Flare's emphasis on content re-use means creating scalable projects with the link:https://help.madcapsoftware.com/flare2023r2/Content/Flare/Global-Project-Linking/Global-Project-Linking.htm[Global Project Linking] technique. 
+Flare's emphasis on content re-use means creating scalable projects with the link:https://help.madcapsoftware.com/flare2023r2/Content/Flare/Global-Project-Linking/Global-Project-Linking.htm[Global Project Linking^] technique. 
 I've lead efforts at two organizations in restructuring Flare content to use this approach. Put simply, all shared assets go in a parent-level project. Then, all projects that wish to reuse this content import the shared assets. To update these shared assets, edit them in the parent-level project and re-import from all the child projects.
 
 .An example of Global Project Linking structure
+[source,ascii]
+----
 shared.flprj/
 ├── project1.flprj
 ├── project2.flprj
 └── project3.flprj
+----
 
 == Conditional text
 
