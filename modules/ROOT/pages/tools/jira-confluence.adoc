@@ -1,26 +1,24 @@
 = Jira & Confluence
 
-List experience and few favorite features. time saving tool. consolidated/integrated pair.
+I've learned a lot about Jira and Confluence over the past five years of using them. They're powerful yet simple enough to use in a variety of ways. However you use them, they're time-saving tools delivered as a one-two punch in a unified platform.
 
 == Jira image:icons/jira.png[Jira logo,50,50] 
 
-Jira is my preferred source of truth for the past five years. It consolidates so many time-saving features that help mitigate the inherent chaos of enterprise software development.
+It's more than just a ticket board, though that's its primary use. Beyond the basics of its ticket management system, I'm a fan of its dashboards, GitHub integration, and automation.
 
 === Dashboards
 
-of course, the pretty pictures. Start my morning with a dashboard. I'm often stretched between multiple teams and Dashboards deliver the most pertitnet information to me efficiently. Deadlines, tickets ranked by priority, how many items I'm currently committed to. Identifies log-jams I wasn't aware of. Etc.
+Who doesn't like pretty pictures? All kidding aside, I start my day with Jira dashboards. I'm often stretched between multiple teams and my home page consists of dashboards and filters that show the most relevant information at-a-glance. I'll typically rely on a filter sorting tickets by deadline, project, and priority so I'm confident I'm working on the most pertinent items. Dashboards that show in-progress work often reveal log-jams in processes and help visualize if I've overcommitted.
 
-=== Ticket board 
+=== Smart commits 
 
-custom columns, required workflows (enforces standards but also saves from accidental click-and drags), automation, diagrams showing workflows, releases, Epics, Features.
+link:https://support.atlassian.com/bitbucket-cloud/docs/use-smart-commits/[Smart commits] do so much unifying Jira and GitHub, and it's so simple. Just by putting the relevant ticket ID in your commit message, Jira displays your commit information on the relevant ticket. This transforms your board into a one-stop-shop for the most updated status on work. Plus, this is in line with my preferred naming conventions on Git branches--by including your ticket ID in your commit message, you can be sure you're working in the right branch. 
 
-=== GitHub integration
-
-smart commits.
+I'm such a fan of smart commits that I still include my ticket ID in commit messages even when not using Jira. It just makes sense!
 
 === Automation
 
-list automation examples.
+Workflows often get complicated and the less time spent tinkering with tickets, the more time there is to write quality docs. Jira automation helps with this. There's basic, built-in automation like "unassigning" a ticket when it's set to Done. But more complex rules are simple to configure. For example, one of my previous roles involved working with a translator. Translation work deserved its own ticket but manually creating a new ticket with each new translation request felt daunting. Rather than do it manually, I setup Jira automation to create and link a new translation ticket if the "Needs translation?" field was "Yes." To make sure this automation rule didn't flood the translator's backlog with every single ticket regardless of status, I configured the rule to only execute when the parent ticket moved from "Review" to "Translate" status. The rule also copied relevant fields like `FixVersion` and `Due Date` to inform the translator of the priority. 
 
 === Releases
 
@@ -41,4 +39,4 @@ Include Page macro. sometimes it's helpful to repeat yourself. can't expect ever
 
 === Search
 
-This one seems assumed but never take a good search for granted. Saves time in locating information.
+Never take a good search for granted. They're hard to get right but Atlassian's search for Jira and Confluence saves me loads of time in locating information.
