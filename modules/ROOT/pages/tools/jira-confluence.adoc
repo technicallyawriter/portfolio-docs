@@ -1,6 +1,6 @@
 = Jira & Confluence
 
-I've learned a lot about Jira and Confluence over the past five years of using them. They're powerful yet simple enough to use in a variety of ways. However you use them, they're time-saving tools delivered as a one-two punch in a unified platform.
+Jira and Confluence are powerful tools, yet simple enough to use in a variety of ways. However you use them, they offer time-saving potential in a unified platform.
 
 == Jira image:icons/jira.png[Jira logo,50,50] 
 
@@ -20,13 +20,9 @@ I'm such a fan of smart commits that I still include my ticket ID in commit mess
 
 Workflows often get complicated and the less time spent tinkering with tickets, the more time there is to write quality docs. Jira automation helps with this. There's basic, built-in automation like "unassigning" a ticket when it's set to Done. But more complex rules are simple to configure. For example, one of my previous roles involved working with a translator. Translation work deserved its own ticket but manually creating a new ticket with each new translation request felt daunting. Rather than do it manually, I setup Jira automation to create and link a new translation ticket if the "Needs translation?" field was "Yes." To make sure this automation rule didn't flood the translator's backlog with every single ticket regardless of status, I configured the rule to only execute when the parent ticket moved from "Review" to "Translate" status. The rule also copied relevant fields like `FixVersion` and `Due Date` to inform the translator of the priority. 
 
-=== Releases
-
-release tracking. FixVersion saves the effort of rolling every ticket up into the same parent ticket. review of Pull Requests.
-
 == Confluence image:icons/confluence.png[Confluence logo,50,50]
 
-I'm a fan of Confluence not only for its easy integration with Jira but for the culture of documentation it promotes with non-tech writers.
+Organizations that buy-in to Confluence are typically ones that value a culture of documentation. This is obviously beneficial to tech writers. When Confluence is treated as a I'm a fan of Confluence not only for its easy integration with Jira but for the culture of documentation it promotes with non-tech writers.
 Integration with Jira. so simple to create Jira tickets with Confluence info and vice versa. Preferred tooling of Product Managers, which means it's a great source of truth for answering questions without having to bother SMEs. Culture of documentation saving each others time. 
 
 === Templates
