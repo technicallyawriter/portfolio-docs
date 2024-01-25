@@ -12,7 +12,7 @@ I appreciate its reliance on git and the ability to scale easily.
 
 Traditional Markdown is great for documentation, but as a tech writer, I prefer for the power and flexibility of AsciiDoc.
 
-Key factors in AsciiDoc syntax (turn this list into a short paragraph and add to preceeding heading) 
+Key factors in AsciiDoc syntax (turn this list into a short paragraph and add to preceding heading) 
 
 * as readable as Markdown
 * *link:https://docs.asciidoctor.org/asciidoc/latest/directives/conditionals/[conditionals,window=_blank]:* route content depending on output (for example, HTML or PDF)
