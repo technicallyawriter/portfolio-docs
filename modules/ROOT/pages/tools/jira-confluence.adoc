@@ -1,8 +1,8 @@
 = Jira & Confluence
 
-image:icons/jira.png[Jira logo,50,50] image:icons/confluence.png[Confluence logo,50,50]
+List experience and few favorite features. time saving tool. consolidated/integrated pair.
 
-== Jira
+== Jira image:icons/jira.png[Jira logo,50,50] 
 
 Jira is my preferred source of truth. List experience. Its configurable ticket board supports custom workflows with helpful automation. The GitHub integration provides information on branching and commit details. releases. Confluence integration.
 
@@ -26,7 +26,7 @@ list automation examples.
 
 release tracking. FixVersion saves the effort of rolling every ticket up into the same parent ticket. review of Pull Requests.
 
-== Confluence
+== Confluence image:icons/confluence.png[Confluence logo,50,50]
 
 Integration with Jira. so simple to create Jira tickets with Confluence info and vice versa. Preferred tooling of Product Managers, which means it's a great source of truth for answering questions without having to bother SMEs. Culture of documentation saving each others time. 
 
