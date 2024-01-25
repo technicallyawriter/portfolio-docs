@@ -1,6 +1,6 @@
 = Jira & Confluence
 
-Jira and Confluence are powerful tools, yet simple enough to use in a variety of ways. However you use them, they offer time-saving potential in a unified platform.
+Jira and Confluence are powerful tools, yet simple enough to use in a variety of ways. However you configure them, they offer time-saving potential in a unified platform. This page discusses a few of my favorite features from each.
 
 == Jira image:icons/jira.png[Jira logo,50,50] 
 
@@ -8,24 +8,23 @@ Jira is more than just a ticket board, though that's its primary use. Beyond the
 
 === Dashboards
 
-Who doesn't like pretty, colored charts? All kidding aside, I start my day with Jira dashboards. I'm often stretched between multiple teams and my home page consists of dashboards and filters that show the most relevant information at-a-glance. I'll typically rely on a filter sorting tickets by deadline, project, and priority so I'm confident I'm working on the most pertinent tasks. Dashboards that show in-progress work often reveal log-jams in processes and help visualize if I've overcommitted.
+Who doesn't love pretty, colored charts? I'm joking, but I start my day with Jira dashboards. My Jira home page consists of dashboards and filters that show the most relevant information at-a-glance. This is critical when writing docs on multiple teams with their own release schedules. For example, I'll typically rely on a filter sorting tickets by deadline, project, and priority so I'm confident I'm working on the most pertinent tasks. Dashboards that show in-progress work often reveal log-jams in processes. They also help visualize if someone is overcommitted.
 
 === Smart commits 
 
-link:https://support.atlassian.com/bitbucket-cloud/docs/use-smart-commits/[Smart commits] do so much for unifying Jira and GitHub, and they're so simple. Just put the relevant ticket ID in your commit message and changes to your source code display on the mentioned ticket. This transforms your board into a one-stop-shop for the most updated status on work. Another reason I love this feature is because it reinforces xref:../principles/docs-as-code.adoc#_naming_conventions[my preferred naming conventions on Git branches]--by including your ticket ID in your commit message, you can be sure you're working in the right branch since they share the same name. Consistency is key to organization when you're spinning plates!
+link:https://support.atlassian.com/bitbucket-cloud/docs/use-smart-commits/[Smart commits] do so much for unifying Jira and GitHub. And they're so simple. Just put the relevant ticket ID in your commit message and changes to your source code display on the mentioned ticket. This transforms your board into a one-stop-shop for the most recent snapshot for work. Another reason I love this feature is because it reinforces xref:../principles/docs-as-code.adoc#_naming_conventions[my preferred naming conventions for Git branches]. You can be sure you're working in the right branch since the ticket ID is also the branch name. Consistency is key to organization when you're spinning plates!
 
-I'm such a fan of smart commits that I still include my ticket ID in commit messages even when not using Jira. It just makes sense, and I'm grateful to pick up the good habit.
+I'm such a fan of smart commits that I still include my ticket ID in commit messages even when not using Jira. I'm thankful for the good habit.
 
 === Automation
 
-Workflows often get complicated and the less time spent tinkering with tickets, the more time there is to write quality docs. Jira automation helps with this. There's basic, built-in automation like "unassigning" a ticket when it's set to Done. But more complex rules are simple to configure. For example, one of my previous roles involved working with a translator. Translation work deserved its own ticket but manually creating a new ticket with each new translation request felt daunting. Rather than do it manually, I setup Jira automation to create and link a new translation ticket if the "Needs translation?" field was "Yes." To make sure this automation rule didn't flood the translator's backlog with every single ticket regardless of status, I configured the rule to only execute when the parent ticket moved from "Review" to "Translate" status. The rule also copied relevant fields like `FixVersion` and `Due Date` to inform the translator of the priority. 
+Workflows often get complicated and the less time spent tinkering with tickets, the more time there is to write quality docs. Jira automation helps with this. There's basic, built-in automation like "unassigning" a ticket when it's set to Done. But more complex rules are simple to configure. For example, one of my previous roles involved working with a translator. Translation work deserved its own ticket, but manually creating a new ticket with each new translation request felt daunting. To make life easier, I used Jira automation to create and link a new translation ticket if the "Needs translation?" field was "Yes." To make sure this automation rule didn't flood the translator's backlog with every single ticket regardless of status, I configured the rule to only execute when the parent ticket moved from "Review" to "Translate" status. The rule also copied relevant fields like `FixVersion` and `Due Date` to inform the translator of priority. 
 
 == Confluence image:icons/confluence.png[Confluence logo,50,50]
 
-If an organization "buys in" to Confluence, it's typically a sign they value a culture of documentation. This is obviously beneficial to tech writers. With Confluence as a knowledge base for features, I'll typically spend more time reading docs written by SMEs and less time interviewing them with basic questions. This saves everyone time and demonstrates the value of docs, even for tech writers.
+If an organization "buys in" to Confluence, it's typically a sign they value a culture of documentation. This is obviously beneficial to tech writers. With Confluence as a knowledge base for features, I'll typically spend more time reading docs written by SMEs and less time interviewing them with basic questions. This saves everyone time and demonstrates the value of docs. 
 
-Of course, Confluence's integration with Jira is noteworthy. The ability to view a ticket's current status from a Confluence page helps keep priorities current, and the ability to highlight text to create Jira tickets with a click is a simple time-saver. 
-
+Of course, Confluence's integration with Jira is noteworthy. The ability to view a ticket's current status from a Confluence page reflects current priorities even if they've changed 100 times. And simple features, like the ability to highlight text to create Jira tickets, save valuable time. 
 
 == Templates
 
@@ -33,8 +32,8 @@ The templates Confluence offers helps standardize vital information and makes it
 
 == Includes Page macro
 
-Content reuse is simple through built-in features like the Include Page macro. Teams often stay siloed within their territory, so repeating information where they're likely to look is helpful for getting your docs read. With the Includes Page macro, you can replicate the docs for an audience's convenience without sacrificing easy maintenance. 
+Content reuse is simple in Confluence through built-in features like the Include Page macro. Teams often stay siloed within their territory, so repeating information where they're likely to look is helpful for getting your docs read. With the Includes Page macro, you can replicate the docs for an audience's convenience without sacrificing easy maintenance. Update the source docs and all places it's included update automatically.
 
 === Search
 
-Never take a good search for granted (they're hard to get right and typically expensive). Atlassian's search function for Jira and Confluence saves me tons of time when locating information.
+Never take a good search for granted (they're hard to get right and typically expensive). Atlassian's search function for Jira and Confluence saves me tons of time when locating information. A simple but notable feature!
