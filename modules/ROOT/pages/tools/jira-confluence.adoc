@@ -4,17 +4,17 @@ Jira and Confluence are powerful tools, yet simple enough to use in a variety of
 
 == Jira image:icons/jira.png[Jira logo,50,50] 
 
-It's more than just a ticket board, though that's its primary use. Beyond the basics of its ticket management system, I'm a fan of its dashboards, GitHub integration, and automation.
+Jira is more than just a ticket board, though that's its primary use. Beyond the basics of ticket management, I'm a fan of its dashboards, GitHub integration, and automation.
 
 === Dashboards
 
-Who doesn't like pretty pictures? All kidding aside, I start my day with Jira dashboards. I'm often stretched between multiple teams and my home page consists of dashboards and filters that show the most relevant information at-a-glance. I'll typically rely on a filter sorting tickets by deadline, project, and priority so I'm confident I'm working on the most pertinent items. Dashboards that show in-progress work often reveal log-jams in processes and help visualize if I've overcommitted.
+Who doesn't like pretty, colored charts? All kidding aside, I start my day with Jira dashboards. I'm often stretched between multiple teams and my home page consists of dashboards and filters that show the most relevant information at-a-glance. I'll typically rely on a filter sorting tickets by deadline, project, and priority so I'm confident I'm working on the most pertinent tasks. Dashboards that show in-progress work often reveal log-jams in processes and help visualize if I've overcommitted.
 
 === Smart commits 
 
-link:https://support.atlassian.com/bitbucket-cloud/docs/use-smart-commits/[Smart commits] do so much unifying Jira and GitHub, and it's so simple. Just by putting the relevant ticket ID in your commit message, Jira displays your commit information on the relevant ticket. This transforms your board into a one-stop-shop for the most updated status on work. Plus, this is in line with my preferred naming conventions on Git branches--by including your ticket ID in your commit message, you can be sure you're working in the right branch. 
+link:https://support.atlassian.com/bitbucket-cloud/docs/use-smart-commits/[Smart commits] do so much for unifying Jira and GitHub, and they're so simple. Just put the relevant ticket ID in your commit message and changes to your source code display on the mentioned ticket. This transforms your board into a one-stop-shop for the most updated status on work. Another reason I love this feature is because it reinforces xref:/pricincples/docs-as-code.adoc#_naming_conventions[my preferred naming conventions on Git branches]--by including your ticket ID in your commit message, you can be sure you're working in the right branch since they share the same name. Consistency is key to organization when you're spinning plates!
 
-I'm such a fan of smart commits that I still include my ticket ID in commit messages even when not using Jira. It just makes sense!
+I'm such a fan of smart commits that I still include my ticket ID in commit messages even when not using Jira. It just makes sense, and I'm grateful to pick up the good habit.
 
 === Automation
 
@@ -22,17 +22,19 @@ Workflows often get complicated and the less time spent tinkering with tickets, 
 
 == Confluence image:icons/confluence.png[Confluence logo,50,50]
 
-Organizations that buy-in to Confluence are typically ones that value a culture of documentation. This is obviously beneficial to tech writers. When Confluence is treated as a I'm a fan of Confluence not only for its easy integration with Jira but for the culture of documentation it promotes with non-tech writers.
-Integration with Jira. so simple to create Jira tickets with Confluence info and vice versa. Preferred tooling of Product Managers, which means it's a great source of truth for answering questions without having to bother SMEs. Culture of documentation saving each others time. 
+If an organization "buys in" to Confluence, it's typically a sign they value a culture of documentation. This is obviously beneficial to tech writers. With Confluence as a knowledge base for features, I'll typically spend more time reading docs written by SMEs and less time interviewing them with basic questions. This saves everyone time and demonstrates the value of docs, even for tech writers.
 
-=== Templates
+Of course, Confluence's integration with Jira is noteworthy. The ability to view a ticket's current status from a Confluence page helps keep priorities current, and the ability to highlight text to create Jira tickets with a click is a simple time-saver. 
 
-project requirements, decision trees provide vital information that tech writers need to know.
 
-=== Content reuse
+== Templates
 
-Include Page macro. sometimes it's helpful to repeat yourself. can't expect everyone to read that one page with all the info.
+The templates Confluence offers helps standardize vital information and makes it predictable to find. Project requirements and decision trees, for example, often relate content tech writers benefit from. Rather than each team do their own version of these tasks, Confluence provides robust examples that unify approaches.
+
+== Includes Page macro
+
+Content reuse is simple through built-in features like the Include Page macro. Teams often stay siloed within their territory, so repeating information where they're likely to look is helpful for getting your docs read. With the Includes Page macro, you can replicate the docs for an audience's convenience without sacrificing easy maintenance. 
 
 === Search
 
-Never take a good search for granted. They're hard to get right but Atlassian's search for Jira and Confluence saves me loads of time in locating information.
+Never take a good search for granted (they're hard to get right and typically expensive). Atlassian's search function for Jira and Confluence saves me tons of time when locating information.
