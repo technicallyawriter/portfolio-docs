@@ -1,0 +1,43 @@
+= Jira & Confluence
+
+image:icons/jira.png[Jira logo,50,50] image:icons/confluence.png[Confluence logo,50,50]
+
+== Jira
+
+Jira is my preferred source of truth. List experience. Its configurable ticket board supports custom workflows with helpful automation. The GitHub integration provides information on branching and commit details. releases. Confluence integration.
+
+=== Dashboards
+
+of course, the pretty pictures. Start my morning with a dashboard. I'm often stretched between multiple teams and Dashboards deliver the most pertitnet information to me efficiently. Deadlines, tickets ranked by priority, how many items I'm currently committed to. Identifies log-jams I wasn't aware of. Etc.
+
+=== Ticket board 
+
+custom columns, required workflows (enforces standards but also saves from accidental click-and drags), automation, diagrams showing workflows, releases, Epics, Features.
+
+=== GitHub integration
+
+smart commits.
+
+=== Automation
+
+list automation examples.
+
+=== Releases
+
+release tracking. FixVersion saves the effort of rolling every ticket up into the same parent ticket. review of Pull Requests.
+
+== Confluence
+
+Integration with Jira. so simple to create Jira tickets with Confluence info and vice versa. Preferred tooling of Product Managers, which means it's a great source of truth for answering questions without having to bother SMEs. Culture of documentation saving each others time. 
+
+=== Content reuse
+
+Include Page macro. sometimes it's helpful to repeat yourself. can't expect everyone to read that one page with all the info.
+
+=== Templates
+
+project requirements, decision trees provide vital information that tech writers need to know.
+
+=== Search
+
+This one seems assumed but never take a good search for granted. Saves time in locating information.

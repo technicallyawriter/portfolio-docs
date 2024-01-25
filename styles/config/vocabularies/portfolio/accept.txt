@@ -1,6 +1,8 @@
 Antora
 shortcode
 Jira
+Confluence
+GitHub
 hotfix
 xyz
 SME

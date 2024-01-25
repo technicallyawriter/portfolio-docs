@@ -5,7 +5,7 @@
 * Tools
 ** xref:tools/git.adoc[]
 ** xref:tools/madcap-flare.adoc[]
-** xref:tools/jira.adoc[]
+** xref:tools/jira-confluence.adoc[]
 ** xref:tools/hugo.adoc[]
 ** xref:tools/antora.adoc[]
 ** xref:tools/vale.adoc[]
