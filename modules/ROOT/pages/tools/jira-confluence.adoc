@@ -1,6 +1,8 @@
 = Jira & Confluence
 
-Jira and Confluence are powerful tools, yet simple enough to use in a variety of ways. However you configure them, they offer time-saving potential in a unified platform. This page discusses a few of my favorite features from each.
+Jira and Confluence are powerful tools, yet simple enough to use in a variety of ways. However you configure them, they offer time-saving potential in a unified platform. 
+
+This page discusses a few of my favorite features from each.
 
 == Jira image:icons/jira.png[Jira logo,50,50] 
 
