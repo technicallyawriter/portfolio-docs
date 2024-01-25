@@ -28,11 +28,11 @@ If an organization "buys in" to Confluence, it's typically a sign they value a c
 
 Of course, Confluence's integration with Jira is noteworthy. The ability to view a ticket's current status from a Confluence page reflects current priorities even if they've changed 100 times. And simple features, like the ability to highlight text to create Jira tickets, save valuable time. 
 
-== Templates
+=== Templates
 
 The templates Confluence offers helps standardize vital information and makes it predictable to find. Project requirements and decision trees, for example, often relate content tech writers benefit from. Rather than each team do their own version of these tasks, Confluence provides robust examples that unify approaches.
 
-== Includes Page macro
+=== Includes Page macro
 
 Content reuse is simple in Confluence through built-in features like the Include Page macro. Teams often stay siloed within their territory, so repeating information where they're likely to look is helpful for getting your docs read. With the Includes Page macro, you can replicate the docs for an audience's convenience without sacrificing easy maintenance. Update the source docs and all places it's included update automatically.
 
