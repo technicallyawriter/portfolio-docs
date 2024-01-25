@@ -4,7 +4,7 @@ List experience and few favorite features. time saving tool. consolidated/integr
 
 == Jira image:icons/jira.png[Jira logo,50,50] 
 
-Jira is my preferred source of truth. List experience. Its configurable ticket board supports custom workflows with helpful automation. The GitHub integration provides information on branching and commit details. releases. Confluence integration.
+Jira is my preferred source of truth for the past five years. It consolidates so many time-saving features that help mitigate the inherent chaos of enterprise software development.
 
 === Dashboards
 
@@ -28,15 +28,16 @@ release tracking. FixVersion saves the effort of rolling every ticket up into th
 
 == Confluence image:icons/confluence.png[Confluence logo,50,50]
 
+I'm a fan of Confluence not only for its easy integration with Jira but for the culture of documentation it promotes with non-tech writers.
 Integration with Jira. so simple to create Jira tickets with Confluence info and vice versa. Preferred tooling of Product Managers, which means it's a great source of truth for answering questions without having to bother SMEs. Culture of documentation saving each others time. 
-
-=== Content reuse
-
-Include Page macro. sometimes it's helpful to repeat yourself. can't expect everyone to read that one page with all the info.
 
 === Templates
 
 project requirements, decision trees provide vital information that tech writers need to know.
+
+=== Content reuse
+
+Include Page macro. sometimes it's helpful to repeat yourself. can't expect everyone to read that one page with all the info.
 
 === Search
 

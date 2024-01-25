@@ -4,6 +4,7 @@ Jira
 Confluence
 GitHub
 Neovim
+Atlassian's
 hotfix
 xyz
 SME
