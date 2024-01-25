@@ -4,8 +4,10 @@ a tech writer's livelihood!
 
 == VS Code image:icons/vs-code.png[VS Code logo,50,50]
 
-todo...
+Vale integration. Terminal integration. List favorite plugins.
 
-== Vim image:icons/vim.png[Vim logo,50,50]
+== Neovim image:icons/neovim.png[Neovim logo,50,50]
 
-todo...
+Keeping it simple. allows me to focus on writing (less distractions!)
+
+list config (Vale via ALE, LSP setup)

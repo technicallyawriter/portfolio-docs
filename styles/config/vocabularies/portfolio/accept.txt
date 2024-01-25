@@ -3,6 +3,7 @@ shortcode
 Jira
 Confluence
 GitHub
+Neovim
 hotfix
 xyz
 SME
