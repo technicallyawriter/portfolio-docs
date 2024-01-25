@@ -12,7 +12,7 @@ Who doesn't like pretty, colored charts? All kidding aside, I start my day with 
 
 === Smart commits 
 
-link:https://support.atlassian.com/bitbucket-cloud/docs/use-smart-commits/[Smart commits] do so much for unifying Jira and GitHub, and they're so simple. Just put the relevant ticket ID in your commit message and changes to your source code display on the mentioned ticket. This transforms your board into a one-stop-shop for the most updated status on work. Another reason I love this feature is because it reinforces xref:/pricincples/docs-as-code.adoc#_naming_conventions[my preferred naming conventions on Git branches]--by including your ticket ID in your commit message, you can be sure you're working in the right branch since they share the same name. Consistency is key to organization when you're spinning plates!
+link:https://support.atlassian.com/bitbucket-cloud/docs/use-smart-commits/[Smart commits] do so much for unifying Jira and GitHub, and they're so simple. Just put the relevant ticket ID in your commit message and changes to your source code display on the mentioned ticket. This transforms your board into a one-stop-shop for the most updated status on work. Another reason I love this feature is because it reinforces xref:../principles/docs-as-code.adoc#_naming_conventions[my preferred naming conventions on Git branches]--by including your ticket ID in your commit message, you can be sure you're working in the right branch since they share the same name. Consistency is key to organization when you're spinning plates!
 
 I'm such a fan of smart commits that I still include my ticket ID in commit messages even when not using Jira. It just makes sense, and I'm grateful to pick up the good habit.
 
