@@ -2,9 +2,9 @@
 
 image:icons/hugo.png[Hugo logo,50,50]
 
-Hugo is a fast and powerful static site generator for writing in plain text. This syntax is simpler to read and write with than Flare's messy XHTML, but don't let this simplicity fool you. Hugo's has an incredibly high ceiling for configuration, since it leverages and extends the Go programming language. This software's main strengths are its templating and ability to parse content for xref:#_shortcodes[shortcodes] and xref:#_.Getpage_method[methods].
+Hugo is a fast and powerful static site generator for writing in plain text. Don't let the simplicity of plain text fool you, though. Hugo has a high ceiling for configuration, since it leverages and extends the Go programming language. This software's main strengths are its templating and ability to parse content for xref:#_shortcodes[shortcodes] and xref:#_.Getpage_method[methods].
 
-And since Hugo is open source, I can experiment with it for free in personal projects, if I choose. This is a huge advantage compared to a pricey proprietary authoring tool like Flare.
+And since Hugo is open source, I can experiment with it for free in personal projects, if I choose. This is a huge advantage compared to pricey proprietary tools like Flare.
 
 == Plain text
 
@@ -12,11 +12,13 @@ Hugo was my first step away from Flare and into the world of plain text static s
 
 === AsciiDoc woes
 
-My time with Hugo taught me a hard lesson about AsciiDoc support, though. While Hugo supports AsciiDoc, it requires additional configuration to run somewhat smoothly.^[link:https://blog.arkey.fr/2020/04/23/tackling-hugo-integration-of-asciidoctor[1^]]^ ^[link:https://stiobhart.net/2020-04-18-hugo-asciidoctor[2^]]^ Your selected theme must also consider AsciiDoc support (most don't) to take full advantage of CSS rules expecting Markdown. This ultimately pushed to me try xref:./antora.adoc[Antora], which natively supports the AsciiDocs syntax.
+My time with Hugo taught me a hard lesson about AsciiDoc support, though. While Hugo supports AsciiDoc, it requires additional configuration to run somewhat smoothly.^[link:https://blog.arkey.fr/2020/04/23/tackling-hugo-integration-of-asciidoctor[1]]^ ^[link:https://stiobhart.net/2020-04-18-hugo-asciidoctor[2]]^ Your selected theme must also consider AsciiDoc support (most don't) to take full advantage of CSS rules expecting Markdown. 
+
+This ultimately pushed to me try xref:./antora.adoc[Antora], which natively supports the AsciiDocs syntax.
 
 == Shortcodes
 
-Just as the name suggests, shortcodes use quick and clean syntax to refer to more complex functions. This maintains docs readability without sacrificing complexity. A one-line `{{< shortcode >}}` can run dozens of lines of code behind the scenes. By abstracting away this complexity in a dedicated file, Hugo lets you centralize the management of shortcodes, while keeping them simple to reference.
+Just as the name suggests, shortcodes use quick and clean syntax to refer to more complex functions. This maintains docs readability without sacrificing complexity. A one-line `{{< shortcode >}}` can run dozens of lines of code behind the scenes. By abstracting away this complexity in a dedicated file, Hugo lets you centralize the management of shortcodes, while keeping them simple to reference and read.
 
 Here's a standard example of a shortcode. It creates a custom alert depending on alert type.
 
@@ -26,7 +28,7 @@ Here's a standard example of a shortcode. It creates a custom alert depending on
 include::example$hugo/alert-shortcode.html[]
 ----
 
-.Reference this alert shortcode in Markdown file and specify type
+.Reference this alert shortcode in Markdown file and specify "type"
 [source, markdown]
 ----
 include::example$hugo/alert-shortcode-call.html[]
@@ -42,17 +44,25 @@ Since Hugo's templating engine extends the Go programming language, it's robust 
 include::example$hugo/template-logic.html[]
 ----
 
-Flexibility is an asset, and the ability to fine-tune templates to handle a variety of scenarios is an advantage. Who wants to manage several different templates when one does the trick?
+Flexibility is an asset, and the ability to fine-tune templates to handle a variety of scenarios is an advantage with Hugo. Who wants to manage several different templates when one does the trick?
 
 == Front matter
 
-Hugo pages use front matter to set values you can parse and refer to as metadata in a variety of ways. Standard values for front matter are `Title`, `Description`, `Date`, and `Author` for example. Though you can further define metadata in front matter however best suits you. 
+Hugo pages use front matter to set values you can parse and refer to as metadata in a variety of ways. Standard values for front matter are `Title`, `Description`, `Date`, and `Author` for example. You can further define metadata in front matter however best suits your needs. 
 
 My favorite ways to use front matter in Hugo are for content reuse, such as with the xref:#.GetPage_method[.GetPage method] or by grouping content with xref:#_taxonomies[taxonomies].
 
 === .GetPage method
 
-Reuse content you've already written by grabbing it with the `.GetPage` method in Hugo. A classic example of this is when you want to introduce a feature on release notes when you've already written a description elsewhere. By storing this description in the feature's front matter, you can grab it with the `.Getpage` method.
+Reuse content you've already written by grabbing it with the `.GetPage` method in Hugo. A classic example of this is when you want to introduce a feature on release notes already written elsewhere. By storing this description in the feature's front matter, you can grab it with the `.Getpage` method.
+
+.Feature xyz's front matter
+----
+---
+Title: "Feature xyz"
+Author: "technicallyawriter"
+Description: "Feature xyz is the solution to all your problems..."
+----
 
 .Reference existing Feature-xyz description for release notes
 [source, markdown]
@@ -72,7 +82,7 @@ First, define a "tags" taxonomy in your `hugo.toml` file like so:
   tag = "tags"
 ----
 
-Then, add whatever tags you'd like to a content page, for example "best practice." Hugo automatically generates a page for each tag you define at `/tags/<tag-name>/`. 
+Then, add whatever tags you'd like to a content page, for example "best practice." Hugo automatically generates a page at `/tags/<tag-name>/` for each tag you define. 
 
 ----
 [source, markdown]
@@ -83,7 +93,7 @@ Tags: "best practice"
 ---
 ----
 
-Finally, update your page template to display a page's tags. Users that click a tag are redirected to the taxonomy page selected.
+Finally, update your page template to display a page's tags. Users that click the "best practice" tag are redirected to `/tags/best-practice/`.
 
 [source, Go (Hugo templating)]
 ----
