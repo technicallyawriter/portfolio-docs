@@ -1,0 +1,18 @@
+{{ $type := .Get "type" | default "note" }}
+{{ $content := .Inner | markdownify }}
+
+{{ $titleMap := map
+  "info" "Note:"
+  "success" "Success:"
+  "warning" "Warning:"
+  "danger" "Danger:"
+}}
+
+<div class="alert alert-{{ $type }}">
+    {{ with index $titleMap $type }}
+        <h4>{{ . }}</h4>
+    {{ end }}
+    <div class="alert-content">
+        {{ $content }}
+    </div>
+</div>

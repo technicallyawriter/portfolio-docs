@@ -20,31 +20,12 @@ Example: custom alerts
 
 .layouts/shortcodes/alert.html
 ----
-{{ $type := .Get "type" | default "note" }}
-{{ $content := .Inner | markdownify }}
-
-{{ $titleMap := map
-  "info" "Note:"
-  "success" "Success:"
-  "warning" "Warning:"
-  "danger" "Danger:"
-}}
-
-<div class="alert alert-{{ $type }}">
-    {{ with index $titleMap $type }}
-        <h4>{{ . }}</h4>
-    {{ end }}
-    <div class="alert-content">
-        {{ $content }}
-    </div>
-</div>
+include::example$hugo/alert-shortcode.html
 ----
 
-.Refer to alert shortcode
+.Call alert shortcode in Markdown file
 ----
-{{< alert type="warning" >}}
-Warning alert text here.
-{{< /alert >}}
+include::example$hugo/alert-shortcode-call.html
 ----
 
 == Templates
@@ -56,13 +37,7 @@ Conditional logic.
 .Set "description" or "summary" parameters before default Summary value.
 [source,Go]
 ----
-{{ if (isset .Params "description") }}
-    {{ index .Params "description" }}
-{{ else if (isset .Params "summary") }}
-    {{ index .Params "summary" }}
-{{ else }}
-    {{ .Summary }}
-{{ end }}
+include::example$hugo/template-logic.html
 ----
 
 == Front matter
@@ -74,18 +49,9 @@ Controlling metadata can help with organizing docs or grouping them, for example
 Common use-case, for release notes.
 
 .Reference existing Feature-xyz description for release notes
+[source, Hugo]
 ----
----
-title: "Release Notes"
----
-
-{{ with .Site.GetPage "feature-xyz/_index.md" }}
-    {{ with .Params.description }}
-        <p class="feature-description">{{ . }}</p>
-    {{ end }}
-{{ end }}
-
-# Rest of the release notes content
+include::example$hugo/front-matter-reuse.html
 ----
 
 == Extensibility
