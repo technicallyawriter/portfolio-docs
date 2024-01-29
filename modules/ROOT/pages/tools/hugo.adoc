@@ -10,7 +10,7 @@ And since it's open source, I can play around without a license and continue to 
 
 Hugo was my first step away from Flare and into the world of plain text static site generators. With plain text, your source code is much easier to read. This makes version control, comparing diffs, and merging branches much less complex.
 
-My time with Hugo taught me a hard lesson about AsciiDoc support, though. While Hugo supports AsciiDoc, it requires additional configuration to run somewhat smoothly.footnote:https://blog.arkey.fr/2020/04/23/tackling-hugo-integration-of-asciidoctor[]footnote:https://stiobhart.net/2020-04-18-hugo-asciidoctor[]Your selected theme must also consider AsciiDoc support, which many don't compared to typical Markdown flavors. This ultimately pushed to me try xref:antora.adoc[Antora], which natively supports the AsciiDocs syntax.
+My time with Hugo taught me a hard lesson about AsciiDoc support, though. While Hugo supports AsciiDoc, it requires additional configuration to run somewhat smoothly.footnote:https://blog.arkey.fr/2020/04/23/tackling-hugo-integration-of-asciidoctor[]footnote:https://stiobhart.net/2020-04-18-hugo-asciidoctor[]Your selected theme must also consider AsciiDoc support, which many don't compared to typical Markdown flavors. This ultimately pushed to me try xref:./antora.adoc[Antora], which natively supports the AsciiDocs syntax.
 
 == Shortcodes
 
