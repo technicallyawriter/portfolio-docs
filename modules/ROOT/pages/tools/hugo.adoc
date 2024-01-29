@@ -20,12 +20,12 @@ Example: custom alerts
 
 .layouts/shortcodes/alert.html
 ----
-include::example$hugo/alert-shortcode.html
+include::example$hugo/alert-shortcode.html[]
 ----
 
 .Call alert shortcode in Markdown file
 ----
-include::example$hugo/alert-shortcode-call.html
+include::example$hugo/alert-shortcode-call.html[]
 ----
 
 == Templates
@@ -37,7 +37,7 @@ Conditional logic.
 .Set "description" or "summary" parameters before default Summary value.
 [source,Go]
 ----
-include::example$hugo/template-logic.html
+include::example$hugo/template-logic.html[]
 ----
 
 == Front matter
@@ -51,7 +51,7 @@ Common use-case, for release notes.
 .Reference existing Feature-xyz description for release notes
 [source, Hugo]
 ----
-include::example$hugo/front-matter-reuse.html
+include::example$hugo/front-matter-reuse.html[]
 ----
 
 == Extensibility
