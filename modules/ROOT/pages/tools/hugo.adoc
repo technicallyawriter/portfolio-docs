@@ -4,21 +4,56 @@ image:icons/hugo.png[Hugo logo,50,50]
 
 what I like about hugo...simpler on the surface but with a higher ceiling than MadCap as you can tap into Go language features.
 
+Can play around with it and learn on my own time since it's open source!
+
 == Plain text
 
-first step into plain text static site generator. transform this to be about traditional Markdown
+first step into plain text static site generators.
+
+Version control is more straight forward. Diffs are readable. Merging is less complex.
 
 == Shortcodes
 
-todo...
+reusable and consist, easy to manage, and hide messy code in separate files.
+
+Example: custom alerts
+
+.layouts/shortcodes/alert.html
+----
+{{ $type := .Get "type" | default "note" }}
+{{ $content := .Inner | markdownify }}
+
+{{ $titleMap := map
+  "info" "Note:"
+  "success" "Success:"
+  "warning" "Warning:"
+  "danger" "Danger:"
+}}
+
+<div class="alert alert-{{ $type }}">
+    {{ with index $titleMap $type }}
+        <h4>{{ . }}</h4>
+    {{ end }}
+    <div class="alert-content">
+        {{ $content }}
+    </div>
+</div>
+----
+
+.Refer to alert shortcode
+----
+{{< alert type="warning" >}}
+Warning alert text here.
+{{< /alert >}}
+----
 
 == Templates
 
 More robust than MadCap Flare.
 
-Conditional logic
+Conditional logic.
 
-.Show "description" parameter if set. If not set, show "summary" parameter.
+.Set "description" or "summary" parameters before default Summary value.
 [source,Go]
 ----
 {{ if (isset .Params "description") }}
@@ -32,4 +67,27 @@ Conditional logic
 
 == Front matter
 
-Controlling metadata, parameters, and variables.
+Controlling metadata can help with organizing docs or grouping them, for example tags and categories. Like show in the templating example TODO: link, page parameters can overwrite default values.
+
+=== Reuse front matter
+
+Common use-case, for release notes.
+
+.Reference existing Feature-xyz description for release notes
+----
+---
+title: "Release Notes"
+---
+
+{{ with .Site.GetPage "feature-xyz/_index.md" }}
+    {{ with .Params.description }}
+        <p class="feature-description">{{ . }}</p>
+    {{ end }}
+{{ end }}
+
+# Rest of the release notes content
+----
+
+== Extensibility
+
+Open source community!
