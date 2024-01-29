@@ -2,29 +2,32 @@
 
 image:icons/hugo.png[Hugo logo,50,50]
 
-Hugo is a powerful static site generator you can write with plain text. I feel it's simpler on the surface than Flare's messy XHTML but with a higher ceiling for configuration, since it relies upon the Go programming language.
+Hugo is a powerful static site generator for writing in plain text, preferably Markdown. This syntax is simpler on the surface than Flare's messy XHTML but the software has a much higher ceiling for configuration, since it extends the Go programming language. Hugo's main strengths are its templating, parsing, and ability to call xref:#_shortcodes[functions] and xref:#_.Getpage_method[methods].
 
 And since it's open source, I can play around without a license and continue to experiment and learn in my free time. This is a huge advantage compared to a proprietary authoring tool like Flare.
 
 == Plain text
 
-Hugo was my first step away from Flare and into the world of plain text static site generators. With plain text, your source code is much easier to read. This makes version control, comparing diffs, and merging branches much less complex.
+Hugo was my first step away from Flare and into the world of plain text static site generators. With plain text, your source code is much easier to read. This makes aspects of version control, like comparing diffs and merging branches, much less complex.
 
-My time with Hugo taught me a hard lesson about AsciiDoc support, though. While Hugo supports AsciiDoc, it requires additional configuration to run somewhat smoothly.^[link:https://blog.arkey.fr/2020/04/23/tackling-hugo-integration-of-asciidoctor[1]]^ ^[link:https://stiobhart.net/2020-04-18-hugo-asciidoctor[2]]^ Your selected theme must also consider AsciiDoc support, which many don't compared to typical Markdown flavors. This ultimately pushed to me try xref:./antora.adoc[Antora], which natively supports the AsciiDocs syntax.
+=== AsciiDoc woes
+
+My time with Hugo taught me a hard lesson about AsciiDoc support, though. While Hugo supports AsciiDoc, it requires additional configuration to run somewhat smoothly.^[link:https://blog.arkey.fr/2020/04/23/tackling-hugo-integration-of-asciidoctor[1^]]^ ^[link:https://stiobhart.net/2020-04-18-hugo-asciidoctor[2^]]^ Your selected theme must also consider AsciiDoc support (most don't) to take full advantage of CSS rules expecting Markdown. This ultimately pushed to me try xref:./antora.adoc[Antora], which natively supports the AsciiDocs syntax.
 
 == Shortcodes
 
-reusable and consist, easy to manage, and hide messy code in separate files.
+Just as the name suggests, shortcodes use a clean syntax to refer to more complex functions. 
+You can create consistent, easy to manage, and hide messy code in separate files. It's a customizable as you make it. Shortcodes are Hugo's best feature, in my opinion. 
 
-Example: custom alerts
+Here's a standard example that creates custom alert shortcodes depending on alert type.
 
-.layouts/shortcodes/alert.html
+.Alert shortcode at layouts/shortcodes/alert.html
 [source, go]
 ----
 include::example$hugo/alert-shortcode.html[]
 ----
 
-.Call alert shortcode in Markdown file
+.Call this alert shortcode in Markdown file and specify type
 [source, markdown]
 ----
 include::example$hugo/alert-shortcode-call.html[]
@@ -32,9 +35,9 @@ include::example$hugo/alert-shortcode-call.html[]
 
 == Templates
 
-More robust than MadCap Flare.
+Since Hugo's templating engine leverages Go, it's simple to handle more complex use cases. For example, conditional logic in your templates. 
 
-Conditional logic.
+For example, if you want certain pages to contain a description or summary blurb, your templates can grab the value if it's defined. If not, the default value still displays.   
 
 .Set "description" or "summary" parameters before default Summary value.
 [source, go]
@@ -44,9 +47,9 @@ include::example$hugo/template-logic.html[]
 
 == Front matter
 
-Controlling metadata can help with organizing docs or grouping them, for example tags and categories. Like show in the templating example TODO: link, page parameters can overwrite default values.
+Controlling metadata can help with organizing and grouping docs however you'd like. Standard values for front matter are `Title`, `Description`, `Date`, and `Author` for example. There are also fun reuse strategies for displaying front matter elsewhere on your site. 
 
-=== Reuse front matter
+=== .GetPage method
 
 Common use-case, for release notes.
 
@@ -55,6 +58,11 @@ Common use-case, for release notes.
 ----
 include::example$hugo/front-matter-reuse.html[]
 ----
+
+=== Categories and tags
+
+taxonomies...
+todo...
 
 == Extensibility
 
