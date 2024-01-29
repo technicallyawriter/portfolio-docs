@@ -1,11 +1,11 @@
 Antora
-shortcode
+(?i)shortcodes?
 Jira
 Confluence
 GitHub
 Neovim
 Atlassian's
-hotfix
+(?i)hotfixes?
 xyz
 SME
 Kanban

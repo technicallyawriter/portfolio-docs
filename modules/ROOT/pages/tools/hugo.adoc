@@ -2,26 +2,34 @@
 
 image:icons/hugo.png[Hugo logo,50,50]
 
-what I like about hugo...
+what I like about hugo...simpler on the surface but with a higher ceiling than MadCap as you can tap into Go language features.
 
-tranform this to be about traditional Markdown
+== Plain text
 
-== AsciiDoctor-pdf for print
+first step into plain text static site generator. transform this to be about traditional Markdown
 
-When outputting single-sourced AsciiDoc content into PDF format, I prefer the link:https://www.npmjs.com/package/asciidoctor-pdf[AsciiDoctor-pdf] NPM package.
+== Shortcodes
 
-=== Install AsciiDoctor-pdf
-```NPM
-npm install asciidoctor-pdf
-```
+todo...
 
-=== Custom PDF styling
-Extend the default PDF theme to your liking by adjusting values in a separate YAML file.
+== Templates
 
-```YAML
-extends: default
-base:
-  font-color: #ff0000
-```
+More robust than MadCap Flare.
 
-**TIP:** refer to the link:https://github.com/asciidoctor/asciidoctor-pdf/blob/main/docs/theming-guide.adoc[AsciiDoctor PDF Theming Guide,window=_blank] for more details.
+Conditional logic
+
+.Show "description" parameter if set. If not set, show "summary" parameter.
+[source,Go]
+----
+{{ if (isset .Params "description") }}
+    {{ index .Params "description" }}
+{{ else if (isset .Params "summary") }}
+    {{ index .Params "summary" }}
+{{ else }}
+    {{ .Summary }}
+{{ end }}
+----
+
+== Front matter
+
+Controlling metadata, parameters, and variables.

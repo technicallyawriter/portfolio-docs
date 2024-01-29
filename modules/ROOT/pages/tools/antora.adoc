@@ -21,3 +21,23 @@ Key factors in AsciiDoc syntax (turn this list into a short paragraph and add to
 == Versioning
 
 Usually producing versioned docs isn't that tightly declared into your project's configuration. With Antora, it's explicitly managed within the playbook.
+
+== AsciiDoctor-pdf for print
+
+When outputting single-sourced AsciiDoc content into PDF format, I prefer the link:https://www.npmjs.com/package/asciidoctor-pdf[AsciiDoctor-pdf] NPM package.
+
+=== Install AsciiDoctor-pdf
+```NPM
+npm install asciidoctor-pdf
+```
+
+=== Custom PDF styling
+Extend the default PDF theme to your liking by adjusting values in a separate YAML file.
+
+```YAML
+extends: default
+base:
+  font-color: #ff0000
+```
+
+**TIP:** refer to the link:https://github.com/asciidoctor/asciidoctor-pdf/blob/main/docs/theming-guide.adoc[AsciiDoctor PDF Theming Guide,window=_blank] for more details.
