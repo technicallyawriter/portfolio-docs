@@ -19,11 +19,13 @@ reusable and consist, easy to manage, and hide messy code in separate files.
 Example: custom alerts
 
 .layouts/shortcodes/alert.html
+[source, go]
 ----
 include::example$hugo/alert-shortcode.html[]
 ----
 
 .Call alert shortcode in Markdown file
+[source, markdown]
 ----
 include::example$hugo/alert-shortcode-call.html[]
 ----
@@ -35,7 +37,7 @@ More robust than MadCap Flare.
 Conditional logic.
 
 .Set "description" or "summary" parameters before default Summary value.
-[source,Go]
+[source, go]
 ----
 include::example$hugo/template-logic.html[]
 ----
@@ -49,7 +51,7 @@ Controlling metadata can help with organizing docs or grouping them, for example
 Common use-case, for release notes.
 
 .Reference existing Feature-xyz description for release notes
-[source, Hugo]
+[source, markdown]
 ----
 include::example$hugo/front-matter-reuse.html[]
 ----
