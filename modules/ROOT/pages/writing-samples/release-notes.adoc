@@ -11,5 +11,5 @@ Release notes to the fictional RTFM-Industries release (v1.1.0) are below. For m
 
 [source,HTML]
 ----
-includes::example$release-notes.html
+includes::example$release-notes.html[]
 ----
