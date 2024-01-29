@@ -84,8 +84,8 @@ First, define a "tags" taxonomy in your `hugo.toml` file like so:
 
 Then, add whatever tags you'd like to a content page, for example "best practice." Hugo automatically generates a page at `/tags/<tag-name>/` for each tag you define. 
 
-----
 [source, markdown]
+----
 ---
 Title: "Feature XYZ"
 Author: "technicallyawriter"
