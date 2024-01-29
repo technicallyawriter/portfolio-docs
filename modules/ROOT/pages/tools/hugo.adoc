@@ -2,9 +2,9 @@
 
 image:icons/hugo.png[Hugo logo,50,50]
 
-Hugo is a powerful static site generator for writing in plain text, preferably Markdown. This syntax is simpler on the surface than Flare's messy XHTML but the software has a much higher ceiling for configuration, since it extends the Go programming language. Hugo's main strengths are its templating, parsing, and ability to call xref:#_shortcodes[functions] and xref:#_.Getpage_method[methods].
+Hugo is a fast and powerful static site generator for writing in plain text. This syntax is simpler to read and write with than Flare's messy XHTML, but don't let this simplicity fool you. Hugo's has an incredibly high ceiling for configuration, since it leverages and extends the Go programming language. This software's main strengths are its templating and ability to parse content for xref:#_shortcodes[shortcodes] and xref:#_.Getpage_method[methods].
 
-And since it's open source, I can play around without a license and continue to experiment and learn in my free time. This is a huge advantage compared to a proprietary authoring tool like Flare.
+And since Hugo is open source, I can experiment with it for free in personal projects, if I choose. This is a huge advantage compared to a pricey proprietary authoring tool like Flare.
 
 == Plain text
 
@@ -16,18 +16,17 @@ My time with Hugo taught me a hard lesson about AsciiDoc support, though. While 
 
 == Shortcodes
 
-Just as the name suggests, shortcodes use a clean syntax to refer to more complex functions. 
-You can create consistent, easy to manage, and hide messy code in separate files. It's a customizable as you make it. Shortcodes are Hugo's best feature, in my opinion. 
+Just as the name suggests, shortcodes use quick and clean syntax to refer to more complex functions. This maintains docs readability without sacrificing complexity. A one-line `{{< shortcode >}}` can run dozens of lines of code behind the scenes. By abstracting away this complexity in a dedicated file, Hugo lets you centralize the management of shortcodes, while keeping them simple to reference.
 
-Here's a standard example that creates custom alert shortcodes depending on alert type.
+Here's a standard example of a shortcode. It creates a custom alert depending on alert type.
 
-.Alert shortcode at layouts/shortcodes/alert.html
-[source, go]
+.Dedicated file at layouts/shortcodes/alert.html
+[source, go (Hugo templating]]
 ----
 include::example$hugo/alert-shortcode.html[]
 ----
 
-.Call this alert shortcode in Markdown file and specify type
+.Reference this alert shortcode in Markdown file and specify type
 [source, markdown]
 ----
 include::example$hugo/alert-shortcode-call.html[]
@@ -35,23 +34,25 @@ include::example$hugo/alert-shortcode-call.html[]
 
 == Templates
 
-Since Hugo's templating engine leverages Go, it's simple to handle more complex use cases. For example, conditional logic in your templates. 
+Since Hugo's templating engine extends the Go programming language, it's robust enough to handle more complex use cases. For example, see the below code block that uses `if` and `elseif` conditional logic to display either a `description`, `summary`, or a default, fall-back value if nothing else is set.
 
-For example, if you want certain pages to contain a description or summary blurb, your templates can grab the value if it's defined. If not, the default value still displays.   
-
-.Set "description" or "summary" parameters before default Summary value.
-[source, go]
+.Complex conditional logic in Hugo template
+[source, go (Hugo templating)]
 ----
 include::example$hugo/template-logic.html[]
 ----
 
+Flexibility is an asset, and the ability to fine-tune templates to handle a variety of scenarios is an advantage. Who wants to manage several different templates when one does the trick?
+
 == Front matter
 
-Controlling metadata can help with organizing and grouping docs however you'd like. Standard values for front matter are `Title`, `Description`, `Date`, and `Author` for example. There are also fun reuse strategies for displaying front matter elsewhere on your site. 
+Hugo pages use front matter to set values you can parse and refer to as metadata in a variety of ways. Standard values for front matter are `Title`, `Description`, `Date`, and `Author` for example. Though you can further define metadata in front matter however best suits you. 
+
+My favorite ways to use front matter in Hugo are for content reuse, such as with the xref:#.GetPage_method[.GetPage method] or by grouping content with xref:#_taxonomies[taxonomies].
 
 === .GetPage method
 
-Common use-case, for release notes.
+Reuse content you've already written by grabbing it with the `.GetPage` method in Hugo. A classic example of this is when you want to introduce a feature on release notes when you've already written a description elsewhere. By storing this description in the feature's front matter, you can grab it with the `.Getpage` method.
 
 .Reference existing Feature-xyz description for release notes
 [source, markdown]
@@ -59,11 +60,34 @@ Common use-case, for release notes.
 include::example$hugo/front-matter-reuse.html[]
 ----
 
-=== Categories and tags
+=== Taxonomies
 
-taxonomies...
-todo...
+What if you want to dynamically group similar content by tag to display on its own page? Hugo makes this straight forward with taxonomy pages. 
 
-== Extensibility
+First, define a "tags" taxonomy in your `hugo.toml` file like so:
 
-Open source community!
+[source, toml]
+----
+[taxonomies]
+  tag = "tags"
+----
+
+Then, add whatever tags you'd like to a content page, for example "best practice." Hugo automatically generates a page for each tag you define at `/tags/<tag-name>/`. 
+
+----
+[source, markdown]
+---
+Title: "Feature XYZ"
+Author: "technicallyawriter"
+Tags: "best practice"
+---
+----
+
+Finally, update your page template to display a page's tags. Users that click a tag are redirected to the taxonomy page selected.
+
+[source, Go (Hugo templating)]
+----
+{{ with .Params.tags }}
+    <p>Tags: {{ range . }}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{ end }}</p>
+{{ end }}
+----
