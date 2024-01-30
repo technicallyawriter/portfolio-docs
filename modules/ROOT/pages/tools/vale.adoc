@@ -1,9 +1,9 @@
 = Vale
 image:icons/vale.png[Vale in terminal,500,auto]
 
-There's a difference between claiming to follow a style guide and actually testing against that style guide. Vale is a tool that can bridge that distance and keep your writing honest. Nobody can keep all style guide rules in their head, and with Vale, you won't have to. Vale is a command line tool at its core, but there's good plugin support in popular text editors like VS Code and Neovim.
+Lint your docs, stay up to date with upstream style guide changes, and customize your own style and vocabulary to reflect your style preferences with Vale.
 
-Lint your docs, stay up to date with upstream style guide changes, and customize your own style and vocabulary to reflect your style preferences.
+There's a difference between claiming to follow a style guide and actually testing against that style guide. Vale is a tool that can bridge that distance and keep your writing honest. Nobody can keep all style guide rules in their head, and with Vale, you won't have to. Vale is a command line tool at its core, but there's good plugin support in popular text editors like VS Code and Neovim.
 
 Here's how I have Vale configured for this project. See my customizations below.
 
@@ -28,10 +28,22 @@ styles/
 
 == Customizations
 
-One of Vale's greatest strength is the ability to customize it. If your organization's style rules differ slightly from Google, for example, Vale makes it intuitive to adjust and add your own rule. You can even update the description text, adjust severity, and link out to your style guide. In the past, I've linked to the doc team's Confluence which provided a rationale for the decision.
+One of Vale's greatest strength is the ability to customize it. If your organization's style rules differ slightly from Google's, for example, Vale makes it possible to adjust rules to your liking. You can even update the rule's description text, severity, and style guide hyperlink. In the past, I've linked custom rules to the doc team's Confluence which provided a rationale for the decision.
 
-However, there is a proper way to ensure your customizations aren't overwritten across Vale upgrades or with the [command]`vale sync` command. In the next sections, I'll explain how I preserved my customizations in this project. 
+There's a proper way to ensure your customizations aren't overwritten, though. It's not enough to remove rules you don't want to apply from a chosen style guide. Once you run `vale sync` or reinstall the app, those local changes are overwritten by the upstream source. To preserve customization, it's better to turn off specific rules in your .vale.ini file. For rules you want to keep but modify, extend them in your own custom style. You can store this configuration in version control.
 
+[NOTE]
+====
+.gitignore for Vale
+
+Update your `.gitignore` to filter out your specified packages. But make sure to track your custom vocab and style content. Here's how my `.gitignore` looks for this project, for example.
+[source, txt]
+----
+.github/styles/*
+!/styles/config/vocabularies
+!/styles/portfolio
+----
+====
 === Vale configuration file 
 
 Here's my vale configuration for this project. In general I prefer Google's style guide TODO.
