@@ -8,5 +8,5 @@ content:
     branches: HEAD
 ui:
   bundle:
-    url: https://github.com/technicallyawriter/portfolio/themes/ui-bundle.zip
+    url: https://github.com/technicallyawriter/portfolio/raw/main/themes/ui-bundle.zip
     snapshot: true 
