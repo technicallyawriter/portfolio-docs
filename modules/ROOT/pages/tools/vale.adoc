@@ -32,11 +32,11 @@ One of Vale's greatest strength is the ability to customize it. If your organiza
 
 There's a proper way to ensure your customizations aren't overwritten, though. It's not enough to remove rules you don't want to apply from a chosen style guide. Once you run `vale sync` or reinstall the app, those local changes are overwritten by the upstream source. To preserve customization, it's better to turn off specific rules in your .vale.ini file. For rules you want to keep but modify, extend them in your own custom style. You can store this configuration in version control.
 
-[NOTE]
+[TIP]
 ====
-.gitignore for Vale
-
 Update your `.gitignore` to filter out your specified packages. But make sure to track your custom vocab and style content. Here's how my `.gitignore` looks for this project, for example.
+
+.gitignore for Vale
 [source, txt]
 ----
 .github/styles/*
