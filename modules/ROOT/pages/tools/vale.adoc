@@ -1,14 +1,16 @@
 = Vale
 image:icons/vale.png[Vale in terminal,500,auto]
 
-Lint your docs and enforce your style guide with Vale. Actually test your docs. Apply rules through YAML files.
+There's a difference between claiming to follow a style guide and actually testing against that style guide. Vale is a tool that can bridge that distance and keep your writing honest. Nobody can keep all style guide rules in their head, and with Vale, you won't have to. Vale is a command line tool at its core, but there's good plugin support in popular text editors like VS Code and Neovim.
 
-Vale via terminal, VS Code, or ALE (Neovim plugin).
+Lint your docs, stay up to date with upstream style guide changes, and customize your own style and vocabulary to reflect your style preferences.
 
-.Directory structure
+Here's how I have Vale configured for this project. See my customizations below.
+
+.Vale structure in this portfolio project
 [source, ascii]
 ----
-Styles/
+styles/
 ├── config/
 │   └── vocabularies/
 │       └── portfolio/
@@ -26,17 +28,21 @@ Styles/
 
 == Customizations
 
-Important to keep these changes across Vale upgrades and syncs, I've created my own `portfolio` vocabulary and style guide. 
+One of Vale's greatest strength is the ability to customize it. If your organization's style rules differ slightly from Google, for example, Vale makes it intuitive to adjust and add your own rule. You can even update the description text, adjust severity, and link out to your style guide. In the past, I've linked to the doc team's Confluence which provided a rationale for the decision.
 
-show styles hierarchy.
+However, there is a proper way to ensure your customizations aren't overwritten across Vale upgrades or with the [command]`vale sync` command. In the next sections, I'll explain how I preserved my customizations in this project. 
 
-== Vale configuration file 
+=== Vale configuration file 
+
+Here's my vale configuration for this project. In general I prefer Google's style guide TODO.
 
 .Current .vale.ini
 [source, properties]
 ----
 include::example$vale/vale.ini[]
 ----
+
+You'll see I've turned off several rules at the bottom of this file that don't make sense to apply to a portfolio. For example, talking in the first person is valid in this context, so I've set `Google.FirstPerson = NO`. Declaring rule preference in the .vale.ini like this means my customizations persist across fresh installs, upgrades, and syncs that grab the latest upstream rules for my style guides.
 
 === Portfolio style
 
