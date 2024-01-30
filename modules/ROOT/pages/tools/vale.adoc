@@ -1,5 +1,5 @@
 = Vale
-
+:source-highlighter: rouge
 image:icons/vale.png[Vale in terminal,500,auto]
 
 == Custom vocabulary
