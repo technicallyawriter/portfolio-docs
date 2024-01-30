@@ -57,6 +57,7 @@ My favorite ways to use front matter in Hugo are for content reuse, such as with
 Reuse content you've already written by grabbing it with the `.GetPage` method in Hugo. A classic example of this is when you want to introduce a feature on release notes already written elsewhere. By storing this description in the feature's front matter, you only need to maintain it in one place.
 
 .Feature xyz's front matter
+[source, yaml]
 ----
 ---
 Title: "Feature xyz"
@@ -85,7 +86,7 @@ First, define a "tags" taxonomy in your `hugo.toml` file like so:
 
 Then, add whatever tags you'd like to a content page, for example "best practice." 
 
-[source, markdown]
+[source, yaml]
 ----
 ---
 Title: "Feature XYZ"
