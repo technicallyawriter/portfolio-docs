@@ -2,8 +2,22 @@
 
 image:icons/vale.png[Vale in terminal,500,auto]
 
+== Custom vocabulary
 
-add includes here for vocab...
+introduce
+
+----
+include::antora::/styles/config/vocabularies/portfolio/accept.txt[]
+----
+
+
+== Vale configuration file 
+
+.vale.ini
+
+----
+include::antora::/.vale.ini[]
+----
 
 adjusted FirstPerson.yml, FleschKincaid to grade level 9 since portfolio's are jargon-heavy and often an area where you have to pack in too much info in too little space...
 
