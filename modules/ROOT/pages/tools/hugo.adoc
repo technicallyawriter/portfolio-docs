@@ -78,10 +78,10 @@ Group similar content with taxonomies like "tags." Hugo automatically generates 
 
 First, define a "tags" taxonomy in your `hugo.toml` file like so:
 
-[source, toml]
+[source, yaml]
 ----
-[taxonomies]
-  tag = "tags"
+taxonomies
+  tag: "tags"
 ----
 
 Then, add whatever tags you'd like to a content page, for example "best practice." 
