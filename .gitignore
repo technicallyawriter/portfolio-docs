@@ -2,5 +2,5 @@
 /build/
 
 # ignore vale packages but track local vocab 
-/styles/*
+.github/styles/*
 !/styles/config/vocabularies
