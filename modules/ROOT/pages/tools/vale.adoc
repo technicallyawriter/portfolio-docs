@@ -7,7 +7,7 @@ image:icons/vale.png[Vale in terminal,500,auto]
 introduce
 
 ----
-include::/home/technicallyawriter/git/portfolio/styles/config/vocabularies/portfolio/accept.txt[]
+include::example$vale/vocab.txt[]
 ----
 
 
