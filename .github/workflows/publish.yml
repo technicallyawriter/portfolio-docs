@@ -20,21 +20,21 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
     - name: Checkout repository
-      uses: actions/checkout
+      uses: actions/checkout@v4
     - name: Configure Pages
-      uses: actions/configure-pages
+      uses: actions/configure-pages@v4
     - name: Install Node.js
-      uses: actions/setup-node
+      uses: actions/setup-node@v4
       with:
         node-version: '20'
     - name: Install Antora
       run: npm i antora
     - name: Generate Site
-      run: npx antora playbook.yml
+      run: npx antora antora-playbook.yml
     - name: Upload Artifacts
-      uses: actions/upload-pages-artifact
+      uses: actions/upload-pages-artifact@v3
       with:
         path: build/site
     - name: Deploy to GitHub Pages
       id: deployment
-      uses: actions/deploy-pages
+      uses: actions/deploy-pages@v4
