@@ -1,9 +1,9 @@
 = Vale
 image:icons/vale.png[Vale in terminal,500,auto]
 
-Lint your docs, stay up to date with upstream style guide changes, and customize your own style and vocabulary to reflect your style preferences with Vale.
+Lint your docs, stay up to date with upstream style guide changes, and customize your own rules and vocabulary to reflect your style preferences with Vale.
 
-There's a difference between claiming to follow a style guide and actually testing against that style guide. Vale is a tool that can bridge that distance and keep your writing honest. Nobody can keep all style guide rules in their head, and with Vale, you won't have to. Vale is a command line tool at its core, but there's good plugin support in popular text editors like VS Code and Neovim.
+There's a difference between claiming to follow a style guide and _actually_ testing against it. Vale is a tool that can bridge that gap and keep your writing honest. Nobody can keep all style guide rules in their head, and with Vale, you won't have to. Vale is a command line tool at its core, but there's good plugin support in popular text editors like VS Code and Neovim.
 
 Here's how I've configured Vale for this project. See my customizations below.
 
@@ -30,7 +30,7 @@ styles/
 
 One of Vale's greatest strength is the ability to customize it. If your organization's style rules differ slightly from Google's, for example, Vale makes it possible to adjust rules to your liking. You can even update the rule's description text, severity, and style guide hyperlink. In the past, I've linked custom rules to the doc team's Confluence which provided a rationale for the decision.
 
-There's a proper way to ensure your customizations aren't overwritten, though. It's not enough to remove rules you don't want to apply from a chosen style guide. Once you run `vale sync` or reinstall the app, those local changes are overwritten by the upstream source. To preserve customization, it's better to turn off specific rules in your xref=_vale_configuration_file[.vale.ini configuration file]. For rules you want to keep but modify, extend them in your own custom style. You can then store this configuration in version control where they'll persist across syncs and installs.
+There's a proper way to ensure your customizations aren't overwritten, though. It's not enough to remove rules you don't want to apply from a chosen style guide. Once you run `vale sync` or reinstall the app, those local changes are overwritten by the upstream source. To preserve customization, it's better to turn off specific rules in your xref:_vale_configuration_file[.vale.ini configuration file]. For rules you want to keep but modify, extend them in your own custom style. You can then store this configuration in version control where they'll persist across syncs and installs.
 
 [TIP]
 ====
@@ -48,7 +48,9 @@ Update your `.gitignore` to filter out upstream packages. Vale can always downlo
 
 Here's my vale configuration for this project. In general, I prefer Google's style guide to Microsoft or RedHat since I find it a bit less rigid and more conversational. This helps me fight jargon and keep docs simple.
 
-I've turned off several rules at the bottom of this file that I'd normally leave enabled. But, because this is a portfolio, I've allowed myself a few cliches, weasel words, and exclamation points as an indulgence! Vale includes several readability metrics by default. I prefer the FleschKincaid grade level rule since it focuses on syllable count rather than word count. Cadence is more jarring than count, in my opinion. In addition to keeping this readability metric, I've extended it into my own `portfolio` style and increased the grade level from 8 to 9.
+I've turned off several rules at the bottom of this file that I'd normally leave enabled. But, because this is a portfolio, I've allowed myself a few cliches, weasel words, and exclamation points as an indulgence!
+
+Vale includes several readability metrics by default. I've turned all off except the FleschKincaid grade level rule. I prefer this metric since it focuses on syllable count rather than word count. Cadence is more important than word count, in my opinion. In addition to keeping this readability metric, I've extended it into my own `portfolio` style and increased the grade level from 8 to 9.
 
 .Current .vale.ini
 [source, properties]
@@ -58,7 +60,7 @@ include::example$vale/vale.ini[]
 
 === Vocabulary
 
-I've maintained a custom vocab list at `styles/config/vocabularies/portfolio`. All terms in this list get added as an "exception" to each rule. This helps quiet Vale errors I'd otherwise ignore. And because this vocab list is separate from the synced packages, my configuration won't be overwritten over time.
+I've maintained a custom vocab list at `styles/config/vocabularies/portfolio`. All terms in this list get added as an "exception" to each style rule. This centralized list is easy to manage and because it's separate from the synced packages, it won't be overwritten over time.
 
 .Current portfolio vocab list 
 [source, txt]
