@@ -1,6 +1,6 @@
 = This portfolio website 
 
-Also, this portfolio is a writing sample for asciidoc!
+Also, this portfolio is a writing sample for AsciiDoc!
 
 example from portfolio!
 

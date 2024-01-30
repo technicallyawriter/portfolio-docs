@@ -1,7 +1,70 @@
 = Vale
 
+Lint your docs, stay up to date with upstream style guide changes, and customize your own rules and vocabulary to reflect your style preferences with link:https://vale.sh[Vale^].
+
 image:icons/vale.png[Vale in terminal,500,auto]
 
-adjusted FirstPerson.yml, FleschKincaid to grade level 9 since portfolio's are jargon-heavy and often an area where you have to pack in too much info in too little space...
+There's a difference between claiming to follow a style guide and _actually_ testing against it. Vale is a tool that can bridge that gap and keep your writing honest. Nobody can keep all style guide rules in their head, and with Vale, you won't have to. Vale is a command line tool at its core, but there's good plugin support in popular text editors like VS Code and Neovim.
 
-do an includes for the accept.txt vocab terms (your list is even case-sensitive, which means if--for example--you've added a proper noun as an exception for sentence case heading capitalization, Vale will enforce this capitalization everywhere, which means if you have improper capitalization on this proper noun, Vale flags it!). Use Global Project Linking (flags lowercase) as an example.
+Here's how I've configured Vale for this project. See my customizations below.
+
+.Vale structure in this portfolio project
+[source, ascii]
+----
+styles/
+├── config/
+│   └── vocabularies/
+│       └── portfolio/
+│           └── accept.txt
+├── Google/
+│   └── rules.yml
+├── portfolio/
+│   └── FleschKincaid.yml
+├── Readability/
+│   └── rules.yml
+└── write-good/
+    └── rules.yml
+.vale.ini
+----
+
+== Customizations
+
+One of Vale's greatest strength is the ability to customize it. If your organization's style rules differ slightly from Google's, for example, Vale makes it possible to adjust rules to your liking. You can even update the rule's description text, severity, and style guide hyperlink. In the past, I've linked custom rules to the doc team's Confluence which provided a rationale for the decision.
+
+There's a proper way to ensure your customizations aren't overwritten, though. It's not enough to remove rules you don't want to apply from a chosen style guide. Once you run `vale sync` or reinstall the app, those local changes are overwritten by the upstream source. To preserve customization, it's better to turn off specific rules in your xref:_vale_configuration_file[.vale.ini configuration file]. For rules you want to keep but modify, extend them in your own custom style. You can then store this configuration in version control where they'll persist across syncs and installs.
+
+[TIP]
+====
+Update your `.gitignore` to filter out upstream packages. Vale can always download these with [command]`vale sync`. But make sure to track your custom vocab and style content. Here's how my `.gitignore` looks for this project, for example.
+
+..gitignore for Vale
+[source, txt]
+----
+.github/styles/*
+!.github/styles/config/vocabularies
+!.github/styles/portfolio
+----
+====
+=== Vale configuration file 
+
+Here's my vale configuration for this project. In general, I prefer Google's style guide to Microsoft or RedHat since I find it a bit less rigid and more conversational. This helps me fight jargon and keep docs simple.
+
+I've turned off several rules at the bottom of this file that I'd normally leave enabled. But, because this is a portfolio, I've allowed myself a few cliches, weasel words, and exclamation points as an indulgence!
+
+Vale includes several readability metrics by default. I've turned all off except the FleschKincaid grade level rule. I prefer this metric since it focuses on syllable count rather than word count. Cadence is more important than word count, in my opinion. In addition to keeping this readability metric, I've extended it into my own `portfolio` style and increased the grade level from 8 to 9.
+
+.Current .vale.ini
+[source, properties]
+----
+include::example$vale/vale.ini[]
+----
+
+=== Vocabulary
+
+I've maintained a custom vocab list at `styles/config/vocabularies/portfolio`. All terms in this list get added as an "exception" to each style rule. This centralized list is easy to manage and because it's separate from the synced packages, it won't be overwritten over time.
+
+.Current portfolio vocab list 
+[source, txt]
+----
+include::example$vale/vocab.txt[]
+----

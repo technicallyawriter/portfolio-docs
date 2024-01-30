@@ -1,0 +1,39 @@
+Antora
+(?i)shortcodes?
+Jira
+Confluence
+GitHub
+Neovim
+Atlassian's
+hotfix
+hotfixes
+xyz
+SME
+Kanban
+dev
+methodology
+check-in
+touch-point
+RTFM
+MadCap Flare
+AsciiDoc
+AsciiDoctor-pdf
+xkcd
+XHTML
+VS Code
+PDF
+Markdown
+N. Parker Jones
+Git's
+repo
+TOCs
+Microsoft Word
+Pandoc
+Global Project Linking
+hoc
+overcommitted 
+unassigning
+roadmaps
+siloed
+Includes Page
+GetPage
