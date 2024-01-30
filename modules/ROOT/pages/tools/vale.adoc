@@ -46,7 +46,7 @@ You'll see I've turned off several rules at the bottom of this file that don't m
 
 === Portfolio style
 
-I get to talk in the first person since it's my portolio. I'm also allowed to be excited with exclamation points! And, because portfolios depend upon a certain level of jargon in such a small space, I increased the FleschKincaid grade level from 8 to 9. I prefer Google's style guide to Microsoft or RedHat. Correct blend of casual (allowing contractions).
+I get to talk in the first person since it's my portfolio. I'm also allowed to be excited with exclamation points! And, because portfolios depend upon a certain level of jargon in such a small space, I increased the FleschKincaid grade level from 8 to 9. I prefer Google's style guide to Microsoft or RedHat. Correct blend of casual (allowing contractions).
 
 === Vocabulary
 

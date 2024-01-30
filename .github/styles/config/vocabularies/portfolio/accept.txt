@@ -5,7 +5,8 @@ Confluence
 GitHub
 Neovim
 Atlassian's
-(?i)hotfixes?
+hotfix
+hotfixes
 xyz
 SME
 Kanban
