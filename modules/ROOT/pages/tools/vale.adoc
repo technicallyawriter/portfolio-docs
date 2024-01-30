@@ -16,7 +16,7 @@ include::example$vale/vocab.txt[]
 
 .vale.ini
 
-[source, php]
+[source, ini]
 ----
 include::example$vale/vale.ini[]
 ----
