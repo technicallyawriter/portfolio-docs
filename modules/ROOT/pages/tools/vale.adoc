@@ -5,6 +5,25 @@ Lint your docs and enforce your style guide with Vale. Actually test your docs. 
 
 Vale via terminal, VS Code, or ALE (Neovim plugin).
 
+.Directory structure
+[source, ascii]
+----
+Styles/
+├── config/
+│   └── vocabularies/
+│       └── portfolio/
+│           └── accept.txt
+├── Google/
+│   └── rules.yml
+├── portfolio/
+│   └── FleschKincaid.yml
+├── Readability/
+│   └── rules.yml
+└── write-good/
+    └── rules.yml
+.vale.ini
+----
+
 == Customizations
 
 Important to keep these changes across Vale upgrades and syncs, I've created my own `portfolio` vocabulary and style guide. 
