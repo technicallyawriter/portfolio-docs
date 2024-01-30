@@ -7,7 +7,7 @@ image:icons/vale.png[Vale in terminal,500,auto]
 introduce
 
 ----
-include::../../../styles/config/vocabularies/portfolio/accept.txt[]
+include::/../styles/config/vocabularies/portfolio/accept.txt[]
 ----
 
 
