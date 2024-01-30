@@ -5,7 +5,7 @@ Lint your docs, stay up to date with upstream style guide changes, and customize
 
 There's a difference between claiming to follow a style guide and actually testing against that style guide. Vale is a tool that can bridge that distance and keep your writing honest. Nobody can keep all style guide rules in their head, and with Vale, you won't have to. Vale is a command line tool at its core, but there's good plugin support in popular text editors like VS Code and Neovim.
 
-Here's how I have Vale configured for this project. See my customizations below.
+Here's how I've configured Vale for this project. See my customizations below.
 
 .Vale structure in this portfolio project
 [source, ascii]
