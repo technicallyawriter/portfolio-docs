@@ -50,11 +50,11 @@ Flexibility is an asset, and the ability to fine-tune templates to handle a vari
 
 Hugo pages use front matter to set values you can parse and refer to as metadata in a variety of ways. Standard values for front matter are `Title`, `Description`, `Date`, and `Author` for example. You can further define metadata in front matter however best suits your needs. 
 
-My favorite ways to use front matter in Hugo are for content reuse, such as with the xref:#.GetPage_method[.GetPage method] or by grouping content with xref:#_taxonomies[taxonomies].
+My favorite ways to use front matter in Hugo are for content reuse, such as with the xref:_getpage_method[.GetPage method] or by grouping content with xref:#_taxonomies[taxonomies].
 
 === .GetPage method
 
-Reuse content you've already written by grabbing it with the `.GetPage` method in Hugo. A classic example of this is when you want to introduce a feature on release notes already written elsewhere. By storing this description in the feature's front matter, you can grab it with the `.Getpage` method.
+Reuse content you've already written by grabbing it with the `.GetPage` method in Hugo. A classic example of this is when you want to introduce a feature on release notes already written elsewhere. By storing this description in the feature's front matter, you only need to maintain it in one place.
 
 .Feature xyz's front matter
 ----
@@ -62,9 +62,10 @@ Reuse content you've already written by grabbing it with the `.GetPage` method i
 Title: "Feature xyz"
 Author: "technicallyawriter"
 Description: "Feature xyz is the solution to all your problems..."
+---
 ----
 
-.Reference existing Feature-xyz description for release notes
+.Reuse existing description for release notes
 [source, markdown]
 ----
 include::example$hugo/front-matter-reuse.html[]
@@ -72,7 +73,7 @@ include::example$hugo/front-matter-reuse.html[]
 
 === Taxonomies
 
-What if you want to dynamically group similar content by tag to display on its own page? Hugo makes this straight forward with taxonomy pages. 
+Group similar content with taxonomies like "tags." Hugo automatically generates a page at `/tags/<tag-name>/` for each tag you define. Setup a workflow for users to explore tags by completing the following steps.
 
 First, define a "tags" taxonomy in your `hugo.toml` file like so:
 
@@ -82,7 +83,7 @@ First, define a "tags" taxonomy in your `hugo.toml` file like so:
   tag = "tags"
 ----
 
-Then, add whatever tags you'd like to a content page, for example "best practice." Hugo automatically generates a page at `/tags/<tag-name>/` for each tag you define. 
+Then, add whatever tags you'd like to a content page, for example "best practice." 
 
 [source, markdown]
 ----
@@ -93,7 +94,7 @@ Tags: "best practice"
 ---
 ----
 
-Finally, update your page template to display a page's tags. Users that click the "best practice" tag are redirected to `/tags/best-practice/`.
+Finally, update your page template to display a page's tags. If a user clicks the "best practice" tag, they're redirected to `/tags/best-practice/`.
 
 [source, Go (Hugo templating)]
 ----
