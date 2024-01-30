@@ -4,3 +4,4 @@
 # ignore vale packages but track local vocab 
 .github/styles/*
 !/styles/config/vocabularies
+!/styles/portfolio
