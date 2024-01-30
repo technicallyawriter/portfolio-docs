@@ -1,26 +1,34 @@
 = Vale
 image:icons/vale.png[Vale in terminal,500,auto]
 
-== Custom vocabulary
+Lint your docs and enforce your style guide with Vale. Actually test your docs. Apply rules through YAML files.
 
-introduce
+Vale via terminal, VS Code, or ALE (Neovim plugin).
 
-[source, txt]
-----
-include::example$vale/vocab.txt[]
-----
+== Customizations
 
+Important to keep these changes across Vale upgrades and syncs, I've created my own `portfolio` vocabulary and style guide. 
+
+show styles hierarchy.
 
 == Vale configuration file 
 
-.vale.ini
-
+.Current .vale.ini
 [source, properties]
-
 ----
 include::example$vale/vale.ini[]
 ----
 
-adjusted FirstPerson.yml, FleschKincaid to grade level 9 since portfolio's are jargon-heavy and often an area where you have to pack in too much info in too little space...
+=== Portfolio style
 
-do an includes for the accept.txt vocab terms (your list is even case-sensitive, which means if--for example--you've added a proper noun as an exception for sentence case heading capitalization, Vale will enforce this capitalization everywhere, which means if you have improper capitalization on this proper noun, Vale flags it!). Use Global Project Linking (flags lowercase) as an example.
+I get to talk in the first person since it's my portolio. I'm also allowed to be excited with exclamation points! And, because portfolios depend upon a certain level of jargon in such a small space, I increased the FleschKincaid grade level from 8 to 9. I prefer Google's style guide to Microsoft or RedHat. Correct blend of casual (allowing contractions).
+
+=== Vocabulary
+
+Point of maintaining a vocab. How it works (adds terms to "exceptions" list for all rules).
+
+.Current portfolio vocab values
+[source, txt]
+----
+include::example$vale/vocab.txt[]
+----
