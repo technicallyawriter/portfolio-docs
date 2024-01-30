@@ -9,7 +9,6 @@
 ** xref:tools/hugo.adoc[]
 ** xref:tools/antora.adoc[]
 ** xref:tools/vale.adoc[]
-** xref:tools/text-editors.adoc[]
 * Writing samples 
 ** xref:writing-samples/feature.adoc[]
 ** xref:writing-samples/release-notes.adoc[]
