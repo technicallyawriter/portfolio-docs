@@ -8,5 +8,5 @@ content:
     branches: HEAD
 ui:
   bundle:
-    url: https://github.com/technicallyawriter/portfolio-ui
+    url: https://github.com/technicallyawriter/portfolio-ui.git
     snapshot: true 
