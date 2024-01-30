@@ -8,6 +8,6 @@ content:
     branches: HEAD
 ui:
   bundle:
-    url: /home/technicallyawriter/git/portfolio-ui/build/ui-bundle.zip
+    url: https://github.com/technicallyawriter/portfolio-ui
     snapshot: true 
   supplemental_files: ./themes/supplemental-ui/
