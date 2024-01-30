@@ -2,7 +2,7 @@
 
 image:icons/hugo.png[Hugo logo,50,50]
 
-Hugo is a fast and powerful plain text static site generator. Don't let the simplicity of the syntax fool you, though. Hugo has a high ceiling for configuration, since it leverages and extends the Go programming language. This software's main strengths are its templating and ability to parse content for xref:_shortcodes[shortcodes] and xref:_.Getpage_method[methods].
+Hugo is a fast and powerful plain text static site generator. Don't let the simplicity of the syntax fool you, though. Hugo has a high ceiling for configuration, since it leverages and extends the Go programming language. This software's main strengths are its templating and ability to parse content for xref:_shortcodes[shortcodes] and xref:_Getpage_method[methods].
 
 And since Hugo is open source, I can experiment with it for free in personal projects, if I choose. This is a huge advantage compared to pricey proprietary tools like Flare.
 
