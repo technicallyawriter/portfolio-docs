@@ -1,4 +1,5 @@
 = Vale
+
 image:icons/vale.png[Vale in terminal,500,auto]
 
 Lint your docs, stay up to date with upstream style guide changes, and customize your own rules and vocabulary to reflect your style preferences with Vale.
