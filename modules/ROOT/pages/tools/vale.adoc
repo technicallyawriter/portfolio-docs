@@ -16,7 +16,7 @@ include::example$vale/vocab.txt[]
 .vale.ini
 
 ----
-include::example$vale/.vale.ini[]
+include::example$vale/vale.ini[]
 ----
 
 adjusted FirstPerson.yml, FleschKincaid to grade level 9 since portfolio's are jargon-heavy and often an area where you have to pack in too much info in too little space...
