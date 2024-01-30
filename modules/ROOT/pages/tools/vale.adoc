@@ -1,8 +1,8 @@
 = Vale
 
-image:icons/vale.png[Vale in terminal,500,auto]
-
 Lint your docs, stay up to date with upstream style guide changes, and customize your own rules and vocabulary to reflect your style preferences with Vale.
+
+image:icons/vale.png[Vale in terminal,500,auto]
 
 There's a difference between claiming to follow a style guide and _actually_ testing against it. Vale is a tool that can bridge that gap and keep your writing honest. Nobody can keep all style guide rules in their head, and with Vale, you won't have to. Vale is a command line tool at its core, but there's good plugin support in popular text editors like VS Code and Neovim.
 
