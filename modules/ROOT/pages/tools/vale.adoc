@@ -36,7 +36,7 @@ There's a proper way to ensure your customizations aren't overwritten, though. I
 ====
 Update your `.gitignore` to filter out your specified packages. But make sure to track your custom vocab and style content. Here's how my `.gitignore` looks for this project, for example.
 
-.gitignore for Vale
+..gitignore for Vale
 [source, txt]
 ----
 .github/styles/*
