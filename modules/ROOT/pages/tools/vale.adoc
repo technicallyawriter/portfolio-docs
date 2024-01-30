@@ -40,8 +40,8 @@ Update your `.gitignore` to filter out your specified packages. But make sure to
 [source, txt]
 ----
 .github/styles/*
-!/styles/config/vocabularies
-!/styles/portfolio
+!.github/styles/config/vocabularies
+!.github/styles/portfolio
 ----
 ====
 === Vale configuration file 
