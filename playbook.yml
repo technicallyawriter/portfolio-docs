@@ -10,4 +10,3 @@ ui:
   bundle:
     url: https://github.com/technicallyawriter/portfolio-ui
     snapshot: true 
-  supplemental_files: ./themes/supplemental-ui/
