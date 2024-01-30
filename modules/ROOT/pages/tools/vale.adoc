@@ -7,7 +7,7 @@ image:icons/vale.png[Vale in terminal,500,auto]
 introduce
 
 ----
-include::/../styles/config/vocabularies/portfolio/accept.txt[]
+include::../../../styles/config/vocabularies/portfolio/accept.txt[]
 ----
 
 
@@ -16,7 +16,6 @@ include::/../styles/config/vocabularies/portfolio/accept.txt[]
 .vale.ini
 
 ----
-include::antora::vale.ini[]
 ----
 
 adjusted FirstPerson.yml, FleschKincaid to grade level 9 since portfolio's are jargon-heavy and often an area where you have to pack in too much info in too little space...
