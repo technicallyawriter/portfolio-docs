@@ -11,3 +11,5 @@ Vale integration. Terminal integration. List favorite plugins.
 Keeping it simple. allows me to focus on writing (less distractions!). Also quick keyboard shortcuts are so fast! An easy example: if I'm writing about new software with terms I'll need to add to Vale's custom vocab, I can add them so quickly with Neovim (yank word (Y+W) then buffer switch to vocab accept.txt list with `:b vocab[tab autocomplete]` and `P` to page (actually show keyboard commands with AsciiDoc).
 
 list configuration (Vale via ALE, LSP setup)
+
+todo...
