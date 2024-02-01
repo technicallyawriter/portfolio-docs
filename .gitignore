@@ -1,6 +1,3 @@
-# antora output
-/build/
-
 # ignore vale packages but track local vocab 
 .github/styles/*
 !.github/styles/config/vocabularies
