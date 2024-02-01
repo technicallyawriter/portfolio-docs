@@ -4,11 +4,11 @@
 ** xref:principles/agile.adoc[]
 * Tools
 ** xref:tools/git.adoc[]
-** xref:tools/madcap-flare.adoc[]
+** xref:tools/vale.adoc[]
 ** xref:tools/jira-confluence.adoc[]
+** xref:tools/madcap-flare.adoc[]
 ** xref:tools/hugo.adoc[]
 ** xref:tools/antora.adoc[]
-** xref:tools/vale.adoc[]
 * Writing samples 
 ** xref:writing-samples/feature.adoc[]
 ** xref:writing-samples/release-notes.adoc[]
