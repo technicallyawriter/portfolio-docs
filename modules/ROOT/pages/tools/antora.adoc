@@ -1,5 +1,3 @@
-:audience: dev
-
 = Antora
 
 With a tagline that claims it's a "site generator for tech writers who love writing AsciiDocs" I had to give Antora a try. In fact, it's what I wrote this portfolio with.
@@ -94,3 +92,5 @@ base:
 **TIP:** refer to the link:https://github.com/asciidoctor/asciidoctor-pdf/blob/main/docs/theming-guide.adoc[AsciiDoctor PDF Theming Guide,window=_blank] for more details.
 
 todo...
+
+speling testt for vaale
