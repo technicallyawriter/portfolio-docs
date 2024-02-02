@@ -1,6 +1,6 @@
-name: prerelease 
-title: Prerelease 
-version: 'feature-abc'
+name: technicallyawriter 
+title: technicallyawriter 
+version: '2.0.0'
 prerelease: -alpha
 asciidoc:
   attributes:
