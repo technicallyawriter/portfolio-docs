@@ -1,7 +1,7 @@
-name: prerelease 
-title: Prerelease
+name: feature-abc 
+title: feature-abc
 version: '2.0.0'
-prerelease: -feature-abc
+prerelease: -alpha
 asciidoc:
   attributes:
     source-language: asciidoc@
