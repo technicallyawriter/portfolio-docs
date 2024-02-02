@@ -1,6 +1,5 @@
 name: technicallyawriter 
 title: technicallyawriter
-version: feature/abc 
 asciidoc:
   attributes:
     source-language: asciidoc@
