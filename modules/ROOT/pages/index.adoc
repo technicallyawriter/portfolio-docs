@@ -1,34 +1,5 @@
-= N. Parker Jones
+= Feature xyz
 
-FEATURE-xyz
+This is prerelease content for feature xyz! It's not released yet but you can easily deploy and share with internal stakeholders or early access audiences.
 
-Hi, I'm Parker. &#128075; Welcome to my tech writing portfolio!
-
-I'm an tech writer with 6 years of experience in the Financial and Facility Management industries. Through this time, I've worked within Engineering and Product Management departments as a sole contributor, team member, and team lead. Wherever I find myself, I strive to produce documentation that answers more questions than it creates and rewards those who take the time to read what I write. 
-
-== Docs-as-code image:icons/terminal.png[a blank computer terminal,50,50]
-
-
-I prefer to treat my docs like source code. Using modern software development processes and tooling makes it possible to produce modular, reviewed, and accessible documentation at scale. 
-
-Goodbye 500+ page Microsoft Word documents; hello pull requests that kick off continuous deployment!
-
-== Agile methodology image:icons/agile.png[circular cycle to represent the feedback loop of agile,50,50]
-
-Years of implementing Agile has taught me the value of proper ticket management, clear acceptance criteria, tight feedback loops with SMEs/shareholders, and the important of periodic reflection on how things are done.
-
-== Simple language image:icons/edit.png[hand holding a pen,50,50]
-
-I believe it's often harder to write a single clear sentence than a paragraph of jumbled jargon. The challenge of tech writing is to translate the complexity of software into manageable concepts and tasks.
-
-== User empathy image:icons/user.png[confused user,50,50]
-
-As a self-taught Linux power user, I know the importance of quality documentation and how painful it is to be stuck with lacking instructions. "User empathy" is an overused buzzword, but let's just say I've suffered through enough poorly documented open source software for it to dramatically inform my tech writing approach.  
-
-== Comic relief
-
-I enjoy working in the middle of this spectrum, preferably not too far to the right! 
-
-.The perils of technical writing
-[link=https://xkcd.com/1343/]
-image::manuals.png[xkcd comic about how manuals can be so confusing they need their own manual, thus creating more problems for users.]
+How I did this...talk branch structure and playbook branch filter.

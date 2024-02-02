@@ -1,15 +1,15 @@
-* xref:index.adoc[Welcome]
-* Principles
+* xref:index.adoc[Overview of xyz]
+* Principles of xyz
 ** xref:principles/docs-as-code.adoc[]
 ** xref:principles/agile.adoc[]
-* Tools
+* Tools of xyz
 ** xref:tools/git.adoc[]
 ** xref:tools/vale.adoc[]
 ** xref:tools/jira-confluence.adoc[]
 ** xref:tools/madcap-flare.adoc[]
 ** xref:tools/hugo.adoc[]
 ** xref:tools/antora.adoc[]
-* Writing samples 
+* Writing samples of xyz
 ** xref:writing-samples/feature.adoc[]
 ** xref:writing-samples/release-notes.adoc[]
 ** xref:writing-samples/portfolio.adoc[]
