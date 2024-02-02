@@ -4,6 +4,8 @@
 
 With a tagline that claims it's a "site generator for tech writers who love writing AsciiDocs" I had to give Antora a try. In fact, it's what I wrote this portfolio with.
 
+Actually lets you nest your `/docs/` within the software. Storing docs with the rest of the software is good. You can even make symlinks between real code files and your examples files this way.
+
 image:icons/antora.png[Antora logo,50,50] 
 
 == Separation of concerns
