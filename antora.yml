@@ -1,6 +1,6 @@
 name: prerelease 
 title: '2.0.0'
-version: 'feature/xyz'
+version: 'feature-xyz'
 prerelease: -alpha
 asciidoc:
   attributes:
