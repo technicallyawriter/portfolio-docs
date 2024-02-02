@@ -1,5 +1,5 @@
 name: feature-abc 
-title: Jira-1234 
+title: Prerelease 
 version: '2.0.0'
 prerelease: -alpha
 asciidoc:
