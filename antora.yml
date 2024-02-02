@@ -1,5 +1,5 @@
-name: feature-abc 
-title: Prerelease 
+name: prerelease 
+title: feature-abc
 version: '2.0.0'
 prerelease: -alpha
 asciidoc:
