@@ -44,7 +44,7 @@ including a section of the file. always scared of doing it by line, so do it by 
 
 include or exclude based on these attributes. use for administrator and internal notes.
 
-balancing act in tems of organization: for smaller interspersed conditions (like an internal note), just single-source it and have all conditions display in the same doc. If this becomes challenging due to the length of the doc (and readability suffers), then determine what needs to be made more modular and separate out the file with its own attributes (and `include::` where appropriate back in the "main" doc). Keep scale in mind but don't automatically build something for infinite scaling (this introduces needless complexity). Instead, keep the topic open and try to get ahead of this as needed rather than all at once in the beginning.
+balancing act in terms of organization: for smaller interspersed conditions (like an internal note), just single-source it and have all conditions display in the same doc. If this becomes challenging due to the length of the doc (and readability suffers), then determine what needs to be made more modular and separate out the file with its own attributes (and `include::` where appropriate back in the "main" doc). Keep scale in mind but don't automatically build something for infinite scaling (this introduces needless complexity). Instead, keep the topic open and try to get ahead of this as needed rather than all at once in the beginning.
 
 ----
 == General Guide
