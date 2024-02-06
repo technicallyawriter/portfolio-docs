@@ -18,7 +18,7 @@ playbook code
 
 Here's the result of this configuration once deployed to a test site.
 
-img:antora-feature-branches.png[Deployed feature branchinges in Antora test site]
+image:antora-feature-branches.png[Deployed feature branchinges in Antora test site]
 
 == Easy scaling
 
