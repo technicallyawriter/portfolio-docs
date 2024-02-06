@@ -1,18 +1,18 @@
 = Antora
 
-With a tagline that claims it's a "site generator for tech writers who love writing AsciiDocs" I had to give Antora a try. In fact, it's what I wrote this portfolio with. Separation of concerns. 
+With a tagline that claims it's a "site generator for tech writers who love writing AsciiDocs" I had to give Antora a try. In fact, it's what I wrote this portfolio with. Compared to Flare and Hugo, it stands out in its ability to leverage Git and AsciiDoc for delivering scalable docs efficiently.
 
 image:icons/antora.png[Antora logo,50,50] 
 
 == Separation of concerns
 
-Antora really separates content from design from styling from build. Three different repos (playbook, content tiles, theme). This degree of separation helps with large, enterprise projects. If it's a build issue, update your playbook repo to automatically push changes to other projects referencing the repo in their `antora.yml`.
+Antora's project structure values separation. It requires you have separate repositories for your content files, build configuration, and site's theming. This compartmentalization forces changes to occur in their own context, which makes managing complex projects much easier. Edits to your `antora-playbook.yml`, for example, won't show up in a PR that updates content files. Instead, Antora uses the power of Git to grab the latest published versions of content. In this way, Git becomes much more than just a place to save your work. It becomes pivotal in your deployment pipeline.
+
+Defining branches in your `antora-playbook.yml` makes it easy to only grab changes ready for production, or, if you prefer, you can create a development pipeline by looking at other branches.
 
 == Easy scaling
 
-Reliance on git and the ability to scale easily. Scaling is as easy as updating your `antora.yml` file to fetch from other repos. When they update, you consume the updated code. Defining branches in your `antora.yml` makes it easy to only grab changes ready for production, or, if you prefer, you can create a development pipeline by looking at other branches.
-
-Actually lets you nest your `/docs/` within the software. Storing docs with the rest of the software is good. You can even make symlinks between real code files and your examples files this way.
+Want to add new projects to your docs site? Just add the Git repo in your `antora-playbook.yml` and a `nav.toc` file, then build it. Actually lets you nest your `/docs/` within the software. Storing docs with the rest of the software is good. You can even make symlinks between real code files and your examples files this way.
 
 == AsciiDoc over traditional Markdown
 
