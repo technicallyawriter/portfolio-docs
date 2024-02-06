@@ -12,6 +12,7 @@ Since Antora sources content from repo URLs, Git becomes a powerful tool in your
 
 For example, I've configured this project to deploy feature branches according to a pattern search for `'feature/*`. My favorite part of this configuration is that it's dynamic. If new feature branches get created, they're generated the next time the site builds. Once a feature branch is deleted, it's removed on the next build.
 
+[source,yaml]
 ----
 content:
   sources:
@@ -19,14 +20,17 @@ content:
     branches: [main, 'feature/*']
 ----
 
-Click the version in the lower-left corner of the screen to display these feature branches.
+Click the version toolbar in the lower-left corner of the screen to display these feature branches. 
 
 == Easy scaling
 
-Want to add new projects to your docs site? Just add the Git repo in your `antora-playbook.yml` and a `nav.adoc` file, then build it. 
+Want to add new projects to your docs site? Just add the Git repo to the sources block in your `antora-playbook.yml`, specify a branch, and a `nav.adoc` file. Once configured, it's included in the next build.
 
 == AsciiDoc over traditional Markdown
 
+Traditional Markdown is wonderful in its simplicity. AsciiDoc maintains this simplicity but with a much richer feature set geared toward tech writing. Two of my favorite AsciiDoc features are directives that help with content reuse and single-sourcing docs: `xref:_includes_[\includes::[]]` and `xref:_conditional_directives_[ifdef[]]`.
+
+AsciiDoc is the native syntax in Antora. In fact, Antora's lead maintainer (link:https://github.com/mojavelinux[Dan Allen]) is also the Asciidoctor project lead. Compatibility between the two is tight.
 Traditional Markdown is great for documentation, but as a tech writer, I prefer for the power and flexibility of AsciiDoc.
 
 === Includes
