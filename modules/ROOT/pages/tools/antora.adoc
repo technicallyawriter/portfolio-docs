@@ -51,21 +51,22 @@ The below code sampe shows admonitions with conditional directives for specific 
 == Feature xyz
 
 Introuction to feature xyz...
+
+\ifdef::admin[]
 [IMPORTANT]
-ifdef::admin[]
 .Administrator Note
 === Admins Only
 
 This information is relevant to system administrators.
-endif::admin[]
+\endif::admin[]
 
-[TIP]
-ifdef::internal[]
+\ifdef::internal[]
+[IMPORTANT]
 .Internal Note
 === Internal Use Only
 
-This section is meant for internal stakeholders.
-endif::internal[]
+This section is meant for internal eyes only.
+\endif::internal[]
 ----
 
 == Versioning
