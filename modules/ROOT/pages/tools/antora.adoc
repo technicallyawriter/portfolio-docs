@@ -10,15 +10,16 @@ Antora's project structure is strict, which is actually a strength. It requires 
 
 Since Antora sources content from repo URLs, Git becomes a powerful tool in your deployment pipeline. You can run different branches of your playbook project that automatically deploy to production or test environments, depending on how you define branches.
 
-For example, I've configured my [branch]`dev` branch on link:[repo] to deploy feature branches to a test site according to a pattern search.
+For example, I've configured this project to deploy feature branches according to a pattern search for `'feature/*`. My favorite part of this configuration is that it's dynamic. If new feature branches get created, they're generated the next time the site builds. Once a feature branch is deleted, it's removed on the next build.
 
 ----
-playbook code
+content:
+  sources:
+  - url: https://github.com/technicallyawriter/portfolio-docs.git 
+    branches: [main, 'feature/*']
 ----
 
-Here's the result of this configuration once deployed to a test site.
-
-image:antora-feature-branches.png[Deployed feature branches in Antora test site]
+Click the version in the lower-left corner of the screen to display these feature branches.
 
 == Easy scaling
 
