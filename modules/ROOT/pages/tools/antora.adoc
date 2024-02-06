@@ -2,17 +2,27 @@
 
 image:icons/antora.png[Antora logo,50,50] 
 
-With a tagline that claims it's a "site generator for tech writers who love writing AsciiDocs" I had to give Antora a try. In fact, it's what I wrote this portfolio with. Compared to Flare and Hugo, it stands out in its ability to leverage Git and AsciiDoc for delivering scalable docs efficiently.
+With a tagline that claims it's a "site generator for tech writers who love writing AsciiDocs" I had to give Antora a try. In fact, it's what I wrote this portfolio with. Compared to Flare and Hugo, it stands out in its ability to leverage Git and AsciiDoc to deliver scalable docs with ease.
 
-== Separation of concerns
+== Structured configuration
 
-Antora's project structure values separation. It requires you have separate repositories for your content files, build configuration, and site's theming. This compartmentalization forces changes to occur in their own context, which makes managing complex projects much easier. Edits to your `antora-playbook.yml`, for example, won't show up in a PR that updates content files. Instead, Antora uses the power of Git to grab the latest published versions of content. In this way, Git becomes much more than just a place to save your work. It becomes pivotal in your deployment pipeline.
+Antora's project structure is strict, which is actually a strength. It requires you to have separate repositories for your content files, build configuration, and site's theming. This compartmentalization enforces a standard where commits occur in their own context, making complex projects easier to manage. Edits to your `antora-playbook.yml`, for example, won't show up in a PR that updates feature docs. While there's a slight learning curve to adopt Antora's conventions, it's worth it to have distinct separation of concerns. 
 
-Defining branches in your `antora-playbook.yml` makes it easy to only grab changes ready for production, or, if you prefer, you can create a development pipeline by looking at other branches.
+Since Antora sources content from repo URLs, Git becomes a powerful tool in your deployment pipeline. You can run different branches of your playbook project that automatically deploy to production or test environments, depending on how you define branches.
+
+For example, I've configured my [branch]`dev` branch on link:[repo] to deploy feature branches to a test site according to a pattern search.
+
+----
+playbook code
+----
+
+Here's the result of this configuration once deployed to a test site.
+
+img:antora-feature-branches.png[Deployed feature branchinges in Antora test site]
 
 == Easy scaling
 
-Want to add new projects to your docs site? Just add the Git repo in your `antora-playbook.yml` and a `nav.toc` file, then build it. Actually lets you nest your `/docs/` within the software. Storing docs with the rest of the software is good. You can even make symlinks between real code files and your examples files this way.
+Want to add new projects to your docs site? Just add the Git repo in your `antora-playbook.yml` and a `nav.adoc` file, then build it. 
 
 == AsciiDoc over traditional Markdown
 
