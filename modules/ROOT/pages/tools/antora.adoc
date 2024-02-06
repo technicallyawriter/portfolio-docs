@@ -20,7 +20,7 @@ content:
     branches: [main, 'feature/*']
 ----
 
-Click the version toolbar in the lower-left corner of the screen to display these feature branches. 
+Click the version toolbar in the lower-left corner of the screen to display the `feature-abc` and [branch]`feature-xyz` feature branches. To indicate they're prerelease docs, their `antora.yml` file specifices an `-alpha`
 
 == Easy scaling
 
@@ -28,35 +28,29 @@ Want to add new projects to your docs site? Just add the Git repo to the sources
 
 == AsciiDoc over traditional Markdown
 
-Traditional Markdown is wonderful in its simplicity. AsciiDoc maintains this simplicity but with a much richer feature set geared toward tech writing. Two of my favorite AsciiDoc features are directives that help with content reuse and single-sourcing docs: `xref:_includes_[\includes::[]]` and `xref:_conditional_directives_[ifdef[]]`.
+Traditional Markdown is wonderful in its simplicity, but it's underpowered for large documentation projects. AsciiDoc is just as readable as Markdown with a much richer feature set geared toward tech writing. Two of my favorite AsciiDoc features are directives that help with content reuse and single-sourcing docs: `xref:_includes[\includes::[]]` and `xref:_conditional_directives[ifdef[]]`.
 
-AsciiDoc is the native syntax in Antora. In fact, Antora's lead maintainer (link:https://github.com/mojavelinux[Dan Allen]) is also the Asciidoctor project lead. Compatibility between the two is tight.
-Traditional Markdown is great for documentation, but as a tech writer, I prefer for the power and flexibility of AsciiDoc.
+AsciiDoc is the native syntax in Antora. In fact, Antora's lead maintainer (link:https://github.com/mojavelinux[Dan Allen]) is also the Asciidoctor project lead.
 
 === Includes
 
-great tool. includes the whole file by default. 
+emphasis on reuse.
 
 including a section of the file. always scared of doing it by line, so do it by "tag" if you're trying to grab a section of the page. if using tags, you'll need to filter them out, though! `\include::file-with-snippets.adoc[tag=!*]`
 
 === Conditional directives
 
-include or exclude based on these attributes. use for administrator and internal notes.
-
-balancing act in terms of organization: for smaller interspersed conditions (like an internal note), just single-source it and have all conditions display in the same doc. If this becomes challenging due to the length of the doc (and readability suffers), then determine what needs to be made more modular and separate out the file with its own attributes (and `include::` where appropriate back in the "main" doc). Keep scale in mind but don't automatically build something for infinite scaling (this introduces needless complexity). Instead, keep the topic open and try to get ahead of this as needed rather than all at once in the beginning.
-
-Attributes: Works similar to how Hugo uses front matter (creates metadata).
+emphasis on single-sourcing for different outputs. common example is for administrator and internal notes.
 
 Single source content (and output depending on audience) with attributes that you include or exclude. This means you don't have to have two versions of the same doc--it all lives on the same page (balancing act). Can define attributes in dedicated files and source them.
 
-example attributes file: `general-attribues.adoc`, `administrator-attributes.adoc`, `internal-attributes.adoc`
+The below code sampe shows admonitions with conditional directives for specific audiences (admin and internal). 
 
+[source, asciidoc]
 ----
-== General Guide
+== Feature xyz
 
-This guide is intended for a general audience.
-// ... general content ...
-
+Introuction to feature xyz...
 [IMPORTANT]
 ifdef::admin[]
 .Administrator Note
