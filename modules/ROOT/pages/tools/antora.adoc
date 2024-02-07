@@ -32,40 +32,29 @@ AsciiDoc is the native syntax in Antora. In fact, Antora's lead maintainer (link
 
 === Includes
 
-talk about reuse. TODO...
+The `\includes::` directive makes including modular docs a simple one-line call. It's my favorite AsciiDoc feature and changes the way I organize my projects. 
 
-including a section of the file. always scared of doing it by line, so do it by "tag" if you're trying to grab a section of the page. if using tags, you'll need to filter them out, though! `\include::file-with-snippets.adoc[tag=!*]`
+Antora builds on this with its link:https://docs.antora.org/antora/latest/family-directories/[family directories]. Example, attachments, images, and partials have their own default root locations, so sourcing them is predictable. For example, referencing a file elsewhere in your project can often turn ugly with relative paths like `\include::../../../../feature-xyz/modular-xyz.adoc`. With Antora's family directories, you can reference the family's root directory for an intuitive path: `\include::example$/feature-xyz/modular-xyz.adoc`. I reference all source code blocks in this portfolio this way.
 
 === Conditional directives
 
-emphasis on single-sourcing for different outputs. common example is for administrator and internal notes.
+Conditional directives in AsciiDoc help filter content based on output. Single-sourcing your docs like this can mean differentiating online vs. print content or only showing certain content to an audience. 
 
-Single source content (and output depending on audience) with attributes that you include or exclude. This means you don't have to have two versions of the same doc--it all lives on the same page (balancing act). Can define attributes in dedicated files and source them.
+Here are two common examples.
 
-The below code sample shows admonitions with conditional directives for specific audiences (`admin` and `internal`). 
-
+.Print only content
 [source, asciidoc]
 ----
-== Feature xyz
-
-Introuction to feature xyz...
-
-\ifdef::admin[]
-[IMPORTANT]
-.Administrator Note
-=== Admins Only
-
-This information is relevant to system administrators.
-\endif::admin[]
-
-\ifdef::internal[]
-[IMPORTANT]
-.Internal Note
-=== Internal Use Only
-
-This section is meant for internal eyes only.
-\endif::internal[]
+include::example$/antora-print-only.adoc[]
 ----
+
+.Admin and internal admonitions
+[source, asciidoc]
+----
+include::example$/antora-conditional-directives.adoc[]
+----
+
+To build output that includes these audiences, you can set the desired attribute in your `antora-playbook.yml` or in your terminal command: `npx antora --fetch --attribute=admin:true antora-playbook.yml`
 
 == Versioning
 
