@@ -61,5 +61,5 @@ The raw AsciiDoc syntax of this page.
 
 [source,asciidoc]
 ----
-include::page$/writing-samples/feature.adoc[]
+include::page$/principles/git.adoc[]
 ----
