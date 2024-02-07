@@ -2,7 +2,11 @@
 
 Introduce fictional company, RTFM-Industries. Tailor all samples to RTFM-Industries (update intros).
 
-== Documentation dashboards overview
+== XHTML
+
+Samples from MadCap Flare.
+
+=== Documentation dashboards overview
 
 View feature documentation for the fictional RTFM-Industries Documentation Dashboard feature.
 The following link:../../overview/#_topic_typing[concept documentation] introduces RTFM-Industries Documentation Dashboards, a splendid feature that helps tech writers do their jobs more effectively.
@@ -14,7 +18,7 @@ include::example$documentation-dashboards-overview.html[]
 ----
 
 
-== Create a new documentation dashboard
+=== Create a new documentation dashboard
 
 The following link:../../overview/#_topic_typing[task] instructs users how to create a new Documentation Dashboard that evaluates the effectiveness of published documentation.
 
@@ -24,7 +28,7 @@ The following link:../../overview/#_topic_typing[task] instructs users how to cr
 include::example$documentation-dashboards-create.html[]
 ----
 
-== Invoicing setup
+=== Invoicing setup
 
 .Invoicing setup for documentation dashboards
 [source,html]
@@ -32,7 +36,7 @@ include::example$documentation-dashboards-create.html[]
 include::example$invoicing-setup.html[]
 ----
 
-== Match an invoice 
+=== Match an invoice 
 
 .Match an invoice
 [source,html]
@@ -40,9 +44,22 @@ include::example$invoicing-setup.html[]
 include::example$match-invoice.html[]
 ----
 
-== Configure notifications (AsciiDoc) 
+== AsciiDoc
 
-[,asciidoc]
+Hugo or from this portfolio.
+
+=== Configure notifications (AsciiDoc) 
+
+[source,asciidoc]
 ----
 include::example$notification-config.adoc[lines=4..-1]
+----
+
+=== Writing samples page
+
+The raw AsciiDoc syntax of this page.
+
+[source,asciidoc]
+----
+include::/pages/writing-samples/feature.adoc[]
 ----
