@@ -59,7 +59,7 @@ include::example$notification-config.adoc[lines=4..-1]
 
 The raw AsciiDoc syntax of this page.
 
-[source,asciidoc]
+[source,asciidoc,wrap=word]
 ----
 include::page$/tools/git.adoc[]
 ----
