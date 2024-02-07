@@ -12,5 +12,4 @@
 * Writing samples 
 ** xref:writing-samples/feature.adoc[]
 ** xref:writing-samples/release-notes.adoc[]
-** xref:writing-samples/portfolio.adoc[]
 * xref:resume.adoc[]
