@@ -2,14 +2,14 @@
 
 Hugo or from this portfolio.
 
-=== Configure notifications (AsciiDoc) 
+== Configure notifications (AsciiDoc) 
 
 [source,asciidoc]
 ----
 include::example$notification-config.adoc[lines=4..-1]
 ----
 
-=== Writing samples page
+== Writing samples page
 
 The raw AsciiDoc syntax of this page.
 
