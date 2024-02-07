@@ -1,6 +1,7 @@
-name: technicallyawriter 
-title: technicallyawriter
-version: 1.0.0 
+name: feature-antora
+title: feature-antora
+version: "1.0.1"
+prerelease: -alpha
 asciidoc:
   attributes:
     source-language: asciidoc@
