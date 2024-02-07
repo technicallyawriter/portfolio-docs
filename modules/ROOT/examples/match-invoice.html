@@ -1,68 +1,116 @@
 <body>
-    <h1>Match a supplier invoice</h1>
-    <h2 MadCap:conditions="cp.EnglishOnly">Overview</h2>
-    <p>
-        Automatically check for discrepancies between billed and received goods by matching a supplier invoice to a purchase order (<a href="#Match">two-way match</a>) or receipt (<a href="#Match2">three-way match</a>). Once a supplier invoice is matched, its state updates to Matched and a read-only Linked invoice is created in <b>Invoicing &gt; Invoices</b>.</p>
-    <p>
-        If discrepancies are found within your <a href="AutoInvoiceProcessRules.htm#If">configured tolerance limits</a>, they are automatically reconciled and the difference is inserted as a balancing line item on the PO. If discrepancies exceed your configured tolerance limits, you are prompted to resolve them manually.
+  <h1>Match a supplier invoice</h1>
+  <h2 MadCap:conditions="cp.EnglishOnly">Overview</h2>
+  <p>
+    Automatically check for discrepancies between billed and received goods by
+    matching a supplier invoice to a purchase order (<a href="#Match"
+      >two-way match</a
+    >) or receipt (<a href="#Match2">three-way match</a>). Once a supplier
+    invoice is matched, its state updates to Matched and a read-only Linked
+    invoice is created in <b>Invoicing &gt; Invoices</b>.
+  </p>
+  <p>
+    If discrepancies are found within your
+    <a href="AutoInvoiceProcessRules.htm#If">configured tolerance limits</a>,
+    they are automatically reconciled and the difference is inserted as a
+    balancing line item on the PO. If discrepancies exceed your configured
+    tolerance limits, you are prompted to resolve them manually.
+  </p>
+  <p><b>Additional processing options</b></p>
+  <p>
+    To request information or record an invoice exception, see the
+    <a href="#Addition">Additional processing options</a> section.
+  </p>
+  <h2>Prerequisites</h2>
+  <ul>
+    <li>
+      <p><a href="InvoicingSetup.htm">Invoicing setup</a></p>
+    </li>
+    <li>
+      <p>Supplier invoice in <i>To match</i> state</p>
+    </li>
+    <li>
+      <p>
+        Invoice matching or Invoice entering authorization depending on
+        organization configuration
+      </p>
+      <MadCap:snippetBlock
+        src="../Resources/Snippets/AuthorizationViewsNote.flsnp"
+      />
+    </li>
+  </ul>
+  <h2>Location</h2>
+  <p>
+    Depending on where you are in the procure-to-pay process, you can match an
+    invoice in the following locations:
+  </p>
+  <h3>Match to a PO (two-way match)</h3>
+  <ul>
+    <li>
+      <p><b>Homepage &gt; To do &gt; Your POs to match</b></p>
+    </li>
+    <li>
+      <p><b>Procurement &gt; POs</b></p>
+    </li>
+  </ul>
+  <h3>Match to a receipt (three-way match)</h3>
+  <p><b>Procurement &gt; Receipts</b></p>
+  <h2><a name="Match"></a>Match a supplier invoice to a PO</h2>
+  <p>
+    Create a supplier invoice from a PO&#160;and check for discrepancies with a
+    2-way match. PO must be in <i>Sent</i> state.
+  </p>
+  <MadCap:snippetBlock
+    src="../Resources/Snippets/Invoicing/MatchSupplierInvoiceToPO.flsnp"
+  />
+  <h2><a name="Match2"></a>Match a supplier invoice to a receipt</h2>
+  <p>
+    Check for discrepancies with a 3-way match between a supplier invoice, PO
+    and receipt.
+  </p>
+  <MadCap:snippetBlock
+    src="../Resources/Snippets/Invoicing/MatchSupplierInvoiceToReceipt.flsnp"
+  />
+  <h2><a name="Addition"></a>Additional processing options</h2>
+  <p>
+    When a supplier invoice is in the <i>To match</i> state, a user has the
+    following processing options that appear above the state machine.
+  </p>
+  <h3>Request information</h3>
+  <p>
+    To request additional information regarding a supplier invoice click the
+    <b>Request info</b> button above the state machine. The point of contact
+    user is notified by email.
+  </p>
+  <h4>Provide instructions to the point of contact</h4>
+  <div class="note">
+    <p class="note">
+      <b>Note:</b> the supplier invoice must be in To match state to provide
+      instructions to the point of contact.
     </p>
-    <p><b>Additional processing options</b>
-    </p>
-    <p>To request information or record an invoice exception, see the <a href="#Addition">Additional processing options</a> section. </p>
-    <h2>Prerequisites</h2>
-    <ul>
-        <li>
-            <p><a href="InvoicingSetup.htm">Invoicing setup</a>
-            </p>
-        </li>
-        <li>
-            <p>Supplier invoice in <i>To match</i> state</p>
-        </li>
-        <li>
-            <p>Invoice matching or Invoice entering authorization depending on organization configuration</p>
-            <MadCap:snippetBlock src="../Resources/Snippets/AuthorizationViewsNote.flsnp" />
-        </li>
-    </ul>
-    <h2>Location</h2>
-    <p>Depending on where you are in the procure-to-pay process, you can match an invoice in the following locations:</p>
-    <h3>Match to a PO (two-way match)</h3>
-    <ul>
-        <li>
-            <p><b>Homepage &gt; To do &gt; Your POs to match</b>
-            </p>
-        </li>
-        <li>
-            <p><b>Procurement &gt; POs</b>
-            </p>
-        </li>
-    </ul>
-    <h3>Match to a receipt (three-way match)</h3>
-    <p><b>Procurement &gt; Receipts</b>
-    </p>
-    <h2>
-        <a name="Match"></a>Match a supplier invoice to a PO</h2>
-    <p>Create a supplier invoice from a PO&#160;and check for discrepancies with a 2-way match. PO must be in <i>Sent</i> state.</p>
-    <MadCap:snippetBlock src="../Resources/Snippets/Invoicing/MatchSupplierInvoiceToPO.flsnp" />
-    <h2>
-        <a name="Match2"></a>Match a supplier invoice to a receipt</h2>
-    <p>Check for discrepancies with a 3-way match between a supplier invoice, PO and receipt.</p>
-    <MadCap:snippetBlock src="../Resources/Snippets/Invoicing/MatchSupplierInvoiceToReceipt.flsnp" />
-    <h2>
-        <a name="Addition"></a>Additional processing options</h2>
-    <p>When a supplier invoice is in the <i>To match</i> state, a user has the following processing options that appear above the state machine. </p>
-    <h3>Request information</h3>
-    <p>To request additional information regarding a supplier invoice click the <b>Request info</b> button above the state machine. The point of contact user is notified by email. </p>
-    <h4>Provide instructions to the point of contact</h4>
-    <div class="note">
-        <p class="note"><b>Note:</b> the supplier invoice must be in To match state to provide instructions to the point of contact.</p>
-    </div>
-    <p>Any active user can be assigned as a point of contact, and a default point of contact can be configured in <b>General Settings &gt; Invoicing</b>. You can provide instructions for the point of contact <em>either</em> manually on the invoice or automatically through a configured <a href="AutoInvoiceProcessRules.htm">automatic invoice processing rule</a>. </p>
-    <p>To manually provide instructions, <b>Edit</b> the supplier invoice, type into the "Instructions for point of contact" field and <b>Save</b>. These instructions and the assigned point of contact appear in the <i>Invoicing processing</i> tab. </p>
-    <h3>Unassign an invoice</h3>
-    <p>To handle an invoice exception found while matching, assign the proper user to the supplier invoice in the <i>Invoice processing</i> tab and click the <b>Unassign</b> button above the state machine. The user assigned to the supplier invoice is notified by email and the supplier invoice returns to the To assign state for reprocessing. </p>
-    <h2>See also</h2>
-    <p><a href="AssignSupplierInvoice.htm">Assign a supplier invoice</a>
-    </p>
-    <p><a href="SupplierInvoiceNoPO.htm">No-PO invoicing</a>
-    </p>
+  </div>
+  <p>
+    Any active user can be assigned as a point of contact, and a default point
+    of contact can be configured in <b>General Settings &gt; Invoicing</b>. You
+    can provide instructions for the point of contact <em>either</em> manually
+    on the invoice or automatically through a configured
+    <a href="AutoInvoiceProcessRules.htm">automatic invoice processing rule</a>.
+  </p>
+  <p>
+    To manually provide instructions, <b>Edit</b> the supplier invoice, type
+    into the "Instructions for point of contact" field and <b>Save</b>. These
+    instructions and the assigned point of contact appear in the
+    <i>Invoicing processing</i> tab.
+  </p>
+  <h3>Unassign an invoice</h3>
+  <p>
+    To handle an invoice exception found while matching, assign the proper user
+    to the supplier invoice in the <i>Invoice processing</i> tab and click the
+    <b>Unassign</b> button above the state machine. The user assigned to the
+    supplier invoice is notified by email and the supplier invoice returns to
+    the To assign state for reprocessing.
+  </p>
+  <h2>See also</h2>
+  <p><a href="AssignSupplierInvoice.htm">Assign a supplier invoice</a></p>
+  <p><a href="SupplierInvoiceNoPO.htm">No-PO invoicing</a></p>
 </body>

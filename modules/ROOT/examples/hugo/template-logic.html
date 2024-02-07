@@ -1,7 +1,3 @@
-{{ if (isset .Params "description") }}
-    {{ index .Params "description" }}
-{{ else if (isset .Params "summary") }}
-    {{ index .Params "summary" }}
-{{ else }}
-    {{ .Summary }}
-{{ end }}
+{{ if (isset .Params "description") }} {{ index .Params "description" }} {{ else
+if (isset .Params "summary") }} {{ index .Params "summary" }} {{ else }} {{
+.Summary }} {{ end }}
