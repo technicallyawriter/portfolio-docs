@@ -8,9 +8,7 @@ With a tagline that claims it's a "site generator for tech writers who love writ
 
 Antora's project structure is strict, which is actually a strength. It requires you to have separate repositories for your content files, build configuration, and site's theming. This compartmentalization enforces a standard where commits occur in their own context, making complex projects easier to manage. Edits to your `antora-playbook.yml`, for example, won't show up in a PR that updates feature docs. While there's a slight learning curve to adopt Antora's conventions, it's worth it to have distinct separation of concerns. 
 
-Since Antora sources content from repo URLs, Git becomes a powerful tool in your deployment pipeline. You can run different branches of your playbook project that automatically deploy to production or test environments, depending on how you define branches.
-
-For example, I've configured this project to deploy feature branches according to a pattern search for `'feature/*`. This search is dynamic, so if you add new feature branches following the `feature/` naming convention, they're generated in the next build. Once you delete a feature branch, it's removed.
+Since Antora sources content from repo URLs, Git becomes a powerful tool in your deployment pipeline. For example, I've configured this project to deploy feature branches according to a pattern search for `'feature/*`. This search is dynamic, so if you add new feature branches following the `feature/` naming convention, they're generated in the next build. Once you delete a feature branch, it's removed.
 
 [source,yaml]
 ----
@@ -20,15 +18,15 @@ content:
     branches: [main, 'feature/*']
 ----
 
-Click the version toolbar in the lower-left corner of the screen to display the `feature-abc` and [branch]`feature-xyz` feature branches. To indicate they're prerelease docs, their `antora.yml` file specifies an `-alpha`
+Click the version toolbar in the lower-left corner of the screen to display the `feature-abc` and [branch]`feature-xyz` branch prerelease content (-alpha).
 
 == Easy scaling
 
-Want to add new projects to your docs site? Just add the Git repo to the sources block in your `antora-playbook.yml`, specify a branch, and add a `nav.adoc` file. Once configured, it's included in the next build. This approach of "hot-swapping" repos lets you handle sources in a single configuration file rather than as directory paths within a monolith project. This is much faster and more centralized than Global Project Linking
+Want to add new projects to your docs site? Just add the Git repo to the sources block in your `antora-playbook.yml`, specify a branch, and add a `nav.adoc` file. Once configured, it's included in the next build. This "hot-swapping" of repos lets you handle sources in a single configuration file rather than as directory paths within a monolith project.
 
 == AsciiDoc over traditional Markdown
 
-Traditional Markdown is wonderful in its simplicity, but it's underpowered for large documentation projects. AsciiDoc is just as readable as Markdown with a much richer feature set geared toward tech writing. Two of my favorite AsciiDoc features are directives that help with content reuse and single-sourcing docs: `xref:_includes[\includes::[]]` and `xref:_conditional_directives[ifdef[]]`.
+Traditional Markdown is wonderful in its simplicity, but it's underpowered for large documentation projects. AsciiDoc is as readable as Markdown but with a much richer feature set geared toward tech writing. Two of my favorite AsciiDoc features are directives that help with content reuse and single-sourcing docs: `xref:_includes[\includes::[]]` and `xref:_conditional_directives[ifdef[]]`.
 
 AsciiDoc is the native syntax in Antora. In fact, Antora's lead maintainer (link:https://github.com/mojavelinux[Dan Allen]) is also the Asciidoctor project lead.
 
