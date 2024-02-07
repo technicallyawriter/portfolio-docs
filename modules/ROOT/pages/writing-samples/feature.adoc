@@ -2,37 +2,40 @@
 
 Introduce fictional company, RTFM-Industries. Tailor all samples to RTFM-Industries (update intros).
 
-== RTFM-Industries documentation dashboards (XHTML)
+== Documentation dashboards overview
 
 View feature documentation for the fictional RTFM-Industries Documentation Dashboard feature.
 The following link:../../overview/#_topic_typing[concept documentation] introduces RTFM-Industries Documentation Dashboards, a splendid feature that helps tech writers do their jobs more effectively.
 
 .Documentation Dashboards Overview
-[,html]
+[source,html]
 ----
 include::example$documentation-dashboards-overview.html[]
 ----
 
 
-== Create a new documentation dashboard (XHTML)
+== Create a new documentation dashboard
 
 The following link:../../overview/#_topic_typing[task] instructs users how to create a new Documentation Dashboard that evaluates the effectiveness of published documentation.
 
-[,html]
+.Create a new documentation dashboard
+[source,html]
 ----
 include::example$documentation-dashboards-create.html[]
 ----
 
-== Invoicing setup page (XHTML)
+== Invoicing setup
 
-[,html]
+.Invoicing setup for documentation dashboards
+[source,html]
 ----
 include::example$invoicing-setup.html[]
 ----
 
-== Match a supplier invoice (XHTML)
+== Match an invoice 
 
-[,html]
+.Match an invoice
+[source,html]
 ----
 include::example$match-invoice.html[]
 ----
