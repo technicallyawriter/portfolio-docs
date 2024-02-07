@@ -1,12 +1,8 @@
 = Feature docs
 
-what I like about feature docs...
+Introduce fictional company, RTFM-Industries. Tailor all samples to RTFM-Industries (update intros).
 
-Explain RTFM-Industries... 
-
-== Conceptual feature docs
-
-=== RTFM-Industries documentation dashboards (XHTML)
+== RTFM-Industries documentation dashboards (XHTML)
 
 View feature documentation for the fictional RTFM-Industries Documentation Dashboard feature.
 The following link:../../overview/#_topic_typing[concept documentation] introduces RTFM-Industries Documentation Dashboards, a splendid feature that helps tech writers do their jobs more effectively.
@@ -17,9 +13,8 @@ The following link:../../overview/#_topic_typing[concept documentation] introduc
 include::example$documentation-dashboards-overview.html[]
 ----
 
-== Task-oriented feature docs
 
-=== Create a new documentation dashboard (XHTML)
+== Create a new documentation dashboard (XHTML)
 
 The following link:../../overview/#_topic_typing[task] instructs users how to create a new Documentation Dashboard that evaluates the effectiveness of published documentation.
 
@@ -28,24 +23,23 @@ The following link:../../overview/#_topic_typing[task] instructs users how to cr
 include::example$documentation-dashboards-create.html[]
 ----
 
-=== Invoicing setup page (XHTML)
+== Invoicing setup page (XHTML)
 
 [,html]
 ----
 include::example$invoicing-setup.html[]
 ----
 
-=== Match a supplier invoice (XHTML)
+== Match a supplier invoice (XHTML)
 
 [,html]
 ----
 include::example$match-invoice.html[]
 ----
 
-=== Configure notifications (AsciiDoc) 
+== Configure notifications (AsciiDoc) 
 
 [,asciidoc]
 ----
 include::example$notification-config.adoc[lines=4..-1]
 ----
-
