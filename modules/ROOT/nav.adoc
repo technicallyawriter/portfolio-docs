@@ -10,6 +10,6 @@
 ** xref:tools/hugo.adoc[]
 ** xref:tools/antora.adoc[]
 * Writing samples 
-** xref:writing-samples/feature.adoc[]
-** xref:writing-samples/release-notes.adoc[]
+** xref:writing-samples/xhtml.adoc[]
+** xref:writing-samples/asciidoc.adoc[]
 * xref:resume.adoc[]

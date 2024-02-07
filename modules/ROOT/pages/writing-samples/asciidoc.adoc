@@ -1,0 +1,21 @@
+= AsciiDoc
+
+Hugo or from this portfolio.
+
+=== Configure notifications (AsciiDoc) 
+
+[source,asciidoc]
+----
+include::example$notification-config.adoc[lines=4..-1]
+----
+
+=== Writing samples page
+
+The raw AsciiDoc syntax of this page.
+
+[source,asciidoc,wrap=word]
+----
+include::page$/tools/git.adoc[]
+----
+
+TODO: add more from portfolio (need to figure out word-wrap, white-space values...(maybe hardcode textwidth in example?)
