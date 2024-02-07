@@ -32,7 +32,7 @@ AsciiDoc is the native syntax in Antora. In fact, Antora's lead maintainer (link
 
 === Includes
 
-emphasis on reuse. todo...
+talk about reuse. TODO...
 
 including a section of the file. always scared of doing it by line, so do it by "tag" if you're trying to grab a section of the page. if using tags, you'll need to filter them out, though! `\include::file-with-snippets.adoc[tag=!*]`
 
