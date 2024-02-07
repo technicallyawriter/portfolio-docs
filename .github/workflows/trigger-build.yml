@@ -1,0 +1,15 @@
+name: Trigger Build in Playbook Repository
+on:
+  push:
+    branches:
+      - main
+jobs:
+  trigger-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repository Dispatch
+        uses: peter-evans/repository-dispatch@v3.0.0
+        with:
+          token: ${{ secrets.PORTFOLIO }}
+          repository: technicallyawriter/portfolio
+          event-type: run-playbook
