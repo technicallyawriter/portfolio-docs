@@ -1,4 +1,5 @@
 = Antora
+:admin:
 
 image:icons/antora.png[Antora logo,50,50] 
 
@@ -60,7 +61,7 @@ include::example$/antora-conditional-directives.adoc[]
 ifdef::admin[]
 [IMPORTANT]
 .Administrator note
-{admin}
+
 This information is relevant to administrators.
 endif::admin[]
 
