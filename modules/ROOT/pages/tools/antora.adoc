@@ -56,22 +56,9 @@ include::example$/antora-print-only.adoc[]
 include::example$/antora-conditional-directives.adoc[]
 ----
 
-== Test directives
-ifdef::admin[]
-[IMPORTANT]
-.Administrator note
+To build output that includes these audiences, you can set the desired attribute in your `antora-playbook.yml` or in your terminal command, like `npx antora --fetch --attribute=admin antora-playbook.yml`
 
-This information is relevant to administrators.
-endif::admin[]
-
-ifdef::internal[]
-[IMPORTANT]
-.Internal note
-
-This section is for internal eyes only.
-endif::internal[]
-
-To build output that includes these audiences, you can set the desired attribute in your `antora-playbook.yml` or in your terminal command: `npx antora --fetch --attribute=admin:true antora-playbook.yml`
+NOTE: You can specify multiple attributes with comma separation: `npx antora --fetch --attribute=admin,internal playbook.yml`.
 
 == Versioning
 
