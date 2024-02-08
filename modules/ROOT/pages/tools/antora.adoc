@@ -64,6 +64,13 @@ ifdef::admin[]
 This information is relevant to administrators.
 endif::admin[]
 
+ifdef::internal[]
+[IMPORTANT]
+.Internal note
+
+This section is for internal eyes only.
+endif::internal[]
+
 To build output that includes these audiences, you can set the desired attribute in your `antora-playbook.yml` or in your terminal command: `npx antora --fetch --attribute=admin:true antora-playbook.yml`
 
 == Versioning
