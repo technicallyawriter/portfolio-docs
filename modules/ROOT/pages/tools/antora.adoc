@@ -1,5 +1,4 @@
 = Antora
-:admin:
 
 image:icons/antora.png[Antora logo,50,50] 
 
