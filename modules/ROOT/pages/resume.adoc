@@ -4,7 +4,7 @@ Experienced tech writer (6+ years) with an emphasis on Agile methodology, docs-a
 clear communication over jumbled jargon.
 
 .Skills
-[cols="1,1",grid="none"]
+[cols="^,^",grid="none"]
 |===
 | MadCap Flare
 | Jira & Confluence
@@ -18,17 +18,14 @@ clear communication over jumbled jargon.
 
 == Experience
 
+.Corcentric, LLC (remote)
 [horizontal]
-[quote, "Technical Writer"] 
-Corcentric, LLC | Remote 
-March 2022 - 2023
-
+March 2022 - March 2023 :: Technical Writer
 Description of your responsibilities and achievements.
 
-[quote, "Technical Writer"]
-FM:Systems | Remote 
-June 2016 - August 2021
-
+.FM:Systems Group, LLC (remote)
+[horizontal]
+June 2016 - August 2021 :: Technical Writer
 Description of your responsibilities and achievements.
 
 == Education
