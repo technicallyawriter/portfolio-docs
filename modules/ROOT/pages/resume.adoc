@@ -19,8 +19,7 @@ clear communication over jumbled jargon.
 == Experience
 
 === Corcentric, LLC (remote)
-_Technical Writer_
-March 2022 - March 2023
+_Technical Writer_, March 2022 - March 2023
 
 * Wrote feature docs and release notes for the Corcentric Platform SaaS Source-to-Pay solution
 * Scaled documentation from a single flagship product to three products with independent release schedules
@@ -31,8 +30,7 @@ March 2022 - March 2023
 * Collaborated with subject-matter experts (SME) and a team of tech writers to define, scope, and complete documentation tasks
 
 === FM:Systems Group, LLC (remote)
-_Technical Writer, team lead_
-June 2016 - August 2021
+_Technical Writer, team lead_, June 2016 - August 2021
 
 * Spearheaded the transition of docs from MS Word to MadCap Flare and Hugo for HTML and PDF outputs
 * Deployed online documentation for the first time to the existing client portal
@@ -55,16 +53,15 @@ documentation
 
 == Education
 
-[quote, "Master of Arts, English"]
-University of North Carolina at Wilmington | Wilmington, NC 
-2015
-summa cum laude
+=== Master of Arts, English
+_University of North Carolina at Wilmington | Wilmington, NC_
+2015, summa cum laude
 
-[quote, "Bachelor of Arts, English"]
-University of North Carolina at Wilmington | Wilmington, NC 
+=== Bachelor of Arts, English
+_University of North Carolina at Wilmington | Wilmington, NC_
 2011
 
 == Certifications & Awards
 
-Poynter ACES Certificate in Editing, 2021
-Eagle Scout, Boy Scouts of America, 2007
+* Poynter ACES Certificate in Editing, 2021
+* Eagle Scout, Boy Scouts of America, 2007
