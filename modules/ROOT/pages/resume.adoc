@@ -16,19 +16,17 @@ clear communication over jumbled jargon.
 | Antora
 |===
 
-[.columns]
+[column]
 ====
-[div]
 * Item 1
 * Item 2
 * Item 3
+====
+[column]
+====
 * Item 4
-
-[div]
-* Item 5 
+* Item 5
 * Item 6
-* Item 7
-* Item 8
 ====
 
 == Experience
