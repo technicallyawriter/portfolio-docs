@@ -1,32 +1,36 @@
 extends: default
-
+font:
+  catalog:
+    merge: true
+    OpenSans:
+      normal: opensans-normal.ttf
+      italic: opensans-italic.ttf
+      bold: opensans-bold.ttf
+      bold_italic: opensans-bolditalic.ttf
 page:
-  background_color: white
-
+  background_color: #ffffff
 header:
   height: 0
   line_height: 1
   padding: 20pt
-  background_color: green
+  background_color: #800080
   border_bottom_width: 0
-
 header_height: 60
 header_column_widths: 1
-
-header_font_color: white
-
+header_font_color: #ffffff
 heading_1:
+  font_family: OpenSans
   font_size: 24
   margin_bottom: 20
-
 heading_2:
+  font_family: OpenSans
   font_size: 20
   margin_bottom: 15
-
 heading_3:
+  font_family: OpenSans
   font_size: 18
   margin_bottom: 10
-
 paragraph:
+  font_family: OpenSans
   font_size: 12
   margin_bottom: 10

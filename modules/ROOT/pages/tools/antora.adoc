@@ -72,11 +72,6 @@ Usually producing versioned docs isn't that tightly declared into your project's
 
 Antora is essentially a wrapper for AsciiDoctor with support for link:https://www.npmjs.com/package/asciidoctor-pdf[AsciiDoctor-pdf].
 
-=== Install AsciiDoctor-pdf
-```NPM
-npm install asciidoctor-pdf
-```
-
 === Custom PDF styling
 Extend the default PDF theme to your liking by adjusting values in a separate YAML file.
 
@@ -84,4 +79,8 @@ Extend the default PDF theme to your liking by adjusting values in a separate YA
 TODO...
 ```
 
-Here's the call for how I made my portfolio: `npx asciidoctor-web-pdf -a pdf-theme=theme/pdf-theme.yml modules/ROOT/pages/resume.adoc -o modules/ROOT/attachments/resume.pdf`
+Here's the call for how I made my portfolio: `asciidoctor-pdf --theme themes/pdf-theme.yml -a pdf-fontsdir=themes/fonts/OpenSans resume.adoc -o modules/ROOT/attachments/resume.pdf`
+
+
+
+
