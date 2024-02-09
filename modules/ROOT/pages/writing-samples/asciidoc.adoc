@@ -5,22 +5,20 @@ I've done a lot of writing in AsciiDoc for this portfolio, so I though I'd show 
 == Principles > Docs-as-code
 
 [source.asciidoc]
-++++
-include::page$/principles/docs-as-code.adoc[]
-++++
+----
+include::page$/principles/docs-as-code.adoc[literal]
+----
 
 == Principles > Agile methodology
 
 [source,asciidoc]
-++++
-include::page$/principles/agile.adoc[]
-++++
+----
+include::page$/principles/agile.adoc[literal]
+----
 
 == Tools > Git 
 
-The raw AsciiDoc syntax of this page.
-
 [source,asciidoc]
-++++
-include::page$/tools/git.adoc[]
-++++
+----
+include::page$/tools/git.adoc[literal]
+----
