@@ -4,7 +4,7 @@ Experienced tech writer (6+ years) with an emphasis on Agile methodology, docs-a
 clear communication over jumbled jargon.
 
 .Skills
-[cols="2",grid="none",frame="none"]
+[cols="2",grid="none",frame="none",table-stripes="odd"]
 |===
 | - MadCap Flare
 | - Jira & Confluence
