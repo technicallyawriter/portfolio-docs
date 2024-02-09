@@ -16,6 +16,21 @@ clear communication over jumbled jargon.
 | Antora
 |===
 
+[.columns]
+====
+[div]
+* Item 1
+* Item 2
+* Item 3
+* Item 4
+
+[div]
+* Item 5 
+* Item 6
+* Item 7
+* Item 8
+====
+
 == Experience
 
 === Corcentric, LLC (remote)
