@@ -21,14 +21,11 @@ clear communication over jumbled jargon.
 === Corcentric, LLC (remote)
 _Technical Writer_, March 2022 - March 2023
 
-* Wrote feature docs and release notes for the Corcentric Platform SaaS Source-to-Pay solution
+* Finance-specific (invoicing, procurement, order to cash, procure to pay) with MadCap Flare
 * Transitioned two products from Microsoft Word to MadCap Flare
 * Coordinated release scheduling for three products with independent release schedules
-* Single-source XML in MadCap Flare for HTML5 and PDF outputs
+* Implemented Git branching and style guide verification with Vale
 * Localized content for multi-language translation support
-* Implemented Git branching strategies
-* Implemented Vale
-* Collaborated with subject-matter experts (SME) and a team of tech writers to define, scope, and complete documentation tasks
 
 === FM:Systems Group, LLC (remote)
 _Technical Writer, team lead_, June 2016 - August 2021
@@ -40,9 +37,7 @@ _Technical Writer, team lead_, June 2016 - August 2021
 * Established SME Review and Peer Review standards as part of GitHub Pull Requests
 * Developed on-boarding and training materials for new tech writers in Confluence
 * Led Daily Stand-up, Sprint Planning, Backlog Refinement, and Retrospective meetings
-* Regularly met with SMEs and stakeholders across departments to discuss accuracy and effectiveness of docs 
 * Implemented style guide verification with Mad Quality and Vale plugins
-* Initiated "shift left" processes for documentation requests and reviews
 
 === Cisco Systems Inc.
 _Technical Writer_
@@ -55,11 +50,11 @@ documentation
 == Education
 
 === Master of Arts, English
-_University of North Carolina at Wilmington | Wilmington, NC_
+_University of North Carolina at Wilmington_ | Wilmington, NC 
 2015, summa cum laude
 
 === Bachelor of Arts, English
-_University of North Carolina at Wilmington | Wilmington, NC_
+_University of North Carolina at Wilmington_ | Wilmington, NC 
 2011
 
 == Certifications & Awards
