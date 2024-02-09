@@ -3,10 +3,6 @@
 Experienced tech writer (5+ years) with an emphasis on Agile methodology, docs-as-code processes, and
 clear communication over jumbled jargon.
 
-ifdef::["{backend}" == "html5"]
-xref:attachment$resume.pdf[Download PDF]
-endif::[]
-
 [cols="^,^"]
 |===
 | Column 1
