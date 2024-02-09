@@ -4,15 +4,17 @@ Experienced tech writer (5+ years) with an emphasis on Agile methodology, docs-a
 clear communication over jumbled jargon.
 
 .Areas of specialty include:
-[columns="2"]
-* MadCap Flare
-* Hugo
-* Antora
-* Jira & Confluence
-* Git/GitHub
-* Agile methodology
-* Snagit
-* Editing
+[cols="1,1"]
+|===
+| * MadCap Flare
+| * Hugo
+| * Antora
+| * Jira & Confluence
+| * Git/GitHub
+| * Agile methodology
+| * Snagit
+| * Editing
+|===
 
 == Job 1
 
