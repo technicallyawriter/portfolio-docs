@@ -1,3 +1,32 @@
 extends: default
-base:
-  font-color: #FF0000
+
+page:
+  background_color: white
+
+header:
+  height: 0
+  line_height: 1
+  padding: 20pt
+  background_color: green
+  border_bottom_width: 0
+
+header_height: 60
+header_column_widths: 1
+
+header_font_color: white
+
+heading_1:
+  font_size: 24
+  margin_bottom: 20
+
+heading_2:
+  font_size: 20
+  margin_bottom: 15
+
+heading_3:
+  font_size: 18
+  margin_bottom: 10
+
+paragraph:
+  font_size: 12
+  margin_bottom: 10

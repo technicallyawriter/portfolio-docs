@@ -81,9 +81,7 @@ npm install asciidoctor-pdf
 Extend the default PDF theme to your liking by adjusting values in a separate YAML file.
 
 ```YAML
-extends: default
-base:
-  font-color: #ff0000
+TODO...
 ```
 
-**TIP:** refer to the link:https://github.com/asciidoctor/asciidoctor-pdf/blob/main/docs/theming-guide.adoc[AsciiDoctor PDF Theming Guide,window=_blank] for more details.
+Here's the call for how I made my portfolio: `npx asciidoctor-web-pdf -a pdf-theme=theme/pdf-theme.yml modules/ROOT/pages/resume.adoc -o modules/ROOT/attachments/resume.pdf`
