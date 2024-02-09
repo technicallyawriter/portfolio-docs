@@ -12,4 +12,4 @@
 * Writing samples 
 ** xref:writing-samples/xhtml.adoc[]
 ** xref:writing-samples/asciidoc.adoc[]
-* xref:resume.adoc[]
+* xref:resume.adoc[Resume]

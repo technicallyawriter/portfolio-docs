@@ -1,27 +1,48 @@
-= Resume
+= N. Parker Jones
 
-Experienced tech writer (5+ years) with an emphasis on Agile methodology, docs-as-code processes, and
+Experienced tech writer (6+ years) with an emphasis on Agile methodology, docs-as-code processes, and
 clear communication over jumbled jargon.
 
-.Areas of specialty include:
-[cols="1,1"]
+.Skills
+[cols="1,1",grid="none"]
 |===
-| * MadCap Flare
-| * Hugo
-| * Antora
-| * Jira & Confluence
-| * Git/GitHub
-| * Agile methodology
-| * Snagit
-| * Editing
+| MadCap Flare
+| Jira & Confluence
+| Git/GitHub
+| Agile methodology
+| Snagit
+| Editing
+| Hugo
+| Antora
 |===
 
-== Job 1
+== Experience
 
-I did these things...
+[horizontal]
+[quote, "Technical Writer"] 
+Corcentric, LLC | Remote 
+March 2022 - 2023
 
-== Job 2
+Description of your responsibilities and achievements.
 
-I did these things...
+[quote, "Technical Writer"]
+FM:Systems | Remote 
+June 2016 - August 2021
 
-todo...
+Description of your responsibilities and achievements.
+
+== Education
+
+[quote, "Master of Arts, English"]
+University of North Carolina at Wilmington | Wilmington, NC 
+2015
+summa cum laude
+
+[quote, "Bachelor of Arts, English"]
+University of North Carolina at Wilmington | Wilmington, NC 
+2011
+
+== Certifications & Awards
+
+Poynter ACES Certificate in Editing, 2021
+Eagle Scout, Boy Scouts of America, 2007
