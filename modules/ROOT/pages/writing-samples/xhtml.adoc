@@ -1,14 +1,9 @@
 = XHTML
 
-Introduce fictional company, RTFM-Industries. Tailor all samples to RTFM-Industries (update intros).
-Samples from MadCap Flare.
+Check out my writing samples for the fictional company, RTFM-Industries. They're meant to be generic, since I don't own the docs I've written at former companies. The intent here is to demonstrate my approach to writing docs with a little bit of flair.
 
 == Documentation dashboards overview
 
-View feature documentation for the fictional RTFM-Industries Documentation Dashboard feature.
-The following link:../../overview/#_topic_typing[concept documentation] introduces RTFM-Industries Documentation Dashboards, a splendid feature that helps tech writers do their jobs more effectively.
-
-.Documentation Dashboards Overview
 [source,html]
 ----
 include::example$documentation-dashboards-overview.html[]
@@ -17,9 +12,6 @@ include::example$documentation-dashboards-overview.html[]
 
 == Create a new documentation dashboard
 
-The following link:../../overview/#_topic_typing[task] instructs users how to create a new Documentation Dashboard that evaluates the effectiveness of published documentation.
-
-.Create a new documentation dashboard
 [source,html]
 ----
 include::example$documentation-dashboards-create.html[]
@@ -27,7 +19,6 @@ include::example$documentation-dashboards-create.html[]
 
 == Invoicing setup
 
-.Invoicing setup for documentation dashboards
 [source,html]
 ----
 include::example$invoicing-setup.html[]
@@ -35,7 +26,6 @@ include::example$invoicing-setup.html[]
 
 == Match an invoice 
 
-.Match an invoice
 [source,html]
 ----
 include::example$match-invoice.html[]
@@ -43,9 +33,7 @@ include::example$match-invoice.html[]
 
 == Release notes
 
-Release notes to the fictional RTFM-Industries release (v1.1.0) are below. For many users, release notes may be their only interaction with software documentation, which makes it a unique document.
-
 [source,HTML]
 ----
-includes::example$release-notes.html[]
+include::example$release-notes.html[]
 ----
