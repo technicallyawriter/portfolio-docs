@@ -18,15 +18,40 @@ clear communication over jumbled jargon.
 
 == Experience
 
-.Corcentric, LLC (remote)
-[horizontal]
-March 2022 - March 2023 :: Technical Writer
-Description of your responsibilities and achievements.
+=== Corcentric, LLC (remote)
+_Technical Writer_
+March 2022 - March 2023
 
-.FM:Systems Group, LLC (remote)
-[horizontal]
-June 2016 - August 2021 :: Technical Writer
-Description of your responsibilities and achievements.
+* Wrote feature docs and release notes for the Corcentric Platform SaaS Source-to-Pay solution
+* Scaled documentation from a single flagship product to three products with independent release schedules
+* Single-source XML in MadCap Flare for HTML5 and PDF outputs
+* Localized content for multi-language translation support
+* Implemented Git branching strategies
+* Implemented Vale
+* Collaborated with subject-matter experts (SME) and a team of tech writers to define, scope, and complete documentation tasks
+
+=== FM:Systems Group, LLC (remote)
+_Technical Writer, team lead_
+June 2016 - August 2021
+
+* Spearheaded the transition of docs from MS Word to MadCap Flare and Hugo for HTML and PDF outputs
+* Deployed online documentation for the first time to the existing client portal
+* Single-sourced XML and Markdown to reduce redundancies across multiple outputs (HTML, PDF, DOCX)
+* Implemented and managed Git processes (branching, pull requests, merging, release tagging) for the technical writing team source code
+* Established SME Review and Peer Review standards as part of GitHub Pull Requests
+* Developed on-boarding and training materials for new tech writers in Confluence
+* Led Daily Stand-up, Sprint Planning, Backlog Refinement, and Retrospective meetings
+* Regularly met with SMEs and stakeholders across departments to discuss accuracy and effectiveness of docs 
+* Implemented style guide verification with Mad Quality and Vale plugins
+* Initiated "shift left" processes for documentation requests and reviews
+
+=== Cisco Systems Inc.
+_Technical Writer_
+August 2015 - May 2016
+
+* Collaborated with subject-matter experts across six departments to product internal
+documentation
+* Formalized procedures and protocols to increase efficiency and confidence in meeting deadlines
 
 == Education
 
