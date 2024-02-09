@@ -6,14 +6,14 @@ clear communication over jumbled jargon.
 .Skills
 [cols="2",grid="none",frame="none"]
 |===
-| MadCap Flare
-| Jira & Confluence
-| Git/GitHub
-| Agile methodology
-| Snagit
-| Editing
-| Hugo
-| Antora
+| - MadCap Flare
+| - Jira & Confluence
+| - Git/GitHub
+| - Agile methodology
+| - Snagit
+| - Editing
+| - Hugo
+| - Antora
 |===
 
 == Experience
