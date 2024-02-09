@@ -4,7 +4,7 @@ Experienced tech writer (6+ years) with an emphasis on Agile methodology, docs-a
 clear communication over jumbled jargon.
 
 .Skills
-[cols="^,^",grid="none"]
+[cols="2",grid="none"]
 |===
 | MadCap Flare
 | Jira & Confluence
@@ -22,7 +22,8 @@ clear communication over jumbled jargon.
 _Technical Writer_, March 2022 - March 2023
 
 * Wrote feature docs and release notes for the Corcentric Platform SaaS Source-to-Pay solution
-* Scaled documentation from a single flagship product to three products with independent release schedules
+* Transitioned two products from Microsoft Word to MadCap Flare
+* Coordinated release scheduling for three products with independent release schedules
 * Single-source XML in MadCap Flare for HTML5 and PDF outputs
 * Localized content for multi-language translation support
 * Implemented Git branching strategies
@@ -33,9 +34,9 @@ _Technical Writer_, March 2022 - March 2023
 _Technical Writer, team lead_, June 2016 - August 2021
 
 * Spearheaded the transition of docs from MS Word to MadCap Flare and Hugo for HTML and PDF outputs
-* Deployed online documentation for the first time to the existing client portal
+* Deployed online documentation for the first time in company's history
 * Single-sourced XML and Markdown to reduce redundancies across multiple outputs (HTML, PDF, DOCX)
-* Implemented and managed Git processes (branching, pull requests, merging, release tagging) for the technical writing team source code
+* Implemented Git processes (branching, pull requests, merging, release tagging) for the technical writing team source code
 * Established SME Review and Peer Review standards as part of GitHub Pull Requests
 * Developed on-boarding and training materials for new tech writers in Confluence
 * Led Daily Stand-up, Sprint Planning, Backlog Refinement, and Retrospective meetings
