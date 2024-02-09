@@ -4,7 +4,7 @@ Experienced tech writer (5+ years) with an emphasis on Agile methodology, docs-a
 clear communication over jumbled jargon.
 
 .Areas of specialty include:
-[cols="1,1"]
+[columns="2"]
 * MadCap Flare
 * Hugo
 * Antora
