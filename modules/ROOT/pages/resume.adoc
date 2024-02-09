@@ -32,12 +32,9 @@ _Technical Writer, team lead_, June 2016 - August 2021
 
 * Spearheaded the transition of docs from MS Word to MadCap Flare and Hugo for HTML and PDF outputs
 * Deployed online documentation for the first time in company's history
-* Single-sourced XML and Markdown to reduce redundancies across multiple outputs (HTML, PDF, DOCX)
 * Implemented Git processes (branching, pull requests, merging, release tagging) for the technical writing team source code
-* Established SME Review and Peer Review standards as part of GitHub Pull Requests
+* Implemented review standards and style guide verification with Mad Quality and Vale plugins
 * Developed on-boarding and training materials for new tech writers in Confluence
-* Led Daily Stand-up, Sprint Planning, Backlog Refinement, and Retrospective meetings
-* Implemented style guide verification with Mad Quality and Vale plugins
 
 === Cisco Systems Inc.
 _Technical Writer_
