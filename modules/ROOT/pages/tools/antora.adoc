@@ -40,9 +40,9 @@ At a certain point relative paths turn ugly: `\include::../../../../../feature-x
 
 === Conditional directives
 
-Conditional directives in AsciiDoc help filter content based on output. This feature is most helpful for brief amounts of content that don't warrent their own page. Conditional directives let you single-source your docs while differentiating online vs. print content or only showing certain content to an audience.
+Conditional directives in AsciiDoc help filter content based on output. This feature is most helpful for brief amounts of content that don't warrant their own page. Conditional directives let you single-source your docs while differentiating online vs. print content or only showing certain content to an audience.
 
-ifdef: If you don't delcare the attribute, it's not included in the output. You can declare it in your `antora-playbook.yml`, page header, or in your command line call (my preference for flexibility), it's not included.
+ifdef: if you don't declare the attribute, it's not included in the output. You can declare it in your `antora-playbook.yml`, page header, or in your command line call (my preference for flexibility), it's not included.
 
 ifndef: todo...
 
