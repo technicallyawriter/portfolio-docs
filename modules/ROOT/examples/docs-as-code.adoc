@@ -154,7 +154,11 @@ Here's a couple of examples to show what I mean:
 
 ++++
 include::example$acceptance-criteria/bad-ac.adoc[]
+++++
+++++
 include::example$acceptance-criteria/good-ac.adoc[]
+++++
+++++
 include::partial$acceptance-criteria/note-about-ac.adoc[]
 ++++
 
