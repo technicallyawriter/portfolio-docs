@@ -97,11 +97,11 @@ Dedicating a page to a specific topic type is enough modularity sometimes. For i
 ----
 = Topic xyz
 
-\include::topic-xyz-intro.adoc
-\include::topic-xyz-prerequities.adoc
-\include::concept-x.adoc
-\include::concept-y.adoc
-\include::concept-z.adoc
+include::topic-xyz-intro.adoc
+include::topic-xyz-prerequities.adoc
+include::concept-x.adoc
+include::concept-y.adoc
+include::concept-z.adoc
 ----
 
 Regardless of how modular I go, I make sure I'm consistent in how I template these files. This consistency enables me to plug-and-play content as needed.
