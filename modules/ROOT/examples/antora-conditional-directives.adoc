@@ -1,6 +1,6 @@
 == Feature xyz
 
-Introuction to feature xyz...
+Introduction to feature xyz...
 
 \ifdef::admin[]
 [IMPORTANT]
