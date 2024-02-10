@@ -32,7 +32,7 @@ image::feature-branching-release-hotfix.png[Feature branches with release and ho
 I prefer to name branches using ticket IDs, for example [branch]`feature/jira-123`. Descriptive names can become confusing, vague, or even inaccurate as development evolves. The associated ticket ID serves as a breadcrumb to the source of truth, in this case a Jira ticket. This ticket contains the most up-to-date information about the feature and is a more appropriate place for details than a branch name.
 
 [source,bash]
-----
+++++
 $ git branch
 
 * main
@@ -41,7 +41,7 @@ feature/jira-456
 feature/jira-789
 release/v1.1.0
 hotfix/v1.0.4
-----
+++++
 
 This isn't the most alluring naming convention, but sometimes:
 
@@ -65,23 +65,23 @@ Content reuse goes by different names depending on the software I'm using, but t
 In *MadCap Flare*, I can use a snippet to remind users where to view their user permissions, for example. This is helpful when a task requires a specific permission. If the path to this location changes or I want to update wording in this blurb, I only need to update the snippet once.
 
 [source,xml]
-----
+++++
 <MadCap:snippetBlock src="../Resources/Snippets/user/view-permissions.flsnp" />
-----
+++++
 
 In *Hugo*, I can create a custom shortcode that contains a helpful short description for a feature. I'll then reuse this shortcode in feature docs and as a release notes introduction.
 
 [source,markdown]
-----
+++++
 {{% feature-xyz-short-desc %}}
-----
+++++
 
 When writing with AsciiDoc in *Antora*, I can use the `include::` directive to display source code from a file. This is preferable to copying and pasting it on different pages because, if this source code example changes, I only need to update the example once.
 
 [source,asciidoc]
-----
-\include::example$feature-xyz.php[]
-----
+++++
+include::example$feature-xyz.php[]
+++++
 
 === Topic typing
 
@@ -94,7 +94,7 @@ Another valuable content reuse technique is topic typing. At it's most general, 
 Dedicating a page to a specific topic type is enough modularity sometimes. For increased reuse potential, I can make each piece of content within a page more modular, if desired. For example:
 
 [source,asciidoc]
-----
+++++
 = Topic xyz
 
 include::topic-xyz-intro.adoc
@@ -102,7 +102,7 @@ include::topic-xyz-prerequities.adoc
 include::concept-x.adoc
 include::concept-y.adoc
 include::concept-z.adoc
-----
+++++
 
 Regardless of how modular I go, I make sure I'm consistent in how I template these files. This consistency enables me to plug-and-play content as needed.
 
