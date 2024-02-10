@@ -80,7 +80,7 @@ When writing with AsciiDoc in *Antora*, I can use the `include::` directive to d
 
 [source,asciidoc]
 ++++
-include::example$feature-xyz.php[]
+\include::example$feature-xyz.php[]
 ++++
 
 === Topic typing
