@@ -60,9 +60,9 @@ about the feature and is a more appropriate place for details than a
 branch name.
 
 [source,bash] 
-
 ++++ 
 $ git branch
+
 * main
 feature/jira-123
 feature/jira-456 
@@ -151,8 +151,10 @@ content within a page more modular, if desired. For example:
 ++++ 
 = Topic xyz
 
-include::topic-xyz-intro.adoc include::topic-xyz-prerequities.adoc
-include::concept-x.adoc include::concept-y.adoc
+include::topic-xyz-intro.adoc 
+include::topic-xyz-prerequities.adoc
+include::concept-x.adoc 
+include::concept-y.adoc
 include::concept-z.adoc 
 ++++
 
