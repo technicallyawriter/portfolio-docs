@@ -1,0 +1,39 @@
+= XHTML
+
+Check out my writing samples for the fictional company, RTFM-Industries. They're meant to be generic, since I don't own the docs I've written at former companies. The intent here is to demonstrate my approach to writing docs with a little bit of flair.
+
+== Documentation dashboards overview
+
+[source,html]
+----
+include::example$documentation-dashboards-overview.html[]
+----
+
+
+== Create a new documentation dashboard
+
+[source,html]
+----
+include::example$documentation-dashboards-create.html[]
+----
+
+== Invoicing setup
+
+[source,html]
+----
+include::example$invoicing-setup.html[]
+----
+
+== Match an invoice 
+
+[source,html]
+----
+include::example$match-invoice.html[]
+----
+
+== Release notes
+
+[source,HTML]
+----
+include::example$release-notes.html[]
+----

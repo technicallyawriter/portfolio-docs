@@ -1,0 +1,17 @@
+== Feature xyz
+
+Introduction to feature xyz...
+
+\ifdef::admin[]
+[IMPORTANT]
+.Administrator note
+
+This information is relevant to administrators.
+\endif::admin[]
+
+\ifdef::internal[]
+[IMPORTANT]
+.Internal note
+
+This section is for internal eyes only.
+\endif::internal[]

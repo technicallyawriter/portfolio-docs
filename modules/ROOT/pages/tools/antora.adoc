@@ -2,91 +2,68 @@
 
 image:icons/antora.png[Antora logo,50,50] 
 
-With a tagline that claims it's a "site generator for tech writers who love writing AsciiDocs" I had to give Antora a try. In fact, it's what I wrote this portfolio with. Compared to Flare and Hugo, it stands out with how it leverages Git and AsciiDoc to scale docs with ease.
+I had to try Antora after seeing its tagline: "The multi-repository documentation site generator for tech writers who love writing in AsciiDoc." I was so please with it, I used it for this portfolio site! Compared to Flare and Hugo, it stands out with how it leverages Git and AsciiDoc to scale docs with ease.
 
 == Structured configuration
 
-Antora's project structure is strict, which is actually a strength. It requires you to have separate repositories for your content files, build configuration, and site's theming. This compartmentalization enforces a standard where commits occur in their own context, making complex projects easier to manage. Edits to your `antora-playbook.yml`, for example, won't show up in a PR that updates feature docs. While there's a slight learning curve to adopt Antora's conventions, it's worth it to have distinct separation of concerns. 
+Antora's project structure is strict, which is actually a strength. It requires you to have separate repositories for your content files, build configuration, and site's theming. This enforces a standard where commits occur in their own context, making complex projects easier to compartmentalize. Edits to your `antora-playbook.yml`, for example, won't show up in a PR that updates feature docs. While there's a slight learning curve to adopt Antora's conventions, it's worth it to have distinct separation of concerns. 
 
-Since Antora sources content from repo URLs, Git becomes a powerful tool in your deployment pipeline. For example, I've configured this project to deploy feature branches according to a pattern search for `'feature/*`. This search is dynamic, so if you add new feature branches following the `feature/` naming convention, they're generated in the next build. Once you delete a feature branch, it's removed.
+Since Antora sources content from repo URLs, Git becomes a powerful tool in your deployment pipeline. For example, I've configured this project to deploy feature branches according to a pattern search for `'feature/*`. 
 
+.Branch pattern in playbook.yml
 [source,yaml]
 ----
-content:
-  sources:
-  - url: https://github.com/technicallyawriter/portfolio-docs.git 
-    branches: [main, 'feature/*']
+include::example$/playbook.yml[]
 ----
+
+New branches with the `feature/` naming convention are generated in the next build. Deleted feature branches are removed.
 
 Click the version toolbar in the lower-left corner of the screen to display the `feature-abc` and [branch]`feature-xyz` branch prerelease content (-alpha).
 
 == Easy scaling
 
-Want to add new projects to your docs site? Just add the Git repo to the sources block in your `antora-playbook.yml`, specify a branch, and add a `nav.adoc` file. Once configured, it's included in the next build. This "hot-swapping" of repos lets you handle sources in a single configuration file rather than as directory paths within a monolith project.
+Want to add new projects to your docs site? Just add the Git repo to the sources block in your `antora-playbook.yml`, specify a branch, and add a `nav.adoc` file. Once configured, it's included in the next build. This "hot-swapping" of repos lets you handle sources in a single configuration file.
 
 == AsciiDoc over traditional Markdown
 
-Traditional Markdown is wonderful in its simplicity, but it's underpowered for large documentation projects. AsciiDoc is as readable as Markdown but with a much richer feature set geared toward tech writing. Two of my favorite AsciiDoc features are directives that help with content reuse and single-sourcing docs: `xref:_includes[\includes::[]]` and `xref:_conditional_directives[ifdef[]]`.
+AsciiDoc is the native syntax in Antora. In fact, Antora's lead maintainer (link:https://github.com/mojavelinux[Dan Allen]) is also the Asciidoctor project lead!
 
-AsciiDoc is the native syntax in Antora. In fact, Antora's lead maintainer (link:https://github.com/mojavelinux[Dan Allen]) is also the Asciidoctor project lead.
+Traditional Markdown is wonderful in its simplicity, but it's underpowered for large documentation projects. AsciiDoc is as readable as Markdown but with a much richer feature set geared toward tech writing. Two of my favorite AsciiDoc features are directives that help with content reuse and single-sourcing docs, respectively: `xref:_includes[\includes::[]]` and `xref:_conditional_directives[ifdef[]]`.
 
 === Includes
 
-talk about reuse. TODO...
+The `\includes::` directive makes including other files a simple one-line call. This makes modular docs easy, as you can just include smaller files on a page. It's my favorite AsciiDoc feature and changes the way I organize my projects. 
 
-including a section of the file. always scared of doing it by line, so do it by "tag" if you're trying to grab a section of the page. if using tags, you'll need to filter them out, though! `\include::file-with-snippets.adoc[tag=!*]`
+Antora builds on this feature with its link:https://docs.antora.org/antora/latest/family-directories/[family directories]. Example, attachments, images, and partials are their own "family" which means they have their own default root locations. This make sourcing specific content intuitive and predictable.
+
+At a certain point relative paths turn ugly: `\include::../../../../../feature-xyz/modular-xyz.adoc`. With Antora's family directories, you can reference the family's root directory for a cleaner path: `\include::example$/feature-xyz/modular-xyz.adoc`.
 
 === Conditional directives
 
-emphasis on single-sourcing for different outputs. common example is for administrator and internal notes.
+Conditional directives in AsciiDoc help filter content based on output. This feature is most helpful for brief amounts of content that don't warrant their own page. Conditional directives let you single-source your docs while differentiating online vs. print content or only showing certain content to an audience.
 
-Single source content (and output depending on audience) with attributes that you include or exclude. This means you don't have to have two versions of the same doc--it all lives on the same page (balancing act). Can define attributes in dedicated files and source them.
+ifdef: if you don't declare the attribute, it's not included in the output. You can declare it in your `antora-playbook.yml`, page header, or in your command line call (my preference for flexibility), it's not included.
 
-The below code sample shows admonitions with conditional directives for specific audiences (`admin` and `internal`). 
+ifndef: todo...
 
+Here are two common examples.
+
+.Print only content
 [source, asciidoc]
 ----
-== Feature xyz
-
-Introuction to feature xyz...
-
-\ifdef::admin[]
-[IMPORTANT]
-.Administrator Note
-=== Admins Only
-
-This information is relevant to system administrators.
-\endif::admin[]
-
-\ifdef::internal[]
-[IMPORTANT]
-.Internal Note
-=== Internal Use Only
-
-This section is meant for internal eyes only.
-\endif::internal[]
+include::example$/antora-print-only.adoc[]
 ----
+
+.Admin and internal admonitions
+[source, asciidoc]
+----
+include::example$/antora-conditional-directives.adoc[]
+----
+
+To build output that includes these audiences, you can set the desired attribute in your `antora-playbook.yml` or in your terminal command, like `npx antora --fetch --attribute=admin antora-playbook.yml`
+
+NOTE: You can specify multiple attributes with comma separation: `npx antora --fetch --attribute=admin,internal playbook.yml`.
 
 == Versioning
 
-Usually producing versioned docs isn't that tightly declared into your project's configuration. With Antora, it's explicitly managed within the playbook.
-
-== AsciiDoctor-pdf for print
-
-Antora is essentially a wrapper for AsciiDoctor with support for link:https://www.npmjs.com/package/asciidoctor-pdf[AsciiDoctor-pdf].
-
-=== Install AsciiDoctor-pdf
-```NPM
-npm install asciidoctor-pdf
-```
-
-=== Custom PDF styling
-Extend the default PDF theme to your liking by adjusting values in a separate YAML file.
-
-```YAML
-extends: default
-base:
-  font-color: #ff0000
-```
-
-**TIP:** refer to the link:https://github.com/asciidoctor/asciidoctor-pdf/blob/main/docs/theming-guide.adoc[AsciiDoctor PDF Theming Guide,window=_blank] for more details.
+Usually producing versioned docs isn't that tightly declared into your project's configuration. With Antora, it's explicitly managed within the playbook. TODO...

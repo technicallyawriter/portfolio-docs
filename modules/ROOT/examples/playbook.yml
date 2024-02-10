@@ -1,0 +1,4 @@
+content:
+  sources:
+    - url: https://github.com/technicallyawriter/portfolio-docs.git
+      branches: [main, "feature/*"]
