@@ -2,6 +2,8 @@
 
 I've done a lot of writing in AsciiDoc for this portfolio, so I though I'd show you how the sausage is made. The intent of this page is to demonstrate my familiarity with this powerful syntax.
 
+NOTE: I've escaped some directives with a backslash (`\`), and used literal delimiters (`++++`) in source code blocks to keep Antora from parsing the syntax.
+
 == Principles > Docs-as-code
 
 [source.asciidoc]
@@ -16,7 +18,7 @@ include::example$/docs-as-code.adoc[]
 include::page$/principles/agile.adoc[]
 ----
 
-== Tools > Git 
+== Tools > Git
 
 [source,asciidoc]
 ----
