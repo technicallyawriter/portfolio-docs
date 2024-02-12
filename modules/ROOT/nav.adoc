@@ -1,4 +1,4 @@
 * xref:index.adoc[Overview of abc]
-* Getting start with abc
+* Getting started
 ** xref:install.adoc[]
 ** xref:common-tasks.adoc[]
