@@ -15,12 +15,12 @@ include::example$/docs-as-code.adoc[]
 
 [source,asciidoc]
 ----
-include::page$/principles/agile.adoc[]
+include::example$/agile.adoc[]
 ----
 
 == Tools > Git
 
 [source,asciidoc]
 ----
-include::page$/tools/git.adoc[]
+include::example$/git.adoc[]
 ----
