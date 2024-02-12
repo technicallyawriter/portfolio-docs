@@ -1,5 +1,5 @@
 = Feature abc
 
-This is prerelease document for feature-abc! I describe how create alpha versions of feature branch docs xref:1.0.0@ROOT:page$/tools/git.adoc#_structured_configuration[on this page].
+This is prerelease document for feature-abc! I describe how create alpha versions of feature branch docs xref:1.0.0@technicallyawriter:ROOT:page$/tools/git.adoc#_structured_configuration[on this page].
 
 To get back to my actual portfolio
