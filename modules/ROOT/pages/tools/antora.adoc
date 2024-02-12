@@ -6,7 +6,7 @@ I had to try Antora after seeing its tagline: "The multi-repository documentatio
 
 == Structured configuration
 
-Antora's project structure is strict, which is actually a strength. It requires you to have separate repositories for your content files, build configuration, and site's theming. This enforces a standard where commits occur in their own context, making complex projects easier to compartmentalize. Edits to your `antora-playbook.yml`, for example, won't show up in a PR that updates feature docs. While there's a slight learning curve to adopt Antora's conventions, it's worth it to have distinct separation of concerns. 
+Antora's project structure is strict, which is actually a strength. It requires you to have separate repositories for your content files, build configuration, and site's theming. This enforces commits to occur in their own context, making complex projects easier to compartmentalize. Edits to your `antora-playbook.yml`, for example, won't show up in a PR that updates feature docs. While there's a slight learning curve to adopt Antora's conventions, it's worth it to have distinct separation of concerns. 
 
 Since Antora sources content from repo URLs, Git becomes a powerful tool in your deployment pipeline. For example, I've configured this project to deploy feature branches according to a pattern search for `'feature/*`. 
 
@@ -32,27 +32,15 @@ Traditional Markdown is wonderful in its simplicity, but it's underpowered for l
 
 === Includes
 
-The `\includes::` directive makes including other files a simple one-line call. This makes modular docs easy, as you can just include smaller files on a page. It's my favorite AsciiDoc feature and changes the way I organize my projects. 
+The `\includes::` directive makes including other files a simple one-line call. This makes modular docs easy, as you can just include smaller files on a page. It's my favorite AsciiDoc feature and changes the way I write my docs.
 
-Antora builds on this feature with its link:https://docs.antora.org/antora/latest/family-directories/[family directories]. Example, attachments, images, and partials are their own "family" which means they have their own default root locations. This make sourcing specific content intuitive and predictable.
-
-At a certain point relative paths turn ugly: `\include::../../../../../feature-xyz/modular-xyz.adoc`. With Antora's family directories, you can reference the family's root directory for a cleaner path: `\include::example$/feature-xyz/modular-xyz.adoc`.
+Antora builds on this feature with its link:https://docs.antora.org/antora/latest/family-directories/[family directories]. Example, attachments, images, and partials are their own "family" which means they have their own default root locations. This make sourcing specific content intuitive and predictable. For example, relative paths turn ugly at certain port: `\include::../../../../../feature-xyz/modular-xyz.adoc`. With Antora's family directories, you can reference the family's root directory (in this case "example") for a cleaner path: `\include::example$/feature-xyz/modular-xyz.adoc`.
 
 === Conditional directives
 
-Conditional directives in AsciiDoc help filter content based on output. This feature is most helpful for brief amounts of content that don't warrant their own page. Conditional directives let you single-source your docs while differentiating online vs. print content or only showing certain content to an audience.
+Conditional directives in AsciiDoc help filter content based on a defined (or not defined) attribute. This concept, first introduced in C programming, provides the [command]`ifdef` and [command]`ifndef` directives respectively. For tech writers, these commands help single-source docs that need to differentiate between online vs. print content or product output for a specific audience.
 
-ifdef: if you don't declare the attribute, it's not included in the output. You can declare it in your `antora-playbook.yml`, page header, or in your command line call (my preference for flexibility), it's not included.
-
-ifndef: todo...
-
-Here are two common examples.
-
-.Print only content
-[source, asciidoc]
-----
-include::example$/antora-print-only.adoc[]
-----
+Here are two common examples that use the [command]`ifdef` directive to "hide" administrator and internal admonitions unless you specify the attribute explicitly.
 
 .Admin and internal admonitions
 [source, asciidoc]
@@ -60,9 +48,9 @@ include::example$/antora-print-only.adoc[]
 include::example$/antora-conditional-directives.adoc[]
 ----
 
-To build output that includes these audiences, you can set the desired attribute in your `antora-playbook.yml` or in your terminal command, like `npx antora --fetch --attribute=admin antora-playbook.yml`
+To build output that includes these audiences, you can set the desired attribute in your [file]`antora-playbook.yml` or in your terminal command, like [command]`npx antora --fetch --attribute=admin antora-playbook.yml`
 
-NOTE: You can specify multiple attributes with comma separation: `npx antora --fetch --attribute=admin,internal playbook.yml`.
+NOTE: You can specify multiple attributes with comma separation: [command]`npx antora --fetch --attribute=admin,internal playbook.yml`.
 
 == Versioning
 
