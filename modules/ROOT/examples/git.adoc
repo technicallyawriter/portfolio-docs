@@ -1,0 +1,58 @@
+= Git 
+
+image:icons/git.png[the Git logo,50,50]
+
+When you're documenting three features simultaneously, releasing a weekly service pack for bug fixes on [branch]`main`, and requesting reviews from SMEs and other tech writers, you need serious control over versioning. Git provides this and more. It's an indispensable tool for keeping docs properly versioned and organized.
+
+On this page, I'll mention my favorite aspects of Git and list a few common uses. For an overview of how I use Git in my typical workflow, see xref:/principles/docs-as-code.adoc[Docs as code]. 
+
+In general, I prefer to use Git from the command line, but GitHub Desktop is a helpful GUI for reviewing complex xref:#_diffs[diffs] and creating/reviewing Pull Requests. It's all Git under the hood!
+
+== Commits
+
+A wise developer once told me, "commit early and often." Committing often is great advice because it leaves a clear breadcrumb trail of your work. Each commit has its own SHA hash for Git to track the version with, as well as a more user-friendly commit message to describe what changed. 
+
+`$ git commit -m "JIRA-123 updated pricing structure for international clients"`
+
+A descriptive commit message is helpful in case you need to xref:#_reversion[revert] a change or create a branch or tag at a specific commit.
+
+TIP: Try to keep commits smaller and well scoped. They're easier to manage when in modular, bite-sized chunks.
+
+Another one of Git's strengths is the redundancy it offers through the local/remote repository structure. Not only does this give you a local sandbox to commit your work, but it also creates constant remote back-ups with each [command]`git push`. This is helpful, since you never know when the Blue screen of death may come.
+
+Commit early and often to save your work in the remote repo!
+
+.The last thing you want to see before committing the entire day's work for the first.
+image::blue-screen.png[The dreaded blue error screen from Windows,500,auto]
+
+== Branching
+
+Branching with Git lets you compartmentalize work in separate locations. This is helpful whether working alone on different features or alongside other tech writers. Of course, working on feature branches frees up your [branch]`main` branch for releases whenever possible. Branches shouldn't linger around for too long, either. I prefer a feature branch to not last more than a couple of months, ideally. I'll periodically merge the latest from [branch]`main` branch into my feature branches to keep them up-to-date. This reduces the likelihood of merge conflicts later on.
+
+Branching like this requires proper organization. I prefer that branch names and workflows reflect the project's ticket structure. For example, if an Epic-level ticket contains 10 child User Story tickets, I'll first create a feature branch off [branch]`main` for that Epic. Then, for each child ticket, I'll create a dedicated branch off the Epic's feature branch and merged completed worked back into it. If more than one writer needs to work the same child ticket, appending the author's initials at the end of the branch name clears things up (for example, `DOC-123-PJ`). 
+
+TIP: Smart commits in Jira make it easy to see which branch a ticket's commits belong to.
+
+Branching also makes automated releases of docs possible. Commits merged to [branch]`main` could kick off deployments to production, while commits merged to [branch]`dev` could deploy to a staging environment, for example.
+
+== Diffs
+
+With all this versioning, you'll need to view the differences between them to keep it all straight. Accounting for this `diff` is a fundamental concept of Git and it's helpful throughout the life of a ticket. You might run [command]`git diff` before committing changes to see what you've changed. Or you might review the differences between a base and target branch on a Pull Request.
+
+== Reversion
+
+Oops! Did you make that commit on the wrong branch? Or completely break the test site with no clue of what you did?
+
+_None of this has ever happened to me, I promise..._
+
+Git makes it easy to pretend those mistakes never happened. 
+
+Use [command]`git revert COMMIT-HASH` to "soft" delete a commit using its hash ID. This method keeps the history in your [command]`git log` and can be undone, if needed. 
+
+Use [command]`git reset --hard HASH` to "hard" delete a commit and erase its history. This cannot be undone, so be careful. 
+
+== Tags and releases
+
+Once you reach a milestone, Git tags and releases offer a convenient way to mark a commit for easy reference. Rather than page through thousands of commit looking for last quarter's release, make a tag or release showcasing the shipped docs. You can handle versions, branches, or revisions of already released content with ease using tags and releases. 
+
+[command]`git tag -a v1.0.1 -m "hotfix for SVE-1234" && git push origin v1.0.1`
