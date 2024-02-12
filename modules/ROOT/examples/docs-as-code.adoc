@@ -54,7 +54,6 @@ contains the most up-to-date information about the feature and is a more
 appropriate place for details than a branch name.
 
 [source,bash]
-
 ++++
 $ git branch
 
