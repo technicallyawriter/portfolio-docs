@@ -1,1 +1,0 @@
-NOTE: You may see these examples on another page. I've reused them with the `includes::` directive! In fact, this note admonition is its own file called `note-about-ac.adoc` and is referenced on multiple pages. &#128522; 

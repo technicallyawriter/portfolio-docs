@@ -1,16 +1,4 @@
 * xref:index.adoc[Overview of abc]
-* Principles of abc
-** xref:principles/docs-as-code.adoc[]
-** xref:principles/agile.adoc[]
-* Tools of abc
-** xref:tools/git.adoc[]
-** xref:tools/vale.adoc[]
-** xref:tools/jira-confluence.adoc[]
-** xref:tools/madcap-flare.adoc[]
-** xref:tools/hugo.adoc[]
-** xref:tools/antora.adoc[]
-* Writing samples of abc
-** xref:writing-samples/feature.adoc[]
-** xref:writing-samples/release-notes.adoc[]
-** xref:writing-samples/portfolio.adoc[]
-* xref:resume.adoc[]
+* Getting start with abc
+** xref:install.adoc[]
+** xref:common-tasks.adoc[]
