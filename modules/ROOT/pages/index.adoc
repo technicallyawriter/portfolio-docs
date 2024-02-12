@@ -1,5 +1,5 @@
-= Feature xyz
+= Feature XYZ
 
-This is prerelease content for feature xyz! It's not released yet but you can easily deploy and share with internal stakeholders or early access audiences.
+These are prerelease docs for Feature XYZ!
 
-How I did this...talk branch structure and playbook branch filter.
+NOTE: You're currently viewing docs from a feature branch that hasn't yet been merged to [branch]`main`. Pretty cool, huh? I describe how I created these alpha versions xref:1.0.0@technicallyawriter:ROOT:page$/tools/antora.adoc#_structured_configuration[on this page].
