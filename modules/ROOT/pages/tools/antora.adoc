@@ -54,4 +54,4 @@ NOTE: You can specify multiple attributes with comma separation: [command]`npx a
 
 == Versioning
 
-Usually producing versioned docs isn't that tightly declared into your project's configuration. With Antora, it's explicitly managed within the playbook. TODO...
+Producing versioned docs can be tough. It can involve a lot of duplicated docs in nested folders and manual linking. With Antora, version is explicitly managed within the your [file]`antora.yml` file and built out automatically. Since each repo referenced in your [file]`antora-playbook.yml` contains an [file]`antora.yml` file, delivering versions is a question of how you configure your [file]`antora-playbook.yml`. This keeps your project size from ballooning and centralizes your management of version within a few files in the same tool.
