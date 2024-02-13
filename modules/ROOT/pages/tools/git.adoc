@@ -10,7 +10,7 @@ On this page, I'll mention my favorite aspects of Git and list a few common uses
 
 A wise developer once told me, "commit early and often." This is great advice because it leaves a clear breadcrumb trail of your work.
 
-.Git commit message with link:../tools/jira-confluence.adoc[smart commits syntax]
+.Git commit message with link:../tools/jira-confluence.html#_smart_commits[smart commits syntax]
 [example]
 `$ git commit -m "ID-123 updated pricing structure for international clients"`
 
