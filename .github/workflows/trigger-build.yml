@@ -1,4 +1,4 @@
-name: Trigger Build in Playbook Repository
+name: Build 
 on:
   push:
     branches:

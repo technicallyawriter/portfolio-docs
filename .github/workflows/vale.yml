@@ -1,4 +1,4 @@
-name: Linting with Vale on pull request
+name: Vale 
 on: [pull_request]
 
 jobs:
