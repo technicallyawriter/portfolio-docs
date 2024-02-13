@@ -10,7 +10,7 @@ On this page, I'll mention my favorite aspects of Git and list a few common uses
 
 A wise developer once told me, "commit early and often." This is great advice because it leaves a clear breadcrumb trail of your work.
 
-.Git commit message with #xref:page$/tool/jira-confluence.adoc#_smart_commits[smart commits syntax]
+.Git commit message with #xref:../tool/jira-confluence.adoc#_smart_commits[smart commits syntax]
 [example]
 `$ git commit -m "ID-123 updated pricing structure for international clients"`
 
@@ -35,7 +35,7 @@ Branching also makes automated releases of docs possible. Commits merged to [bra
 
 Oops! Did you make that commit on the wrong branch? Or completely break the test site with no clue of what you did?
 
-_None of this has ever happened to me, I promise..._
+Important: none of this has ever happened to me, I promise...
 
 Git makes it easy to pretend those mistakes never happened.
 
@@ -47,5 +47,4 @@ Use [command]`git reset --hard HASH` to "hard" delete a commit and erase its his
 
 Once you reach a milestone, Git tags and releases offer a convenient way to mark a commit for easy reference. Rather than paging through thousands of commit looking for last quarter's release, make a tag or release showcasing the shipped docs. You can handle versions, branches, or revisions of already released content with ease using tags and releases.
 
-[example]
-`git tag -a v1.0.1 -m "hotfix for SVE-1234" && git push origin v1.0.1`
+[command]`git tag -a v1.0.1 -m "hotfix for SVE-1234" && git push origin v1.0.1`
