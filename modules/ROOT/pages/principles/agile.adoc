@@ -1,12 +1,12 @@
 = Agile methodology
 
-I'm an Agile advocate with six years of experience running Scrum and Kanban frameworks. 
+I'm an Agile advocate with six years of experience running Scrum and Kanban frameworks.
 
-My preference between these approaches depends on the context. If I'm assigned to a specific dev team also running Scrum, I think Sprints for tech writing are effective. I'll try to follow one sprint behind development and stay aligned with changes by attending their stand-up and planning meetings. If I'm stretched across several teams, I typically prefer Kanban. Juggling simultaneous sprints is overwhelming at a certain point. In this case, it's better to simplify the board and let release deadlines determine priorities. Proper scoping of tickets with xref:/principles/docs-as-code.adoc#_testability[testable acceptance criteria] turns that intimidating mountain into small, manageable rocks.
+My preference between these approaches depends on the context. If I'm assigned to a specific dev team also running Scrum, I think Sprints for tech writing are effective. I'll try to follow one sprint behind development and stay aligned with changes by attending their stand-up and planning meetings. If I'm stretched across several teams, I typically prefer Kanban. Juggling simultaneous sprints is overwhelming at a certain point. In this case, it's better to simplify the board and let release deadlines determine priorities. Proper scoping of tickets with xref:/principles/docs-as-code.adoc#_testability[testable acceptance criteria] turns that intimidating mountain of work into small, manageable rocks.
 
-Above all, I believe in team-created definitions and processes with tight feedback loops. 
+Above all, I believe in team-created definitions and processes with tight feedback loops.
 
-.Who doesn't like moving tickets from left to right across the board?! 
+.Who doesn't like moving tickets from left to right across the board?!
 image::agile-board.png[a decorative image showing a people moving tickets across a Kanban board,350,auto]
 
 == Agile ceremonies
@@ -18,13 +18,15 @@ I've participated in and led the typical agile ceremonies:
 * Sprint Planning meetings
 * Retrospective meetings
 
-If I had to choose only one, I'd pick the daily stand-ups. These quick check-ins are great for divvying up work, adjusting priorities, and clarifying uncertainty.
+If I had to choose only one, I'd pick the daily stand-ups. These quick check-ins are great for divvying up work, adjusting priorities, and clarifying uncertainty in a short amount of time.
 
 == Definition of done
 
-Establishing a definition of done is helpful to limit scope creep in tickets. Docs can always improve, but this doesn't mean they're updated in one fell swoop. Creating a series of narrowly scoped tickets helps decouple efforts and makes collaboration easier. 
+Establishing a definition of done is helpful to limit scope creep in tickets. Docs can always improve, but this doesn't mean a ticket is never finished. Creating a series of narrowly scoped tickets helps decouple efforts and makes sharing workloads possible.
 
-I'm a fan of the link:https://gamestorming.com/circles-and-soup/[Circles and Soup activity^] to help writers agree on a definition of done. This game maps out what tech writers can control and influence as well as what is out of their control. Knowing the difference between these categories leads to more predictable resolution times for tickets. 
+I'm a fan of the link:https://gamestorming.com/circles-and-soup/[Circles and Soup activity^] to help writers agree on a definition of done. This game maps out what tech writers can control and influence as well as what is out of their control. Knowing the difference between these categories leads to more predictable resolution times for tickets.
+
+== Acceptance criteria
 
 As strange as it sounds, it's sometimes hard to know when you're done. Well-written acceptance criteria make this easier.
 
@@ -34,8 +36,8 @@ include::partial$acceptance-criteria/note-about-ac.adoc[]
 
 == Document early and often
 
-I'd rather involve docs earlier in the software development life cycle (SDLC) than later. The "document late" approach is generally dated, though there is such thing as documenting too early. Once a project has stable business rules, it's time to start documenting foundational concepts and high-level processes. Then, as development irons out the nitty-gritty details, adjusting course and reviewing changes is a more straight forward process.
+I'd rather involve docs earlier in the software development life cycle (SDLC) than later. The "document late" approach is dated, though there is such thing as documenting _too_ early. Once a project has stable business rules, it's time to start documenting foundational concepts and high-level processes. Then, as development irons out the nitty-gritty details, adjusting course and reviewing changes is a more straight forward process.
 
 == Tight feedback loops
 
-What I appreciate most about Agile is how it encourages efficient communication. 15-minute daily stand-ups and quick touch-points with SMEs provide consistent opportunities to share meaningful updates. Other meetings, like team retrospectives, celebrate wins and set goals for how to improve existing processes. Developing a cadence for feedback is largely what makes Agile such a successful approach and mindset.
+What I appreciate most about Agile is how it encourages communication. 15-minute daily stand-ups and quick touch-points with SMEs provide consistent opportunities to share meaningful updates. Other meetings, like team retrospectives, celebrate wins and set goals for how to improve existing processes. Developing a cadence for feedback is largely what makes Agile such a successful approach and mindset.

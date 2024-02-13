@@ -102,7 +102,7 @@ this blurb, I only need to update the snippet once.
 
 [source,xml]
 ++++
-<MadCap:snippetBlocksrc="../resources/snippets/view-user-permissions.flsnp" />
+<MadCap:snippetBlock src="../resources/snippets/view-user-permissions.flsnp" />
 ++++
 
 In *Hugo*, I can create a custom shortcode with this information.

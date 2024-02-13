@@ -5,7 +5,8 @@ Confluence
 GitHub
 Neovim
 Atlassian's
-(?i)hotfixes?
+hotfix
+hotfixes
 xyz
 SME
 Kanban
@@ -16,7 +17,6 @@ touch-point
 RTFM
 MadCap Flare
 AsciiDoc
-AsciiDoctor-pdf
 xkcd
 XHTML
 VS Code
@@ -30,9 +30,13 @@ Microsoft Word
 Pandoc
 Global Project Linking
 hoc
-overcommitted 
+overcommitted
 unassigning
 roadmaps
 siloed
 Includes Page
 GetPage
+Infrastructure as Code
+ifdef
+ifndef
+reinvent the wheel

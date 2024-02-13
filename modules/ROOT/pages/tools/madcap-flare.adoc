@@ -4,20 +4,22 @@
 
 image:icons/flare.png[MadCap Flare logo,50,50]
 
-A majority of my tech writing experience is in MadCap Flare. Single-sourcing content for multiple outputs with conditional text, targets, and TOCs is like riding a bike at this point--a somewhat heavy bike that crashes if you change gears too quickly &#128517; (I poke fun since I'm intimately familiar with all its quirks over the years). 
+A majority of my tech writing experience is in MadCap Flare. Single-sourcing content for multiple outputs with conditional text, targets, and TOCs is like riding a bike at this point--a somewhat heavy bike that crashes if you change gears too quickly &#128517;.
 
-Perhaps most importantly, Flare is a fully featured product with a friendly UI. I've found this makes the learning curve less steep, which means you're more likely to get help from other tech writers!
+Perhaps most importantly, Flare is a fully featured product with a friendly enough UI. I've found this makes the learning curve less steep, which means you're more likely to get help from other tech writers!
 
 == Importing from Microsoft Word
 
-Flare is great for transitioning from Word to online docs. The efficiency by which you can import .DOCX files, build a TOC, and publish an HTML target is worth the price tag. Sure you could write a Pandoc script to manage the bulk of these transforms, but this comes at a hidden costs of writing and maintaining an ad hoc workflow. I feel Flare has a competitive advantage here as a tried-and-tested product. 
+Flare is great for transitioning from Word to online docs. The efficiency by which you can import .DOCX files, build a TOC, and publish an HTML target is worth the price tag. Sure you could write a Pandoc script to manage the bulk of these transforms, but this comes at a hidden costs of writing and maintaining an ad hoc workflow. I feel Flare has a competitive advantage here as a tried-and-tested product.
 
 I've led transitions from Word to Flare at two different organizations, so the process feels like a well-oiled machine. Map Word to Flare styles, remove all of Word's messy inline styling, and Flare does its black-box magic 🪄pretty well. Before you know it, you've got bare-bones XHTML content you can polish further if you wish.
 
 == Global Project Linking
 
-Flare's emphasis on content re-use means creating scalable projects with the link:https://help.madcapsoftware.com/flare2023r2/Content/Flare/Global-Project-Linking/Global-Project-Linking.htm[Global Project Linking^] technique. 
-I've lead efforts at two organizations in restructuring Flare content to use this approach. It's a must if you're managing more than a couple of doc projects. The idea is simple: all shared assets go in a parent-level project. This can be your branding colors or global variables few example. Then, all projects that wish to reuse this content import the shared assets project. To update these shared assets, edit them in the parent-level project and re-import into all the child projects. You can even have these child project automatically import on each build. Change it once and you're done.
+Flare's emphasis on content re-use means creating scalable projects with the link:https://help.madcapsoftware.com/flare2023r2/Content/Flare/Global-Project-Linking/Global-Project-Linking.htm[Global Project Linking^] technique.
+I've lead efforts at two organizations in restructuring Flare content to use this approach. It's a must if you're managing more than a couple of doc projects. The idea is simple: all shared assets go in a parent-level project. This can be your branding colors, homepage template, contact pages, or other global variables to name a few examples. Then, all projects that wish to reuse this content import the shared assets project. MadCap conditions make including what you want to share and excluding what you don't pretty simple. To update these shared assets, edit them in the parent-level project and re-import into all the child projects. You can even have these child project automatically import on each build.
+
+Change it once, import, and you're done.
 
 .An example of Global Project Linking structure
 [source,ascii]
@@ -34,9 +36,9 @@ NOTE: This is a conceptual hierarchy. Child projects don't need to be literally 
 
 Snippets are the poster-child for content reuse in Flare. Create modular snippets to house chunks of content that can stand own their own, then plug them in wherever appropriate.
 
-How and where you store your snippets is a matter of personal preference. You can keep them separate from your main content (at their default location) in the Project Organizer tab if you wish. 
+How and where you store your snippets is a matter of personal preference. You can keep them separate from your main content (at their default location) in the Project Organizer tab if you wish.
 
-.Snippets stored in the default location (menu:Project Organizer[Resources > Snippets > Product Area > Snippet.flsnp] 
+.Snippets stored in the default location (menu:Project Organizer[Resources > Snippets > Product Area > Snippet.flsnp]
 [source,ascii]
 ----
 Resources/
@@ -51,7 +53,7 @@ Resources/
         └── snippet3.flsnp
 ----
 
-Or, if you prefer, you can nest a `snippets` directory within your docs directories. For example:
+Or, if you prefer, you can nest a `snippets` directory within your content directories. For example:
 
 .Snippets nested within the Content Explorer tab
 [source,ascii]
@@ -70,15 +72,15 @@ Product-B/
 
 == Global variables
 
-Managing global variables is simple with Flare. They're automatically included in topic pages, so you don't need to explicitly include them in the document header, like with AsciiDocs. This is a small consideration, but small things add up and it's nice when Flare handles it for me.
+Managing global variables is simple with Flare. They're automatically included in topic pages, so you don't need to explicitly include them in the document header, like with AsciiDoc. This is a small consideration, but small things add up and it's nice when Flare handles it for me.
 
 == Conditional text
 
-Conditional text is another content reuse strategy made easy in Flare. You manage conditional text similar to variables and they're automatically available whenever needed. The conditions you wish to include or exclude are stored in a simple table with an include/exclude filter column for each row. You can apply conditions to an entire file to exclude it from a specific target, or you can highlight in-line text to filter accordingly.
+Conditional text is another content reuse strategy made easy in Flare. The conditions you wish to include or exclude are stored in a simple table with an include/exclude filter column for each row. You can apply conditions to an entire file to exclude it from a specific target, or you can highlight in-line text to filter accordingly.
 
 Someone common uses for conditional text are to use a `PrintOnly` condition to exclude content from online targets, or an `AdminOnly` condition to hide admininstrator-level content from general use docs.
 
-NOTE: Global Project Linking uses this same filtering logic to include/exclude shared content. 
+NOTE: Global Project Linking uses this same filtering logic to include/exclude shared content.
 
 == PDF styling
 

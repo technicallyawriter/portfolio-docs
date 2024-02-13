@@ -2,7 +2,7 @@
 
 image:icons/hugo.png[Hugo logo,50,50]
 
-Hugo is a fast and powerful plain text static site generator. Don't let the simplicity of the syntax fool you, though. Hugo has a high ceiling for configuration, since it leverages and extends the Go programming language. This software's main strengths are its templating and ability to parse content for xref:_shortcodes[shortcodes] and xref:_getpage_method[methods].
+Hugo is a fast and powerful plain text static site generator. Don't let the simplicity of the syntax fool you, though. Hugo has a high ceiling for configuration, since it leverages the Go programming language. This software's main strengths are its templating and ability to parse content for xref:_shortcodes[shortcodes] and xref:_getpage_method[methods].
 
 And since Hugo is open source, I can experiment with it for free in personal projects, if I choose. This is a huge advantage compared to pricey proprietary tools like Flare.
 
@@ -12,7 +12,7 @@ Hugo was my first step away from Flare and into the world of plain text static s
 
 === AsciiDoc woes
 
-My time with Hugo taught me a hard lesson about AsciiDoc support, though. While Hugo supports AsciiDoc, it requires additional configuration to run somewhat smoothly.^[link:https://blog.arkey.fr/2020/04/23/tackling-hugo-integration-of-asciidoctor[1]]^ ^[link:https://stiobhart.net/2020-04-18-hugo-asciidoctor[2]]^ Your selected theme must also consider AsciiDoc support (most don't) to take full advantage of CSS rules expecting Markdown. 
+My time with Hugo taught me a hard lesson about AsciiDoc support, though. While Hugo supports AsciiDoc, it requires additional configuration to run somewhat smoothly.^[link:https://blog.arkey.fr/2020/04/23/tackling-hugo-integration-of-asciidoctor[1]]^ ^[link:https://stiobhart.net/2020-04-18-hugo-asciidoctor[2]]^ Your selected theme must also consider AsciiDoc support (most don't) to take full advantage of CSS rules expecting Markdown.
 
 This ultimately pushed to me try xref:./antora.adoc[Antora], which natively supports the AsciiDocs syntax.
 
@@ -36,7 +36,7 @@ include::example$hugo/alert-shortcode-call.html[]
 
 == Templates
 
-Since Hugo's templating engine extends the Go programming language, it's robust enough to handle more complex use cases. For example, see the below code block that uses `if` and `elseif` conditional logic to display either a `description`, `summary`, or a default, fall-back value if nothing else is set.
+Since Hugo's templating engine is based on the Go programming language, it's robust enough to handle complex use cases. For example, see the below code block that uses `if` and `elseif` conditional logic to display either a `description`, `summary`, or a default, fall-back value if nothing else is set.
 
 .Complex conditional logic in Hugo template
 [source, go (Hugo templating)]
@@ -48,7 +48,7 @@ Flexibility is an asset, and the ability to fine-tune templates to handle a vari
 
 == Front matter
 
-Hugo pages use front matter to set values you can parse and refer to as metadata in a variety of ways. Standard values for front matter are `Title`, `Description`, `Date`, and `Author` for example. You can further define metadata in front matter however best suits your needs. 
+Hugo pages use front matter to set values you can parse and refer to as metadata in a variety of ways. Standard values for front matter are `Title`, `Description`, `Date`, and `Author` for example. You can further define metadata in front matter however best suits your needs.
 
 Two notable features that make use of front matter are the xref:_getpage_method[.GetPage method] for content reuse and xref:#_taxonomies[taxonomies] for grouping similar content.
 
@@ -84,7 +84,7 @@ taxonomies
   tag: "tags"
 ----
 
-Then, add whatever tags you'd like to a content page, for example "best practice." 
+Then, add whatever tags you'd like to a content page, for example "best practice."
 
 [source, yaml]
 ----
