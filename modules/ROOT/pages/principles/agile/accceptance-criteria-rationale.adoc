@@ -1,0 +1,3 @@
+Clear, demonstrative acceptance criteria helps writers know when they're done with a ticket. Writing can always improve, but that doesn't mean the work is done in one fell swoop. Instead, write acceptance criteria that captures the purpose and scope of the ticket, then validate against it.
+
+TIP: Keep your AC action-oriented from the user perspective to make testing easier.

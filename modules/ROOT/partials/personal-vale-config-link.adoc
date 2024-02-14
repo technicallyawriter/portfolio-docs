@@ -1,0 +1,1 @@
+Check out xref::page$/tools/vale.adoc[my personal Vale configuration for this portfolio].

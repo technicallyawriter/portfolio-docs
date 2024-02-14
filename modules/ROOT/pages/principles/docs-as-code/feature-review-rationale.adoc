@@ -1,3 +1,1 @@
-= Feature review
-
 Once a feature is nearing *feature complete* status, it should consider the opinion of other stakeholders (Product Management, Engineering, Professional Services, Support). This review takes into account higher-level feedback from a wider audience and serves as a jumping off point for training. You'll likely receive lots of out-of-scope feedback from this review, so create tickets in your backlog and plan accordingly. Not everything requested in this review can make the initial release.

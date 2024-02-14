@@ -1,5 +1,3 @@
-= Examples depending on software
-
 Content reuse goes by different names depending on the software I'm using, but the concept remains the same. Here are a few examples.
 
 In *MadCap Flare*, I can use a snippet to remind users where to view their user permissions, for example. This is helpful when a task requires a specific permission. If the path to this location changes, or I want to update wording in this blurb, I only need to update the snippet once.

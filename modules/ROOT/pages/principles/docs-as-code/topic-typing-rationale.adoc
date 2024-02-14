@@ -1,5 +1,3 @@
-= Topic typing
-
 Topic typing categorizes content based on the purpose it serves as well as its style and theme. This approach scopes writing into potentially reusable sections. Generally, I prefer to organize content into three basic categories: *concept*, *task*, or *reference*.
 
 * *Concept:* used when introducing or explaining an idea, like the overview of a complex feature

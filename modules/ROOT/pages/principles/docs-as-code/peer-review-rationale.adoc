@@ -1,5 +1,3 @@
-= Peer review
-
 Once the SME signs off on the docs, tech writers can review each other's work. Peer review considers style guide adherence, proper information architecture, and consistency in tone, grammar, and usage. Always communicate feedback professionally and consider the author's feelings. Peer review isn't a free pass for ruthless criticism!
 
 Complete this review as part of a GitHub Pull Request.
