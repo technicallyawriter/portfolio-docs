@@ -1,7 +1,7 @@
 * xref:index.adoc[Welcome]
 * Principles
-** xref:principles/docs-as-code.adoc[]
-** xref:principles/agile.adoc[]
+** xref:principles/docs-as-code/docs-as-code.adoc[]
+** xref:principles/agile/agile.adoc[]
 * Tools
 ** xref:tools/git.adoc[]
 ** xref:tools/vale.adoc[]
@@ -9,6 +9,6 @@
 ** xref:tools/madcap-flare.adoc[]
 ** xref:tools/hugo.adoc[]
 ** xref:tools/antora.adoc[]
-* Writing samples 
+* Writing samples
 ** xref:writing-samples/xhtml.adoc[]
 ** xref:writing-samples/asciidoc.adoc[]
