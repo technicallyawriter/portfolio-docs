@@ -1,5 +1,5 @@
-name: technicallyawriter
-title: Modularize 
+name: feature/modularize
+title: feature/modularize
 version: "1.0.1"
 asciidoc:
   attributes:
