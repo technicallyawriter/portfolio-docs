@@ -20,7 +20,10 @@ Whether working alone or on a team, proper version control is a must.
 \include::example$/git/feature-branch-naming-convention-example.bash[]
 
 === Pull requests
-Before merging, I like to xref:#_testability[test] and xref:#_peer_review[peer review] my docs as part of a Pull Request. If possible, I'll deploy a [branch]`feature` or [branch]`dev` branch to a staging environment and share with internal shareholders before the release.
+Before merging, I like to xref:#_testability[test] and xref:#_peer_review[peer review]
+my docs as part of a Pull Request. If possible, I'll deploy a [branch]`feature` or
+[branch]`dev` branch to a staging environment and share with internal shareholders before
+the release.
 
 == Content reuse
 // Content reuse rationale
