@@ -1,6 +1,6 @@
 = Docs-as-code
 
-include::page$/principles/docs-as-code-preamble.adoc[]
+include::partial$/docs-as-code-preamble.adoc[]
 
 image:docs-as-code.jpeg[decorative image of Docs as Code process]
 
@@ -9,10 +9,10 @@ image:docs-as-code.jpeg[decorative image of Docs as Code process]
 Whether working alone or on a team, proper version control is a must.
 
 === Feature branch workflow
-include::page$/principles/version-control/git-feature-branch-workflow.adoc[]
+include::partial$/version-control/git-feature-branch-workflow.adoc[]
 
 === Feature branch naming conventions
-include::page$/principles/version-control/git-feature-branch-naming-convention-rationale.adoc[]
+include::partial$/version-control/git-feature-branch-naming-convention-rationale.adoc[]
 
 include::example$/git/feature-branch-naming-convention-example.bash[]
 
@@ -22,15 +22,15 @@ Before merging, I like to xref:#_testability[test] and xref:#_peer_review[peer r
 
 == Content reuse
 // content reuse rationale
-include::page$/principles/content-reuse/content-reuse-rationale.adoc[]
+include::partial$/content-reuse/content-reuse-rationale.adoc[]
 
 === Examples depending on software
 // content reuse examples - TODO: break this down by software with example$
-include::page$/principles/content-reuse/content-reuse-examples-with-different-software.adoc[]
+include::partial$/content-reuse/content-reuse-examples-with-different-software.adoc[]
 
 // topic typing rationale
 == Topic typing
-include::page$/principles/content-reuse/topic-typing-rationale.adoc[]
+include::partial$/content-reuse/topic-typing-rationale.adoc[]
 
 // topic typing example
 include::example$/docs-as-code/topic-typing-feature-xyz.adoc[]
@@ -40,32 +40,32 @@ include::partial$/content-reuse-determination-note.adoc[]
 
 == Reviews
 // reviews rationale
-include::page$/principles/reviews/reviews-rationale.adoc[]
+include::partial$/reviews/reviews-rationale.adoc[]
 
 === SME review
 
 // SME review rationale
-include::page$/principles/reviews/sme-review-rationale.adoc[]
+include::partial$/reviews/sme-review-rationale.adoc[]
 
 === Peer review
 
 // peer review rationale
-include::page$/principles/reviews/peer-review-rationale.adoc[]
+include::partial$/reviews/peer-review-rationale.adoc[]
 
 === Feature review
 
 // feature review rationale
-include::page$/principles/reviews/feature-review-rationale.adoc[]
+include::partial$/reviews/feature-review-rationale.adoc[]
 
 == Testability
 
 // testing rationale
-include::page$/principles/testing/testability-rationale.adoc[]
+include::partial$/testing/testability-rationale.adoc[]
 
 === Linters
 
 // testing with linters
-include::page$/principles/testing/linters-rationale.adoc
+include::partial$/testing/linters-rationale.adoc
 
 // personal vale config link
 include::partial$/personal-vale-config-link.adoc
@@ -73,7 +73,7 @@ include::partial$/personal-vale-config-link.adoc
 === Acceptance criteria
 
 // testing against acceptance criteria
-include::page$/principles/testing/acceptance-criteria-rationale.adoc[]
+include::partial$/testing/acceptance-criteria-rationale.adoc[]
 
 // acceptance criteria examples
 Here's a couple of examples to show what I mean:
@@ -85,4 +85,4 @@ include::partial$acceptance-criteria/note-about-ac.adoc[]
 === Reviews
 
 // testing through reviews
-include::page$/principles/testing/reviews-as-testing.adoc[]
+include::partial$/testing/reviews-as-testing.adoc[]
