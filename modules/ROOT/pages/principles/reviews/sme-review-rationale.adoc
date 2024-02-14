@@ -1,5 +1,3 @@
-= Subject matter expert (SME) review
-
 This review involves working with a SME to ensure technical accuracy, proper order of operations, and prerequisites, for example. Tight feedback loops between a tech writer and SME is ideal. As a courtesy, ask the SME how they'd prefer to handle reviews and accommodate accordingly. Some prefer a meeting while others only have time for emails or SharePoint files. Efficient use of a SME's time is crucial as experts are often called to many tasks.
 
 Complete SME reviews before requesting peer review.
