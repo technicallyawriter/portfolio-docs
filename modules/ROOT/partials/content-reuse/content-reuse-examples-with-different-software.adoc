@@ -14,9 +14,9 @@ In *Hugo*, I can create a custom shortcode with this information and reference i
 {{% view-user-permissions %}}
 ----
 
-When writing with AsciiDoc in *Antora*, I can use the `include::` directive to display content from a modular file.
+When writing with AsciiDoc in *Antora*, I can use the `include::` directive to display content from a partial.
 
 [source,asciidoc]
 ----
-\include::page$/view-user-permissions.adoc[]
+\include::partial$/view-user-permissions.adoc[]
 ----
