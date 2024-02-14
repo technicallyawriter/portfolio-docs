@@ -8,19 +8,19 @@ NOTE: I've escaped some directives with a backslash and used literal delimiters 
 
 [source.asciidoc]
 ----
-include::example$/docs-as-code.adoc[]
+include::example$/writing-samples/docs-as-code.adoc[]
 ----
 
 == Principles > Agile methodology
 
 [source,asciidoc]
 ----
-include::example$/agile.adoc[]
+include::example$/writing-samples/agile.adoc[]
 ----
 
 == Tools > Git
 
 [source,asciidoc]
 ----
-include::example$/git.adoc[]
+include::example$/writing-samples/git.adoc[]
 ----
