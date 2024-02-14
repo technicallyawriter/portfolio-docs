@@ -54,7 +54,7 @@ I've turned off several rules at the bottom of this file that I'd normally leave
 
 Vale includes several readability metrics by default. I've turned all off except the FleschKincaid grade level rule. I prefer this metric since it focuses on syllable count rather than word count. Cadence is more important than word count, in my opinion. In addition to keeping this readability metric, I've extended it into my own `portfolio` style and increased the grade level from 8 to 9.
 
-.Current .vale.ini
+.Current .vale.ini for this portfolio
 [source, properties]
 ----
 include::example$vale/vale.ini[]

@@ -1,1 +1,1 @@
-Check out xref::page$/tools/vale.adoc[my personal Vale configuration for this portfolio].
+Check out xref::page$/tools/vale.adoc#_vale_configuration_file[my personal Vale configuration for this portfolio].
