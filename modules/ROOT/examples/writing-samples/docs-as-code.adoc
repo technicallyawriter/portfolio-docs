@@ -1,12 +1,6 @@
 = Docs-as-code
-
-Modern tech writing has evolved to treat documentation like code in how it's
-versioned, reviewed, tested, and deployed. While I began my career watching
-Microsoft Word struggle with 500+ page documents, I've learned first-hand that
-delivering high quality documentation at scale means having high quality tools
-and processes.
-
-Fortunately, there's no need to reinvent the wheel. Treat the docs like code!
+// Preamble
+\include::partial$/docs-as-code-preamble.adoc[]
 
 image:docs-as-code.jpeg[decorative image of Docs as Code process]
 
@@ -14,210 +8,70 @@ image:docs-as-code.jpeg[decorative image of Docs as Code process]
 
 Whether working alone or on a team, proper version control is a must.
 
-=== Feature branching
+=== Feature branch workflow
+// Various branching workflows with diagrams
+\include::partial$/version-control/git-feature-branch-workflow.adoc[]
 
-As a general rule, [branch]`main` branch always contains production-ready code.
-This way, you can quickly release new docs without worry of it containing
-unfinished work or errors that'll break your site. Feature branches off of
-[branch]`main` contain in-progress work for upcoming releases. I prefer to
-scope these feature branches at the xref:./agile.adoc[Epic or Feature level]
-and merge completed feature docs into them. How you structure your tickets
-informs how you structure your branches.
+=== Feature branch naming conventions
+// Preferred naming conventions
+\include::partial$/version-control/git-feature-branch-naming-convention-rationale.adoc[]
 
-.Feature branching (simple) image::feature-branching-simple.png[Feature
-branches without release branch]
-
-Branching in this way is more straight-forward the more "agile" a company's
-release schedule is. In other words, if a company releases a feature once it's
-complete, the feature branch containing the docs is simply merged to
-[branch]`main` come release time. However, if a company prefers a longer
-release runway (_cough_ waterfall! _cough_), I'll create a release branch off
-[branch]`main` to merge completed feature branches into.
-
-.Feature branching with a release branch
-image::feature-branching-release.png[Feature branches with release branch]
-
-Branching like this makes writing release notes for service packs and hotfixes
-simple, as these docs are just another feature branch.
-
-.Feature branching with release and hotfix branches
-image::feature-branching-release-hotfix.png[Feature branches with release and
-hotfix branch]
-
-=== Naming conventions
-
-I prefer to name branches using ticket IDs, for example
-[branch]`feature/id-123`. Descriptive names can become confusing, vague, or
-even inaccurate as development evolves. The associated ticket ID serves as a
-breadcrumb to the source of truth, in this case a Jira ticket. This ticket
-contains the most up-to-date information about the feature and is a more
-appropriate place for details than a branch name.
-
-[source,bash]
-++++
-$ git branch
-
-* main
-feature/id-123
-feature/id-456
-feature/id-789
-release/v1.1.0
-hotfix/v1.0.4
-++++
-
-This isn't the most alluring naming convention, but sometimes:
-
-[quote,Unix Philosophy] Clarity is better than cleverness
+// Git branch names example
+\include::example$/git/feature-branch-naming-convention-example.bash[]
 
 === Pull requests
-
-Before merging, I like to xref:#_testability[test] and xref:#_peer_review[peer
-reviewed] my docs as part of a Pull Request. If possible, I'll deploy a
-[branch]`feature` or [branch]`dev` branch to a staging environment and share
-with internal shareholders before the release.
+Before merging, I like to xref:#_testability[test] and xref:#_peer_review[peer review] my docs as part of a Pull Request. If possible, I'll deploy a [branch]`feature` or [branch]`dev` branch to a staging environment and share with internal shareholders before the release.
 
 == Content reuse
-
-Docs-as-code encourages tech writers to borrow from the coding concept of
-**modular programming**. This term describes how programmers separate code into
-independent files depending on the purpose it serves. This approach leads to
-less manual work and makes managing code must easier. Why write something three
-or four times when you can write it once and reuse it? This is transferrable to
-docs, of course.
-
-Writing docs that are more flexible and narrowly scoped may take some initial
-planning, but the approach is ultimately more efficient, not to mention less of
-a headache to manage. Proper content reuse also creates consistency for
-readers, making the docs easier to read.
-
-Content reuse goes by different names depending on the software I'm using, but
-the concept remains the same. Here are a few examples.
+// Content reuse rationale
+\include::partial$/content-reuse/content-reuse-rationale.adoc[]
 
 === Examples depending on software
+// Content reuse examples - TODO: break this down by software with example$
+\include::partial$/content-reuse/content-reuse-examples-with-different-software.adoc[]
 
-In *MadCap Flare*, I can use a snippet to remind users where to view their user
-permissions, for example. This is helpful when a task requires a specific
-permission. If the path to this location changes or I want to update wording in
-this blurb, I only need to update the snippet once.
+== Topic typing
+// Topic typing rationale
+\include::partial$/content-reuse/topic-typing-rationale.adoc[]
 
-[source,xml]
-++++
-<MadCap:snippetBlock src="../resources/snippets/view-user-permissions.flsnp" />
-++++
+// Topic typing example
+\include::example$/docs-as-code/topic-typing-feature-xyz.adoc[]
 
-In *Hugo*, I can create a custom shortcode with this information.
-
-[source,markdown]
-++++
-{{% view-user-permissions %}}
-++++
-
-When writing with AsciiDoc in *Antora*, I can use the `include::` directive to
-display content from a modular file.
-
-[source,asciidoc]
-++++
-\include::page$/view-user-permissions.adoc[]
-++++
-
-=== Topic typing
-
-Another valuable content reuse technique is topic typing. At it's most general,
-I prefer to organize content into three basic categories: **concept**,
-**task**, or **reference**.
-
-* *Concept:* used when introducing or explaining an idea, like the overview of a complex feature.
-* *Task:** used when instructing user action, like enabling a feature within a product.
-* *Reference:* used when providing a large amount of scannable information, like tabular data about compatibility.
-
-Dedicating a page to a specific topic type is enough modularity sometimes. For
-increased reuse potential, I can make each piece of content within a page more
-modular, if desired. For example:
-
-[source,asciidoc]
-++++
-= Topic xyz
-
-\include::topic-xyz-intro.adoc
-\include::topic-xyz-prerequities.adoc
-\include::concept-x.adoc
-\include::concept-y.adoc
-\include::concept-z.adoc
-++++
-
-Regardless of how modular I go, I make sure I'm consistent in how I template
-these files. This consistency enables me to plug-and-play content as needed.
-
-NOTE: Structuring content for reuse is easier to do from the start but don't
-feel like you have to structure _everything_ for reuse. Discuss with your team
-(or yourself) to determine how modular your docs should be.
+// Note: not everything must be modular
+\include::partial$/content-reuse/content-reuse-determination-note.adoc[]
 
 == Reviews
+// Reviews rationale
+\include::partial$/reviews/reviews-rationale.adoc[]
 
-Docs are best when they're collaborative. And the most fruitful collaboration
-often takes the form of reviews. Tech writers usually aren't the expert on the
-subject they're writing--for this, there's the
-xref:#_subject_matter_expert_sme_review[subject matter expert (SME) review].
-And authors usually aren't the best editors of their own work--for this,
-there's the xref:#_peer_review[peer review].
-
-Reviews might look differently depending on personal preference and the
-software used. I've conducted reviews of plain text docs in GitHub as part of a
-Pull Request, as well as in exported Word docs uploaded to SharePoint with the
-Track Changes feature turned on.
-
-As is the rule with all collaboration, work with others to find the best
-compromise.
-
-=== Subject matter expert (SME) review
-
-This review involves working with a SME to ensure technical accuracy, proper
-order of operations, and prerequisites, for example. Tight feedback loops
-between a tech writer and SME is ideal. As a courtesy, ask the SME how they'd
-prefer to handle reviews and accommodate accordingly. Some prefer a meeting
-while others only have time for emails or SharePoint files. Efficient use of a
-SME's time is crucial as experts are often called to many tasks.
-
-Complete SME reviews before requesting peer review.
+=== SME review
+// SME review rationale
+\include::partial$/reviews/sme-review-rationale.adoc[]
 
 === Peer review
-
-Once the SME signs off on the docs, tech writers can review each other's work.
-Peer review considers style guide adherence, proper information architecture,
-consistency in tone, grammar, and usage. Always communicate feedback
-professionally and consider the author's feelings. This isn't a free pass for
-ruthless criticism. Complete this review as part of a GitHub Pull Request.
+// Peer review rationale
+\include::partial$/reviews/peer-review-rationale.adoc[]
 
 === Feature review
-
-Once a feature is nearing **feature complete** status, it should consider the
-opinion of other stakeholders (Product Management, Engineering, Professional
-Services, Support). This review takes into account higher-level feedback from a
-wider audience and serves as a jumping off point for training. You'll likely
-receive lots of out-of-scope feedback from this review, so create tickets in
-your backlog and plan accordingly. Not everything requested in this review can
-make the initial release.
+// Feature review rationale
+\include::partial$/reviews/feature-review-rationale.adoc[]
 
 == Testability
-
-Tech writers don't just write the docs. They should test them too!
+// Testing rationale
+\include::partial$/testing/testability-rationale.adoc[]
 
 === Linters
+// Testing with linters
+\include::partial$/testing/linters-rationale.adoc[]
 
-Validating documentation doesn't need to be purely subjective. Tools like
-link:https://vale.sh[Vale^] deliver data around style guide adherence and
-readability. Vale lets you customize existing style guides and create your own
-rules to reflect your organization's preferences. It's a very powerful tool.
-
-Check out xref::page$/tools/vale.adoc[my personal Vale configuration for this
-portfolio.]
+// Personal Vale config link
+\include::partial$/personal-vale-config-link.adoc[]
 
 === Acceptance criteria
+// Testing against acceptance criteria
+\include::partial$/testing/acceptance-criteria-rationale.adoc[]
 
-Another test of documentation is to verify the writing against the ticket's
-acceptance criteria. This calls for clear, demonstrative acceptance criteria
-that can pass or fail such a test.
-
+// Acceptance criteria examples
 Here's a couple of examples to show what I mean:
 
 \include::example$acceptance-criteria/bad-ac.adoc[]
@@ -225,11 +79,5 @@ Here's a couple of examples to show what I mean:
 \include::partial$acceptance-criteria/note-about-ac.adoc[]
 
 === Reviews
-
-xref:#_subject_matter_expert_sme_review[SME] and xref:#_peer_review[peer]
-reviews serve as the catch-all test for what escapes linters and acceptance
-criteria. This is the arena for "I think this paragraph is confusing" or "I
-would word this differently" feedback. Tech writers are human after all,
-writing documentation for other humans, so docs should pass these subjective
-criteria, too. Effective tech writers must develop the ability to synthesize
-murky (and sometimes conflicting) feedback into clear docs.
+// Testing through reviews
+\include::partial$/testing/reviews-as-testing.adoc[]
