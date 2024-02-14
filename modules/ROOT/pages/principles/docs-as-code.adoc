@@ -36,7 +36,7 @@ include::partial$/content-reuse/topic-typing-rationale.adoc[]
 include::example$/docs-as-code/topic-typing-feature-xyz.adoc[]
 
 // note: not everything must be modular
-include::partial$/content-reuse-determination-note.adoc[]
+include::partial$/content-reuse/content-reuse-determination-note.adoc[]
 
 == Reviews
 // reviews rationale
@@ -65,10 +65,10 @@ include::partial$/testing/testability-rationale.adoc[]
 === Linters
 
 // testing with linters
-include::partial$/testing/linters-rationale.adoc
+include::partial$/testing/linters-rationale.adoc[]
 
 // personal vale config link
-include::partial$/personal-vale-config-link.adoc
+include::partial$/personal-vale-config-link.adoc[]
 
 === Acceptance criteria
 
