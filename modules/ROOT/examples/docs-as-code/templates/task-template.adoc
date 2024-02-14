@@ -1,0 +1,9 @@
+// TASK template
+    // introduction/rationale
+        // set expectations for page (declare purpose)
+        // link to concept (as applicable)
+        // link to reference (as applicable)
+    // prerequisites
+    // location
+    // task
+    // related tasks/next steps (if in a series)

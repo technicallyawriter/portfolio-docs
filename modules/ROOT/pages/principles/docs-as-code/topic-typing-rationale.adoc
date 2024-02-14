@@ -1,0 +1,9 @@
+= Topic typing
+
+Topic typing categorizes content based on the purpose it serves as well as its style and theme. This approach scopes writing into potentially reusable sections. Generally, I prefer to organize content into three basic categories: *concept*, *task*, or *reference*.
+
+* *Concept:* used when introducing or explaining an idea, like the overview of a complex feature
+* *Task:* used when instructing user action, like enabling a feature within a product
+* *Reference:* used when providing a large amount of scannable information, like tabular data about compatibility
+
+Dedicating a page to a specific topic type is enough modularity sometimes. For increased reuse potential, I'll make each piece of content within a page more modular, if desired. Regardless of how modular I go, I make sure I'm consistent in how I template each topic type. This consistency enables me to plug-and-play content as needed.

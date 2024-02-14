@@ -1,0 +1,5 @@
+= Naming conventions
+
+I prefer to name branches using ticket IDs, for example [branch]`feature/id-123`. Descriptive names can become confusing, vague, or even inaccurate as development evolves. The associated ticket ID serves as a breadcrumb to the source of truth.
+
+This isn't the most alluring naming convention, but sometimes link:https://medium.com/coderbyte/the-unix-philosophy-isnt-dead-fcf63a726916[clarity is better than cleverness^].

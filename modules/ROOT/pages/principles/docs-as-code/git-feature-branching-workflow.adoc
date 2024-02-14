@@ -1,0 +1,16 @@
+= Feature branching workflow
+
+As a general rule, [branch]`main` branch always contains production-ready code. This way, you can quickly release new docs without worry of it containing unfinished work or errors that'll break your site. Feature branches off of [branch]`main` contain in-progress work for upcoming releases. I prefer to scope feature branches at the xref:./agile.adoc[Epic or Feature level] and merge completed child tickets into them. How you structure your tickets informs how you structure your branches, but keep those feature branches short-lived!
+
+.Feature branching (simple)
+image::feature-branching-simple.png[Feature branches without release branch]
+
+Feature branching is more straight-forward the more "agile" a company's release schedule is. In other words, if a company releases a feature once it's complete, the feature branch containing the docs is simply merged to [branch]`main` come release time. However, if a company prefers a longer release runway (_cough_! waterfall! _cough_!), I'll create a release branch off [branch]`main` to merge completed feature branches into.
+
+.Feature branching with a release branch
+image::feature-branching-release.png[Feature branches with release branch]
+
+Branching like this makes writing release notes for service packs and hotfixes simple, as these docs are just another feature branch.
+
+.Feature branching with release and hotfix branches
+image::feature-branching-release-hotfix.png[Feature branches with release and hotfix branch]

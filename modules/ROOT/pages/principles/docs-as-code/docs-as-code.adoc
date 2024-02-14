@@ -1,0 +1,70 @@
+= Docs-as-code
+
+include::page$/principles/docs-as-code/docs-as-code-preamble.adoc[]
+
+image:docs-as-code.jpeg[decorative image of Docs as Code process]
+
+== Git
+
+Whether working alone or on a team, proper version control is a must.
+
+include::pages$/principles/docs-as-code/git-feature-branching-workflow.adoc[]
+
+include::pages$/principles/docs-as-code/git-feature-branch-naming-convention-rationale.adoc[]
+
+include::example$/git/feature-branch-naming-convention-example.bash[]
+
+=== Pull requests
+
+Before merging, I like to xref:#_testability[test] and xref:#_peer_review[peer review] my docs as part of a Pull Request. If possible, I'll deploy a [branch]`feature` or [branch]`dev` branch to a staging environment and share with internal shareholders before the release.
+
+// content reuse rationale
+include::page$/principles/docs-as-code/content-reuse-rationale.adoc[]
+
+// content reuse examples
+include::page$/principles/docs-as-code/content-reuse-examples-with-different-software.adoc[]
+
+// topic typing rationale
+include::page$/principles/docs-as-code/topic-typing-rationale.adoc[]
+
+// note: not everything must be modular
+include::page$/principles/docs-as-code/content-reuse-determination-note.adoc[]
+
+// topic typing example - TODO: put this before note admonition?
+include::example$/docs-as-code/topic-typing-feature-xyz.adoc[]
+
+// reviews rationale
+include::pages$/principles/docs-as-code/reviews-rationale.adoc[]
+
+// sme review rationale
+include::pages$/principles/docs-as-code/sme-review-rationale.adoc[]
+
+// peer review rationale
+include::pages$/principles/docs-as-code/peer-review-rationale.adoc[]
+
+// feature review rationale
+include::pages$/principles/docs-as-code/feature-review-rationale.adoc[]
+
+== Testability
+// testing rationale
+include::page$/principles/docs-as-code/testability.adoc[]
+
+=== Linters
+// testing with linters
+Validating documentation doesn't need to be purely subjective. Tools like link:https://vale.sh[Vale^] deliver data around style guide adherence and readability. Vale lets you customize existing style guides and create your own rules to reflect your organization's preferences. It's a very powerful tool.
+
+Check out xref::page$/tools/vale.adoc[my personal Vale configuration for this portfolio].
+
+=== Acceptance criteria
+// testing against acceptance criteria
+Another test of documentation is to verify the writing against the ticket's acceptance criteria. This calls for clear, demonstrative acceptance criteria that can pass or fail such a test.
+// acceptance criteria examples
+Here's a couple of examples to show what I mean:
+
+include::example$acceptance-criteria/bad-ac.adoc[]
+include::example$acceptance-criteria/good-ac.adoc[]
+include::partial$acceptance-criteria/note-about-ac.adoc[]
+
+=== Reviews
+// testing through reviews
+xref:#_subject_matter_expert_sme_review[SME] and xref:#_peer_review[peer] reviews serve as catch-all tests for what escapes linters and acceptance criteria. This is the arena for "I think this paragraph is confusing" or "I would word this differently" type of feedback. Tech writers are human after all, writing documentation for other humans, so docs should consider these subjective criteria, too. Effective tech writers must develop the ability to synthesize murky (and sometimes conflicting) feedback into clear docs.

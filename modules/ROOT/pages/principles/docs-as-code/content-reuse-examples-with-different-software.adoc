@@ -1,0 +1,24 @@
+= Examples depending on software
+
+Content reuse goes by different names depending on the software I'm using, but the concept remains the same. Here are a few examples.
+
+In *MadCap Flare*, I can use a snippet to remind users where to view their user permissions, for example. This is helpful when a task requires a specific permission. If the path to this location changes, or I want to update wording in this blurb, I only need to update the snippet once.
+
+[source,xml]
+----
+<MadCap:snippetBlock src="../resources/snippets/view-user-permissions.flsnp" />
+----
+
+In *Hugo*, I can create a custom shortcode with this information and reference it across the docs.
+
+[source,markdown]
+----
+{{% view-user-permissions %}}
+----
+
+When writing with AsciiDoc in *Antora*, I can use the `include::` directive to display content from a modular file.
+
+[source,asciidoc]
+----
+\include::page$/view-user-permissions.adoc[]
+----

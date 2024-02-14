@@ -1,0 +1,7 @@
+= Reviews
+
+Docs are best when they're collaborative. And the most fruitful collaboration often takes the form of reviews. Tech writers usually aren't the expert on the subject they're writing--for this, there's the xref:#_subject_matter_expert_sme_review[subject matter expert (SME) review]. And authors usually aren't the best editors of their own work--for this, there's the xref:#_peer_review[peer review].
+
+Reviews might look different depending on personal preference and the software used. I've conducted reviews of plain text docs in GitHub as part of a Pull Request, as well as in exported Word docs uploaded to SharePoint with the Track Changes feature turned on.
+
+As is the rule with all collaboration, work with others to find the best compromise.
