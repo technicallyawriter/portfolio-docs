@@ -8,9 +8,9 @@ image:docs-as-code.jpeg[decorative image of Docs as Code process]
 
 Whether working alone or on a team, proper version control is a must.
 
-include::pages$/principles/docs-as-code/git-feature-branching-workflow.adoc[]
+include::page$/principles/docs-as-code/git-feature-branching-workflow.adoc[]
 
-include::pages$/principles/docs-as-code/git-feature-branch-naming-convention-rationale.adoc[]
+include::page$/principles/docs-as-code/git-feature-branch-naming-convention-rationale.adoc[]
 
 include::example$/git/feature-branch-naming-convention-example.bash[]
 
@@ -34,16 +34,16 @@ include::page$/principles/docs-as-code/content-reuse-determination-note.adoc[]
 include::example$/docs-as-code/topic-typing-feature-xyz.adoc[]
 
 // reviews rationale
-include::pages$/principles/docs-as-code/reviews-rationale.adoc[]
+include::page$/principles/docs-as-code/reviews-rationale.adoc[]
 
 // sme review rationale
-include::pages$/principles/docs-as-code/sme-review-rationale.adoc[]
+include::page$/principles/docs-as-code/sme-review-rationale.adoc[]
 
 // peer review rationale
-include::pages$/principles/docs-as-code/peer-review-rationale.adoc[]
+include::page$/principles/docs-as-code/peer-review-rationale.adoc[]
 
 // feature review rationale
-include::pages$/principles/docs-as-code/feature-review-rationale.adoc[]
+include::page$/principles/docs-as-code/feature-review-rationale.adoc[]
 
 == Testability
 // testing rationale
