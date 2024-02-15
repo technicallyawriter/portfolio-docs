@@ -1,0 +1,86 @@
+= Docs-as-code
+// Preamble
+\include::partial$/docs-as-code-preamble.adoc[]
+
+image:docs-as-code.jpeg[decorative image of Docs as Code process]
+
+== Git
+
+Whether working alone or on a team, proper version control is a must.
+
+=== Feature branch workflow
+// Various branching workflows with diagrams
+\include::partial$/version-control/git-feature-branch-workflow.adoc[]
+
+=== Feature branch naming conventions
+// Preferred naming conventions
+\include::partial$/version-control/git-feature-branch-naming-convention-rationale.adoc[]
+
+// Git branch names example
+\include::example$/git/feature-branch-naming-convention-example.bash[]
+
+=== Pull requests
+Before merging, I like to xref:#_testability[test] and xref:#_peer_review[peer review]
+my docs as part of a Pull Request. If possible, I'll deploy a [branch]`feature` or
+[branch]`dev` branch to a staging environment and share with internal shareholders before
+the release.
+
+== Content reuse
+// Content reuse rationale
+\include::partial$/content-reuse/content-reuse-rationale.adoc[]
+
+=== Examples depending on software
+// Content reuse examples - TODO: break this down by software with example$
+\include::partial$/content-reuse/content-reuse-examples-with-different-software.adoc[]
+
+== Topic typing
+// Topic typing rationale
+\include::partial$/content-reuse/topic-typing-rationale.adoc[]
+
+// Topic typing example
+\include::example$/docs-as-code/topic-typing-feature-xyz.adoc[]
+
+// Note: not everything must be modular
+\include::partial$/content-reuse/content-reuse-determination-note.adoc[]
+
+== Reviews
+// Reviews rationale
+\include::partial$/reviews/reviews-rationale.adoc[]
+
+=== SME review
+// SME review rationale
+\include::partial$/reviews/SME-review-rationale.adoc[]
+
+=== Peer review
+// Peer review rationale
+\include::partial$/reviews/peer-review-rationale.adoc[]
+
+=== Feature review
+// Feature review rationale
+\include::partial$/reviews/feature-review-rationale.adoc[]
+
+== Testability
+// Testing rationale
+\include::partial$/testing/testability-rationale.adoc[]
+
+=== Linters
+// Testing with linters
+\include::partial$/testing/linters-rationale.adoc[]
+
+// Personal Vale config link
+\include::partial$/personal-vale-config-link.adoc[]
+
+=== Acceptance criteria
+// Testing against acceptance criteria
+\include::partial$/testing/acceptance-criteria-rationale.adoc[]
+
+// Acceptance criteria examples
+Here's a couple of examples to show what I mean:
+
+\include::example$acceptance-criteria/bad-ac.adoc[]
+\include::example$acceptance-criteria/good-ac.adoc[]
+\include::partial$acceptance-criteria/note-about-ac.adoc[]
+
+=== Reviews
+// Testing through reviews
+\include::partial$/testing/reviews-as-testing.adoc[]

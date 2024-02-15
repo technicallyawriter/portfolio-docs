@@ -1,0 +1,3 @@
+Docs-as-code encourages tech writers to borrow from the coding concept of **modular programming**. This term describes how programmers separate code into independent files depending on the purpose it serves. This approach leads to less manual work and makes managing code easier. Why write something three or four times when you can write it once and reuse it? This is transferrable to docs, of course.
+
+Writing docs that are more flexible and narrowly scoped may take some initial planning, but the approach is ultimately more efficient, not to mention less of a headache to manage. Proper content reuse also creates consistency for readers, making the docs easier to read.

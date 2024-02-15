@@ -1,0 +1,11 @@
+.Example of topic typing for introducing Topic xyz
+[source,asciidoc]
+----
+= Topic xyz
+
+include::topic-xyz-intro.adoc
+include::topic-xyz-prerequities.adoc
+include::concept-x.adoc
+include::concept-y.adoc
+include::concept-z.adoc
+----

@@ -1,8 +1,6 @@
 .Good acceptance criteria
 ====
-Documentation covering the following use-cases:
 
-* [task] fresh install workflow for new users
-* [task] upgrade workflow for existing users (USA)
-* [task] upgrade workflow for existing users (UK) 
+* upgrade instructions contain new required steps identified in Ticket-123
+* upgrade instructions contain an IMPORTANT admonition clarifying that this doesn't affect UK clients
 ====

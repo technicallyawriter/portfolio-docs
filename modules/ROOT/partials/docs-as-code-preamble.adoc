@@ -1,0 +1,3 @@
+Modern tech writing has evolved to treat documentation like code in how it's versioned, reviewed, tested, and deployed. While I began my career watching Microsoft Word struggle with 500+ page documents, I've learned first-hand that delivering high quality documentation at scale means having high quality tools and processes.
+
+Fortunately, there's no need to reinvent the wheel. Treat the docs like code!

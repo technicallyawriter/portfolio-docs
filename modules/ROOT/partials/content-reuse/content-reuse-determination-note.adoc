@@ -1,0 +1,1 @@
+NOTE: Structuring content for reuse is easier to do from the start but don't feel like you have to structure _everything_ for reuse. Discuss with your team (or yourself) to determine how modular your docs should be.

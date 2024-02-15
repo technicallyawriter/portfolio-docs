@@ -1,6 +1,6 @@
-name: technicallyawriter
-title: Portfolio
-version: "1.0.0"
+name: feature-modularize
+title: feature-modularize
+version: "1.0.1"
 asciidoc:
   attributes:
     source-language: asciidoc@
