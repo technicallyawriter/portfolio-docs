@@ -25,7 +25,9 @@ across a Kanban board,350,auto]
 
 I've participated in and led the typical agile ceremonies:
 
-* Daily stand-up meetings Backlog Refinement meetings Sprint Planning meetings
+* Daily stand-up meetings
+* Backlog Refinement meetings
+* Sprint Planning meetings
 * Retrospective meetings
 
 If I had to choose only one, I'd pick the daily stand-ups. These quick
