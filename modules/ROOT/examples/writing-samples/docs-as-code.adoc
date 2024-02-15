@@ -49,7 +49,7 @@ the release.
 
 === SME review
 // SME review rationale
-\include::partial$/reviews/sme-review-rationale.adoc[]
+\include::partial$/reviews/SME-review-rationale.adoc[]
 
 === Peer review
 // Peer review rationale
