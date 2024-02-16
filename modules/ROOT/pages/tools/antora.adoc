@@ -2,7 +2,9 @@
 
 image:icons/antora.png[Antora logo,50,50]
 
-I had to try Antora after seeing its tagline: "The multi-repository documentation site generator for tech writers who love writing in AsciiDoc." I was so please with it, I used it for this portfolio site! Compared to Flare and Hugo, it stands out with how it leverages Git and AsciiDoc to scale docs with ease.
+I had to try Antora after seeing its tagline: "_The multi-repository documentation site generator for tech writers who love writing in AsciiDoc_."
+
+I was so please with it, I used it for this portfolio site! Compared to Flare and Hugo, it stands out with how it leverages Git and AsciiDoc to scale docs with ease.
 
 == Structured configuration
 
