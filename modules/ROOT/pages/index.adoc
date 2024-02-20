@@ -2,12 +2,12 @@
 
 Hi, I'm Parker. &#128075; Welcome to my tech writing portfolio!
 
-I'm an tech writer with 6 years of experience in the Financial and Facility Management industries. Through this time, I've worked within Engineering and Product Management departments as a sole contributor, team member, and team lead. Wherever I find myself, I strive to produce documentation that answers more questions than it creates and rewards those who take the time to read what I write. 
+I'm a tech writer with 6 years of experience in the Financial and Facility Management industries. Through this time, I've worked within Engineering and Product Management departments as a sole contributor, team member, and team lead. Wherever I find myself, I strive to produce documentation that answers more questions than it creates and rewards those who take the time to read what I write.
 
 == Docs-as-code image:icons/terminal.png[a blank computer terminal,50,50]
 
 
-I prefer to treat my docs like source code. Using modern software development processes and tooling makes it possible to produce modular, reviewed, and accessible documentation at scale. 
+I prefer to treat my docs like source code. Using modern software development processes and tooling makes it possible to produce modular, reviewed, and accessible documentation at scale.
 
 Goodbye 500+ page Microsoft Word documents; hello pull requests that kick off continuous deployment!
 
@@ -21,11 +21,11 @@ I believe it's often harder to write a single clear sentence than a paragraph of
 
 == User empathy image:icons/user.png[confused user,50,50]
 
-As a self-taught Linux power user, I know the importance of quality documentation and how painful it is to be stuck with lacking instructions. "User empathy" is an overused buzzword, but let's just say I've suffered through enough poorly documented open source software for it to dramatically inform my tech writing approach.  
+As a self-taught Linux power user, I know the importance of quality documentation and how painful it is to be stuck with lacking instructions. "User empathy" is an overused buzzword, but let's just say I've suffered through enough poorly documented open source software for it to dramatically inform my tech writing approach.
 
 == Comic relief
 
-I enjoy working in the middle of this spectrum, preferably not too far to the right! 
+I enjoy working in the middle of this spectrum, preferably not too far to the right!
 
 .The perils of technical writing
 [link=https://xkcd.com/1343/]
