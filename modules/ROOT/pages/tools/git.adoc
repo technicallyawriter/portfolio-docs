@@ -35,7 +35,7 @@ Branching also makes automated releases of docs possible. Commits merged to [bra
 
 Oops! Did you make that commit on the wrong branch? Or completely break the test site with no clue of what you did?
 
-Important: none of this has ever happened to me, I promise...
+IMPORTANT: none of this has ever happened to me, I promise...
 
 Git makes it easy to pretend those mistakes never happened.
 
