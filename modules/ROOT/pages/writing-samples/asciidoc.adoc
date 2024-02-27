@@ -3,9 +3,9 @@
 I've done a lot of writing in AsciiDoc for this portfolio, so I though I'd share a peak behind the curtain.
 
 == Principles > Docs-as-code
-This sample shows a high degree of modularity on the Docs-as-code page. This is admittedly overboard for a portfolio where content reuse opportunities aren't as necessary as in large documentation sites. It's mostly to serve as an example for how I approached topic typing for reuse. Notice the directory structure in the `include::` directives. They're grouped intuitively by theme. This approach helps with consistent categorizing of future content.
+This sample shows a high degree of modularity on the Docs-as-code page. This is admittedly overboard for a portfolio where content reuse opportunities aren't as necessary as in large documentation sites. It's mostly to serve as an example for how I approached topic typing for reuse.
 
-I've also added brief comments to help when scanning the page. The cognitive load of a short comment is much lower than a messy `include::` directive. And, of course, a quick summary is more informative than a filename. It's important to consider maintainers in this way. I've often saved myself some heartburn with a clarifying internal note.
+I've also added brief comments to help when scanning the page. The cognitive load of a short comment is much lower than a messy `include::` directive. And, of course, a quick summary is more informative than a filename.
 
 [source.asciidoc]
 ----
