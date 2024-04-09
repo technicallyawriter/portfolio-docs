@@ -1,7 +1,7 @@
 {{ $type := .Get "type" | default "note" }}
 {{ $content := .Inner | markdownify }}
 
-{{ $titleMap := map
+{{ $titleMap := dict
   "info" "Note:"
   "success" "Success:"
   "warning" "Warning:"
