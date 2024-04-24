@@ -1,16 +1,14 @@
 <body>
   <h1>Match an invoice</h1>
-
   <h2>Overview</h2>
-
-  <summary>
+  <p>
     Automatically check for discrepancies between billed and received goods by
     matching an invoice. You can perform a <a href="#two-way-match">
     two-way match</a>) with an invoice and a PO or a <a href="three-way-match">
     three-way match</a>if you also have a receipt. Once an invoice is matched, 
     its status updates to "Matched" and a linked invoice is created in 
-    <b>RTFM-Industries &gt; Invoices</b>.
-  </summary>
+    <p><span class="bold">RTFM-Industries &gt; Invoices</span></p>.
+  </p>
   <p>
     If discrepancies are found within your
     <a href="auto-invoice-processing-rules.htm#tolerance">configured
@@ -19,19 +17,18 @@
     discrepancies exceed your configured tolerance limits, you are
     prompted to resolve them manually.
   </p>
-  <p><b>Additional processing options</b></p>
+  <p><span class="bold">Additional processing options</span></p>
   <p>
     To request information or record an invoice exception, see the
     <a href="#Addition">Additional processing options</a> section.
   </p>
-
   <h2>Prerequisites</h2>
   <ul>
     <li>
       <p><a href="InvoicingSetup.htm">Invoicing setup</a></p>
     </li>
     <li>
-        <p>Invoice in <b>To match</b> status</p>
+        <p>Invoice in <span class="bold">To match</span> status</p>
     </li>
     <li>
       <p>
@@ -42,27 +39,24 @@
       />
     </li>
   </ul>
-
   <h2>Location</h2>
   <p>
     You can match an invoice in two locations depending on the type
     of match you're doing:
   </p>
-
   <h3>Match to a PO (two-way match)</h3>
   <ul>
     <li>
-      <p><b>Procurement &gt; POs</b></p>
+      <p><span class="bold">Procurement &gt; POs</span></p>
     </li>
   </ul>
 
   <h3>Match to a receipt (three-way match)</h3>
-  <p><b>Procurement &gt; Receipts</b></p>
-
+  <p><span class="bold">Procurement &gt; Receipts</span></p>
   <h2><a name="two-way-match"></a>Match an invoice to a PO</h2>
   <p>
     Create an invoice from a PO and check for discrepancies with a
-    2-way match. The PO must be in <b>Sent</b> status.
+    2-way match. The PO must be in <span class="bold">Sent</span> status.
   </p>
   <MadCap:snippetBlock
     src="../resources/snippets/invoicing/match-invoice-to-po.flsnp"
@@ -79,34 +73,30 @@
 
   <h2><a name="Addition"></a>Additional processing options</h2>
   <p>
-    When an invoice is in the <b>To match</b> status, a user has the
+    When an invoice is in the <span class="bold">To match</span> status, a user has the
     following processing options that appear above the state machine.
   </p>
-
   <h3>Request information</h3>
   <p>
     To request additional information regarding an invoice, click the
-    <b>Request info</b> button above the status line. The point of contact
-    user is notified by email as a result.
+    <span class="bold">Request info</span> button above the status line. The point of contact user is notified by email as a result.
   </p>
-
   <h4>Provide instructions to the point of contact</h4>
     You can provide instructions for the point of contact <em>either</em>
     manually on the invoice or automatically through a configured <a href=
     "auto-invoice-processing-rules.htm">automatic invoice processing rule</a>.
   </p>
   <p>
-    To manually provide instructions, <b>Edit</b> the invoice, update the
-    "Instructions for point of contact" field and <b>Save</b>. These
+    To manually provide instructions, <span class="bold">Edit</span> the invoice, update the
+    "Instructions for point of contact" field and <span class="bold">Save</span>. These
     instructions and the assigned point of contact are saved in the
-    <b>Invoicing processing</b> tab.
+    <span class="bold">Invoicing processing</span> tab.
   </p>
-
   <h3>Unassign an invoice</h3>
   <p>
     To handle an invoice exception found while matching, assign the proper user
-    to the invoice in the <b>Invoice processing</b> tab and click the
-    <b>Unassign</b> button above the status line. The user assigned to the
+    to the invoice in the <span class="bold">Invoice processing</span> tab and click the
+    <span class="bold">Unassign</span> button above the status line. The user assigned to the
     invoice is notified by email and the invoice's status updates to "To assign"
     for reprocessing.
   </p>
